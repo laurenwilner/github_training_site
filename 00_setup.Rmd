@@ -1,26 +1,8 @@
 # Workshop Setup
 
-TESTING LINE TO MAKE SURE ITS UPDATED
-
-option 1
-![](https://youtu.be/JuZxhOTDMtw)
-
-
-option 2 
-
-```{r, echo=FALSE}
+```{4, echo=FALSE}
 library("vembedr")
-embed_url("https://youtu.be/JuZxhOTDMtw")
 ```
-option 3
-
-<iframe width="560" height="315" src="https://youtu.be/JuZxhOTDMtw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-option 4
-https://youtu.be/JuZxhOTDMtw
-
-option 5
-(https://youtu.be/JuZxhOTDMtw)
 
 This pre-workshop guide is designed to walk you through the initial setup of git on your computer.  
 
@@ -50,6 +32,12 @@ Do this for each of the packages.
 
 *If any of these packages fail to install, please let us know. You may need to update your RStudio but we will try to help you get everything set up with minimal interruption to your other work.*   
 
+
+```{r, echo=FALSE}
+embed_url("https://youtu.be/JuZxhOTDMtw")
+```
+
+
 ## Create a github account  
 - https://github.com/
 
@@ -72,8 +60,9 @@ RStudio should automatically detect the presence of Git Bash. You can inspect an
 
 4) The next set of tasks are done in RStudio. The code to run these commands are found in the file `code/00_Setup-instructions-for-Windows.R`. After running all those commands you are ready to use GitHub from the Shell. (Currently, these instructions do not include setting up a Git client.)
 
-<iframe width="560" height="315" src="https://youtu.be/0blgUPi5j4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-(https://youtu.be/0blgUPi5j4U)
+```{r, echo=FALSE}
+embed_url("https://youtu.be/0blgUPi5j4U")
+```
 
 <br> 
 
@@ -83,7 +72,7 @@ RStudio should automatically detect the presence of Git Bash. You can inspect an
 `git config` and then `enter`. You will be prompted to install Git and follow the prompts! 
 
 ```{r, echo=FALSE}
-#embed_url("https://youtu.be/cAk8wOv81fo")
+embed_url("https://youtu.be/cAk8wOv81fo")
 ```
 
 ## Configure Git using an HTTPS token
@@ -115,8 +104,10 @@ When prompted, paste in the token you copied. This will add your credentials to 
 `-> Removing credentials from cache...`  
 `-> Done.`  
 
-<iframe width="560" height="315" src="https://youtu.be/yedGFJifmdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-(https://youtu.be/yedGFJifmdI)
+
+```{r, echo=FALSE}
+embed_url("https://youtu.be/yedGFJifmdI")
+```
 
 ## Resources 
 
