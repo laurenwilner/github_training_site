@@ -1,0 +1,3 @@
+# Git Jargon (Alice Bartlett)
+
+Write a blurb about Alice's slides, link her slides, show screenshot of first slide. 
