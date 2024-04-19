@@ -1,6 +1,6 @@
 # Workshop Setup
 
-```{4, echo=FALSE}
+```{r, echo=FALSE}
 library("vembedr")
 ```
 

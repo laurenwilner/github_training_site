@@ -1,31 +1,6 @@
 # Workshop Setup
 
-TESTING LINE TO MAKE SURE ITS UPDATED
 
-option 1
-![](https://youtu.be/JuZxhOTDMtw)
-
-
-option 2 
-
-
-```{=html}
-<div class="vembedr">
-<div>
-<iframe src="https://www.youtube.com/embed/JuZxhOTDMtw" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
-</div>
-</div>
-```
-
-option 3
-
-<iframe width="560" height="315" src="https://youtu.be/JuZxhOTDMtw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-option 4
-https://youtu.be/JuZxhOTDMtw
-
-option 5
-(https://youtu.be/JuZxhOTDMtw)
 
 This pre-workshop guide is designed to walk you through the initial setup of git on your computer.  
 
@@ -55,6 +30,18 @@ Do this for each of the packages.
 
 *If any of these packages fail to install, please let us know. You may need to update your RStudio but we will try to help you get everything set up with minimal interruption to your other work.*   
 
+
+
+```{=html}
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/JuZxhOTDMtw" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
+```
+
+
+
 ## Create a github account  
 - https://github.com/
 
@@ -77,8 +64,15 @@ RStudio should automatically detect the presence of Git Bash. You can inspect an
 
 4) The next set of tasks are done in RStudio. The code to run these commands are found in the file `code/00_Setup-instructions-for-Windows.R`. After running all those commands you are ready to use GitHub from the Shell. (Currently, these instructions do not include setting up a Git client.)
 
-<iframe width="560" height="315" src="https://youtu.be/0blgUPi5j4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-(https://youtu.be/0blgUPi5j4U)
+
+```{=html}
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/0blgUPi5j4U" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
+```
+
 
 <br> 
 
@@ -87,6 +81,14 @@ RStudio should automatically detect the presence of Git Bash. You can inspect an
 1) Type git --version in your terminal to check if git is installed. If it is, you will see a version number. If not, type: 
 `git config` and then `enter`. You will be prompted to install Git and follow the prompts! 
 
+
+```{=html}
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/cAk8wOv81fo" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
+```
 
 
 ## Configure Git using an HTTPS token
@@ -118,8 +120,16 @@ When prompted, paste in the token you copied. This will add your credentials to 
 `-> Removing credentials from cache...`  
 `-> Done.`  
 
-<iframe width="560" height="315" src="https://youtu.be/yedGFJifmdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-(https://youtu.be/yedGFJifmdI)
+
+
+```{=html}
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/yedGFJifmdI" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
+```
+
 
 ## Resources 
 
