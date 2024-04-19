@@ -1,10 +1,12 @@
-# Workshop Setup  
+# Workshop Setup
+
+![](https://youtu.be/JuZxhOTDMtw)
 
 This pre-workshop guide is designed to walk you through the initial setup of git on your computer.  
 
-If you have any issues, please reach out to us at wilnerl@uw.edu or c.riddell@berkeley.edu.   
+If you have any issues, please reach out to us at datasci.ph@gmail.com.   
 
-## Introduction  
+**Introduction**  
 
 Git is a version control system that allows you to track changes in your code.  
 
@@ -12,10 +14,10 @@ In order to get setup, we need to install git on your computer, make a GitHub ac
 
 We will get into the details of how to use git in the workshop, but are requesting that you complete the following steps before the workshop so that we can spend all of the workshop time on using Git rather than on setup!     
 
-## Step 1. Install R and RStudio if you have not already: 
+## Install R and RStudio if you have not already: 
 - https://posit.co/download/rstudio-desktop/  
 
-## Step 2. Open RStudio and install the following packages:   
+## Open RStudio and install the following packages:   
 
 - **tidyverse**
 - **usethis**
@@ -28,10 +30,10 @@ Do this for each of the packages.
 
 *If any of these packages fail to install, please let us know. You may need to update your RStudio but we will try to help you get everything set up with minimal interruption to your other work.*   
 
-## Step 3. Create a github account  
+## Create a github account  
 - https://github.com/
 
-## Step 4. Install Git  
+## Install Git  
 
 Follow the instructions on the following slides to install git on your computer. Select the slides that correspond to Windows or Mac depending on what machine you are using.  
 
@@ -50,10 +52,19 @@ RStudio should automatically detect the presence of Git Bash. You can inspect an
 
 4) The next set of tasks are done in RStudio. The code to run these commands are found in the file `code/00_Setup-instructions-for-Windows.R`. After running all those commands you are ready to use GitHub from the Shell. (Currently, these instructions do not include setting up a Git client.)
 
+<iframe width="560" height="315" src="https://youtu.be/0blgUPi5j4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+(https://youtu.be/0blgUPi5j4U)
+
+<br> 
+
 ### Mac Instructions
 
 1) Type git --version in your terminal to check if git is installed. If it is, you will see a version number. If not, type: 
 `git config` and then `enter`. You will be prompted to install Git and follow the prompts! 
+
+```{r, echo=FALSE}
+#embed_url("https://youtu.be/cAk8wOv81fo")
+```
 
 ## Configure Git using an HTTPS token
 
@@ -84,13 +95,13 @@ When prompted, paste in the token you copied. This will add your credentials to 
 `-> Removing credentials from cache...`  
 `-> Done.`  
 
+<iframe width="560" height="315" src="https://youtu.be/yedGFJifmdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+(https://youtu.be/yedGFJifmdI)
+
 ## Resources 
 
 You should now be set up to use Git and Github! If you had any issues, here are a few links you can look at for help. If you are still having trouble, please reach out to us before the workshop!  
 
-- https://happygitwithr.com/  
+- [Happy Git with R](https://happygitwithr.com/)  
 
-- https://git-scm.com/book/en/v2/Getting-Started-About-Version-ControlLinks  
-
-<br>  
-We look forward to seeing you at the workshop! 
+- [Git Setup Book](https://git-scm.com/book/en/v2/Getting-Started-About-Version-ControlLinks)

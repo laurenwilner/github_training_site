@@ -15,15 +15,12 @@ csl: chicago-fullnote-bibliography.csl
 
 # About this training
 
-(insert abstract here)
+Keeping track of changes to your statistical code can really help cut down on mistakes in your analysis. But, a lot of epidemiologists haven't been trained on how to do this, and might wonder how it all fits with IRB protocols and privacy rules. In these materials, we get into the basics of git and GitHub. We'll show you how these tools can help you manage your code changes safely and ethically.
+LBW Note: is this the right tone?
 
-## Target audience 
+**Questions? Comments?**
 
-(insert target audience)
-
-## Questions? Comments?
-
-Contact us @ (insert contact info).
+Contact us at datasci.ph@gmail.com if you have questions, comments, or feedback!
 
 ```{r, eval=FALSE, include=FALSE}
 bookdown::render_book()

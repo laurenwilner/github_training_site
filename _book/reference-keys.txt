@@ -1,12 +1,9 @@
 about-this-training
-target-audience
-questions-comments
-welcome-to-the-workshop
-introduction
-step-1.-install-r-and-rstudio-if-you-have-not-already
-step-2.-open-rstudio-and-install-the-following-packages
-step-3.-create-a-github-account
-step-4.-install-git
+workshop-setup
+install-r-and-rstudio-if-you-have-not-already
+open-rstudio-and-install-the-following-packages
+create-a-github-account
+install-git
 windows-instructions
 mac-instructions
 configure-git-using-an-https-token
