@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Chapter 6 Do’s and Don’t’s of using GitHub | GitHub for Public Health</title>
 <meta name="author" content="Corinne Riddell and Lauren Wilner">
-<meta name="description" content="6.1 Different approaches to using Github for data analysis   6.2 Different approaches to using Github for data analysis Approach 1: Some people use Github to track changes to their statistical...">
+<meta name="description" content="6.1 Different approaches to using Github for data analysis  6.1.1 Approach 1: Some people use Git and Github to track changes to their statistical code only. Here, they are only tracking their...">
 <meta name="generator" content="bookdown 0.39.1 with bs4_book()">
 <meta property="og:title" content="Chapter 6 Do’s and Don’t’s of using GitHub | GitHub for Public Health">
 <meta property="og:type" content="book">
-<meta property="og:description" content="6.1 Different approaches to using Github for data analysis   6.2 Different approaches to using Github for data analysis Approach 1: Some people use Github to track changes to their statistical...">
+<meta property="og:description" content="6.1 Different approaches to using Github for data analysis  6.1.1 Approach 1: Some people use Git and Github to track changes to their statistical code only. Here, they are only tracking their...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chapter 6 Do’s and Don’t’s of using GitHub | GitHub for Public Health">
-<meta name="twitter:description" content="6.1 Different approaches to using Github for data analysis   6.2 Different approaches to using Github for data analysis Approach 1: Some people use Github to track changes to their statistical...">
+<meta name="twitter:description" content="6.1 Different approaches to using Github for data analysis  6.1.1 Approach 1: Some people use Git and Github to track changes to their statistical code only. Here, they are only tracking their...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.6.1/transition.js"></script><script src="libs/bs3compat-0.6.1/tabs.js"></script><script src="libs/bs3compat-0.6.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -66,112 +66,65 @@
 <h2>
 <span class="header-section-number">6.1</span> Different approaches to using Github for data analysis<a class="anchor" aria-label="anchor" href="#different-approaches-to-using-github-for-data-analysis"><i class="fas fa-link"></i></a>
 </h2>
-</div>
-<div id="different-approaches-to-using-github-for-data-analysis-1" class="section level2" number="6.2">
-<h2>
-<span class="header-section-number">6.2</span> Different approaches to using Github for data analysis<a class="anchor" aria-label="anchor" href="#different-approaches-to-using-github-for-data-analysis-1"><i class="fas fa-link"></i></a>
-</h2>
-<p><strong>Approach 1:</strong> Some people use Github to track changes to their statistical code
-only.</p>
-<ul>
-<li>Here, they are only tracking their code files in R (.R or .Rmd), or
-SAS (.SAS), or the corresponding files for whichever language they use.</li>
-<li>They add all other types of files to the git ignore file so that git
+<div id="approach-1" class="section level3" number="6.1.1">
+<h3>
+<span class="header-section-number">6.1.1</span> Approach 1:<a class="anchor" aria-label="anchor" href="#approach-1"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>Some people use Git and Github to track changes to their statistical code only.</strong></p>
+<p>Here, they are only tracking their code files in R (.R or .Rmd), or
+SAS (.SAS), or the corresponding files for whichever language they use.</p>
+<p>They add all other types of files to the git ignore file so that git
 won’t track them or accidentally push them to GitHub. This would include:
 data files, word documents, pdfs, image files, etc – anything else you are
-putting in the github folder that you don’t want to track.</li>
-<li>This approach most closely corresponds to how GitHub is used by software developers/
+putting in the github folder that you don’t want to track.</p>
+<p>This approach most closely corresponds to how GitHub is used by software developers/
 other code writers, but is also an option chosen by researchers and research
-teams depending on their objectives.</li>
-</ul>
-<p><strong>Approach 2:</strong> There is another approach to using Git and GitHub in which you
-might choose to track a larger set of files. These other files might include:</p>
-<ul>
-<li>Data</li>
-<li>Images</li>
-<li>Documents</li>
-</ul>
+teams depending on their objectives.</p>
 </div>
-<div id="approach-2-tracking-data-files" class="section level2" number="6.3">
-<h2>
-<span class="header-section-number">6.3</span> Approach 2: Tracking data files<a class="anchor" aria-label="anchor" href="#approach-2-tracking-data-files"><i class="fas fa-link"></i></a>
-</h2>
-<ul>
-<li><p><strong>Don’t track restricted data</strong></p></li>
-<li><p><strong>Dont’ track large datasets.</strong> Git will warn you if your file exceeds 50 MB and
-block you from tracking files 100 MB or larger.</p></li>
-<li><p>To ensure these files aren’t tracked, you can store them elsewhere (outside of
-the tracked Git folder), or store them in the tracked folder while also listing
-them or their file type to your .gitignore file.</p></li>
-<li><p>It doesn’t often make sense to track a large “raw” data file – it is too big
-and not useful to track any changes to this file.</p></li>
-<li><p>It may be helpful to track “intermediate data products”, if these files are
-not restricted.<br></p></li>
-<li><p>Intermediate data products might include aggregated datasets
-that are either reported directly or used in analysis.</p></li>
-<li><p>For example, you may have access to a restricted dataset, but the data may
-become non-restricted if you aggregate at the level of the census tract. The
-benefit of tracking this smaller dataset is that if the raw data is updated, you
-can easily see how those updates affect these intermediate data products if you
-track them.</p></li>
-<li><p>In this case you need to ensure you are not reporting any private/restricted
-data (eg no cell counts below 10 is a restricted often imposed on aggregated
-tables, or not reporting any identifying features such as protected health
-information or anything else that would allow anyone with access to identify
-individuals.</p></li>
-<li><p>What type of data files should you track?</p></li>
-<li><p>Anything that is plain text like csv files and txt files (e.g., files you can
-open in a text editor).</p></li>
-<li><p>These are best for tracking because they render nicely on GitHub, so you can
-easily view the differences to these files when you submit a pull request.</p></li>
-<li><p>You could also track things like Excel files but you can’t easily view them
-on GitHub, so some of the benefits of using GitHub do not apply to these files.</p></li>
-</ul>
+<div id="approach-2" class="section level3" number="6.1.2">
+<h3>
+<span class="header-section-number">6.1.2</span> Approach 2:<a class="anchor" aria-label="anchor" href="#approach-2"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>Some people Git and GitHub to track a larger set of files. These other files might include data, images, and documents.</strong>
+When tracking non-code files, here are some rules of thumb:</p>
+<div id="data-files" class="section level4" number="6.1.2.1">
+<h4>
+<span class="header-section-number">6.1.2.1</span> Data files<a class="anchor" aria-label="anchor" href="#data-files"><i class="fas fa-link"></i></a>
+</h4>
+<p><strong>Don’t track restricted data!</strong></p>
+<p><strong>Dont’ track large datasets!</strong> Git will warn you if your file exceeds 50 MB and
+block you from tracking files 100 MB or larger. To ensure these files aren’t tracked, you can store them elsewhere (outside of
+the tracked Git folder), or store them in the tracked folder while also listing them or their file type to your .gitignore file.</p>
+<p>Generally, it also doesn’t often make sense to track a large “raw” data file – it is too big and not useful to track any changes to this file. It may be helpful to track “intermediate data products”, if these files are not restricted. Intermediate data products might include aggregated datasets that are either reported directly or used in analysis. For example, you may have access to a restricted dataset, but the data may become non-restricted if you aggregate at the level of the census tract. The benefit of tracking this smaller dataset is that if the raw data is updated, you can easily see how those updates affect these intermediate data products if you track them. In this case you need to ensure you are not reporting any private/restricted data (eg no cell counts below 10 is a restricted often imposed on aggregatedtables, or not reporting any identifying features such as protected health information or anything else that would allow anyone with access to identify
+individuals.</p>
+<p><strong>Data files you should track</strong> include anything that is plain text like csv files and txt files (e.g., files you can
+open in a text editor). These are best for tracking because they render nicely on GitHub, so you can
+easily view the differences to these files when you submit a pull request. You could also track things like Excel files but you can’t easily view them on GitHub, so some of the benefits of using GitHub do not apply to these files.</p>
 </div>
-<div id="approach-2-tracking-image-files" class="section level2" number="6.4">
-<h2>
-<span class="header-section-number">6.4</span> Approach 2: Tracking image files<a class="anchor" aria-label="anchor" href="#approach-2-tracking-image-files"><i class="fas fa-link"></i></a>
-</h2>
-<ul>
-<li>Image files (e.g., png, jpeg), such as plots/other figures you create for a
-report, may also be tracked.</li>
-<li>The benefit of also tracking figures are the use of the image
-comparison tools in GitHub to see an image pre/post a change in the analysis.</li>
-<li>This can be super helpful when you have modified something in the analysis
-after having already written up some results.</li>
-<li>If you track the image, you can
-easily see how it changed (it being the point estimates and confidence intervals,
-of the slope of the regression line, or the shading of a colored map).</li>
-<li>This
-has the direct pay-off of making it much easier to revise the written results
-as you can more easily see the changes using these tools.</li>
-<li>One thing to be careful about is not uploading very large images like the
-ones that are generated by some GIS analyses (large maps).</li>
-<li>If you aren’t sure if you should track your image file, take a look at the
+<div id="image-files" class="section level4" number="6.1.2.2">
+<h4>
+<span class="header-section-number">6.1.2.2</span> Image files<a class="anchor" aria-label="anchor" href="#image-files"><i class="fas fa-link"></i></a>
+</h4>
+<p>You can also track image files (e.g., png, jpeg), such as plots/other figures you create for a
+report. The benefit of tracking figures are the use of the image comparison tools in GitHub to see an image pre/post a change in the analysis. This can be super helpful when you have modified something in the analysis after having already written up some results. If you track the image, you can easily see how it changed (it being the point estimates and confidence intervals, of the slope of the regression line, or the shading of a colored map). This has the direct pay-off of making it much easier to revise the written results as you can more easily see the changes using these tools.
+* One thing to be careful about is not uploading very large images like the
+ones that are generated by some GIS analyses (large maps).
+* If you aren’t sure if you should track your image file, take a look at the
 file size. (I had a look at all of my repositories for epidemiologic analyses –
 most images were &lt; 1000 kb. Some were between 1 MB and 4 MB – these were some
-maps and some images saved at higher resolutions.)</li>
-</ul>
+maps and some images saved at higher resolutions.)</p>
 </div>
-<div id="approach-2-tracking-documents" class="section level2" number="6.5">
-<h2>
-<span class="header-section-number">6.5</span> Approach 2: Tracking documents<a class="anchor" aria-label="anchor" href="#approach-2-tracking-documents"><i class="fas fa-link"></i></a>
-</h2>
-<ul>
-<li>You can also track reports and manuscripts using GitHub.</li>
-<li>If these reports are written in a plaintext language (e.g., R markdown, LaTeX)
-then they will render nicely on GitHub and, and permit you to see the “diffs”
-made to the document during a pull request.</li>
-<li>Tracking pdfs is permissible but you can’t easily see the “diffs” when they are
-updated. However, pdfs are easily viewable on GitHub.</li>
-<li>Tracking docx files is also permissible, but you can’t easily see the “diffs”
-and they are not easily viewable on GitHub (since they require MS Word to render
-them).</li>
-</ul>
+<div id="documents" class="section level4" number="6.1.2.3">
+<h4>
+<span class="header-section-number">6.1.2.3</span> Documents<a class="anchor" aria-label="anchor" href="#documents"><i class="fas fa-link"></i></a>
+</h4>
+<p>You can also track reports and manuscripts using GitHub. If these reports are written in a plaintext language (e.g., R markdown, LaTeX) then they will render nicely on GitHub and, and permit you to see the “diffs” made to the document during a pull request. Tracking pdfs is permissible but you can’t easily see the “diffs” when they are updated. However, pdfs are easily viewable on GitHub.Tracking docx files is also permissible, but you can’t easily see the “diffs” and they are not easily viewable on GitHub (since they require MS Word to render them).</p>
 </div>
-<div id="things-you-definitely-do-not-want-to-track" class="section level2" number="6.6">
+</div>
+</div>
+<div id="things-you-definitely-do-not-want-to-track" class="section level2" number="6.2">
 <h2>
-<span class="header-section-number">6.6</span> Things you definitely do not want to track<a class="anchor" aria-label="anchor" href="#things-you-definitely-do-not-want-to-track"><i class="fas fa-link"></i></a>
+<span class="header-section-number">6.2</span> Things you definitely do not want to track<a class="anchor" aria-label="anchor" href="#things-you-definitely-do-not-want-to-track"><i class="fas fa-link"></i></a>
 </h2>
 <ul>
 <li>Anything that is private or restricted or that you would never want to
@@ -191,12 +144,13 @@ code.</li>
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#dos-and-donts-of-using-github"><span class="header-section-number">6</span> Do’s and Don’t’s of using GitHub</a></li>
-<li><a class="nav-link" href="#different-approaches-to-using-github-for-data-analysis"><span class="header-section-number">6.1</span> Different approaches to using Github for data analysis</a></li>
-<li><a class="nav-link" href="#different-approaches-to-using-github-for-data-analysis-1"><span class="header-section-number">6.2</span> Different approaches to using Github for data analysis</a></li>
-<li><a class="nav-link" href="#approach-2-tracking-data-files"><span class="header-section-number">6.3</span> Approach 2: Tracking data files</a></li>
-<li><a class="nav-link" href="#approach-2-tracking-image-files"><span class="header-section-number">6.4</span> Approach 2: Tracking image files</a></li>
-<li><a class="nav-link" href="#approach-2-tracking-documents"><span class="header-section-number">6.5</span> Approach 2: Tracking documents</a></li>
-<li><a class="nav-link" href="#things-you-definitely-do-not-want-to-track"><span class="header-section-number">6.6</span> Things you definitely do not want to track</a></li>
+<li>
+<a class="nav-link" href="#different-approaches-to-using-github-for-data-analysis"><span class="header-section-number">6.1</span> Different approaches to using Github for data analysis</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#approach-1"><span class="header-section-number">6.1.1</span> Approach 1:</a></li>
+<li><a class="nav-link" href="#approach-2"><span class="header-section-number">6.1.2</span> Approach 2:</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#things-you-definitely-do-not-want-to-track"><span class="header-section-number">6.2</span> Things you definitely do not want to track</a></li>
 </ul>
 
       <div class="book-extra">

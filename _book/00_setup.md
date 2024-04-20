@@ -15,7 +15,7 @@ In order to get setup, we need to install git on your computer, make a GitHub ac
 We will get into the details of how to use git in the workshop, but are requesting that you complete the following steps before the workshop so that we can spend all of the workshop time on using Git rather than on setup!     
 
 ## Install R and RStudio if you have not already:
-- https://posit.co/download/rstudio-desktop/  
+https://posit.co/download/rstudio-desktop/  
 
 ## Open RStudio and install the following packages:
 
@@ -43,7 +43,7 @@ Do this for each of the packages.
 
 
 ## Create a github account
-- https://github.com/
+https://github.com/
 
 ## Install Git
 
@@ -53,9 +53,9 @@ Follow the instructions on the following slides to install git on your computer.
 
 1) Download Git for Windows from here: https://gitforwindows.org/. There are lots of things to click through. 
 
-Notes from HappyGitWithR:
-NOTE: When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, we believe it is good to accept the defaults.
-Note that RStudio for Windows prefers for Git to be installed below C:/Program Files and this appears to be the default. This implies, for example, that the Git executable on my Windows system is found at C:/Program Files/Git/bin/git.exe. Unless you have specific reasons to otherwise, follow this convention.
+*Notes from HappyGitWithR:*
+*NOTE: When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, we believe it is good to accept the defaults.*
+*Note that RStudio for Windows prefers for Git to be installed below C:/Program Files and this appears to be the default. This implies, for example, that the Git executable on my Windows system is found at C:/Program Files/Git/bin/git.exe. Unless you have specific reasons to otherwise, follow this convention.*
 
 2) Start menu > Git > Git Bash. Confirm that you have access to Git Bash.
  
@@ -95,12 +95,16 @@ RStudio should automatically detect the presence of Git Bash. You can inspect an
 
 Load `usethis` & `gitcreds`:  
 
-- `library(usethis)`
-- `library(gitcreds)`
+```
+library(usethis)
+library(gitcreds)
+```
 
 Pick a user name - it does not need to be your GitHub user name. This is the email address linked to your GitHub account:  
-`use_git_config(user.name = "Corinne Riddell on Dell",`
-               `user.email = "corinne.riddell@gmail.com")`
+```
+use_git_config(user.name = "Corinne Riddell on Dell",
+               user.email = "corinne.riddell@gmail.com")
+```
 
 
 After you have installed the packages, you will need to create a personal access token. This is a way to authenticate yourself with GitHub. You will need to do this in order to push and pull from your repository.  Run the following:   
@@ -115,10 +119,12 @@ Go back to R and run the following:
   
 When prompted, paste in the token you copied. This will add your credentials to your cache. The following will print out to the RStudio console:    
 
-`? Enter password or token: ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`  
-`-> Adding new credentials...`  
-`-> Removing credentials from cache...`  
-`-> Done.`  
+```
+? Enter password or token: ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  
+-> Adding new credentials...
+-> Removing credentials from cache...
+-> Done.
+```  
 
 
 
