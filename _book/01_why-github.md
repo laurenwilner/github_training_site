@@ -10,7 +10,6 @@ contributors can manage changes to the same set of files (Wilson et al., 2017).
 **GitHub** is a hosting service on the web for Git repositories.
 <br />
 <br />
-<br />
 
 ## The case for version control
 
@@ -47,5 +46,9 @@ You can use Git to roll back to a previous version of a file at any point. To do
 
 Anything posted on GitHub can be shared widely to your organization or with 
 the public.
+
+<br />
+<br />
+<br />
 
 *Reference: Wilson G, et al. Good enough practices in scientific computing. PLoS Comp Bio. 2017.*

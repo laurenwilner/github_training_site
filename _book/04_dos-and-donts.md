@@ -2,7 +2,7 @@
 
 ## Different approaches to using Github for data analysis
 
-### Approach 1: 
+### Approach 1 
 **Some people use Git and Github to track changes to their statistical code only.**
 
 Here, they are only tracking their code files in R (.R or .Rmd), or 
@@ -17,7 +17,7 @@ This approach most closely corresponds to how GitHub is used by software develop
 other code writers, but is also an option chosen by researchers and research 
 teams depending on their objectives.
 
-### Approach 2: 
+### Approach 2 
 **Some people Git and GitHub to track a larger set of files. These other files might include data, images, and documents.**
 When tracking non-code files, here are some rules of thumb:
 
