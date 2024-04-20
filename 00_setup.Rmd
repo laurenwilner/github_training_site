@@ -8,7 +8,7 @@ This pre-workshop guide is designed to walk you through the initial setup of git
 
 If you have any issues, please reach out to us at datasci.ph@gmail.com.   
 
-**Introduction**  
+## Introduction
 
 Git is a version control system that allows you to track changes in your code.  
 
@@ -16,10 +16,10 @@ In order to get setup, we need to install git on your computer, make a GitHub ac
 
 We will get into the details of how to use git in the workshop, but are requesting that you complete the following steps before the workshop so that we can spend all of the workshop time on using Git rather than on setup!     
 
-## Install R and RStudio if you have not already: 
+## Install R and RStudio if you have not already:
 - https://posit.co/download/rstudio-desktop/  
 
-## Open RStudio and install the following packages:   
+## Open RStudio and install the following packages:
 
 - **tidyverse**
 - **usethis**
@@ -38,10 +38,10 @@ embed_url("https://youtu.be/JuZxhOTDMtw")
 ```
 
 
-## Create a github account  
+## Create a github account
 - https://github.com/
 
-## Install Git  
+## Install Git
 
 Follow the instructions on the following slides to install git on your computer. Select the slides that correspond to Windows or Mac depending on what machine you are using.  
 
@@ -109,7 +109,7 @@ When prompted, paste in the token you copied. This will add your credentials to 
 embed_url("https://youtu.be/yedGFJifmdI")
 ```
 
-## Resources 
+## Resources
 
 You should now be set up to use Git and Github! If you had any issues, here are a few links you can look at for help. If you are still having trouble, please reach out to us before the workshop!  
 
