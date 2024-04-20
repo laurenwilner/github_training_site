@@ -134,7 +134,7 @@
 <ul>
 <li>Go to the main page of your repository clicking on the green <code>Code</code> button and copying the URL. Then, navigate to the location where you will clone your repository and run the following command in your terminal:</li>
 </ul>
-<div class="sourceCode" id="cb34"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb34-1"><a href="group-workflow.html#cb34-1" tabindex="-1"></a><span class="fu">git</span> clone {repository URL}</span></code></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb37-1"><a href="group-workflow.html#cb37-1" tabindex="-1"></a><span class="fu">git</span> clone {repository URL}</span></code></pre></div>
 </div>
 </div>
 <div id="check-the-status-of-your-repository" class="section level2" number="7.6">
@@ -143,19 +143,19 @@
 </h2>
 <p>Now that you both have the repository cloned, we will set ourselves up following the same steps as we did this morning. Let’s redo what we did this morning:</p>
 <p>Type <code>git status</code>. The results shows you that no changes have been made yet:</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb35-1"><a href="group-workflow.html#cb35-1" tabindex="-1"></a><span class="ex">Biostat-MBP13-20:life-expectancy</span> corinneriddell$ git status</span>
-<span id="cb35-2"><a href="group-workflow.html#cb35-2" tabindex="-1"></a><span class="ex">On</span> branch main</span>
-<span id="cb35-3"><a href="group-workflow.html#cb35-3" tabindex="-1"></a><span class="ex">Your</span> branch is up to date with <span class="st">'origin/main'</span>.</span>
-<span id="cb35-4"><a href="group-workflow.html#cb35-4" tabindex="-1"></a></span>
-<span id="cb35-5"><a href="group-workflow.html#cb35-5" tabindex="-1"></a><span class="ex">nothing</span> to commit, working tree clean</span></code></pre></div>
+<div class="sourceCode" id="cb38"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb38-1"><a href="group-workflow.html#cb38-1" tabindex="-1"></a><span class="ex">Biostat-MBP13-20:life-expectancy</span> corinneriddell$ git status</span>
+<span id="cb38-2"><a href="group-workflow.html#cb38-2" tabindex="-1"></a><span class="ex">On</span> branch main</span>
+<span id="cb38-3"><a href="group-workflow.html#cb38-3" tabindex="-1"></a><span class="ex">Your</span> branch is up to date with <span class="st">'origin/main'</span>.</span>
+<span id="cb38-4"><a href="group-workflow.html#cb38-4" tabindex="-1"></a></span>
+<span id="cb38-5"><a href="group-workflow.html#cb38-5" tabindex="-1"></a><span class="ex">nothing</span> to commit, working tree clean</span></code></pre></div>
 </div>
 <div id="determine-the-branch-you-are-on" class="section level2" number="7.7">
 <h2>
 <span class="header-section-number">7.7</span> Determine the branch you are on<a class="anchor" aria-label="anchor" href="#determine-the-branch-you-are-on"><i class="fas fa-link"></i></a>
 </h2>
 <p>Type <code>git branch</code>. This shows you that you are currently on the main branch.</p>
-<div class="sourceCode" id="cb36"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb36-1"><a href="group-workflow.html#cb36-1" tabindex="-1"></a><span class="ex">Biostat-MBP13-20:life-expectancy</span> corinneriddell<span class="va">$git</span> branch</span>
-<span id="cb36-2"><a href="group-workflow.html#cb36-2" tabindex="-1"></a><span class="ex">*</span> main</span></code></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb39-1"><a href="group-workflow.html#cb39-1" tabindex="-1"></a><span class="ex">Biostat-MBP13-20:life-expectancy</span> corinneriddell<span class="va">$git</span> branch</span>
+<span id="cb39-2"><a href="group-workflow.html#cb39-2" tabindex="-1"></a><span class="ex">*</span> main</span></code></pre></div>
 </div>
 <div id="create-a-new-branch" class="section level2" number="7.8">
 <h2>
@@ -166,8 +166,8 @@
 <li>
 <strong>Both:</strong> Create a new branch with the following command:</li>
 </ul>
-<div class="sourceCode" id="cb37"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb37-1"><a href="group-workflow.html#cb37-1" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> {new-branch-name}</span>
-<span id="cb37-2"><a href="group-workflow.html#cb37-2" tabindex="-1"></a><span class="fu">git</span> branch</span></code></pre></div>
+<div class="sourceCode" id="cb40"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb40-1"><a href="group-workflow.html#cb40-1" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> {new-branch-name}</span>
+<span id="cb40-2"><a href="group-workflow.html#cb40-2" tabindex="-1"></a><span class="fu">git</span> branch</span></code></pre></div>
 <p>Typing <code>git branch</code> will show you that you are now on the new branch, though only the first line was <em>necessary</em> to create this branch.</p>
 </div>
 <div id="collaborative-routes" class="section level2" number="7.9">
@@ -219,9 +219,9 @@
 <li>
 <strong>Both:</strong> Add, commit, and push your file to GitHub as shown.</li>
 </ul>
-<div class="sourceCode" id="cb38"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb38-1"><a href="group-workflow.html#cb38-1" tabindex="-1"></a><span class="fu">git</span> add {file-name}.R</span>
-<span id="cb38-2"><a href="group-workflow.html#cb38-2" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Initial commit with {file-name}"</span></span>
-<span id="cb38-3"><a href="group-workflow.html#cb38-3" tabindex="-1"></a><span class="fu">git</span> push origin {new-branch-name}</span></code></pre></div>
+<div class="sourceCode" id="cb41"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb41-1"><a href="group-workflow.html#cb41-1" tabindex="-1"></a><span class="fu">git</span> add {file-name}.R</span>
+<span id="cb41-2"><a href="group-workflow.html#cb41-2" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Initial commit with {file-name}"</span></span>
+<span id="cb41-3"><a href="group-workflow.html#cb41-3" tabindex="-1"></a><span class="fu">git</span> push origin {new-branch-name}</span></code></pre></div>
 </div>
 <div id="collaborative-route-1-create-a-pull-request" class="section level2" number="7.14">
 <h2>
@@ -277,8 +277,8 @@ branch has no conflicts with the base branch”. This means you are good to go!<
 <span class="header-section-number">7.19</span> Collaborative Route #2: Create a new branch<a class="anchor" aria-label="anchor" href="#collaborative-route-2-create-a-new-branch"><i class="fas fa-link"></i></a>
 </h2>
 <p><strong>Lead researcher:</strong> Create a new branch with the following command:</p>
-<div class="sourceCode" id="cb39"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb39-1"><a href="group-workflow.html#cb39-1" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> {new-branch-name}</span>
-<span id="cb39-2"><a href="group-workflow.html#cb39-2" tabindex="-1"></a><span class="fu">git</span> branch</span></code></pre></div>
+<div class="sourceCode" id="cb42"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb42-1"><a href="group-workflow.html#cb42-1" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> {new-branch-name}</span>
+<span id="cb42-2"><a href="group-workflow.html#cb42-2" tabindex="-1"></a><span class="fu">git</span> branch</span></code></pre></div>
 <p>Typing <code>git branch</code> will show you that you are now on the new branch, though only the first line was <em>necessary</em> to create this branch.</p>
 </div>
 <div id="collaborative-route-2-lead-researcher-makes-changes-to-a-file" class="section level2" number="7.20">
@@ -298,9 +298,9 @@ branch has no conflicts with the base branch”. This means you are good to go!<
 <li>
 <strong>Lead Researcher:</strong> Add, commit, and push your new file or changes to your branch on GitHub.</li>
 </ul>
-<div class="sourceCode" id="cb40"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb40-1"><a href="group-workflow.html#cb40-1" tabindex="-1"></a><span class="fu">git</span> add {file-name}</span>
-<span id="cb40-2"><a href="group-workflow.html#cb40-2" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"{your description of what you changed}"</span></span>
-<span id="cb40-3"><a href="group-workflow.html#cb40-3" tabindex="-1"></a><span class="fu">git</span> push origin {your-branch-name}</span></code></pre></div>
+<div class="sourceCode" id="cb43"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb43-1"><a href="group-workflow.html#cb43-1" tabindex="-1"></a><span class="fu">git</span> add {file-name}</span>
+<span id="cb43-2"><a href="group-workflow.html#cb43-2" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"{your description of what you changed}"</span></span>
+<span id="cb43-3"><a href="group-workflow.html#cb43-3" tabindex="-1"></a><span class="fu">git</span> push origin {your-branch-name}</span></code></pre></div>
 </div>
 <div id="collaborative-route-2-create-a-pull-request" class="section level2" number="7.22">
 <h2>
@@ -427,8 +427,8 @@ branch has no conflicts with the base branch”. This means you are good to go!<
 <li>
 <strong>Colleague:</strong> Create a new branch with the following command:</li>
 </ul>
-<div class="sourceCode" id="cb41"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb41-1"><a href="group-workflow.html#cb41-1" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> {new-branch-name}</span>
-<span id="cb41-2"><a href="group-workflow.html#cb41-2" tabindex="-1"></a><span class="fu">git</span> branch</span></code></pre></div>
+<div class="sourceCode" id="cb44"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb44-1"><a href="group-workflow.html#cb44-1" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> {new-branch-name}</span>
+<span id="cb44-2"><a href="group-workflow.html#cb44-2" tabindex="-1"></a><span class="fu">git</span> branch</span></code></pre></div>
 <p>Typing <code>git branch</code> will show you that you are now on the new branch, though only the first line was <em>necessary</em> to create this branch.</p>
 </div>
 <div id="collaborative-route-3-colleague-creates-a-file" class="section level2" number="7.33">
@@ -448,9 +448,9 @@ branch has no conflicts with the base branch”. This means you are good to go!<
 <li>
 <strong>Colleague:</strong> Add, commit, and push your new file or changes to your branch on GitHub.</li>
 </ul>
-<div class="sourceCode" id="cb42"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb42-1"><a href="group-workflow.html#cb42-1" tabindex="-1"></a><span class="fu">git</span> add {file-name}</span>
-<span id="cb42-2"><a href="group-workflow.html#cb42-2" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"{your description of what you changed}"</span></span>
-<span id="cb42-3"><a href="group-workflow.html#cb42-3" tabindex="-1"></a><span class="fu">git</span> push origin {your-branch-name}</span></code></pre></div>
+<div class="sourceCode" id="cb45"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb45-1"><a href="group-workflow.html#cb45-1" tabindex="-1"></a><span class="fu">git</span> add {file-name}</span>
+<span id="cb45-2"><a href="group-workflow.html#cb45-2" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"{your description of what you changed}"</span></span>
+<span id="cb45-3"><a href="group-workflow.html#cb45-3" tabindex="-1"></a><span class="fu">git</span> push origin {your-branch-name}</span></code></pre></div>
 </div>
 <div id="collaborative-route-3-create-a-pull-request" class="section level2" number="7.35">
 <h2>
