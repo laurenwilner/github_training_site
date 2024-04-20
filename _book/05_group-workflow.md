@@ -312,13 +312,13 @@ This occurs when XXX.
 
 **Colleague**: You will see the following. 
 
-**LBW INSERT FIRST SCREENSHOT HERE**
+<img src="./figures/merge-conflict-1.png" width="75%" />
 
 ## Practicing a merge conflict
 
 **Colleague**: Click on `View Pull Request` to begin resolving the merge conflict. When you click on `View Pull Request`, you will see the following. 
 
-**LBW INSERT SECOND SCREENSHOT HERE**
+<img src="./figures/merge-conflict-2.png" width="75%" />
 
 ## Practicing a merge conflict
 

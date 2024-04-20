@@ -312,13 +312,17 @@ This occurs when XXX.
 
 **Colleague**: You will see the following. 
 
-**LBW INSERT FIRST SCREENSHOT HERE**
+```{r, echo=F, out.width='75%'}
+knitr::include_graphics("./figures/merge-conflict-1.png")
+```
 
 ## Practicing a merge conflict
 
 **Colleague**: Click on `View Pull Request` to begin resolving the merge conflict. When you click on `View Pull Request`, you will see the following. 
 
-**LBW INSERT SECOND SCREENSHOT HERE**
+```{r, echo=F, out.width='75%'}
+knitr::include_graphics("./figures/merge-conflict-2.png")
+```
 
 ## Practicing a merge conflict
 
