@@ -3,6 +3,7 @@
 ## What is version control, Git, and Github?
 
 * TEST BULLET
+* Test v2
 * **Version control** is the practice of tracking and managing changes to 
 (statistical) code and other files.
 * **Git** is a version control system. It tracks what is changed in a file, 
