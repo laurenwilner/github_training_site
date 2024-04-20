@@ -80,120 +80,58 @@
 <li>Merge your branch into main</li>
 </ul>
 </div>
-<div id="working-in-terminal-mac-and-bash-windows" class="section level2" number="5.2">
+<div id="some-basic-setup-information-and-guidelines" class="section level2" number="5.2">
 <h2>
-<span class="header-section-number">5.2</span> Working in Terminal (Mac) and Bash (Windows)<a class="anchor" aria-label="anchor" href="#working-in-terminal-mac-and-bash-windows"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.2</span> Some basic setup information and guidelines<a class="anchor" aria-label="anchor" href="#some-basic-setup-information-and-guidelines"><i class="fas fa-link"></i></a>
 </h2>
-<ul>
-<li>We will use Terminal and Bash applications to interact with Git on our laptops.</li>
-<li>Below is a Mac Terminal window. It looks very similar to a Windows Bash window.</li>
-</ul>
+<div id="working-in-terminal-mac-and-bash-windows" class="section level3" number="5.2.1">
+<h3>
+<span class="header-section-number">5.2.1</span> Working in Terminal (Mac) and Bash (Windows)<a class="anchor" aria-label="anchor" href="#working-in-terminal-mac-and-bash-windows"><i class="fas fa-link"></i></a>
+</h3>
+<p>We will use Terminal and Bash applications to interact with Git on our laptops. Below is a Mac Terminal window. It looks very similar to a Windows Bash window.</p>
 <div class="inline-figure"><img src="figures/Terminal-explainer-1.jpg" width="100%"></div>
-<ul>
-<li>In this session, we will supply you with Git code for you to manually input
-into your Terminal/Bash windows. Note that all of this code will be written after
-the dollar sign in the figure above.</li>
-</ul>
-</div>
-<div id="working-in-terminal-mac-and-bash-windows-1" class="section level2" number="5.3">
-<h2>
-<span class="header-section-number">5.3</span> Working in Terminal (Mac) and Bash (Windows)<a class="anchor" aria-label="anchor" href="#working-in-terminal-mac-and-bash-windows-1"><i class="fas fa-link"></i></a>
-</h2>
-<ul>
-<li>Here is an example of the command <code>git branch</code>, followed by the output printed
-to screen:</li>
-</ul>
+<p>In this session, we will supply you with Git code for you to manually input into your Terminal/Bash windows. Note that all of this code will be written after the dollar sign in the figure above.</p>
+<p>Here is an example of the command <code>git branch</code>, followed by the output printed to screen:</p>
 <div class="inline-figure"><img src="figures/Terminal-explainer-2.jpg" width="100%"></div>
 </div>
-<div id="folder-names-and-file-names-tips" class="section level2" number="5.4">
-<h2>
-<span class="header-section-number">5.4</span> Folder names and file names tips<a class="anchor" aria-label="anchor" href="#folder-names-and-file-names-tips"><i class="fas fa-link"></i></a>
-</h2>
-<ul>
-<li>Recall when you name a variable in SAS or R, the variable name cannot
-contain spaces or unusual characters.</li>
-<li>It is best practice to not use spaces or unusual characters in folder
-or file names, even though spaces are permissible and commonly used by Windows
-and Mac Users.</li>
-</ul>
-</div>
-<div id="good-folder-names" class="section level2" number="5.5">
-<h2>
-<span class="header-section-number">5.5</span> Good folder names…<a class="anchor" aria-label="anchor" href="#good-folder-names"><i class="fas fa-link"></i></a>
-</h2>
-<ul>
-<li>Use dashes in place of spaces</li>
-<li>Use capitalization instead of spaces</li>
-</ul>
-<div id="good-folder-names-examples" class="section level3" number="5.5.1">
+<div id="a-quick-refresher-some-best-practices-around-folder-and-file-names" class="section level3" number="5.2.2">
 <h3>
-<span class="header-section-number">5.5.1</span> Good folder names examples<a class="anchor" aria-label="anchor" href="#good-folder-names-examples"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.2.2</span> A quick refresher: some best practices around folder and file names<a class="anchor" aria-label="anchor" href="#a-quick-refresher-some-best-practices-around-folder-and-file-names"><i class="fas fa-link"></i></a>
 </h3>
-<ul>
-<li>life-expectancy</li>
-<li>lifeExpectancy</li>
-<li>LifeExpectancy</li>
-</ul>
+<p>When you are working in your terminal, it is important to have good folder and file names to make your life easier! Recall when you name a variable in SAS or R, the variable name cannot contain spaces or unusual characters. <strong>It is best practice to not use spaces or unusual characters in folder or file names,</strong> even though spaces are permissible and commonly used by Windows and Mac Users.</p>
+<p>You are probably wondering what the problem is with spaces anyway… While spaces are human-readable they aren’t machine-friendly. When you refer to a folder or file using Git in Terminal or Bash, a name without spaces is much easier to type (otherwise you have to insert a backslash before the space). Spaces also break the auto-complete function that Git users love. This is a very frustrating experience.</p>
+<p><strong>Good folder and names…</strong>
+* Use dashes in place of spaces
+* Use capitalization instead of spaces</p>
+<p><strong>Good folder names examples</strong>
+* life-expectancy
+* lifeExpectancy
+* LifeExpectancy</p>
+<p>Good file names, specifically, generally should start with a number (padded by 0) to order the files according to
+the order performed in the analysis. This is followed by a short (human and machine readable) descriptor of what
+the file does. You can also use underscore “_” to delimit field, and dashes “-” to separate words within field.</p>
+<p><strong>Good file names examples</strong></p>
+<div class="inline-figure"><img src="figures/Variable-names-example.png" width="50%"></div>
+<p><strong>These good names are…</strong>
+* machine readable
+* human readable
+* play well with default ordering</p>
+<p>See the file “how-to-name-files.pdf” for a more deeper dive into file naming. <strong>CR LINK THIS FILE HERE?</strong></p>
 </div>
-</div>
-<div id="what-is-the-problem-with-spaces-anyway" class="section level2" number="5.6">
-<h2>
-<span class="header-section-number">5.6</span> What is the problem with spaces, anyway?<a class="anchor" aria-label="anchor" href="#what-is-the-problem-with-spaces-anyway"><i class="fas fa-link"></i></a>
-</h2>
-<ul>
-<li>While spaces are human-readable they aren’t machine-friendly.</li>
-<li>When you refer to a folder or file using Git in Terminal or Bash, a name
-without spaces is much easier to type (otherwise you have to insert a
-backslash before the space)</li>
-<li>Spaces also break the auto-complete function that Git users love. This is a
-very frustrating experience.</li>
-</ul>
-</div>
-<div id="good-file-names-are" class="section level2" number="5.7">
-<h2>
-<span class="header-section-number">5.7</span> Good file names are…<a class="anchor" aria-label="anchor" href="#good-file-names-are"><i class="fas fa-link"></i></a>
-</h2>
-<ul>
-<li>machine readable</li>
-<li>human readable</li>
-<li>play well with default ordering</li>
-</ul>
-<p>See the file “how-to-name-files.pdf” for a more deeper dive into file naming.</p>
-<div id="good-file-names-examples" class="section level3" number="5.7.1">
+<div id="some-bad-file-naming-examples-and-associated-git-pain" class="section level3" number="5.2.3">
 <h3>
-<span class="header-section-number">5.7.1</span> Good file names examples<a class="anchor" aria-label="anchor" href="#good-file-names-examples"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.2.3</span> Some bad file naming examples (and associated Git pain)…<a class="anchor" aria-label="anchor" href="#some-bad-file-naming-examples-and-associated-git-pain"><i class="fas fa-link"></i></a>
 </h3>
-<div class="inline-figure"><img src="figures/Variable-names-example.png" width="75%"></div>
-<ul>
-<li>Filenames start with a number (padded by 0) to order the files according to
-the order performed in the analysis</li>
-<li>This is followed by a short (human and machine readable) descriptor of what
-the file does</li>
-<li>Uses underscore “_” to delimit field, and dashes “-” to separate words within field</li>
-</ul>
-</div>
-<div id="bad-file-name-example-and-associated-git-pain" class="section level3" number="5.7.2">
-<h3>
-<span class="header-section-number">5.7.2</span> Bad file name example (and associated Git pain)<a class="anchor" aria-label="anchor" href="#bad-file-name-example-and-associated-git-pain"><i class="fas fa-link"></i></a>
-</h3>
-<ul>
-<li>Can see that there is an R markdown (Rmd) file named “Data Visualization Evaluation Report” that has been modified.</li>
-<li>The pain arises when I go to <code>git add</code> the file. Before each space, I need to
-include a backslash (which looks ugly). Even worse, the space breaks the auto-complete that happens when I press “tab” to auto-complete the file name.
-Auto-complete will become your friend when you use Git, and not being able to
-use it is very sad/infuriating when you have grown to love it.</li>
-</ul>
 <div class="inline-figure"><img src="figures/Space-in-pathways-pain.png" width="100%"></div>
+<p>Here, you can see that there is an R markdown (Rmd) file named “Data Visualization Evaluation Report” that has been modified. The pain arises when I go to <code>git add</code> the file. Before each space, I need to include a backslash (which looks ugly). Even worse, the space breaks the auto-complete that happens when I press “tab” to auto-complete the file name. Auto-complete will become your friend when you use Git, and not being able to use it is very sad/infuriating when you have grown to love it.
+<strong>CR: Lets emphasize this in our screenshot?</strong></p>
 </div>
 </div>
-<div id="set-up-a-project-that-you-want-to-track-with-git-and-github" class="section level2" number="5.8">
+<div id="onto-git-set-up-a-project-that-you-want-to-track-with-git-and-github" class="section level2" number="5.3">
 <h2>
-<span class="header-section-number">5.8</span> Set up a project that you want to track with git and GitHub<a class="anchor" aria-label="anchor" href="#set-up-a-project-that-you-want-to-track-with-git-and-github"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.3</span> Onto Git: set up a project that you want to track with git and GitHub<a class="anchor" aria-label="anchor" href="#onto-git-set-up-a-project-that-you-want-to-track-with-git-and-github"><i class="fas fa-link"></i></a>
 </h2>
-<p>Let’s suppose that you have a project that you want to start tracking using Git
-and Github. For this project, you are already working on with some code, data,
-and visualizations that have already been saved. We have made this project for
-you. To download it, run the following two commands in the RStudio console:</p>
+<p>Let’s suppose that you have a project that you want to start tracking using Git and Github. For this project, you are already working on with some code, data, and visualizations that have already been saved. We have made this project for you. To download it, run the following two commands in the RStudio console:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"usethis"</span><span class="op">)</span></span>
 <span><span class="fu">usethis</span><span class="fu">::</span><span class="fu"><a href="https://usethis.r-lib.org/reference/zip-utils.html">use_course</a></span><span class="op">(</span><span class="st">"corinne-riddell/existing-project"</span><span class="op">)</span></span></code></pre></div>
@@ -210,9 +148,9 @@ saved it into the images sub-folder.</li>
 tracking on GitHub. The next thing to do is make a folder on GitHub that will
 store this project.</p>
 </div>
-<div id="make-a-new-repository-on-github" class="section level2" number="5.9">
+<div id="make-a-new-repository-on-github" class="section level2" number="5.4">
 <h2>
-<span class="header-section-number">5.9</span> Make a new repository on GitHub<a class="anchor" aria-label="anchor" href="#make-a-new-repository-on-github"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.4</span> Make a new repository on GitHub<a class="anchor" aria-label="anchor" href="#make-a-new-repository-on-github"><i class="fas fa-link"></i></a>
 </h2>
 <ul>
 <li>Go to github.com and log in. Click the green “New” button to make a GitHub
@@ -229,9 +167,9 @@ repository. Type “life-expectancy” in the repository name.</li>
 main page.</li>
 </ul>
 </div>
-<div id="clone-the-repository-to-your-local-machine" class="section level2" number="5.10">
+<div id="clone-the-repository-to-your-local-machine" class="section level2" number="5.5">
 <h2>
-<span class="header-section-number">5.10</span> Clone the repository to your local machine<a class="anchor" aria-label="anchor" href="#clone-the-repository-to-your-local-machine"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.5</span> Clone the repository to your local machine<a class="anchor" aria-label="anchor" href="#clone-the-repository-to-your-local-machine"><i class="fas fa-link"></i></a>
 </h2>
 <ul>
 <li>From the main page of your repository and click on the green <code>Code</code> button.<br>
@@ -254,9 +192,9 @@ remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (5/5), done.</code></pre>
 <p>You now are ready to begin tracking changes to this folder using Git and GitHub.</p>
 </div>
-<div id="get-oriented-to-the-new-directory" class="section level2" number="5.11">
+<div id="get-oriented-to-the-new-directory" class="section level2" number="5.6">
 <h2>
-<span class="header-section-number">5.11</span> Get oriented to the new directory<a class="anchor" aria-label="anchor" href="#get-oriented-to-the-new-directory"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.6</span> Get oriented to the new directory<a class="anchor" aria-label="anchor" href="#get-oriented-to-the-new-directory"><i class="fas fa-link"></i></a>
 </h2>
 <p>To get yourself oriented, do the following in the Terminal/Bash window:</p>
 <ul>
@@ -274,9 +212,9 @@ nothing to commit, working tree clean</code></pre>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$git branch
 * main</code></pre>
 </div>
-<div id="make-your-first-branch" class="section level2" number="5.12">
+<div id="make-your-first-branch" class="section level2" number="5.7">
 <h2>
-<span class="header-section-number">5.12</span> Make your first branch<a class="anchor" aria-label="anchor" href="#make-your-first-branch"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.7</span> Make your first branch<a class="anchor" aria-label="anchor" href="#make-your-first-branch"><i class="fas fa-link"></i></a>
 </h2>
 <p>Set yourself up in a new branch off of main. In terminal/bash:</p>
 <ul>
@@ -293,24 +231,20 @@ the new branch.</li>
   main
 * may3-cr</code></pre>
 </div>
-<div id="make-some-changes-to-your-code" class="section level2" number="5.13">
+<div id="make-some-changes-to-your-code" class="section level2" number="5.8">
 <h2>
-<span class="header-section-number">5.13</span> Make some changes to your code<a class="anchor" aria-label="anchor" href="#make-some-changes-to-your-code"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.8</span> Make some changes to your code<a class="anchor" aria-label="anchor" href="#make-some-changes-to-your-code"><i class="fas fa-link"></i></a>
 </h2>
 <p>Okay, you are now set up to track changes. Let’s do the following:</p>
-<ul>
-<li>Copy the code/ data/ and images/ sub-folders from your “existing-project” folder into the
-“life-expectancy” folder.</li>
-</ul>
+<p>Copy the code/ data/ and images/ sub-folders from your “existing-project” folder into the
+“life-expectancy” folder.</p>
 </div>
-<div id="commit-the-changes-that-you-made-and-push-them-to-github" class="section level2" number="5.14">
+<div id="commit-the-changes-that-you-made-and-push-them-to-github" class="section level2" number="5.9">
 <h2>
-<span class="header-section-number">5.14</span> Commit the changes that you made and push them to GitHub<a class="anchor" aria-label="anchor" href="#commit-the-changes-that-you-made-and-push-them-to-github"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.9</span> Commit the changes that you made and push them to GitHub<a class="anchor" aria-label="anchor" href="#commit-the-changes-that-you-made-and-push-them-to-github"><i class="fas fa-link"></i></a>
 </h2>
-<ul>
-<li>Go back over to terminal or bash. Type <code>git status</code>. The output will tell you
-what has been changed. It tells us that there are untracked files:</li>
-</ul>
+<p>Go back over to terminal or bash. Type <code>git status</code>. The output will tell you
+what has been changed. It tells us that there are untracked files:</p>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git status
 On branch may3-cr
 Untracked files:
@@ -320,10 +254,8 @@ Untracked files:
     data/
     images/
     life-expectancy.Rproj</code></pre>
-<p>We want to track the code/, data/ and images/ subfolders we just copied over, as
-well as the life-expectancy.Rproj file.</p>
-<p>Use <code>git add</code> to add the newly-added files to be tracked. Then use <code>git status</code>
-to confirm you have added everything you want to track:</p>
+<p>We want to track the code/, data/ and images/ subfolders we just copied over, as well as the life-expectancy.Rproj file.</p>
+<p>Use <code>git add</code> to add the newly-added files to be tracked. Then use <code>git status</code> to confirm you have added everything you want to track:</p>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git add code/
 Biostat-MBP13-20:life-expectancy corinneriddell$ git add data/
 Biostat-MBP13-20:life-expectancy corinneriddell$ git add images/
@@ -346,12 +278,10 @@ Untracked files:
 doc or Excel spreadsheet is open. You will see these weird files listed under the
 Untracked files list. You don’t need to worry about them because we don’t want
 to track changes to any of those files.</p>
-<ul>
-<li>Commit these changes locally: <code>git commit -m 'your commit message'</code>, replace
+<p>Commit these changes locally: <code>git commit -m 'your commit message'</code>, replace
 ‘your commit message’ with a short message about what you’ve done (keep the
 quotes around the message). For example, your message could be something like
-<code>git commit -m "added first set of files"</code>.</li>
-</ul>
+<code>git commit -m "added first set of files"</code>.</p>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git commit -m "added first set of files"
 [may3-cr 58fcc58] added first set of files
 5 files changed, 7253 insertions(+)
@@ -360,11 +290,9 @@ create mode 100644 data/Life-expectancy-by-state-long.csv
 create mode 100644 images/ca-black-women-LE.png
 create mode 100644 images/placeholder.md
 create mode 100644 life-expectancy.Rproj</code></pre>
-<ul>
-<li>Push these changes to GitHub: <code>git push origin your-branch-name</code>, replacing
+<p>Push these changes to GitHub: <code>git push origin your-branch-name</code>, replacing
 your-branch-name with the name of your branch. If you don’t remember your branch’s
-name, type <code>git branch</code> to print it to the screen and then the <code>git push</code> command.</li>
-</ul>
+name, type <code>git branch</code> to print it to the screen and then the <code>git push</code> command.</p>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git push origin may3-cr
 Enumerating objects: 11, done.
 Counting objects: 100% (11/11), done.
@@ -381,21 +309,18 @@ To https://github.com/corinne-riddell/life-expectancy.git
 </code></pre>
 <p>You have successfully pushed your changes to GitHub!</p>
 </div>
-<div id="merge-the-changes-from-your-branch-into-main" class="section level2" number="5.15">
+<div id="merge-the-changes-from-your-branch-into-main" class="section level2" number="5.10">
 <h2>
-<span class="header-section-number">5.15</span> Merge the changes from your branch into main<a class="anchor" aria-label="anchor" href="#merge-the-changes-from-your-branch-into-main"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.10</span> Merge the changes from your branch into main<a class="anchor" aria-label="anchor" href="#merge-the-changes-from-your-branch-into-main"><i class="fas fa-link"></i></a>
 </h2>
-<ul>
-<li>Navigate to GitHub.com to your repository’s URL. There should be a pale yellow
+<p>Navigate to GitHub.com to your repository’s URL. There should be a pale yellow
 banner informing you about the changes you just pushed. Click the button
 “Compare &amp; pull request”. Notice that the title is your commit message from the
 previous step. Scroll down. Look at the files that have been added.
+* The code is all shown in green, indicating that every line of code is new.
+* The csv data file has been added but is not rendered because it is large
+* The png file is displayed.</p>
 <ul>
-<li>The code is all shown in green, indicating that every line of code is new.</li>
-<li>The csv data file has been added but is not rendered because it is large</li>
-<li>The png file is displayed.</li>
-</ul>
-</li>
 <li>Click on the green “Create pull request” button. Github will check that it
 is able to merge your branch with main without problems. Note the message “This
 branch has no conflicts with the base branch”. This means you are good to go!</li>
@@ -405,9 +330,9 @@ branch has no conflicts with the base branch”. This means you are good to go!<
 <li>Click the “Delete branch” button.</li>
 </ul>
 </div>
-<div id="summary" class="section level2" number="5.16">
+<div id="summary" class="section level2" number="5.11">
 <h2>
-<span class="header-section-number">5.16</span> Summary<a class="anchor" aria-label="anchor" href="#summary"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.11</span> Summary<a class="anchor" aria-label="anchor" href="#summary"><i class="fas fa-link"></i></a>
 </h2>
 <ul>
 <li>You setup a folder on your laptop so that Git is used to track changes made
@@ -419,9 +344,9 @@ GitHub and pulled your changes into main. This means that the main branch has
 been updated with your changes <em>on GitHub</em>.</li>
 </ul>
 </div>
-<div id="tracking-changes" class="section level2" number="5.17">
+<div id="tracking-changes" class="section level2" number="5.12">
 <h2>
-<span class="header-section-number">5.17</span> Tracking changes<a class="anchor" aria-label="anchor" href="#tracking-changes"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.12</span> Tracking changes<a class="anchor" aria-label="anchor" href="#tracking-changes"><i class="fas fa-link"></i></a>
 </h2>
 <p>Now suppose a few days have gone by and you are ready to work on your analysis
 project. In particular, you want to update some code that will affect some
@@ -429,9 +354,9 @@ of the results and “outputs”, where outputs are results saved in any form. I
 this section, we outline the process to follow when you want to implement some
 set of tracked changes.</p>
 </div>
-<div id="get-setup-for-a-new-day-of-work" class="section level2" number="5.18">
+<div id="get-setup-for-a-new-day-of-work" class="section level2" number="5.13">
 <h2>
-<span class="header-section-number">5.18</span> Get setup for a new day of work<a class="anchor" aria-label="anchor" href="#get-setup-for-a-new-day-of-work"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.13</span> Get setup for a new day of work<a class="anchor" aria-label="anchor" href="#get-setup-for-a-new-day-of-work"><i class="fas fa-link"></i></a>
 </h2>
 <p>The first thing we need to do is make sure we are in a good place with git and
 GitHub:</p>
@@ -444,11 +369,9 @@ names are displayed. The asterisk is next to the branch we are currently on.</li
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
   main
 * may3-cr</code></pre>
-<ul>
-<li>Check if you forgot to save anything from last time using <code>git status</code>.
+<p>Check if you forgot to save anything from last time using <code>git status</code>.
 Ideally, you have saved all your changes and there is nothing to add/track/commit.
-Here is my status:</li>
-</ul>
+Here is my status:</p>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git status
 On branch may3-cr
 Untracked files:
@@ -459,10 +382,8 @@ nothing added to commit but untracked files present (use "git add" to track)</co
 <p>There is one untracked file: .DS_Store. This is okay since it is an internal
 file used by Mac OS that does not need to be tracked. We just want to ensure
 no code files or outputs we intended to track have been forgotton.</p>
-<ul>
-<li>You are likely still on your branch from the last day. In that case, navigate
-back to main using <code>git checkout main</code>.</li>
-</ul>
+<p>You are likely still on your branch from the last day. In that case, navigate
+back to main using <code>git checkout main</code>.</p>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout main
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.</code></pre>
@@ -475,12 +396,11 @@ main.</p>
 locally:</p>
 <pre><code>Biostat-MBP13-20:github-training corinneriddell$ git branch -d may3-cr
 Deleted branch may3-cr (was 761bb97).</code></pre>
-<p>CORINNE TODO: ON HOME COMPUTER DELETE THE MAY3 BRANCH FROM THE LE REPO SO CAN
-GRAB THE CORRECT CODE AFTER “WAS” AND REPLACE IN THE ABOVE.</p>
+<p><strong>CORINNE TODO: ON HOME COMPUTER DELETE THE MAY3 BRANCH FROM THE LE REPO SO CAN GRAB THE CORRECT CODE AFTER “WAS” AND REPLACE IN THE ABOVE.</strong></p>
 </div>
-<div id="pull-down-the-changes-from-main" class="section level2" number="5.19">
+<div id="pull-down-the-changes-from-main" class="section level2" number="5.14">
 <h2>
-<span class="header-section-number">5.19</span> Pull down the changes from main<a class="anchor" aria-label="anchor" href="#pull-down-the-changes-from-main"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.14</span> Pull down the changes from main<a class="anchor" aria-label="anchor" href="#pull-down-the-changes-from-main"><i class="fas fa-link"></i></a>
 </h2>
 <p>This is your <strong>local</strong> copy of main. It needs to pull down the changes to
 made that you made on GitHub in an earlier step. To do that, type <code>git pull origin main</code>.
@@ -508,24 +428,22 @@ Fast-forward
  create mode 100644 images/placeholder.md
  create mode 100644 life-expectancy.Rproj</code></pre>
 </div>
-<div id="start-a-new-branch" class="section level2" number="5.20">
+<div id="start-a-new-branch" class="section level2" number="5.15">
 <h2>
-<span class="header-section-number">5.20</span> Start a new branch<a class="anchor" aria-label="anchor" href="#start-a-new-branch"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.15</span> Start a new branch<a class="anchor" aria-label="anchor" href="#start-a-new-branch"><i class="fas fa-link"></i></a>
 </h2>
-<ul>
-<li>Like the last day, start a new branch to track today’s changes. Let’s
+<p>Like the last day, start a new branch to track today’s changes. Let’s
 pretend it is now May 7. Type <code>git checkout -b may7-XY</code>, where XY is replaced
-with your initials. Type <code>git branch</code> to confirm you have changed branches.</li>
-</ul>
+with your initials. Type <code>git branch</code> to confirm you have changed branches.</p>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout -b may7-cr
 Switched to a new branch 'may7-cr'
 Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
   main
 * may7-cr</code></pre>
 </div>
-<div id="you-are-now-ready-to-make-changes" class="section level2" number="5.21">
+<div id="you-are-now-ready-to-make-changes" class="section level2" number="5.16">
 <h2>
-<span class="header-section-number">5.21</span> You are now ready to make changes!<a class="anchor" aria-label="anchor" href="#you-are-now-ready-to-make-changes"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.16</span> You are now ready to make changes!<a class="anchor" aria-label="anchor" href="#you-are-now-ready-to-make-changes"><i class="fas fa-link"></i></a>
 </h2>
 <p>Think about what you would like to do in advance. In particular, suppose you
 want to:</p>
@@ -571,18 +489,15 @@ PROC EXPORT DATA= WORK.LE_AVERAGES
      PUTNAMES=YES;
 RUN;</code></pre>
 </div>
-<div id="track-your-changes-using-git" class="section level2" number="5.22">
+<div id="track-your-changes-using-git" class="section level2" number="5.17">
 <h2>
-<span class="header-section-number">5.22</span> Track your changes using Git<a class="anchor" aria-label="anchor" href="#track-your-changes-using-git"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.17</span> Track your changes using Git<a class="anchor" aria-label="anchor" href="#track-your-changes-using-git"><i class="fas fa-link"></i></a>
 </h2>
-<ul>
-<li><p>Re-run your previous R code (highlight all the previous code and hit
+<p>Re-run your previous R code (highlight all the previous code and hit
 command + Return [Mac] or control + Enter [Windows]). Then run the newly-added
 code line by line to see what it is doing. Save the updated .R file by pushing
-the save icon.</p></li>
-<li><p>Track the changes using Git. Go to the bash/terminal window. Type “git status”.
-Which files have been modified? Which files are new and untracked?</p></li>
-</ul>
+the save icon. Track the changes using Git. Go to the bash/terminal window. Type “git status”.
+Which files have been modified? Which files are new and untracked?</p>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git status
 On branch may7-cr
 Changes not staged for commit:
@@ -595,15 +510,13 @@ Untracked files:
     .DS_Store
     data/le_averages.csv</code></pre>
 </div>
-<div id="add-new-and-modified-files" class="section level2" number="5.23">
+<div id="add-new-and-modified-files" class="section level2" number="5.18">
 <h2>
-<span class="header-section-number">5.23</span> Add new and modified files<a class="anchor" aria-label="anchor" href="#add-new-and-modified-files"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.18</span> Add new and modified files<a class="anchor" aria-label="anchor" href="#add-new-and-modified-files"><i class="fas fa-link"></i></a>
 </h2>
-<ul>
-<li>Use <code>git add</code> to add the specific files that have been modified or created.
+<p>Use <code>git add</code> to add the specific files that have been modified or created.
 Add them one by one. Use <code>git status</code> again to check that all the changed files
-are being tracked. When you are satisfied, commit these changes locally.</li>
-</ul>
+are being tracked. When you are satisfied, commit these changes locally.</p>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git add code/01_Analyze-life-expectancy.R 
 Biostat-MBP13-20:life-expectancy corinneriddell$ git add data/le_averages.csv 
 Biostat-MBP13-20:life-expectancy corinneriddell$ git status
@@ -617,33 +530,29 @@ Untracked files:
   (use "git add &lt;file&gt;..." to include in what will be committed)
     .DS_Store</code></pre>
 </div>
-<div id="commit-the-changes-locally" class="section level2" number="5.24">
+<div id="commit-the-changes-locally" class="section level2" number="5.19">
 <h2>
-<span class="header-section-number">5.24</span> Commit the changes locally<a class="anchor" aria-label="anchor" href="#commit-the-changes-locally"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.19</span> Commit the changes locally<a class="anchor" aria-label="anchor" href="#commit-the-changes-locally"><i class="fas fa-link"></i></a>
 </h2>
 <p>Helpful hint: Terminal/Bash plays well with autocomplete. For example, if you
 are typing the pathway for the .R file as “code/…” you can push the tab button
 as you are typing the name and it will autocomplete. This makes selecting the
 specific files to commit much easier.</p>
-<ul>
-<li>“git commit -m ‘your message’”. Replace ‘your message’ with a short message
-describing the changes. Remember to keep the quotes around the message!</li>
-</ul>
+<p><code>git commit -m '{your message}'</code>
+Replace ‘your message’ with a short message describing the changes. Remember to keep the quotes around the message!</p>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git commit -m 'calc LE averages' 
 [may7-cr a7435b8] calc LE averages
  2 files changed, 177 insertions(+), 1 deletion(-)
  create mode 100644 data/le_averages.csv</code></pre>
 </div>
-<div id="push-the-changes-up-to-github" class="section level2" number="5.25">
+<div id="push-the-changes-up-to-github" class="section level2" number="5.20">
 <h2>
-<span class="header-section-number">5.25</span> Push the changes up to GitHub<a class="anchor" aria-label="anchor" href="#push-the-changes-up-to-github"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.20</span> Push the changes up to GitHub<a class="anchor" aria-label="anchor" href="#push-the-changes-up-to-github"><i class="fas fa-link"></i></a>
 </h2>
-<ul>
-<li>You are now ready to push these changes up to GitHub onto GitHub’s version
+<p>You are now ready to push these changes up to GitHub onto GitHub’s version
 of your local branch. First, remind yourself of your branch’s name using
 “git branch”. Then push: <code>git push origin {YOUR-BRANCH-NAME}</code>, replacing
-{YOUR-BRANCH-NAME} with the name of your branch.</li>
-</ul>
+{YOUR-BRANCH-NAME} with the name of your branch.</p>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
   main
 * may7-cr
@@ -662,18 +571,16 @@ remote:
 To https://github.com/corinne-riddell/life-expectancy.git
  * [new branch]      may7-cr -&gt; may7-cr</code></pre>
 </div>
-<div id="create-a-pull-request" class="section level2" number="5.26">
+<div id="create-a-pull-request" class="section level2" number="5.21">
 <h2>
-<span class="header-section-number">5.26</span> Create a pull request<a class="anchor" aria-label="anchor" href="#create-a-pull-request"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.21</span> Create a pull request<a class="anchor" aria-label="anchor" href="#create-a-pull-request"><i class="fas fa-link"></i></a>
 </h2>
-<ul>
-<li>Navigate to GitHub.com and go through the steps described previously to
-create a pull request to pull these changes into main.</li>
-</ul>
+<p>Navigate to GitHub.com and go through the steps described previously to
+create a pull request to pull these changes into main.</p>
 </div>
-<div id="changes-after-receiving-an-updated-dataset" class="section level2" number="5.27">
+<div id="changes-after-receiving-an-updated-dataset" class="section level2" number="5.22">
 <h2>
-<span class="header-section-number">5.27</span> Changes after receiving an updated dataset<a class="anchor" aria-label="anchor" href="#changes-after-receiving-an-updated-dataset"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.22</span> Changes after receiving an updated dataset<a class="anchor" aria-label="anchor" href="#changes-after-receiving-an-updated-dataset"><i class="fas fa-link"></i></a>
 </h2>
 <p>Another week goes by. It is now May 14. You received an email that there was an
 error in the data file that you used to conduct the analysis. A new data file
@@ -681,21 +588,16 @@ was securely transferred to you by the data holder. You need to rerun the analys
 using the new dataset. The new data file is the one called “LEbsyrx.csv” in the
 data folder.</p>
 </div>
-<div id="get-ready-for-the-day" class="section level2" number="5.28">
+<div id="get-ready-for-the-day" class="section level2" number="5.23">
 <h2>
-<span class="header-section-number">5.28</span> Get ready for the day<a class="anchor" aria-label="anchor" href="#get-ready-for-the-day"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.23</span> Get ready for the day<a class="anchor" aria-label="anchor" href="#get-ready-for-the-day"><i class="fas fa-link"></i></a>
 </h2>
-<ul>
-<li><p>Set yourself up to work with git and GitHub for the day:</p></li>
-<li><p><code>git branch</code>: see which branch you are on.</p></li>
-</ul>
+<p>Set yourself up to work with git and GitHub for the day:</p>
+<p><code>git branch</code>: see which branch you are on:</p>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
   main
 * may7-cr</code></pre>
-<ul>
-<li>
-<code>git status</code>: confirm you committed everything you wanted to commit.</li>
-</ul>
+<p><code>git status</code>: confirm you committed everything you wanted to commit:</p>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git status
 On branch may7-cr
 Untracked files:
@@ -712,11 +614,8 @@ nothing added to commit but untracked files present (use "git add" to track)</co
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout main
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.</code></pre>
-<ul>
-<li>
-<code>git pull origin main</code>: pull GitHub’s copy of the main branch to update your
-local version. Examine the figure made by git about the changes.</li>
-</ul>
+<p><code>git pull origin main</code>: pull GitHub’s copy of the main branch to update your
+local version. Examine the figure made by git about the changes:</p>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git pull origin main
 remote: Enumerating objects: 1, done.
 remote: Counting objects: 100% (1/1), done.
@@ -732,43 +631,29 @@ Fast-forward
  2 files changed, 177 insertions(+), 1 deletion(-)
  create mode 100644 data/le_averages.csv</code></pre>
 </div>
-<div id="checkout-a-new-branch" class="section level2" number="5.29">
+<div id="checkout-a-new-branch" class="section level2" number="5.24">
 <h2>
-<span class="header-section-number">5.29</span> Checkout a new branch<a class="anchor" aria-label="anchor" href="#checkout-a-new-branch"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.24</span> Checkout a new branch<a class="anchor" aria-label="anchor" href="#checkout-a-new-branch"><i class="fas fa-link"></i></a>
 </h2>
-<ul>
-<li>
-<code>git checkout -b may14-xy</code>, replacing xy with your initials.</li>
-</ul>
+<p><code>git checkout -b may14-xy</code>, replacing xy with your initials.</p>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout -b may14-cr
 Switched to a new branch 'may14-cr'</code></pre>
 </div>
-<div id="update-the-dataset" class="section level2" number="5.30">
+<div id="update-the-dataset" class="section level2" number="5.25">
 <h2>
-<span class="header-section-number">5.30</span> Update the dataset<a class="anchor" aria-label="anchor" href="#update-the-dataset"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.25</span> Update the dataset<a class="anchor" aria-label="anchor" href="#update-the-dataset"><i class="fas fa-link"></i></a>
 </h2>
-<ul>
-<li><p>Update the CSV file “Life-expectancy-by-state-long.csv” with the new dataset.
+<p>Update the CSV file “Life-expectancy-by-state-long.csv” with the new dataset.
 First, decide if you want to archive this older version of the dataset for any reason.
 If you do, then decide where you would store the archived version and move it there.
 The archived version could stay on GitHub or be moved off of GitHub – this is
-up to you and your file organization system.</p></li>
-<li><p>Move the LEbsyrx.csv into the data folder and rename it to have the name of
-the file it is replacing (“Life-expectancy-by-state-long.csv”).</p></li>
-</ul>
+up to you and your file organization system. Move the LEbsyrx.csv into the data folder and rename it to have the name of
+the file it is replacing (“Life-expectancy-by-state-long.csv”).</p>
+<p>Re-run all your code that uses this file. First open the .Rproj file to launch RStudio. Then, you can highlight all the code and hit the “Run” button.</p>
 </div>
-<div id="re-run-the-analysis" class="section level2" number="5.31">
+<div id="track-the-changes-using-git" class="section level2" number="5.26">
 <h2>
-<span class="header-section-number">5.31</span> Re-run the analysis<a class="anchor" aria-label="anchor" href="#re-run-the-analysis"><i class="fas fa-link"></i></a>
-</h2>
-<ul>
-<li>Re-run all your code that uses this file. First open the .Rproj file to launch
-RStudio. Then, you can highlight all the code and hit the “Run” button.</li>
-</ul>
-</div>
-<div id="track-the-changes-using-git" class="section level2" number="5.32">
-<h2>
-<span class="header-section-number">5.32</span> Track the changes using Git<a class="anchor" aria-label="anchor" href="#track-the-changes-using-git"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.26</span> Track the changes using Git<a class="anchor" aria-label="anchor" href="#track-the-changes-using-git"><i class="fas fa-link"></i></a>
 </h2>
 <p>Use “git status”, “git add…”, and “git commit…” to track these changes
 locally. Use “git push” to push these changes to GitHub.</p>
@@ -809,9 +694,9 @@ Untracked files:
     .DS_Store
     data/.DS_Store</code></pre>
 </div>
-<div id="commit-the-changes-locally-1" class="section level2" number="5.33">
+<div id="commit-the-changes-locally-1" class="section level2" number="5.27">
 <h2>
-<span class="header-section-number">5.33</span> Commit the changes locally<a class="anchor" aria-label="anchor" href="#commit-the-changes-locally-1"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.27</span> Commit the changes locally<a class="anchor" aria-label="anchor" href="#commit-the-changes-locally-1"><i class="fas fa-link"></i></a>
 </h2>
 <p>Then I commit my changes:</p>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git commit -m 'data update and downstream changes'
@@ -820,9 +705,9 @@ Untracked files:
  create mode 100644 data/archive/Life-expectancy-by-state-long_old.csv
  rewrite images/ca-black-women-LE.png (98%)</code></pre>
 </div>
-<div id="push-the-changes-to-github" class="section level2" number="5.34">
+<div id="push-the-changes-to-github" class="section level2" number="5.28">
 <h2>
-<span class="header-section-number">5.34</span> Push the changes to GitHub<a class="anchor" aria-label="anchor" href="#push-the-changes-to-github"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.28</span> Push the changes to GitHub<a class="anchor" aria-label="anchor" href="#push-the-changes-to-github"><i class="fas fa-link"></i></a>
 </h2>
 <p>Finally I push these changes to GitHub:</p>
 <pre><code>git push origin may14-cr
@@ -838,24 +723,22 @@ To https://github.com/corinne-riddell/life-expectancy.git
 Biostat-MBP13-20:life-expectancy corinneriddell$ 
 </code></pre>
 </div>
-<div id="submit-a-pull-request" class="section level2" number="5.35">
+<div id="submit-a-pull-request" class="section level2" number="5.29">
 <h2>
-<span class="header-section-number">5.35</span> Submit a pull request<a class="anchor" aria-label="anchor" href="#submit-a-pull-request"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.29</span> Submit a pull request<a class="anchor" aria-label="anchor" href="#submit-a-pull-request"><i class="fas fa-link"></i></a>
 </h2>
-<ul>
-<li>Go through the process to start a pull request. On the pull request page,
+<p>Go through the process to start a pull request. On the pull request page,
 scroll down to see the “diffs” in the data and image. Pay close attention to
-the files that were changed:</li>
-<li>use the “2-up” “swiper” and “onion skin” tools to see the changes to the saved figure.
-How did the data changed? Which tool do you prefer?</li>
-<li>can you see which rows of data were affected by the change?</li>
-<li>can you tell from the data or images how the change affected the analytic findings?</li>
-<li>anything else you noticed?</li>
-</ul>
+the files that were changed:
+* use the “2-up” “swiper” and “onion skin” tools to see the changes to the saved figure.
+How did the data changed? Which tool do you prefer?
+* can you see which rows of data were affected by the change?
+* can you tell from the data or images how the change affected the analytic findings?
+* anything else you noticed?</p>
 </div>
-<div id="to-be-worked-in" class="section level2" number="5.36">
+<div id="to-be-worked-in" class="section level2" number="5.30">
 <h2>
-<span class="header-section-number">5.36</span> To be worked in<a class="anchor" aria-label="anchor" href="#to-be-worked-in"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.30</span> To be worked in<a class="anchor" aria-label="anchor" href="#to-be-worked-in"><i class="fas fa-link"></i></a>
 </h2>
 <ol start="6" style="list-style-type: lower-roman">
 <li>Open your .gitignore file in a text editor that you are comfortable with (e.g. nano or notepad). Add the following two lines to it: <strong>LBW COMMENT: CORINNE, DO WE WANT THEM TO ADD ANYTHING TO THEIR GIT IGNORE?</strong>
@@ -871,48 +754,41 @@ How did the data changed? Which tool do you prefer?</li>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#setup-of-solo-workflow"><span class="header-section-number">5</span> Setup of Solo Workflow</a></li>
 <li><a class="nav-link" href="#outline-for-this-section"><span class="header-section-number">5.1</span> Outline for this section</a></li>
-<li><a class="nav-link" href="#working-in-terminal-mac-and-bash-windows"><span class="header-section-number">5.2</span> Working in Terminal (Mac) and Bash (Windows)</a></li>
-<li><a class="nav-link" href="#working-in-terminal-mac-and-bash-windows-1"><span class="header-section-number">5.3</span> Working in Terminal (Mac) and Bash (Windows)</a></li>
-<li><a class="nav-link" href="#folder-names-and-file-names-tips"><span class="header-section-number">5.4</span> Folder names and file names tips</a></li>
 <li>
-<a class="nav-link" href="#good-folder-names"><span class="header-section-number">5.5</span> Good folder names…</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#good-folder-names-examples"><span class="header-section-number">5.5.1</span> Good folder names examples</a></li></ul>
-</li>
-<li><a class="nav-link" href="#what-is-the-problem-with-spaces-anyway"><span class="header-section-number">5.6</span> What is the problem with spaces, anyway?</a></li>
-<li>
-<a class="nav-link" href="#good-file-names-are"><span class="header-section-number">5.7</span> Good file names are…</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#good-file-names-examples"><span class="header-section-number">5.7.1</span> Good file names examples</a></li>
-<li><a class="nav-link" href="#bad-file-name-example-and-associated-git-pain"><span class="header-section-number">5.7.2</span> Bad file name example (and associated Git pain)</a></li>
+<a class="nav-link" href="#some-basic-setup-information-and-guidelines"><span class="header-section-number">5.2</span> Some basic setup information and guidelines</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#working-in-terminal-mac-and-bash-windows"><span class="header-section-number">5.2.1</span> Working in Terminal (Mac) and Bash (Windows)</a></li>
+<li><a class="nav-link" href="#a-quick-refresher-some-best-practices-around-folder-and-file-names"><span class="header-section-number">5.2.2</span> A quick refresher: some best practices around folder and file names</a></li>
+<li><a class="nav-link" href="#some-bad-file-naming-examples-and-associated-git-pain"><span class="header-section-number">5.2.3</span> Some bad file naming examples (and associated Git pain)…</a></li>
 </ul>
 </li>
-<li><a class="nav-link" href="#set-up-a-project-that-you-want-to-track-with-git-and-github"><span class="header-section-number">5.8</span> Set up a project that you want to track with git and GitHub</a></li>
-<li><a class="nav-link" href="#make-a-new-repository-on-github"><span class="header-section-number">5.9</span> Make a new repository on GitHub</a></li>
-<li><a class="nav-link" href="#clone-the-repository-to-your-local-machine"><span class="header-section-number">5.10</span> Clone the repository to your local machine</a></li>
-<li><a class="nav-link" href="#get-oriented-to-the-new-directory"><span class="header-section-number">5.11</span> Get oriented to the new directory</a></li>
-<li><a class="nav-link" href="#make-your-first-branch"><span class="header-section-number">5.12</span> Make your first branch</a></li>
-<li><a class="nav-link" href="#make-some-changes-to-your-code"><span class="header-section-number">5.13</span> Make some changes to your code</a></li>
-<li><a class="nav-link" href="#commit-the-changes-that-you-made-and-push-them-to-github"><span class="header-section-number">5.14</span> Commit the changes that you made and push them to GitHub</a></li>
-<li><a class="nav-link" href="#merge-the-changes-from-your-branch-into-main"><span class="header-section-number">5.15</span> Merge the changes from your branch into main</a></li>
-<li><a class="nav-link" href="#summary"><span class="header-section-number">5.16</span> Summary</a></li>
-<li><a class="nav-link" href="#tracking-changes"><span class="header-section-number">5.17</span> Tracking changes</a></li>
-<li><a class="nav-link" href="#get-setup-for-a-new-day-of-work"><span class="header-section-number">5.18</span> Get setup for a new day of work</a></li>
-<li><a class="nav-link" href="#pull-down-the-changes-from-main"><span class="header-section-number">5.19</span> Pull down the changes from main</a></li>
-<li><a class="nav-link" href="#start-a-new-branch"><span class="header-section-number">5.20</span> Start a new branch</a></li>
-<li><a class="nav-link" href="#you-are-now-ready-to-make-changes"><span class="header-section-number">5.21</span> You are now ready to make changes!</a></li>
-<li><a class="nav-link" href="#track-your-changes-using-git"><span class="header-section-number">5.22</span> Track your changes using Git</a></li>
-<li><a class="nav-link" href="#add-new-and-modified-files"><span class="header-section-number">5.23</span> Add new and modified files</a></li>
-<li><a class="nav-link" href="#commit-the-changes-locally"><span class="header-section-number">5.24</span> Commit the changes locally</a></li>
-<li><a class="nav-link" href="#push-the-changes-up-to-github"><span class="header-section-number">5.25</span> Push the changes up to GitHub</a></li>
-<li><a class="nav-link" href="#create-a-pull-request"><span class="header-section-number">5.26</span> Create a pull request</a></li>
-<li><a class="nav-link" href="#changes-after-receiving-an-updated-dataset"><span class="header-section-number">5.27</span> Changes after receiving an updated dataset</a></li>
-<li><a class="nav-link" href="#get-ready-for-the-day"><span class="header-section-number">5.28</span> Get ready for the day</a></li>
-<li><a class="nav-link" href="#checkout-a-new-branch"><span class="header-section-number">5.29</span> Checkout a new branch</a></li>
-<li><a class="nav-link" href="#update-the-dataset"><span class="header-section-number">5.30</span> Update the dataset</a></li>
-<li><a class="nav-link" href="#re-run-the-analysis"><span class="header-section-number">5.31</span> Re-run the analysis</a></li>
-<li><a class="nav-link" href="#track-the-changes-using-git"><span class="header-section-number">5.32</span> Track the changes using Git</a></li>
-<li><a class="nav-link" href="#commit-the-changes-locally-1"><span class="header-section-number">5.33</span> Commit the changes locally</a></li>
-<li><a class="nav-link" href="#push-the-changes-to-github"><span class="header-section-number">5.34</span> Push the changes to GitHub</a></li>
-<li><a class="nav-link" href="#submit-a-pull-request"><span class="header-section-number">5.35</span> Submit a pull request</a></li>
-<li><a class="nav-link" href="#to-be-worked-in"><span class="header-section-number">5.36</span> To be worked in</a></li>
+<li><a class="nav-link" href="#onto-git-set-up-a-project-that-you-want-to-track-with-git-and-github"><span class="header-section-number">5.3</span> Onto Git: set up a project that you want to track with git and GitHub</a></li>
+<li><a class="nav-link" href="#make-a-new-repository-on-github"><span class="header-section-number">5.4</span> Make a new repository on GitHub</a></li>
+<li><a class="nav-link" href="#clone-the-repository-to-your-local-machine"><span class="header-section-number">5.5</span> Clone the repository to your local machine</a></li>
+<li><a class="nav-link" href="#get-oriented-to-the-new-directory"><span class="header-section-number">5.6</span> Get oriented to the new directory</a></li>
+<li><a class="nav-link" href="#make-your-first-branch"><span class="header-section-number">5.7</span> Make your first branch</a></li>
+<li><a class="nav-link" href="#make-some-changes-to-your-code"><span class="header-section-number">5.8</span> Make some changes to your code</a></li>
+<li><a class="nav-link" href="#commit-the-changes-that-you-made-and-push-them-to-github"><span class="header-section-number">5.9</span> Commit the changes that you made and push them to GitHub</a></li>
+<li><a class="nav-link" href="#merge-the-changes-from-your-branch-into-main"><span class="header-section-number">5.10</span> Merge the changes from your branch into main</a></li>
+<li><a class="nav-link" href="#summary"><span class="header-section-number">5.11</span> Summary</a></li>
+<li><a class="nav-link" href="#tracking-changes"><span class="header-section-number">5.12</span> Tracking changes</a></li>
+<li><a class="nav-link" href="#get-setup-for-a-new-day-of-work"><span class="header-section-number">5.13</span> Get setup for a new day of work</a></li>
+<li><a class="nav-link" href="#pull-down-the-changes-from-main"><span class="header-section-number">5.14</span> Pull down the changes from main</a></li>
+<li><a class="nav-link" href="#start-a-new-branch"><span class="header-section-number">5.15</span> Start a new branch</a></li>
+<li><a class="nav-link" href="#you-are-now-ready-to-make-changes"><span class="header-section-number">5.16</span> You are now ready to make changes!</a></li>
+<li><a class="nav-link" href="#track-your-changes-using-git"><span class="header-section-number">5.17</span> Track your changes using Git</a></li>
+<li><a class="nav-link" href="#add-new-and-modified-files"><span class="header-section-number">5.18</span> Add new and modified files</a></li>
+<li><a class="nav-link" href="#commit-the-changes-locally"><span class="header-section-number">5.19</span> Commit the changes locally</a></li>
+<li><a class="nav-link" href="#push-the-changes-up-to-github"><span class="header-section-number">5.20</span> Push the changes up to GitHub</a></li>
+<li><a class="nav-link" href="#create-a-pull-request"><span class="header-section-number">5.21</span> Create a pull request</a></li>
+<li><a class="nav-link" href="#changes-after-receiving-an-updated-dataset"><span class="header-section-number">5.22</span> Changes after receiving an updated dataset</a></li>
+<li><a class="nav-link" href="#get-ready-for-the-day"><span class="header-section-number">5.23</span> Get ready for the day</a></li>
+<li><a class="nav-link" href="#checkout-a-new-branch"><span class="header-section-number">5.24</span> Checkout a new branch</a></li>
+<li><a class="nav-link" href="#update-the-dataset"><span class="header-section-number">5.25</span> Update the dataset</a></li>
+<li><a class="nav-link" href="#track-the-changes-using-git"><span class="header-section-number">5.26</span> Track the changes using Git</a></li>
+<li><a class="nav-link" href="#commit-the-changes-locally-1"><span class="header-section-number">5.27</span> Commit the changes locally</a></li>
+<li><a class="nav-link" href="#push-the-changes-to-github"><span class="header-section-number">5.28</span> Push the changes to GitHub</a></li>
+<li><a class="nav-link" href="#submit-a-pull-request"><span class="header-section-number">5.29</span> Submit a pull request</a></li>
+<li><a class="nav-link" href="#to-be-worked-in"><span class="header-section-number">5.30</span> To be worked in</a></li>
 </ul>
 
       <div class="book-extra">
@@ -930,7 +806,7 @@ How did the data changed? Which tool do you prefer?</li>
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>GitHub for Public Health</strong>" was written by Corinne Riddell and Lauren Wilner. It was last built on 2024-04-19.</p>
+    <p>"<strong>GitHub for Public Health</strong>" was written by Corinne Riddell and Lauren Wilner. It was last built on 2024-04-20.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

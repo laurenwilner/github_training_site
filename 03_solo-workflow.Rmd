@@ -11,94 +11,68 @@ We have discussed why Git and GitHub are important, now we will set up a reposit
 * Push the code to your repository  
 * Merge your branch into main  
 
-## Working in Terminal (Mac) and Bash (Windows)
+## Some basic setup information and guidelines
 
-* We will use Terminal and Bash applications to interact with Git on our laptops.
-* Below is a Mac Terminal window. It looks very similar to a Windows Bash window.
+### Working in Terminal (Mac) and Bash (Windows)
+
+We will use Terminal and Bash applications to interact with Git on our laptops. Below is a Mac Terminal window. It looks very similar to a Windows Bash window.
 
 ```{r, echo=F, out.width='100%'}
 knitr::include_graphics(path = "./figures/Terminal-explainer-1.jpg")
 ```
 
-* In this session, we will supply you with Git code for you to manually input
-into your Terminal/Bash windows. Note that all of this code will be written after
-the dollar sign in the figure above. 
+In this session, we will supply you with Git code for you to manually input into your Terminal/Bash windows. Note that all of this code will be written after the dollar sign in the figure above. 
 
-## Working in Terminal (Mac) and Bash (Windows)
-
-* Here is an example of the command `git branch`, followed by the output printed
-to screen:
+Here is an example of the command `git branch`, followed by the output printed to screen:
 
 ```{r, echo=F, out.width='100%'}
 knitr::include_graphics(path = "./figures/Terminal-explainer-2.jpg")
 ```
 
-## Folder names and file names tips
+### A quick refresher: some best practices around folder and file names
+When you are working in your terminal, it is important to have good folder and file names to make your life easier! Recall when you name a variable in SAS or R, the variable name cannot contain spaces or unusual characters. **It is best practice to not use spaces or unusual characters in folder or file names,** even though spaces are permissible and commonly used by Windows and Mac Users. 
 
-* Recall when you name a variable in SAS or R, the variable name cannot 
-contain spaces or unusual characters.
-* It is best practice to not use spaces or unusual characters in folder 
-or file names, even though spaces are permissible and commonly used by Windows
-and Mac Users.
+You are probably wondering what the problem is with spaces anyway... While spaces are human-readable they aren't machine-friendly. When you refer to a folder or file using Git in Terminal or Bash, a name without spaces is much easier to type (otherwise you have to insert a backslash before the space). Spaces also break the auto-complete function that Git users love. This is a very frustrating experience.
 
-## Good folder names...
-
+  
+**Good folder and names...**
 * Use dashes in place of spaces
 * Use capitalization instead of spaces
 
-### Good folder names examples
-
+**Good folder names examples**
 * life-expectancy
 * lifeExpectancy
 * LifeExpectancy
 
-## What is the problem with spaces, anyway?
+Good file names, specifically, generally should start with a number (padded by 0) to order the files according to 
+the order performed in the analysis. This is followed by a short (human and machine readable) descriptor of what 
+the file does. You can also use underscore "_" to delimit field, and dashes "-" to separate words within field. 
 
-* While spaces are human-readable they aren't machine-friendly. 
-* When you refer to a folder or file using Git in Terminal or Bash, a name 
-  without spaces is much easier to type (otherwise you have to insert a 
-  backslash before the space)
-* Spaces also break the auto-complete function that Git users love. This is a
-  very frustrating experience.
+**Good file names examples**
 
-## Good file names are...
+```{r, echo=F, out.width='50%'}
+knitr::include_graphics(path = "./figures/Variable-names-example.png")
+```
 
+**These good names are...**
 * machine readable
 * human readable
 * play well with default ordering
 
-See the file "how-to-name-files.pdf" for a more deeper dive into file naming.
+See the file "how-to-name-files.pdf" for a more deeper dive into file naming. **CR LINK THIS FILE HERE?**
 
-### Good file names examples
-
-```{r, echo=F, out.width='75%'}
-knitr::include_graphics(path = "./figures/Variable-names-example.png")
-```
-
-* Filenames start with a number (padded by 0) to order the files according to 
-the order performed in the analysis
-* This is followed by a short (human and machine readable) descriptor of what 
-the file does
-* Uses underscore "_" to delimit field, and dashes "-" to separate words within field
-
-### Bad file name example (and associated Git pain)
-
-* Can see that there is an R markdown (Rmd) file named "Data Visualization Evaluation Report" that has been modified.
-* The pain arises when I go to `git add` the file. Before each space, I need to 
-include a backslash (which looks ugly). Even worse, the space breaks the auto-complete that happens when I press "tab" to auto-complete the file name. 
-Auto-complete will become your friend when you use Git, and not being able to 
-use it is very sad/infuriating when you have grown to love it.
+### Some bad file naming examples (and associated Git pain)...
 
 ```{r, echo=F, out.width='100%'}
 knitr::include_graphics(path = "./figures/Space-in-pathways-pain.png")
 ```
 
-## Set up a project that you want to track with git and GitHub 
+Here, you can see that there is an R markdown (Rmd) file named "Data Visualization Evaluation Report" that has been modified. The pain arises when I go to `git add` the file. Before each space, I need to include a backslash (which looks ugly). Even worse, the space breaks the auto-complete that happens when I press "tab" to auto-complete the file name. Auto-complete will become your friend when you use Git, and not being able to use it is very sad/infuriating when you have grown to love it.
+**CR: Lets emphasize this in our screenshot?**
 
-Let's suppose that you have a project that you want to start tracking using Git
-and Github. For this project, you are already working on with some code, data, 
-and visualizations that have already been saved. We have made this project for 
-you. To download it, run the following two commands in the RStudio console:
+## Onto Git: set up a project that you want to track with git and GitHub 
+
+Let's suppose that you have a project that you want to start tracking using Git and Github. For this project, you are already working on with some code, data, and visualizations that have already been saved. We have made this project for you. To download it, run the following two commands in the RStudio console:
 
 ```{r, eval = FALSE, include = TRUE}
 install.packages("usethis")
@@ -200,12 +174,12 @@ Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
 
 Okay, you are now set up to track changes. Let's do the following:
 
-* Copy the code/ data/ and images/ sub-folders from your "existing-project" folder into the 
+Copy the code/ data/ and images/ sub-folders from your "existing-project" folder into the 
 "life-expectancy" folder.
 
 ## Commit the changes that you made and push them to GitHub
 
-* Go back over to terminal or bash. Type `git status`. The output will tell you 
+Go back over to terminal or bash. Type `git status`. The output will tell you 
 what has been changed. It tells us that there are untracked files:
 
 ```
@@ -220,11 +194,9 @@ Untracked files:
 	life-expectancy.Rproj
 ```
 
-We want to track the code/, data/ and images/ subfolders we just copied over, as
-well as the life-expectancy.Rproj file.
+We want to track the code/, data/ and images/ subfolders we just copied over, as well as the life-expectancy.Rproj file.
 
-Use `git add` to add the newly-added files to be tracked. Then use `git status`
-to confirm you have added everything you want to track:
+Use `git add` to add the newly-added files to be tracked. Then use `git status` to confirm you have added everything you want to track:
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git add code/
@@ -253,7 +225,7 @@ Untracked files list. You don't need to worry about them because we don't want
 to track changes to any of those files.
 
 
-* Commit these changes locally: `git commit -m 'your commit message' `, replace
+Commit these changes locally: `git commit -m 'your commit message' `, replace
 'your commit message' with a short message about what you've done (keep the 
  quotes around the message). For example, your message could be something like 
  `git commit -m "added first set of files"`.
@@ -269,7 +241,7 @@ to track changes to any of those files.
  create mode 100644 life-expectancy.Rproj
  ```
  
-* Push these changes to GitHub: `git push origin your-branch-name`, replacing 
+Push these changes to GitHub: `git push origin your-branch-name`, replacing 
 your-branch-name with the name of your branch. If you don't remember your branch's
 name, type `git branch` to print it to the screen and then the `git push` command.
 
@@ -293,7 +265,7 @@ You have successfully pushed your changes to GitHub!
 
 ## Merge the changes from your branch into main
 
-* Navigate to GitHub.com to your repository's URL. There should be a pale yellow 
+Navigate to GitHub.com to your repository's URL. There should be a pale yellow 
 banner informing you about the changes you just pushed. Click the button 
 "Compare & pull request". Notice that the title is your commit message from the 
 previous step. Scroll down. Look at the files that have been added. 
@@ -342,7 +314,7 @@ Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
 * may3-cr
 ```
 
-* Check if you forgot to save anything from last time using `git status`. 
+Check if you forgot to save anything from last time using `git status`. 
 Ideally, you have saved all your changes and there is nothing to add/track/commit.
 Here is my status:
 
@@ -360,7 +332,7 @@ There is one untracked file: .DS_Store. This is okay since it is an internal
 file used by Mac OS that does not need to be tracked. We just want to ensure 
 no code files or outputs we intended to track have been forgotton.
 
-* You are likely still on your branch from the last day. In that case, navigate
+You are likely still on your branch from the last day. In that case, navigate
 back to main using `git checkout main`. 
 
 ```
@@ -386,8 +358,7 @@ Biostat-MBP13-20:github-training corinneriddell$ git branch -d may3-cr
 Deleted branch may3-cr (was 761bb97).
 ```
 
-CORINNE TODO: ON HOME COMPUTER DELETE THE MAY3 BRANCH FROM THE LE REPO SO CAN
-GRAB THE CORRECT CODE AFTER "WAS" AND REPLACE IN THE ABOVE.
+**CORINNE TODO: ON HOME COMPUTER DELETE THE MAY3 BRANCH FROM THE LE REPO SO CAN GRAB THE CORRECT CODE AFTER "WAS" AND REPLACE IN THE ABOVE.**
 
 ## Pull down the changes from main
 
@@ -422,7 +393,7 @@ Fast-forward
 
 ## Start a new branch
 
-* Like the last day, start a new branch to track today's changes. Let's 
+Like the last day, start a new branch to track today's changes. Let's 
 pretend it is now May 7. Type `git checkout -b may7-XY`, where XY is replaced 
 with your initials. Type `git branch` to confirm you have changed branches. 
 
@@ -487,12 +458,10 @@ RUN;
 ```
 ## Track your changes using Git
 
-* Re-run your previous R code (highlight all the previous code and hit 
+Re-run your previous R code (highlight all the previous code and hit 
 command + Return [Mac] or control + Enter [Windows]). Then run the newly-added 
 code line by line to see what it is doing. Save the updated .R file by pushing
-the save icon.
-
-* Track the changes using Git. Go to the bash/terminal window. Type "git status".
+the save icon. Track the changes using Git. Go to the bash/terminal window. Type "git status".
 Which files have been modified? Which files are new and untracked?
 
 ```
@@ -511,7 +480,7 @@ Untracked files:
 
 ## Add new and modified files 
 
-* Use `git add` to add the specific files that have been modified or created.
+Use `git add` to add the specific files that have been modified or created.
 Add them one by one. Use `git status` again to check that all the changed files
 are being tracked. When you are satisfied, commit these changes locally.
 
@@ -537,8 +506,8 @@ are typing the pathway for the .R file as "code/..." you can push the tab button
 as you are typing the name and it will autocomplete. This makes selecting the 
 specific files to commit much easier. 
 
-* "git commit -m 'your message'". Replace 'your message' with a short message
-describing the changes. Remember to keep the quotes around the message!
+`git commit -m '{your message}'`
+Replace 'your message' with a short message describing the changes. Remember to keep the quotes around the message!
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git commit -m 'calc LE averages' 
@@ -549,7 +518,7 @@ Biostat-MBP13-20:life-expectancy corinneriddell$ git commit -m 'calc LE averages
 
 ## Push the changes up to GitHub
 
-* You are now ready to push these changes up to GitHub onto GitHub's version
+You are now ready to push these changes up to GitHub onto GitHub's version
 of your local branch. First, remind yourself of your branch's name using 
 "git branch". Then push: `git push origin {YOUR-BRANCH-NAME}`, replacing 
 {YOUR-BRANCH-NAME} with the name of your branch.
@@ -576,7 +545,7 @@ To https://github.com/corinne-riddell/life-expectancy.git
 
 ## Create a pull request
 
-* Navigate to GitHub.com and go through the steps described previously to 
+Navigate to GitHub.com and go through the steps described previously to 
 create a pull request to pull these changes into main.
 
 ## Changes after receiving an updated dataset
@@ -589,9 +558,9 @@ data folder.
 
 ## Get ready for the day 
 
-* Set yourself up to work with git and GitHub for the day:
+Set yourself up to work with git and GitHub for the day:
 
-* `git branch`: see which branch you are on. 
+`git branch`: see which branch you are on: 
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
@@ -599,7 +568,7 @@ Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
 * may7-cr
 ```
 
-* `git status`: confirm you committed everything you wanted to commit.
+`git status`: confirm you committed everything you wanted to commit:
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git status
@@ -620,8 +589,8 @@ Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 ```
 
-* `git pull origin main`: pull GitHub's copy of the main branch to update your 
-local version. Examine the figure made by git about the changes.
+`git pull origin main`: pull GitHub's copy of the main branch to update your 
+local version. Examine the figure made by git about the changes:
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git pull origin main
@@ -642,7 +611,7 @@ Fast-forward
 
 ## Checkout a new branch
 
-* `git checkout -b may14-xy`, replacing xy with your initials.
+`git checkout -b may14-xy`, replacing xy with your initials.
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout -b may14-cr
@@ -651,19 +620,14 @@ Switched to a new branch 'may14-cr'
 
 ## Update the dataset
 
-* Update the CSV file "Life-expectancy-by-state-long.csv" with the new dataset.
+Update the CSV file "Life-expectancy-by-state-long.csv" with the new dataset.
 First, decide if you want to archive this older version of the dataset for any reason.
 If you do, then decide where you would store the archived version and move it there.
 The archived version could stay on GitHub or be moved off of GitHub -- this is 
-up to you and your file organization system.
-
-* Move the LEbsyrx.csv into the data folder and rename it to have the name of 
+up to you and your file organization system. Move the LEbsyrx.csv into the data folder and rename it to have the name of 
 the file it is replacing ("Life-expectancy-by-state-long.csv").
 
-## Re-run the analysis
-
-* Re-run all your code that uses this file. First open the .Rproj file to launch
-RStudio. Then, you can highlight all the code and hit the "Run" button.
+Re-run all your code that uses this file. First open the .Rproj file to launch RStudio. Then, you can highlight all the code and hit the "Run" button.
 
 ## Track the changes using Git
 
@@ -751,14 +715,14 @@ Biostat-MBP13-20:life-expectancy corinneriddell$
 
 ## Submit a pull request
 
-* Go through the process to start a pull request. On the pull request page, 
+Go through the process to start a pull request. On the pull request page, 
 scroll down to see the "diffs" in the data and image. Pay close attention to 
 the files that were changed:
-- use the "2-up" "swiper" and "onion skin" tools to see the changes to the saved figure.
+* use the "2-up" "swiper" and "onion skin" tools to see the changes to the saved figure.
 How did the data changed? Which tool do you prefer?
-- can you see which rows of data were affected by the change?
-- can you tell from the data or images how the change affected the analytic findings?
-- anything else you noticed?
+* can you see which rows of data were affected by the change?
+* can you tell from the data or images how the change affected the analytic findings?
+* anything else you noticed?
 
 
 ## To be worked in
