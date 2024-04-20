@@ -31,11 +31,13 @@ When you are working in your terminal, it is important to have good folder and f
 You are probably wondering what the problem is with spaces anyway... While spaces are human-readable they aren't machine-friendly. When you refer to a folder or file using Git in Terminal or Bash, a name without spaces is much easier to type (otherwise you have to insert a backslash before the space). Spaces also break the auto-complete function that Git users love. This is a very frustrating experience.
 
   
-**Good folder and names...**
+**Good folder and names...**  
+
 * Use dashes in place of spaces
 * Use capitalization instead of spaces
 
-**Good folder names examples**
+**Good folder names examples**  
+
 * life-expectancy
 * lifeExpectancy
 * LifeExpectancy
@@ -48,7 +50,8 @@ the file does. You can also use underscore "_" to delimit field, and dashes "-" 
 
 <img src="./figures/Variable-names-example.png" width="50%" />
 
-**These good names are...**
+**These good names are...**  
+
 * machine readable
 * human readable
 * play well with default ordering
