@@ -85,6 +85,7 @@ library(gitcreds)
 ```
 
 Pick a user name - it does not need to be your GitHub user name. This is the email address linked to your GitHub account:  
+
 ```
 use_git_config(user.name = "Corinne Riddell on Dell",
                user.email = "corinne.riddell@gmail.com")
