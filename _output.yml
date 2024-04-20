@@ -1,7 +1,7 @@
 bookdown::bs4_book:
   css: style.css
   theme:
-    primary: "#41ae76"
+    primary: "#FFBE98"
   repo: https://github.com/rstudio/bookdown-demo
 bookdown::pdf_book:
   includes:
