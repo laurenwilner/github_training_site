@@ -11,12 +11,12 @@ description: |
   This is a training on using Git and GitHub for Public Health.
 biblio-style: apalike
 csl: chicago-fullnote-bibliography.csl
+always_allow_html: true
 ---
 
 # About this training
 
-Keeping track of changes to your statistical code can really help cut down on mistakes in your analysis. But, a lot of epidemiologists haven't been trained on how to do this, and might wonder how it all fits with IRB protocols and privacy rules. In these materials, we get into the basics of git and GitHub. We'll show you how these tools can help you manage your code changes safely and ethically.
-LBW Note: is this the right tone?
+Keeping track of changes to your statistical code is key to reducing errors and boosting teamwork in your projects. However, many public health professionals, including epidemiologists, haven't been trained on how to manage these changes, which might leave you wondering about the integration with IRB protocols and privacy rules. On this website, we'll dive into the basics of Git and GitHub. We're here to show you how these tools can help you confidently and ethically manage your code changes, making your research smoother and more secure.
 
 **Questions? Comments?**
 
