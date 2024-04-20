@@ -76,9 +76,7 @@
 <h2>
 <span class="header-section-number">2.2</span> Install R and RStudio if you have not already:<a class="anchor" aria-label="anchor" href="#install-r-and-rstudio-if-you-have-not-already"><i class="fas fa-link"></i></a>
 </h2>
-<ul>
-<li><a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a></li>
-</ul>
+<p><a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a></p>
 </div>
 <div id="open-rstudio-and-install-the-following-packages" class="section level2" number="2.3">
 <h2>
@@ -104,9 +102,7 @@ Do this for each of the packages.</p>
 <h2>
 <span class="header-section-number">2.4</span> Create a github account<a class="anchor" aria-label="anchor" href="#create-a-github-account"><i class="fas fa-link"></i></a>
 </h2>
-<ul>
-<li><a href="https://github.com/" class="uri">https://github.com/</a></li>
-</ul>
+<p><a href="https://github.com/" class="uri">https://github.com/</a></p>
 </div>
 <div id="install-git" class="section level2" number="2.5">
 <h2>
@@ -120,9 +116,9 @@ Do this for each of the packages.</p>
 <ol style="list-style-type: decimal">
 <li>Download Git for Windows from here: <a href="https://gitforwindows.org/" class="uri">https://gitforwindows.org/</a>. There are lots of things to click through.</li>
 </ol>
-<p>Notes from HappyGitWithR:
-NOTE: When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, we believe it is good to accept the defaults.
-Note that RStudio for Windows prefers for Git to be installed below C:/Program Files and this appears to be the default. This implies, for example, that the Git executable on my Windows system is found at C:/Program Files/Git/bin/git.exe. Unless you have specific reasons to otherwise, follow this convention.</p>
+<p><em>Notes from HappyGitWithR:</em>
+<em>NOTE: When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, we believe it is good to accept the defaults.</em>
+<em>Note that RStudio for Windows prefers for Git to be installed below C:/Program Files and this appears to be the default. This implies, for example, that the Git executable on my Windows system is found at C:/Program Files/Git/bin/git.exe. Unless you have specific reasons to otherwise, follow this convention.</em></p>
 <ol start="2" style="list-style-type: decimal">
 <li><p>Start menu &gt; Git &gt; Git Bash. Confirm that you have access to Git Bash.</p></li>
 <li><p>RStudio next
@@ -156,19 +152,21 @@ RStudio should automatically detect the presence of Git Bash. You can inspect an
 <span class="header-section-number">2.6</span> Configure Git using an HTTPS token<a class="anchor" aria-label="anchor" href="#configure-git-using-an-https-token"><i class="fas fa-link"></i></a>
 </h2>
 <p>Load <code>usethis</code> &amp; <code>gitcreds</code>:</p>
-<ul>
-<li><code><a href="https://usethis.r-lib.org">library(usethis)</a></code></li>
-<li><code><a href="https://gitcreds.r-lib.org/">library(gitcreds)</a></code></li>
-</ul>
-<p>Pick a user name - it does not need to be your GitHub user name. This is the email address linked to your GitHub account:<br><code>use_git_config(user.name = "Corinne Riddell on Dell",</code>
-<code>user.email = "corinne.riddell@gmail.com")</code></p>
+<pre><code><a href="https://usethis.r-lib.org">library(usethis)
+library(gitcreds)</a></code></pre>
+<p>Pick a user name - it does not need to be your GitHub user name. This is the email address linked to your GitHub account:</p>
+<pre><code>use_git_config(user.name = "Corinne Riddell on Dell",
+               user.email = "corinne.riddell@gmail.com")</code></pre>
 <p>After you have installed the packages, you will need to create a personal access token. This is a way to authenticate yourself with GitHub. You will need to do this in order to push and pull from your repository. Run the following:</p>
 <p><code><a href="https://usethis.r-lib.org/reference/github-token.html">usethis::create_github_token()</a></code></p>
 <p>This will bring you to a browser page. Put in a description for your token and then select an expiration date from the drop down - please select <code>No expiration</code>. Scroll down and click the <code>Generate token</code> button. Copy the token that is generated and paste it somewhere where you will be able to access it.</p>
 <p>Go back to R and run the following:</p>
 <p><code><a href="https://gitcreds.r-lib.org/reference/gitcreds_get.html">gitcreds::gitcreds_set()</a></code></p>
 <p>When prompted, paste in the token you copied. This will add your credentials to your cache. The following will print out to the RStudio console:</p>
-<p><code>? Enter password or token: ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</code><br><code>-&gt; Adding new credentials...</code><br><code>-&gt; Removing credentials from cache...</code><br><code>-&gt; Done.</code></p>
+<pre><code>? Enter password or token: ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  
+-&gt; Adding new credentials...
+-&gt; Removing credentials from cache...
+-&gt; Done.</code></pre>
 <div class="vembedr">
 <div>
 <iframe src="https://www.youtube.com/embed/yedGFJifmdI" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
