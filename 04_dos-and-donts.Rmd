@@ -2,75 +2,44 @@
 
 ## Different approaches to using Github for data analysis
 
-## Different approaches to using Github for data analysis
+### Approach 1: 
+**Some people use Git and Github to track changes to their statistical code only.**
 
-**Approach 1:** Some people use Github to track changes to their statistical code 
-only. 
-
-* Here, they are only tracking their code files in R (.R or .Rmd), or 
+Here, they are only tracking their code files in R (.R or .Rmd), or 
 SAS (.SAS), or the corresponding files for whichever language they use. 
-* They add all other types of files to the git ignore file so that git
+
+They add all other types of files to the git ignore file so that git
 won't track them or accidentally push them to GitHub. This would include:
 data files, word documents, pdfs, image files, etc -- anything else you are 
 putting in the github folder that you don't want to track.
-* This approach most closely corresponds to how GitHub is used by software developers/
+
+This approach most closely corresponds to how GitHub is used by software developers/ 
 other code writers, but is also an option chosen by researchers and research 
 teams depending on their objectives.
 
-**Approach 2:** There is another approach to using Git and GitHub in which you 
-might choose to track a larger set of files. These other files might include:
+### Approach 2: 
+**Some people Git and GitHub to track a larger set of files. These other files might include data, images, and documents.**
+When tracking non-code files, here are some rules of thumb:
 
-   - Data 
-   - Images
-   - Documents
-   
-## Approach 2: Tracking data files
-   
-* **Don't track restricted data**
-* **Dont' track large datasets.** Git will warn you if your file exceeds 50 MB and 
-block you from tracking files 100 MB or larger.
-* To ensure these files aren't tracked, you can store them elsewhere (outside of
-the tracked Git folder), or store them in the tracked folder while also listing 
-them or their file type to your .gitignore file.
+#### Data files
 
-* It doesn't often make sense to track a large "raw" data file -- it is too big
-and not useful to track any changes to this file.
-* It may be helpful to track "intermediate data products", if these files are 
-not restricted.  
-* Intermediate data products might include aggregated datasets 
-that are either reported directly or used in analysis. 
-* For example, you may have access to a restricted dataset, but the data may 
-become non-restricted if you aggregate at the level of the census tract. The 
-benefit of tracking this smaller dataset is that if the raw data is updated, you 
-can easily see how those updates affect these intermediate data products if you 
-track them. 
-* In this case you need to ensure you are not reporting any private/restricted
-data (eg no cell counts below 10 is a restricted often imposed on aggregated 
-tables, or not reporting any identifying features such as protected health 
-information or anything else that would allow anyone with access to identify 
+**Don't track restricted data!**
+
+**Dont' track large datasets!** Git will warn you if your file exceeds 50 MB and 
+block you from tracking files 100 MB or larger. To ensure these files aren't tracked, you can store them elsewhere (outside of
+the tracked Git folder), or store them in the tracked folder while also listing them or their file type to your .gitignore file. 
+
+Generally, it also doesn't often make sense to track a large "raw" data file -- it is too big and not useful to track any changes to this file. It may be helpful to track "intermediate data products", if these files are not restricted. Intermediate data products might include aggregated datasets that are either reported directly or used in analysis. For example, you may have access to a restricted dataset, but the data may become non-restricted if you aggregate at the level of the census tract. The benefit of tracking this smaller dataset is that if the raw data is updated, you can easily see how those updates affect these intermediate data products if you track them. In this case you need to ensure you are not reporting any private/restricted data (eg no cell counts below 10 is a restricted often imposed on aggregatedtables, or not reporting any identifying features such as protected health information or anything else that would allow anyone with access to identify 
 individuals.
-* What type of data files should you track? 
-* Anything that is plain text like csv files and txt files (e.g., files you can
-open in a text editor). 
-* These are best for tracking because they render nicely on GitHub, so you can
-easily view the differences to these files when you submit a pull request.
-* You could also track things like Excel files but you can't easily view them
-on GitHub, so some of the benefits of using GitHub do not apply to these files.
-   
-## Approach 2: Tracking image files
 
-* Image files (e.g., png, jpeg), such as plots/other figures you create for a 
-report, may also be tracked.
-* The benefit of also tracking figures are the use of the image
-   comparison tools in GitHub to see an image pre/post a change in the analysis. 
-* This can be super helpful when you have modified something in the analysis 
-   after having already written up some results. 
-* If you track the image, you can 
-   easily see how it changed (it being the point estimates and confidence intervals,
-   of the slope of the regression line, or the shading of a colored map).
-* This 
-   has the direct pay-off of making it much easier to revise the written results
-   as you can more easily see the changes using these tools.
+**Data files you should track** include anything that is plain text like csv files and txt files (e.g., files you can
+open in a text editor). These are best for tracking because they render nicely on GitHub, so you can
+easily view the differences to these files when you submit a pull request. You could also track things like Excel files but you can't easily view them on GitHub, so some of the benefits of using GitHub do not apply to these files.
+   
+#### Image files
+
+You can also track image files (e.g., png, jpeg), such as plots/other figures you create for a 
+report. The benefit of  tracking figures are the use of the image comparison tools in GitHub to see an image pre/post a change in the analysis. This can be super helpful when you have modified something in the analysis after having already written up some results. If you track the image, you can easily see how it changed (it being the point estimates and confidence intervals, of the slope of the regression line, or the shading of a colored map). This has the direct pay-off of making it much easier to revise the written results as you can more easily see the changes using these tools.
 * One thing to be careful about is not uploading very large images like the 
 ones that are generated by some GIS analyses (large maps). 
 * If you aren't sure if you should track your image file, take a look at the 
@@ -78,17 +47,9 @@ file size. (I had a look at all of my repositories for epidemiologic analyses --
 most images were < 1000 kb. Some were between 1 MB and 4 MB -- these were some 
 maps and some images saved at higher resolutions.)
 
-## Approach 2: Tracking documents
+#### Documents
 
-* You can also track reports and manuscripts using GitHub. 
-* If these reports are written in a plaintext language (e.g., R markdown, LaTeX) 
-then they will render nicely on GitHub and, and permit you to see the "diffs" 
-made to the document during a pull request. 
-* Tracking pdfs is permissible but you can't easily see the "diffs" when they are
-updated. However, pdfs are easily viewable on GitHub.
-* Tracking docx files is also permissible, but you can't easily see the "diffs" 
-and they are not easily viewable on GitHub (since they require MS Word to render
-them). 
+You can also track reports and manuscripts using GitHub. If these reports are written in a plaintext language (e.g., R markdown, LaTeX) then they will render nicely on GitHub and, and permit you to see the "diffs" made to the document during a pull request. Tracking pdfs is permissible but you can't easily see the "diffs" when they are updated. However, pdfs are easily viewable on GitHub.Tracking docx files is also permissible, but you can't easily see the "diffs" and they are not easily viewable on GitHub (since they require MS Word to render them). 
 
 ## Things you definitely do not want to track
 
