@@ -25,7 +25,8 @@ Keeping track of changes to your statistical code is key to reducing errors and 
 
 **Questions? Comments?**
 
-Contact us at datasci.ph@gmail.com if you have questions, comments, or feedback!
+Contact us at c.riddell@berkeley.edu and wilnerl@uw.edu if you have questions, 
+comments, or feedback!
 
 ```{r, eval=FALSE, include=FALSE}
 bookdown::render_book()
