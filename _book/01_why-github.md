@@ -7,7 +7,7 @@
 
 **Git** is a version control system. It tracks what is changed in a file, 
 when and by whom and synchronizes the changes to a central server so that multiple
-contributors can manage changes to the same set of files [Wilson et al., 2017](https://dx.plos.org/10.1371/journal.pcbi.1005510).
+contributors can manage changes to the same set of files [(Wilson et al., 2017)](https://dx.plos.org/10.1371/journal.pcbi.1005510).
 
 **GitHub** is a hosting service on the web for Git repositories.
 
