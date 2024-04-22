@@ -2,7 +2,8 @@
 
 
 
-This pre-workshop guide is designed to walk you through the initial setup of git on your computer.  
+This pre-workshop guide is designed to walk you through the initial setup of Git
+on your computer.  
 
 If you have any issues, please reach out to us at datasci.ph@gmail.com.   
 
@@ -10,26 +11,50 @@ If you have any issues, please reach out to us at datasci.ph@gmail.com.
 
 Git is a version control system that allows you to track changes in your code.  
 
-In order to get setup, we need to install git on your computer, make a GitHub account, and configure git on your computer.  
+In order to get setup, you need to install Git on your computer, make a GitHub 
+account, and then configure Git on your computer.  
 
-We will get into the details of how to use git in the workshop, but are requesting that you complete the following steps before the workshop so that we can spend all of the workshop time on using Git rather than on setup!     
+If you are attending a live workshop, we will cover the details of how to use 
+Git during the workshop. To ensure the workshop runs smoothly and efficiently, 
+we request you to complete the following steps before the workshop -- this 
+enables us to spend all of the workshop time on using Git rather than on setup.
+Thank you!
 
-## Install R and RStudio if you have not already:
-https://posit.co/download/rstudio-desktop/  
+## Install R and RStudio
 
-## Open RStudio and install the following packages:
+If you don't already have R and RStudio please install them. While the workshop
+will also give options using SAS, everyone needs R and RStudio for some pieces 
+of the workshop -- it should only take a few minutes to download and install 
+each of these. 
+
+**Link to both downloads:** https://posit.co/download/rstudio-desktop/  
+
+If you downloads each of these a while ago, we recommend that you update the 
+versions so everthing runs smoothly. 
+
+## Open RStudio and install the following packages
 
 - **tidyverse**
 - **usethis**
 - **gitcreds**
 - **broom**
 
-To do this, run the following code in the RStudio console:
-`install.packages('tidyverse')` 
-Do this for each of the packages. 
+To do this, run the following code in the RStudio console (lower left-hand side
+panel, of the four panel pane):
 
-*If any of these packages fail to install, please let us know. You may need to update your RStudio but we will try to help you get everything set up with minimal interruption to your other work.*   
 
+```r
+install.packages('tidyverse')
+install.packages('usethis')
+install.packages('gitcreds')
+install.packages('broom')
+```
+
+*If any of these packages fail to install, please let us know.*   
+
+If this is your first time using R/RStudio, this video shows how to type the 
+commands into the console and R looks like when the installs runs smoothly. 
+*Please view this video in full screen and at high quality to see it properly.*
 
 
 ```{=html}
@@ -41,28 +66,30 @@ Do this for each of the packages.
 ```
 
 
+## Create a GitHub account
 
-## Create a github account
 https://github.com/
 
 ## Install Git
 
-Follow the instructions on the following slides to install git on your computer. Select the slides that correspond to Windows or Mac depending on what machine you are using.  
+Installing Git is different depending on whether you are using a Windows or Mac. 
+Follow the relevant instructions.
 
 ### Windows Instructions
 
-1) Download Git for Windows from here: https://gitforwindows.org/. There are lots of things to click through. 
+1) Download Git for Windows: https://git-scm.com/download/win. Once the download
+begins, there are many menu items to click through. As recommended on the 
+fantastic website [HappyGitWithR](https://happygitwithr.com/install-git), accept
+the default selections except for the item "Adjusting your PATH environment". 
+There, make sure to select “Git from the command line and also from 3rd-party 
+software”. HappyGitWithR also notes that "RStudio for Windows prefers for Git to
+be installed below C:/Program Files and this appears to be the default. This 
+implies, for example, that the Git executable on my Windows system is found at 
+C:/Program Files/Git/bin/git.exe. Unless you have specific reasons to otherwise,
+follow this convention.
 
-*Notes from HappyGitWithR:*
-*- When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, we believe it is good to accept the defaults.*
-*- Note that RStudio for Windows prefers for Git to be installed below C:/Program Files and this appears to be the default. This implies, for example, that the Git executable on my Windows system is found at C:/Program Files/Git/bin/git.exe. Unless you have specific reasons to otherwise, follow this convention.*
-
-2) Start menu > Git > Git Bash. Confirm that you have access to Git Bash.
- 
-3) RStudio next
-RStudio should automatically detect the presence of Git Bash. You can inspect and influence this directly via Tools > Global Options > Terminal. Unless you have good reason to do otherwise, you want to see “Git Bash” in the “New terminals open with …” dropdown menu.
-
-4) The next set of tasks are done in RStudio. The code to run these commands are found in the file `code/00_Setup-instructions-for-Windows.R`. After running all those commands you are ready to use GitHub from the Shell. (Currently, these instructions do not include setting up a Git client.)
+The following video shows how to download and install Git for Windows. View it 
+on full screen and in high quality if you want to follow along:
 
 
 ```{=html}
@@ -74,12 +101,23 @@ RStudio should automatically detect the presence of Git Bash. You can inspect an
 ```
 
 
-<br> 
+2) Once you have Git downloads, confirm you have access to Git Bash. To do so, 
+it should appear in your Start menu: Start menu > Git > Git Bash.
+ 
+3) RStudio should automatically detect the presence of Git Bash. You can inspect
+and influence this directly via Tools > Global Options > Terminal. Unless you 
+have good reason to do otherwise, you want to see “Git Bash” in the “New 
+terminals open with …” dropdown menu.
+
+4) The next set of tasks are done in RStudio and outlined below in the section
+"Configure Git using an HTTPS token" below the Mac instructions.
 
 ### Mac Instructions
 
-1) Type git --version in your terminal to check if git is installed. If it is, you will see a version number. If not, type: 
-`git config` and then `enter`. You will be prompted to install Git and follow the prompts! 
+1) Open up the Terminal application, and type `git --version` to check if Git is
+already installed. If it is, you will see a version number. If it is not, type: 
+`git config` and then press return. You will be prompted to install Git and 
+follow the prompts! 
 
 
 ```{=html}
