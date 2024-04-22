@@ -1,8 +1,9 @@
 # Git Jargon
 
-[Alice Bartlett](https://github.com/alicebartlett) is a Principal Engineer at 
-the Financial Times. She made an excellent set of slides introducing Git and 
-GitHub and the associated jargon:
+Before diving into using Git and GitHub, we need to become immersed in its 
+jargon. Fortunately, [Alice Bartlett](https://github.com/alicebartlett), a 
+Principal Engineer at the Financial Times, made an excellent set of slides on 
+Git and GitHub and the associated jargon. She covers:
 
 * repository, or "repo"
 * commit
