@@ -77,7 +77,8 @@ begins, there are many menu items to click through. As recommended on the
 fantastic website [HappyGitWithR](https://happygitwithr.com/install-git), accept
 the default selections except for the item "Adjusting your PATH environment". 
 There, make sure to select “Git from the command line and also from 3rd-party 
-software”. HappyGitWithR also notes that "RStudio for Windows prefers for Git to
+software”. [HappyGitWithR](https://happygitwithr.com/install-git) also notes 
+that "RStudio for Windows prefers for Git to
 be installed below C:/Program Files and this appears to be the default. This 
 implies, for example, that the Git executable on my Windows system is found at 
 C:/Program Files/Git/bin/git.exe. Unless you have specific reasons to otherwise,
@@ -108,37 +109,48 @@ already installed. If it is, you will see a version number. If it is not, type:
 `git config` and then press return. You will be prompted to install Git and 
 follow the prompts! 
 
-```{r, echo=FALSE}
-embed_url("https://youtu.be/cAk8wOv81fo")
-```
-
 ## Configure Git using an HTTPS token
 
-Load `usethis` & `gitcreds`:  
+In RStudio, load the libraries `usethis` & `gitcreds`:  
 
-```
+```{r, eval =F}
 library(usethis)
 library(gitcreds)
 ```
 
-Pick a user name - it does not need to be your GitHub user name. This is the email address linked to your GitHub account:  
+Use the function `use_git_config()` to configure Git using an HTTPS token. To 
+do so, type the following in the RStudio Console (lower left panel), filling in 
+a user name, and email. The user name is up to you -- it doesn't need to be your
+GitHub user name. `user.email` is the email address linked to your GitHub 
+account.
+
+```{r, eval=F}
+use_git_config(user.name = "Your user name",
+               user.email = "your.email.adress@gmail.com")
 ```
-use_git_config(user.name = "Corinne Riddell on Dell",
-               user.email = "corinne.riddell@gmail.com")
+
+Next up, you will need to create a personal access token. This is a way to 
+authenticate yourself with GitHub. You will need to do this in order to push and
+pull from your GitHub repository.  To do so, run the following in the R console:   
+
+```{r, eval=F}
+usethis::create_github_token()  
 ```
 
+This will bring you to a browser page. Put in a description for your token and 
+then select an expiration date from the drop down - please select `No expiration`.
+Scroll down and click the `Generate token` button. Copy the token that is 
+generated and paste it somewhere where you will be able to access it. 
 
-After you have installed the packages, you will need to create a personal access token. This is a way to authenticate yourself with GitHub. You will need to do this in order to push and pull from your repository.  Run the following:   
+Go back to R/RStudio and run the following:  
 
-`usethis::create_github_token()`   
+```{r, eval=F}
+gitcreds::gitcreds_set()
+```
 
-This will bring you to a browser page. Put in a description for your token and then select an expiration date from the drop down - please select `No expiration`. Scroll down and click the `Generate token` button. Copy the token that is generated and paste it somewhere where you will be able to access it. 
-
-Go back to R and run the following:  
-
-`gitcreds::gitcreds_set()`  
-  
-When prompted, paste in the token you copied. This will add your credentials to your cache. The following will print out to the RStudio console:    
+When prompted, paste in the GitHub token you copied from the website. This will 
+add your credentials to your cache. The following will print out to the RStudio 
+console:    
 
 ```
 ? Enter password or token: ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  
@@ -147,14 +159,11 @@ When prompted, paste in the token you copied. This will add your credentials to 
 -> Done.
 ```  
 
-
-```{r, echo=FALSE}
-embed_url("https://youtu.be/yedGFJifmdI")
-```
-
 ## Resources
 
-You should now be set up to use Git and Github! If you had any issues, here are a few links you can look at for help. If you are still having trouble, please reach out to us before the workshop!  
+You should now be set up to use Git and GitHub! If you had any issues, here are 
+a few links you can look at for help. If you are still having trouble, please 
+reach out to us before the workshop.
 
 - [Happy Git with R](https://happygitwithr.com/)  
 

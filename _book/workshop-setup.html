@@ -140,7 +140,8 @@ begins, there are many menu items to click through. As recommended on the
 fantastic website <a href="https://happygitwithr.com/install-git">HappyGitWithR</a>, accept
 the default selections except for the item “Adjusting your PATH environment”.
 There, make sure to select “Git from the command line and also from 3rd-party
-software”. HappyGitWithR also notes that “RStudio for Windows prefers for Git to
+software”. <a href="https://happygitwithr.com/install-git">HappyGitWithR</a> also notes
+that “RStudio for Windows prefers for Git to
 be installed below C:/Program Files and this appears to be the default. This
 implies, for example, that the Git executable on my Windows system is found at
 C:/Program Files/Git/bin/git.exe. Unless you have specific reasons to otherwise,
@@ -174,44 +175,51 @@ already installed. If it is, you will see a version number. If it is not, type:
 <code>git config</code> and then press return. You will be prompted to install Git and
 follow the prompts!</li>
 </ol>
-<div class="vembedr">
-<div>
-<iframe src="https://www.youtube.com/embed/cAk8wOv81fo" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
-</div>
-</div>
 </div>
 </div>
 <div id="configure-git-using-an-https-token" class="section level2" number="2.6">
 <h2>
 <span class="header-section-number">2.6</span> Configure Git using an HTTPS token<a class="anchor" aria-label="anchor" href="#configure-git-using-an-https-token"><i class="fas fa-link"></i></a>
 </h2>
-<p>Load <code>usethis</code> &amp; <code>gitcreds</code>:</p>
-<pre><code><a href="https://usethis.r-lib.org">library(usethis)
-library(gitcreds)</a></code></pre>
-<p>Pick a user name - it does not need to be your GitHub user name. This is the email address linked to your GitHub account:</p>
-<pre><code>use_git_config(user.name = "Corinne Riddell on Dell",
-               user.email = "corinne.riddell@gmail.com")</code></pre>
-<p>After you have installed the packages, you will need to create a personal access token. This is a way to authenticate yourself with GitHub. You will need to do this in order to push and pull from your repository. Run the following:</p>
-<p><code><a href="https://usethis.r-lib.org/reference/github-token.html">usethis::create_github_token()</a></code></p>
-<p>This will bring you to a browser page. Put in a description for your token and then select an expiration date from the drop down - please select <code>No expiration</code>. Scroll down and click the <code>Generate token</code> button. Copy the token that is generated and paste it somewhere where you will be able to access it.</p>
-<p>Go back to R and run the following:</p>
-<p><code><a href="https://gitcreds.r-lib.org/reference/gitcreds_get.html">gitcreds::gitcreds_set()</a></code></p>
-<p>When prompted, paste in the token you copied. This will add your credentials to your cache. The following will print out to the RStudio console:</p>
+<p>In RStudio, load the libraries <code>usethis</code> &amp; <code>gitcreds</code>:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://usethis.r-lib.org">usethis</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://gitcreds.r-lib.org/">gitcreds</a></span><span class="op">)</span></span></code></pre></div>
+<p>Use the function <code><a href="https://usethis.r-lib.org/reference/use_git_config.html">use_git_config()</a></code> to configure Git using an HTTPS token. To
+do so, type the following in the RStudio Console (lower left panel), filling in
+a user name, and email. The user name is up to you – it doesn’t need to be your
+GitHub user name. <code>user.email</code> is the email address linked to your GitHub
+account.</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://usethis.r-lib.org/reference/use_git_config.html">use_git_config</a></span><span class="op">(</span>user.name <span class="op">=</span> <span class="st">"Your user name"</span>,</span>
+<span>               user.email <span class="op">=</span> <span class="st">"your.email.adress@gmail.com"</span><span class="op">)</span></span></code></pre></div>
+<p>Next up, you will need to create a personal access token. This is a way to
+authenticate yourself with GitHub. You will need to do this in order to push and
+pull from your GitHub repository. To do so, run the following in the R console:</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu"><a href="https://usethis.r-lib.org/reference/github-token.html">create_github_token</a></span><span class="op">(</span><span class="op">)</span>  </span></code></pre></div>
+<p>This will bring you to a browser page. Put in a description for your token and
+then select an expiration date from the drop down - please select <code>No expiration</code>.
+Scroll down and click the <code>Generate token</code> button. Copy the token that is
+generated and paste it somewhere where you will be able to access it.</p>
+<p>Go back to R/RStudio and run the following:</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">gitcreds</span><span class="fu">::</span><span class="fu"><a href="https://gitcreds.r-lib.org/reference/gitcreds_get.html">gitcreds_set</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<p>When prompted, paste in the GitHub token you copied from the website. This will
+add your credentials to your cache. The following will print out to the RStudio
+console:</p>
 <pre><code>? Enter password or token: ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  
 -&gt; Adding new credentials...
 -&gt; Removing credentials from cache...
 -&gt; Done.</code></pre>
-<div class="vembedr">
-<div>
-<iframe src="https://www.youtube.com/embed/yedGFJifmdI" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
-</div>
-</div>
 </div>
 <div id="resources" class="section level2" number="2.7">
 <h2>
 <span class="header-section-number">2.7</span> Resources<a class="anchor" aria-label="anchor" href="#resources"><i class="fas fa-link"></i></a>
 </h2>
-<p>You should now be set up to use Git and Github! If you had any issues, here are a few links you can look at for help. If you are still having trouble, please reach out to us before the workshop!</p>
+<p>You should now be set up to use Git and GitHub! If you had any issues, here are
+a few links you can look at for help. If you are still having trouble, please
+reach out to us before the workshop.</p>
 <ul>
 <li><p><a href="https://happygitwithr.com/">Happy Git with R</a></p></li>
 <li><p><a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-ControlLinks">Git Setup Book</a></p></li>
