@@ -7,7 +7,8 @@ library("vembedr")
 This pre-workshop guide is designed to walk you through the initial setup of Git
 on your computer.  
 
-If you have any issues, please reach out to us at datasci.ph@gmail.com.   
+If you have any issues, please reach out to us at c.riddell@berkeley.edu and 
+wilnerl@uw.edu.   
 
 ## Introduction
 
@@ -161,10 +162,13 @@ console:
 
 ## Resources
 
-You should now be set up to use Git and GitHub! If you had any issues, here are 
+You are now set up to use Git and GitHub! If you had any issues, here are 
 a few links you can look at for help. If you are still having trouble, please 
 reach out to us before the workshop.
 
 - [Happy Git with R](https://happygitwithr.com/)  
 
 - [Git Setup Book](https://git-scm.com/book/en/v2/Getting-Started-About-Version-ControlLinks)
+
+If you are attending the live workshop, we will cover the rest of this website
+live. See you there!
