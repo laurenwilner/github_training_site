@@ -61,11 +61,13 @@ relationship between air pollutants and preterm birth:
 
 ```{r, echo=F, out.width='50%'}
 knitr::include_graphics(path = "./figures/Variable-names-example.png")
+library(emoji)
+# emoji(check)
 ```
 
-`r emoji(check)` machine readable   
-`r emoji(check)` human readable   
-`r emoji(check)` play well with default ordering
+* machine readable   
+* human readable   
+* play well with default ordering
 
 Flip through Jenny Bryan's slide set here for a deeper dive into file naming:
 

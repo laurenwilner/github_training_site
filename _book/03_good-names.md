@@ -57,5 +57,17 @@ relationship between air pollutants and preterm birth:
 
 <img src="./figures/Variable-names-example.png" width="50%" />
 
+* machine readable   
+* human readable   
+* play well with default ordering
 
+Flip through Jenny Bryan's slide set here for a deeper dive into file naming:
 
+<iframe src="https://drive.google.com/file/d/1JibUedZzP0ZlrZ-IiqnkWhtwsMICoXBx/preview" width="100%" height="400"></iframe>
+
+### Some bad file naming examples (and associated Git pain)...
+
+<img src="./figures/Space-in-pathways-pain.png" width="100%" />
+
+Here, you can see that there is an R markdown (Rmd) file named "Data Visualization Evaluation Report" that has been modified. The pain arises when I go to `git add` the file. Before each space, I need to include a backslash (which looks ugly). Even worse, the space breaks the auto-complete that happens when I press "tab" to auto-complete the file name. Auto-complete will become your friend when you use Git, and not being able to use it is very sad/infuriating when you have grown to love it.
+**CR: Lets emphasize this in our screenshot?**
