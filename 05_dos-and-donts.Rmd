@@ -1,24 +1,23 @@
-# Do's and Don't's of using GitHub
+# What to track on Git and Github?
 
-## Different approaches to using Github for data analysis
+## Approach 1 : Track statistical code only
 
-### Approach 1 
-**Some people use Git and Github to track changes to their statistical code only.**
-
+Some people use Git and Github to track changes to their statistical code only. 
 Here, they are only tracking their code files in R (.R or .Rmd), or 
 SAS (.SAS), or the corresponding files for whichever language they use. 
 
-They add all other types of files to the git ignore file so that git
-won't track them or accidentally push them to GitHub. This would include:
-data files, word documents, pdfs, image files, etc -- anything else you are 
-putting in the github folder that you don't want to track.
+They add all other types of files to the .gitignore file so that Git
+won't track them or accidentally push them to GitHub. Under this approach, 
+untracked files include: data files, word documents, PDFs, image files, etc -- 
+anything else you are storing looking in the folder tracked by git that you do
+not want pushed to GitHub.
 
-This approach most closely corresponds to how GitHub is used by software developers/ 
-other code writers, but is also an option chosen by researchers and research 
+This approach most closely corresponds to how GitHub is used by software 
+developers/other code writers, and is used by researchers and research 
 teams depending on their objectives.
 
-### Approach 2 
-**Some people Git and GitHub to track a larger set of files. These other files might include data, images, and documents.**
+## Approach 2: Track statistical code, some data files, images, and other documents
+
 When tracking non-code files, here are some rules of thumb:
 
 #### Data files
