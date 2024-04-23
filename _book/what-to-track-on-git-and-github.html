@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chapter 7 What to track on Git and Github? | Git and GitHub for Public Health</title>
+<title>Chapter 9 What to track on Git and Github? | Git and GitHub for Public Health</title>
 <meta name="author" content="Corinne Riddell and Lauren Wilner">
-<meta name="description" content="7.1 Approach 1 : Track statistical code only Some people use Git and Github to track changes to their statistical code only. Here, they are only tracking their code files in R (.R or .Rmd), or SAS...">
+<meta name="description" content="9.1 Approach 1 : Track statistical code only Some people use Git and Github to track changes to their statistical code only. Here, they are only tracking their code files in R (.R or .Rmd), or SAS...">
 <meta name="generator" content="bookdown 0.39 with bs4_book()">
-<meta property="og:title" content="Chapter 7 What to track on Git and Github? | Git and GitHub for Public Health">
+<meta property="og:title" content="Chapter 9 What to track on Git and Github? | Git and GitHub for Public Health">
 <meta property="og:type" content="book">
-<meta property="og:description" content="7.1 Approach 1 : Track statistical code only Some people use Git and Github to track changes to their statistical code only. Here, they are only tracking their code files in R (.R or .Rmd), or SAS...">
+<meta property="og:description" content="9.1 Approach 1 : Track statistical code only Some people use Git and Github to track changes to their statistical code only. Here, they are only tracking their code files in R (.R or .Rmd), or SAS...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chapter 7 What to track on Git and Github? | Git and GitHub for Public Health">
-<meta name="twitter:description" content="7.1 Approach 1 : Track statistical code only Some people use Git and Github to track changes to their statistical code only. Here, they are only tracking their code files in R (.R or .Rmd), or SAS...">
+<meta name="twitter:title" content="Chapter 9 What to track on Git and Github? | Git and GitHub for Public Health">
+<meta name="twitter:description" content="9.1 Approach 1 : Track statistical code only Some people use Git and Github to track changes to their statistical code only. Here, they are only tracking their code files in R (.R or .Rmd), or SAS...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.5.1/transition.js"></script><script src="libs/bs3compat-0.5.1/tabs.js"></script><script src="libs/bs3compat-0.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -48,11 +48,12 @@
 <li><a class="" href="workshop-setup.html"><span class="header-section-number">2</span> Workshop Setup</a></li>
 <li><a class="" href="why-git-and-github.html"><span class="header-section-number">3</span> Why Git and GitHub</a></li>
 <li><a class="" href="git-jargon.html"><span class="header-section-number">4</span> Git Jargon</a></li>
-<li><a class="" href="interacting-with-terminal-and-bash-and-naming-files-and-folders.html"><span class="header-section-number">5</span> Interacting with Terminal and Bash and naming files and folders</a></li>
-<li><a class="" href="setup-of-solo-workflow.html"><span class="header-section-number">6</span> Setup of Solo Workflow</a></li>
-<li><a class="active" href="what-to-track-on-git-and-github.html"><span class="header-section-number">7</span> What to track on Git and Github?</a></li>
+<li><a class="" href="interacting-with-terminal-and-bash.html"><span class="header-section-number">5</span> Interacting with Terminal and Bash</a></li>
+<li><a class="" href="best-practices-around-folder-and-file-names.html"><span class="header-section-number">6</span> Best practices around folder and file names</a></li>
+<li><a class="" href="setup-of-solo-workflow.html"><span class="header-section-number">7</span> Setup of Solo Workflow</a></li>
 <li><a class="" href="group-workflow.html"><span class="header-section-number">8</span> Group Workflow</a></li>
-<li><a class="" href="daily-git-practice.html"><span class="header-section-number">9</span> Daily Git Practice</a></li>
+<li><a class="active" href="what-to-track-on-git-and-github.html"><span class="header-section-number">9</span> What to track on Git and Github?</a></li>
+<li><a class="" href="daily-git-practice.html"><span class="header-section-number">10</span> Daily Git Practice</a></li>
 </ul>
 
         <div class="book-extra">
@@ -60,13 +61,13 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="what-to-track-on-git-and-github" class="section level1" number="7">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="what-to-track-on-git-and-github" class="section level1" number="9">
 <h1>
-<span class="header-section-number">7</span> What to track on Git and Github?<a class="anchor" aria-label="anchor" href="#what-to-track-on-git-and-github"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9</span> What to track on Git and Github?<a class="anchor" aria-label="anchor" href="#what-to-track-on-git-and-github"><i class="fas fa-link"></i></a>
 </h1>
-<div id="approach-1-track-statistical-code-only" class="section level2" number="7.1">
+<div id="approach-1-track-statistical-code-only" class="section level2" number="9.1">
 <h2>
-<span class="header-section-number">7.1</span> Approach 1 : Track statistical code only<a class="anchor" aria-label="anchor" href="#approach-1-track-statistical-code-only"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9.1</span> Approach 1 : Track statistical code only<a class="anchor" aria-label="anchor" href="#approach-1-track-statistical-code-only"><i class="fas fa-link"></i></a>
 </h2>
 <p>Some people use Git and Github to track changes to their statistical code only.
 Here, they are only tracking their code files in R (.R or .Rmd), or
@@ -80,9 +81,9 @@ not want pushed to GitHub.</p>
 developers/other code writers, and is used by researchers and research
 teams depending on their objectives.</p>
 </div>
-<div id="approach-2-track-statistical-code-some-data-files-images-and-other-documents" class="section level2" number="7.2">
+<div id="approach-2-track-statistical-code-some-data-files-images-and-other-documents" class="section level2" number="9.2">
 <h2>
-<span class="header-section-number">7.2</span> Approach 2: Track statistical code, some data files, images, and other documents<a class="anchor" aria-label="anchor" href="#approach-2-track-statistical-code-some-data-files-images-and-other-documents"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9.2</span> Approach 2: Track statistical code, some data files, images, and other documents<a class="anchor" aria-label="anchor" href="#approach-2-track-statistical-code-some-data-files-images-and-other-documents"><i class="fas fa-link"></i></a>
 </h2>
 <p>Some people use Git and Github to track a variety of files including their code,
 <em>some</em> of their data files, as well as images and other documents. This approach
@@ -95,9 +96,9 @@ with your project.</p>
 <p>In many research or public health settings, you are not able to share the data.
 In this case, you can still share other aspects of your project with the wider
 community.</p>
-<div id="data-files-dos-and-donts" class="section level3" number="7.2.1">
+<div id="data-files-dos-and-donts" class="section level3" number="9.2.1">
 <h3>
-<span class="header-section-number">7.2.1</span> Data files do’s and dont’s<a class="anchor" aria-label="anchor" href="#data-files-dos-and-donts"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9.2.1</span> Data files do’s and dont’s<a class="anchor" aria-label="anchor" href="#data-files-dos-and-donts"><i class="fas fa-link"></i></a>
 </h3>
 <p>❌ <strong>Don’t track restricted data!</strong></p>
 <p>Restricted data cannot be posted on GitHub. A best practice is to store it
@@ -116,9 +117,9 @@ easily view the differences to these files when you submit a pull request. You
 could also track things like Excel files but you can’t easily view them on
 GitHub, so some of the benefits of using GitHub do not apply to these files.</p>
 </div>
-<div id="images-dos-and-donts" class="section level3" number="7.2.2">
+<div id="images-dos-and-donts" class="section level3" number="9.2.2">
 <h3>
-<span class="header-section-number">7.2.2</span> Images dos and dont’s<a class="anchor" aria-label="anchor" href="#images-dos-and-donts"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9.2.2</span> Images dos and dont’s<a class="anchor" aria-label="anchor" href="#images-dos-and-donts"><i class="fas fa-link"></i></a>
 </h3>
 <p>You can also track image files (e.g., png, jpeg), such as plots/other figures
 you create for a report. The benefit of tracking figures are the use of the
@@ -138,9 +139,9 @@ all of my repositories for epidemiologic analyses – most images were &lt; 1000
 Some were between 1 MB and 4 MB – these were some maps and some images saved at
 higher resolutions.)</p>
 </div>
-<div id="documents" class="section level3" number="7.2.3">
+<div id="documents" class="section level3" number="9.2.3">
 <h3>
-<span class="header-section-number">7.2.3</span> Documents<a class="anchor" aria-label="anchor" href="#documents"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9.2.3</span> Documents<a class="anchor" aria-label="anchor" href="#documents"><i class="fas fa-link"></i></a>
 </h3>
 <p>You can also track reports and manuscripts using GitHub. If these reports are
 written in a plain text language (e.g., R markdown, LaTeX) then they will render
@@ -155,9 +156,9 @@ them).</p>
 ❌ <strong>Don’t track Word documents (cannot view)</strong></p>
 </div>
 </div>
-<div id="things-you-definitely-do-not-want-to-track" class="section level2" number="7.3">
+<div id="things-you-definitely-do-not-want-to-track" class="section level2" number="9.3">
 <h2>
-<span class="header-section-number">7.3</span> Things you definitely do not want to track<a class="anchor" aria-label="anchor" href="#things-you-definitely-do-not-want-to-track"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9.3</span> Things you definitely do not want to track<a class="anchor" aria-label="anchor" href="#things-you-definitely-do-not-want-to-track"><i class="fas fa-link"></i></a>
 </h2>
 <p>❌ <strong>Anything that is private or restricted or that you would never want to
 inadvertently share.</strong></p>
@@ -171,27 +172,27 @@ code.</li>
 </div>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="setup-of-solo-workflow.html"><span class="header-section-number">6</span> Setup of Solo Workflow</a></div>
-<div class="next"><a href="group-workflow.html"><span class="header-section-number">8</span> Group Workflow</a></div>
+<div class="prev"><a href="group-workflow.html"><span class="header-section-number">8</span> Group Workflow</a></div>
+<div class="next"><a href="daily-git-practice.html"><span class="header-section-number">10</span> Daily Git Practice</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#what-to-track-on-git-and-github"><span class="header-section-number">7</span> What to track on Git and Github?</a></li>
-<li><a class="nav-link" href="#approach-1-track-statistical-code-only"><span class="header-section-number">7.1</span> Approach 1 : Track statistical code only</a></li>
+<li><a class="nav-link" href="#what-to-track-on-git-and-github"><span class="header-section-number">9</span> What to track on Git and Github?</a></li>
+<li><a class="nav-link" href="#approach-1-track-statistical-code-only"><span class="header-section-number">9.1</span> Approach 1 : Track statistical code only</a></li>
 <li>
-<a class="nav-link" href="#approach-2-track-statistical-code-some-data-files-images-and-other-documents"><span class="header-section-number">7.2</span> Approach 2: Track statistical code, some data files, images, and other documents</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#data-files-dos-and-donts"><span class="header-section-number">7.2.1</span> Data files do’s and dont’s</a></li>
-<li><a class="nav-link" href="#images-dos-and-donts"><span class="header-section-number">7.2.2</span> Images dos and dont’s</a></li>
-<li><a class="nav-link" href="#documents"><span class="header-section-number">7.2.3</span> Documents</a></li>
+<a class="nav-link" href="#approach-2-track-statistical-code-some-data-files-images-and-other-documents"><span class="header-section-number">9.2</span> Approach 2: Track statistical code, some data files, images, and other documents</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#data-files-dos-and-donts"><span class="header-section-number">9.2.1</span> Data files do’s and dont’s</a></li>
+<li><a class="nav-link" href="#images-dos-and-donts"><span class="header-section-number">9.2.2</span> Images dos and dont’s</a></li>
+<li><a class="nav-link" href="#documents"><span class="header-section-number">9.2.3</span> Documents</a></li>
 </ul>
 </li>
-<li><a class="nav-link" href="#things-you-definitely-do-not-want-to-track"><span class="header-section-number">7.3</span> Things you definitely do not want to track</a></li>
+<li><a class="nav-link" href="#things-you-definitely-do-not-want-to-track"><span class="header-section-number">9.3</span> Things you definitely do not want to track</a></li>
 </ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/rstudio/bookdown-demo/blob/master/05_dos-and-donts.Rmd">View source <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/rstudio/bookdown-demo/edit/master/05_dos-and-donts.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+<li><a id="book-source" href="https://github.com/rstudio/bookdown-demo/blob/master/07_dos-and-donts.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/rstudio/bookdown-demo/edit/master/07_dos-and-donts.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
 </div>
     </nav>
