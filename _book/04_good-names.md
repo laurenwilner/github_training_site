@@ -1,34 +1,4 @@
-# Interacting with Terminal and Bash and naming files and folders
-
-We have two more things to cover before we dive in to Git and Github. First,
-we will be using Mac's Terminal and Window's Bash for this training. If you 
-have never used these applications before, we introduce them below, so you 
-become familiar with them. Second, we discuss good names for files and folders,
-as good names will for good times when you interact with Terminal and Bash.
-
-## A Terminal window
-
-We will use Terminal and Bash applications to interact with Git on our laptops. 
-Below is a Mac Terminal window. It looks very similar to a Windows Bash window.
-
-```{r, echo=F, out.width='100%'}
-knitr::include_graphics(path = "./figures/Terminal-explainer-1.jpg")
-```
-
-In this training, we supply you with Git code for you to type into 
-your Terminal/Bash windows. 
-
-Once you input a command and hit Enter/return on 
-your keyboard, Terminal/Bash will display output to the screen. Pay attention
-to this output as it will indicate if the command was understood by your 
-computer or if something went wrong. For example, here is the command 
-`git branch`, followed by the output printed to screen:
-
-```{r, echo=F, out.width='100%'}
-knitr::include_graphics(path = "./figures/Terminal-explainer-2.jpg")
-```
-
-## Best practices around folder and file names
+# Best practices around folder and file names
 
 When you are working in Terminal/Bash, it is important to have good folder and 
 file names to make your life easier. Recall when you name a variable in SAS or 
@@ -60,11 +30,7 @@ separate words within field.
 
 For example, here are some of the file names in the "pollution-ptb" folder:
 
-```{r, echo=F, out.width='50%'}
-knitr::include_graphics(path = "./figures/Variable-names-example.png")
-library(emoji)
-# emoji(check)
-```
+<img src="./figures/Variable-names-example.png" width="50%" />
 
 These files are: 
 
@@ -78,9 +44,7 @@ Flip through [Jenny Bryan's](https://jennybryan.org/about/) slide set here for a
 
 ### Bad file naming examples
 
-```{r, echo=F, out.width='100%'}
-knitr::include_graphics(path = "./figures/Space-in-pathways-pain.png")
-```
+<img src="./figures/Space-in-pathways-pain.png" width="100%" />
 
 Here, you can see that there is an R markdown (Rmd) file named "Data Visualization Evaluation Report" that has been modified. The pain arises when I go to `git add` the file. Before each space, I need to include a backslash (which looks ugly). Even worse, the space breaks the auto-complete that happens when I press "tab" to auto-complete the file name. Auto-complete will become your friend when you use Git, and not being able to use it is very sad/infuriating when you have grown to love it.
 **CR: Lets emphasize this in our screenshot?**
