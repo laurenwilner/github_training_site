@@ -1,4 +1,4 @@
-# Setup of Solo Workflow
+# Solo Workflow
 
 
 ## Outline for this section    
@@ -27,7 +27,8 @@ Tell R whether to delete the file.
 * RStudio will then open. Click the code folder in the file viewer. Then, click
 the filename "01_Analyze-life-expectancy.R" to open this file in RStudio.
 * Run all the code in the .R file you just downloaded. Note that it created a figure and
-saved it into the images sub-folder.
+saved it into the images sub-folder. Alternatively, open the SAS file 
+"01_Analyze-life-expectancy.sas" to run the equivalent SAS code.
 
 Now you are set up with some existing code and things that you might want to start
 tracking on GitHub. The next thing to do is make a folder on GitHub that will 
@@ -49,8 +50,8 @@ main page.
 
 * From the main page of your repository and click on the green `Code` button.  
 * You'll see a URL that starts with https://. Push the icon with two overlapping
-squares to copy the URL to your clipboard. [Lauren, you had written this differently and had them use the SSH one... is there a reason to use one over the other?]
-* Open terminal (Mac) or bash (Windows) program. Navigate to where you want to place 
+squares to copy the URL to your clipboard.
+* Open Terminal (Mac) or Bash (Windows) program. Navigate to where you want to place 
 this repository using the `cd {folder_name}` command. Then write 
 `git clone {paste the url you copied here}` and
 then press the return/enter button. The following will display in Terminal/Bash
@@ -93,7 +94,7 @@ Biostat-MBP13-20:life-expectancy corinneriddell$git branch
 
 ## Make your first branch
 
-Set yourself up in a new branch off of main. In terminal/bash:
+Set yourself up in a new branch off of main. In Terminal/Bash:
 
 * Type `git checkout -b may3-XY`, replacing XY with your initials. (If today 
 is not May 3, replace "may3" with today's date.)
@@ -121,7 +122,7 @@ Copy the code/ data/ and images/ sub-folders from your "existing-project" folder
 
 ## Commit the changes that you made and push them to GitHub
 
-Go back over to terminal or bash. Type `git status`. The output will tell you 
+Go back over to Terminal or Bash. Type `git status`. The output will tell you 
 what has been changed. It tells us that there are untracked files:
 
 ```
@@ -183,8 +184,8 @@ Commit these changes locally: `git commit -m 'your commit message' `, replace
  create mode 100644 life-expectancy.Rproj
  ```
  
-Push these changes to GitHub: `git push origin your-branch-name`, replacing 
-your-branch-name with the name of your branch. If you don't remember your branch's
+Push these changes to GitHub: `git push origin {branch-name}`, replacing 
+{branch-name} with the name of your branch. If you don't remember your branch's
 name, type `git branch` to print it to the screen and then the `git push` command.
 
 ```
@@ -210,10 +211,13 @@ You have successfully pushed your changes to GitHub!
 Navigate to GitHub.com to your repository's URL. There should be a pale yellow 
 banner informing you about the changes you just pushed. Click the button 
 "Compare & pull request". Notice that the title is your commit message from the 
-previous step. Scroll down. Look at the files that have been added. 
+previous step. Scroll down. Look at the files that have been added: 
+
    * The code is all shown in green, indicating that every line of code is new. 
-   * The csv data file has been added but is not rendered because it is large
+   * The csv data file has been added but is not rendered because it is large.
    * The png file is displayed.
+
+To merge your changes into main: 
 
 * Click on the green "Create pull request" button. Github will check that it 
 is able to merge your branch with main without problems. Note the message "This
@@ -245,7 +249,7 @@ set of tracked changes.
 The first thing we need to do is make sure we are in a good place with git and
 GitHub:
 
-* Open up bash or terminal and navigate to the life-expectancy folder using 
+* Open up Bash or Terminal and navigate to the life-expectancy folder using 
 the `cd` command.
 * Check which branch you are currently on using `git branch`. All local branch 
 names are displayed. The asterisk is next to the branch we are currently on. 
@@ -299,8 +303,6 @@ locally:
 Biostat-MBP13-20:github-training corinneriddell$ git branch -d may3-cr
 Deleted branch may3-cr (was 761bb97).
 ```
-
-**CORINNE TODO: ON HOME COMPUTER DELETE THE MAY3 BRANCH FROM THE LE REPO SO CAN GRAB THE CORRECT CODE AFTER "WAS" AND REPLACE IN THE ABOVE.**
 
 ## Pull down the changes from main
 
@@ -356,13 +358,13 @@ want to:
 gender for each state and,
 * save the above table as a CSV file into the data folder.
 
-* Re-launch RStudio by double-clicking the .Rproj file in your file viewer 
+To do so, re-launch RStudio by double-clicking the .Rproj file in your file viewer 
 window. Navigate to the code file 01_Analyze-life-expectancy.R and insert the 
 following R code (if working in R) or SAS code (if working in SAS) to make and save this table:
 
-```
-# R Code
 
+```r
+# R Code
 # Calculate the LE for each state, separately by race and gender:
 le_averages <- le_data %>% 
   group_by(state, race, sex) %>%
@@ -403,7 +405,7 @@ RUN;
 Re-run your previous R code (highlight all the previous code and hit 
 command + Return [Mac] or control + Enter [Windows]). Then run the newly-added 
 code line by line to see what it is doing. Save the updated .R file by pushing
-the save icon. Track the changes using Git. Go to the bash/terminal window. Type "git status".
+the save icon. Track the changes using Git. Go to the Bash/Terminal window. Type "git status".
 Which files have been modified? Which files are new and untracked?
 
 ```
@@ -660,6 +662,7 @@ Biostat-MBP13-20:life-expectancy corinneriddell$
 Go through the process to start a pull request. On the pull request page, 
 scroll down to see the "diffs" in the data and image. Pay close attention to 
 the files that were changed:
+
 * use the "2-up" "swiper" and "onion skin" tools to see the changes to the saved figure.
 How did the data changed? Which tool do you prefer?
 * can you see which rows of data were affected by the change?
@@ -667,10 +670,17 @@ How did the data changed? Which tool do you prefer?
 * anything else you noticed?
 
 
-## To be worked in
 
-  (vi) Open your .gitignore file in a text editor that you are comfortable with (e.g. nano or notepad). Add the following two lines to it:  **LBW COMMENT: CORINNE, DO WE WANT THEM TO ADD ANYTHING TO THEIR GIT IGNORE?**  
+## Summary
 
+Congratulations, you have successfully worked in Git and GitHub solo! What a 
+journey. You now know how to transition your existing work to being tracked 
+using Git and GitHub, and how to track new changes using `git add`, `git commit`, 
+and push them to your GitHub using `git push origin {branch}`. You also learned
+how to pull these changes back into main using `git pull origin main`, and how to
+create, switch, and delete branches.
 
-
-
+There are a lot of steps to remember, but if you do this for a week it will 
+become easier. To help you get started, feel free to use the "Daily Git Practice" 
+guide (linked on the left), which provides a handy guide covering all the 
+commands covered in this section.
