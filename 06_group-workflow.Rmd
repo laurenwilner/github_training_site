@@ -2,133 +2,132 @@
 
 ## Outline for this section
 
-Now, we're going to learn about working collaboratively using Git and GitHub.  
+In the previous section, you got up and running with working alone in Git and 
+GitHub. During this section, we're going to learn how to collaborate with others
+using Git and GitHub. We will: 
 
-- Setting up a shared repository
-- First Commit
-- Collaborative Routes
+- Set up a shared repository
+- Make a first commit
+- Cover three routes for collaboration: 
     - Independent Work
     - Code Review
     - Direct Edits
-- Big picture: Tracking Changes outside of Git
-- Practice
+- Practice resolving a merge conflict
 
-## Set up
+## Setup
 
-- **Find a partner:** One of you will be the *lead researcher*, and the other will be your *colleague*.
-- **Decide roles:** The lead researcher will create the repository, and the colleague will contribute to it.
+To get the most out of this section of the training, you need a training buddy.
+One of you will be the *lead researcher*, and the other will be the *colleague*.
+The lead researcher will create the repository, and the colleague will contribute to it.
 
-## Create your repository: Person 1
-*One of you will follow these instructions and one will follow instructions on the next slide.*
+**Lead Researcher: Create a new repository on GitHub**
 
-### **Lead researcher (Person 1):** Create a new repository on GitHub.
 - Go to GitHub, click on the "+" icon in the top-right corner, and select `New repository`.
-- Follow the same instructions as we did in the solo exercise to create a new repository (add a README, choose a license, etc.).
-- Add your colleague as a collaborator by going to `Settings` > `Collaborators` > `Add people`. Ask your colleague for their GitHub username and add them to this repository.
+- Follow the same instructions as we did in the solo workflow to create a new 
+repository (add a README, choose a license, etc.).
+- Add your colleague as a collaborator by going to 
+`Settings` > `Collaborators` > `Add people`. Ask your colleague for their 
+GitHub username and add them to this repository.
 
-## Join the repository: Person 2
-*If you did not follow the person 1 instructions, follow these!*
+**Colleague: Join the repository**
 
-### **Person 2 (Colleague):** Accept the invitation to collaborate on the repository.
 - Check your email for an invitation to collaborate on the repository.
 - Accept the invitation by clicking on the link in the email.
 
-## Clone the repository
-### **Both:** Clone the repository 
-- Go to the main page of your repository clicking on the green `Code` button and copying the URL. Then, navigate to the location where you will clone your repository and run the following command in your terminal:
+**Both: Clone the repository**
+
+- Go to the main page of the repository clicking on the green `Code` button and
+copying the URL. Then, in Bash/Terminal navigate to the location where you will
+clone your repository and run the following command:
 
 ```bash
 git clone {repository URL}
 ```
 
-## Check the status of your repository
+## Get oriented to the new directory
 
-Now that you both have the repository cloned, we will set ourselves up following the same steps as we did this morning. Let's redo what we did this morning:
-
-Type `git status`. The results shows you that no changes have been made yet:
+- Navigate into your repository by typing cd {repo-name}/
+- Type `git status`. The results shows you that no changes have been made yet:
 
 ```bash
-Biostat-MBP13-20:life-expectancy corinneriddell$ git status
+Biostat-MBP13-20:collabo-repo corinneriddell$ git status
 On branch main
 Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
 ```
 
-## Determine the branch you are on
-Type `git branch`. This shows you that you are currently on the main branch.
+- Type `git branch`. This shows you that you are currently on the main branch.
 
 ```bash
 Biostat-MBP13-20:life-expectancy corinneriddell$git branch
 * main
 ```
 
-## Create a new branch
-
-Now that we know that our repository is cloned, up to date, and on main, we can create a new branch to work on. 
-
+- Create a new branch. Now that we know that our repository is cloned, up to 
+date, and on main, we can create a new branch to work on. 
 - **Both:** Create a new branch with the following command:
 
 ```bash
 git checkout -b {new-branch-name}
 git branch
 ```
-Typing `git branch` will show you that you are now on the new branch, though only the first line was *necessary* to create this branch. 
+
+Typing `git branch` will show you that you are now on the new branch, though 
+only the first line was *necessary* to create this branch. 
 
 ## Collaborative Routes
 
-Now we will go through three different ways of working collaboratively on a project:
+In general, there are three ways to work collaboratively on a project:
 
 1. **Independent Work:** You each work on separate files and merge your own changes.
 2. **Code Review:** Submit pull requests for code reviews without direct edits.
 3. **Direct Edits:** Submit pull requests and make direct changes to each other's code.
 
-## Collaborative Routes
+While these different routes may seem ambiguous right now, you can think of pull
+requests as akin to "Track Changes" in Microsoft Word or "Comments" in Google Docs.  
 
-While these different routes may seem ambiguous right now, you can think of pull requests as akin to "Track Changes" or "Comments" in Microsoft Word or Google Docs.  
+**Collaborative route #1 (Independent work)** is like creating several separate 
+documents and storing them in a shared folder for you both to view.  
 
-**Collaborative route #1 (Independent work)** is like creating two separate documents and having them in a shared folder.  
+**Collaborative route #2 (Code review)** is like having a shared document where 
+you can leave comments for each other - like when you leave comments on a
+MS Word document for your colleague.  
 
-**Collaborative route #2 (Code review)** is like having a shared document where you can leave comments for each other - think about when you leave comments on a word document for your colleague.  
+**Collaborative route #3 (Direct edits)** is like having a shared document where
+you can make changes directly to your colleague's work - think track changes.
 
-**Collaborative route #3 (Direct edits)** is like having a shared document where you can make changes directly to your colleague's work - think track changes.
+We will cover each collaborative route below.
 
 ## Collaborative Route #1: Independent work  
 
-You each work on separate files and merge your own changes. The repository will have two files, one that each of you made! 
+You each work on separate files and merge your own changes. To start, the 
+repository will have two files, one that each of you made. In general, you could
+maintain several files, each of your working on the specific files that make 
+sense but never editing each other's files.
 
-## Collaborative Route #1: Add a file
+Let's practice this workflow now:
 
-- **Lead researcher:** Save the code file that you brought to this workshop in your repository! 
-- **Colleague:** Save the code file that you brought to this workshop in your repository! 
-
-Your files should have different names but if they do not, please make sure to rename one of them! 
-
-## Collaborative Route #1: Commit our new file 
-
-- **Both:** Add, commit, and push your file to GitHub as shown.
+- **Lead researcher:** Save a code file that you brought to this workshop in the shared repository. 
+- **Colleague:** Save a code file that you brought to this workshop in the shared repository. If 
+your file has the same name as the lead researcher's file, rename it now.
+- **Both:** Add, commit, and push your respective files to GitHub:
 
 ```bash
-git add {file-name}.R
+git add {file-name}
 git commit -m "Initial commit with {file-name}"
 git push origin {new-branch-name}
 ```
 
-## Collaborative Route #1: Create a pull request  
+If the output from the push command looks successful, you are now ready to create
+a pull request following the same process we used in the solo workflow section.
 
-We'll do the same thing we did earlier today: 
-
-- Navigate to GitHub.com to your repository's URL. There should be a pale yellow 
+- **Both:** Navigate to GitHub.com to your repository's URL. There should be a pale yellow 
 banner informing you about the changes you just pushed. Click the button 
 "Compare & pull request". Notice that the title is your commit message from the 
 previous step. Scroll down. Look at the files that have been added. 
-* The code is all shown in green, indicating that every line of code is new. 
-
-## Collaborative Route #1: Merge the changes from your branch into main
-
-**Both**: 
-Again, this is the same as what you did earlier today: 
-
+- The code is all shown in green, indicating that every line of code is new. 
+- Merge the changes from your branch into main
 - Click on the green "Create pull request" button. Github will check that it 
 is able to merge your branch with main without problems. Note the message "This
 branch has no conflicts with the base branch". This means you are good to go!
@@ -136,40 +135,48 @@ branch has no conflicts with the base branch". This means you are good to go!
 - Click on the green "Confirm merge" button. 
 - Click the "Delete branch" button.
 
-## Collaborative Route #1: Let's look at our main branch now
+Both of your files have been merged into the main branch. Let's take a look. Go 
+into the main `Code` page and take a look at the code on `main` (which should be
+the only existing branch in your repository). You should see the files that 
+*both* of you created in the previous steps.
 
-**Both**:  
--  Go into the main `Code` page and take a look at the code on `main` (which should be the only existing branch in your repository).  
-- You should see the files that *both* of you created in the previous steps.
+**Recap**
 
-## Collaborative Route #1: Recap
+* You have now successfully completed the first collaborative route. You each 
+created a file, committed it, and merged it into the main branch. You worked on 
+different files and had no merge conflicts or interaction, but now have access 
+to each other's work! 
 
-You have now successfully completed the first collaborative route. You each created a file, committed it, and merged it into the main branch. You worked on different files and had no merge conflicts or interaction, but now have access to each other's work! 
+* In this workflow, you could continue working independently on your file in 
+the shared repo and add other files as you go along. 
 
-
-
+* `r emo::ji("exclamation")` Take care: Now that you are working together, be sure
+to use `git pull origin main` to grab any changes your colleague made to the 
+repository. You should be doing this already, but it is even more important 
+when you are working together so you can stay up to date on whatever changes
+have been made to the repository.
 
 ## Collaborative Route #2: Code Review
 
-In this code review style collaborative approach, the lead researcher will make a new file, make changes to that file and push these to GitHub. The colleague will then review these changes by submitting comments on the pull request.
+In Collaborative Route #2, the lead researcher will make a new file, make 
+changes to that file and push these to GitHub. The colleague will then review 
+these changes by submitting comments on the pull request. 
 
-## Collaborative Route #2: Create a new branch  
+Let's practice this workflow now:
 
-**Lead researcher:** Create a new branch with the following command:
+**Lead researcher steps:** 
+
+- Create a new branch with the following command:
 
 ```bash
 git checkout -b {new-branch-name}
 git branch
 ```
-Typing `git branch` will show you that you are now on the new branch, though only the first line was *necessary* to create this branch. 
 
-## Collaborative Route #2: Lead Researcher makes changes to a file
-
-- **Lead Researcher:** Make a change to the file you used above. You can add in a comment or a new line of code - something small. Save your file.
-
-## Collaborative Route #2: Push Your Changes
-
-- **Lead Researcher:** Add, commit, and push your new file or changes to your branch on GitHub.
+- Make a change to the file you added in the previous step.
+You can add in a comment or a new line of code - something small is good. Save 
+your file.
+- Add, commit, and push your changes to your branch on GitHub:
 
 ```bash
 git add {file-name}
@@ -177,47 +184,57 @@ git commit -m "{your description of what you changed}"
 git push origin {your-branch-name}
 ```
 
-## Collaborative Route #2: Create a Pull Request
-
-- **Lead Researcher:** Go to your GitHub repository page. You should see a notification about your recent push. Click on "Compare & pull request" next to your branch.
-- Fill in the details of the pull request, explaining what you've added or changed and why. 
-- **This time, add your colleague as a reviewer. We will not immediately merge this in this time!**
+- Go to your GitHub repository page. You should see a notification about your 
+recent push. Click on "Compare & pull request" next to your branch.
+- `r emo::ji("exclamation")` **NEW STEP ALERT**: Fill in the details of the pull
+request, explaining what you've added or changed and why. 
+- `r emo::ji("exclamation")` **NEW STEP ALERT**: Add your colleague as a 
+reviewer. We will not immediately merge this in this time!
 - Submit the pull request.
 
-## Collaborative Route #2: Colleague Reviews the Pull Request
+**Colleague steps:**
 
-- **Colleague:** Once the pull request is submitted, you should receive an email telling you that your lead researcher requested your review on PR #{X}.
-- Click `view it on GitHub` and it will bring you to GitHub and there will be a yellow box at the top. 
+- Once the pull request is submitted, the colleague should receive an email telling them 
+that the lead researcher requested their review on PR #{X}.
+- Click `View it on GitHub` and it will bring you to GitHub and there will be a 
+yellow box at the top. 
 - Click on `Add your review` in the yellow box. Then click `Review changes` in green in the right corner. 
-- Leave comments on the pull request by clicking the plus signs next to chunks of code. You can leave multiple comments Your feedback can include suggestions, questions, or general feedback about the code. Focus on clarity, efficiency, and any potential errors you might notice.
+- Leave comments on the pull request by clicking the plus signs next to chunks 
+of code. You can leave multiple comments. Your feedback can include suggestions,
+questions, or general feedback about the code. Focus on clarity, efficiency, and 
+any potential errors you might notice.
 - When you're finished commenting, click `Finish your review` in green in the top right. 
-
-## Collaborative Route #2: Colleague Reviews the Pull Request  
-
 - Submit your comments. You can either:  
-    1. Comment: This submits feedback without explicitly approving the PR.
-    2. Approve: This submits feedback and approves the PR for merging into main.
-    3. Request Changes: Submit feedback that the other person needs to address before they can merge into main.
+    1. **Comment:** This submits feedback without explicitly approving the pull request.
+    2. **Approve:** This submits feedback and approves the pull request for merging into main.
+    3. **Request Changes:** Submit feedback that the other person must address before they can merge into main.
+    
+Let's take a moment to talk briefly about each of these review options.
 
-## Collaborative Route #2: Pull Request Review Options
-1. Comment: This submits feedback without explicitly approving the PR.
-- This will send the lead researcher an email with your comments on their code. The lead researcher can click `View it on GitHub` to see your comments. They can reply and/or merge the PR into main at this point.
-- This can be used either as an FYI or to start a conversation about the code - e.g. maybe a certain function is new to you so you want to ask about why they chose to use that.
-- You may want to use this if you have a workflow where you always want the person who wrote the code to do the merging.
+**Comment:** This submits feedback without explicitly approving the pull request.
+This will send the lead researcher an email with your comments on their code. 
+The lead researcher can click `View it on GitHub` to see your comments. They can
+reply and/or merge the pull request into main at this point. This can be used 
+either as an FYI or to start a conversation about the code - e.g. maybe a 
+certain function is new to you so you want to ask about why they chose to use that.
+You may want to use this if you have a workflow where you always want the person
+who wrote the code to do the merging.
 
-## Collaborative Route #2: Pull Request Review Options
-2. Approve: This submits feedback and approves the PR for merging into main.
-- This will send the lead researcher an email with your comments that will also indicate that the PR is approved. 
-- This option can be used as an FYI - e.g. telling them about an alternate function that they *could* use but do not have to.
-- Either person can merge the PR into main. You can establish norms around how these work with your colleagues - there is no right answer! 
+**Approve:** This submits feedback and approves the PR for merging into main. 
+This will send the lead researcher an email with your comments that will also 
+indicate that the pull request is approved. This option can be used as an FYI, 
+e.g., telling them about an alternate function that they *could* use but do not 
+have to. Either person can merge the pull request into main. You can establish
+norms around how these work with your colleagues - there is no right answer! 
 
-## Collaborative Route #2: Pull Request Review Options
-3. Request Changes: Submit feedback that the other person needs to address before they can merge into main.
-- This will send the lead researcher an email with your comments that will also indicate that the PR needs changes.
-- This option can be used if you see something that needs to change before the PR can be merged - e.g. a function that is not working as intended.
-- The lead researcher will need to address your comments before they can merge the PR into main.
-
-*NOTE: Technically, the PR could be merged in without the changes, but this is not good practice.*
+**Request Changes:** Submit feedback that the other person needs to address 
+before they can merge into main. This will send the lead researcher an email 
+with your comments that will also indicate that the PR needs changes. This 
+option can be used if you see something that needs to change before the pull 
+request can be merged - e.g. a function that is not working as intended. The 
+lead researcher will need to address your comments before they can merge the 
+pull request into main. *Technically, the PR could be merged in without the 
+changes, but this is not good practice.*
 
 ## Collaborative Route #2: Your turn [CR/LBW: THIS SLIDE NEEDS TO BE REFINED]  
 
@@ -295,61 +312,73 @@ This route had you directly edited your colleague's code. This can be very usefu
 
 ## Merge conflicts
 
-## Practicing a merge conflict
+Merge conflicts can be a source of stress for many GitHub users. While they can
+be scary, you are in good company when you have your first merge conflict --
+everyone has a merge conflict eventually. 
 
-This occurs when XXX. 
+What is a merge conflict, you might ask, and how does it happen? Well, a merge 
+conflict can happen if you and a colleague edit the same location on the same 
+file. If colleague #1 merges their changes into main, then when colleague #2 
+goes to merge their changes into main, GitHub doesn't know what to do. This can
+occur if you both worked from the same version of main. Once colleague #1 merged
+in their changes, colleague #2's changes can't be merged in without making 
+some decisions regarding whose changes should be kept.
 
-## Practicing a merge conflict
+If this seems a little convoluted, it is your lucky day. We will set the stage
+for a merge conflict and practice resolving it with our buddy. 
 
-**Both**: 
-- Both partipiants should be on `main` now. If you are not, please do `git checkout main` and `git pull origin main` to make sure you are up to date.
-- Both participants make and checkout a new branch: `git checkout -b {new-branch-name}`
-- Both participants make a change to the same line of code in the same file. You can choose whichever file you want to use. Edit the last line of the file to make this easier to use for practice. 
-- **Lead Researcher**: Add, commit, and push your changes to your branch. Create a pull request and merge your changes into main. 
-- **Colleague**: Add, commit, and push your changes to your branch. Create a pull request and you will not be able to merge into main. 
+**Creating a merge conflict**
 
-## Practicing a merge conflict
+- Both researchers should be on `main` now. If you are not, please do 
+`git checkout main` and `git pull origin main` to make sure you are up to date.
+- Make and checkout a new branch: `git checkout -b {new-branch-name}`. Each of
+you should call their branch something different from the other researcher.
+- Together, choose one file and one line location on the file that you will each
+edit separately on your laptops.
 
-**Colleague**: You will see the following. 
+Then, the lead researcher will first add, commit, and push their changes to 
+their branch. Then, they will create a pull request and merge their changes into
+main. After this, the colleague will add, commit, and push their changes to 
+their branch. Then, they will create a pull request. 
 
-```{r, echo=F, out.width='75%'}
+`r emo::ji("scared")` Merge conflict! 
+
+You will not be able to merge into main. 
+
+We will walk you through how to resolve the merge conflict. 
+
+The colleague with the conflict will see the following. Colleague, follow these steps!
+Lead researcher, watch your colleague's screen to see how this looks:
+
+```{r, echo=F, out.width='100%'}
 knitr::include_graphics("./figures/merge-conflict-1.png")
 ```
 
-## Practicing a merge conflict
+Click on `View Pull Request` to begin resolving the merge conflict. When you click on `View Pull Request`, you will see the following: 
 
-**Colleague**: Click on `View Pull Request` to begin resolving the merge conflict. When you click on `View Pull Request`, you will see the following. 
-
-```{r, echo=F, out.width='75%'}
+```{r, echo=F, out.width='100%'}
 knitr::include_graphics("./figures/merge-conflict-2.png")
 ```
 
-## Practicing a merge conflict
-
-**Colleague**: Click on `Resolve conflicts` to begin resolving the merge conflict. When you click on `Resolve conflicts`, you will see the following:
+Click on `Resolve conflicts` to begin resolving the merge conflict. When you click on `Resolve conflicts`, you will see the following:
 
 ```{r, echo=F, out.width='75%'}
 knitr::include_graphics("./figures/Example-merge-conflict-github.png")
 ```
 
+Together, look at the code in the file. Decide which edits you will keep. For
+this exercise, it is arbitrary which edits you keep. However, in practice you 
+will make this decision in an informed way. 
 
-## Practicing a merge conflict
-
-**Both**: Together, look at the code in the file. Decide which edits you will keep. For this exercise, it is abritrary which edits you keep. However, keep in mind that in real life you will make this decision in an informed way. 
-
-When you choose what to keep, take out all of the `>>>` and `===` and `<<<` lines, as well as the lines from the person whose code you are not keeping. When you are finished, click `Mark as resolved` in the top right corner. 
-
-Note: You are still doing all of this on GitHub, not in your terminal.
-
-## Practicing a merge conflict
-
-Now that you have clicked `Mark as resolved`, you will see a green checkmark next to the file name, and it will say `Resolved` in the top right corner. There will also be a green button in the top right corner that says `Commit merge`. Click on this button. 
-
-This brings you back to the page you are familiar with, where you can merge into main. Click `Merge pull request` and then `Confirm merge`. You can delete the branch as you usually do. 
+When you choose what to keep, delete the `>>>` and `===` and `<<<` lines, as 
+well as the lines from the person whose code you are not keeping. When you are 
+finished, click `Mark as resolved` in the top right corner. Now that you have 
+clicked `Mark as resolved`, you will see a green check mark next to the file 
+name, and it will say `Resolved` in the top right corner. There will also be a 
+green button in the top right corner that says `Commit merge`. Click on this 
+button. This brings you back to the page you are familiar with, where you can 
+merge into main. Click `Merge pull request` and then `Confirm merge`. You can 
+delete the branch as you usually do. 
 
 You have just resolved your first merge conflict! 
-
-**CR/LBW: add conclusion slides**
-**make sure to mention that if all else fails, they should blow up their repo.**
-
 
