@@ -4,15 +4,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chapter 9 Daily Git Practice: Cheat Sheet | Git and GitHub for Public Health</title>
+<title>Chapter 9 Daily Git Practice | Git and GitHub for Public Health</title>
 <meta name="author" content="Corinne Riddell and Lauren Wilner">
 <meta name="description" content="Use these instructions each day you are working in your repository for good practice! Open Terminal (Mac) or Bash (Windows). Navigate to your repository using cd. When you get to your directory,...">
 <meta name="generator" content="bookdown 0.39 with bs4_book()">
-<meta property="og:title" content="Chapter 9 Daily Git Practice: Cheat Sheet | Git and GitHub for Public Health">
+<meta property="og:title" content="Chapter 9 Daily Git Practice | Git and GitHub for Public Health">
 <meta property="og:type" content="book">
 <meta property="og:description" content="Use these instructions each day you are working in your repository for good practice! Open Terminal (Mac) or Bash (Windows). Navigate to your repository using cd. When you get to your directory,...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chapter 9 Daily Git Practice: Cheat Sheet | Git and GitHub for Public Health">
+<meta name="twitter:title" content="Chapter 9 Daily Git Practice | Git and GitHub for Public Health">
 <meta name="twitter:description" content="Use these instructions each day you are working in your repository for good practice! Open Terminal (Mac) or Bash (Windows). Navigate to your repository using cd. When you get to your directory,...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -43,16 +43,26 @@
 </form>
 
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
-        <ul class="book-toc list-unstyled"><li><a class="" href="index.html"><span class="header-section-number">Chapter 9</span> Daily Git Practice: Cheat Sheet</a></li></ul>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Git and GitHub for Public Health</a></li>
+<li><a class="" href="workshop-setup.html"><span class="header-section-number">2</span> Workshop Setup</a></li>
+<li><a class="" href="why-git-and-github.html"><span class="header-section-number">3</span> Why Git and GitHub</a></li>
+<li><a class="" href="git-jargon.html"><span class="header-section-number">4</span> Git Jargon</a></li>
+<li><a class="" href="interacting-with-terminal-and-bash-and-naming-files-and-folders.html"><span class="header-section-number">5</span> Interacting with Terminal and Bash and naming files and folders</a></li>
+<li><a class="" href="setup-of-solo-workflow.html"><span class="header-section-number">6</span> Setup of Solo Workflow</a></li>
+<li><a class="" href="what-to-track-on-git-and-github.html"><span class="header-section-number">7</span> What to track on Git and Github?</a></li>
+<li><a class="" href="group-workflow.html"><span class="header-section-number">8</span> Group Workflow</a></li>
+<li><a class="active" href="daily-git-practice.html"><span class="header-section-number">9</span> Daily Git Practice</a></li>
+</ul>
 
         <div class="book-extra">
           <p><a id="book-repo" href="https://github.com/rstudio/bookdown-demo">View book source <i class="fab fa-github"></i></a></p>
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="daily-git-practice-cheat-sheet" class="section level1" number="9">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="daily-git-practice" class="section level1" number="9">
 <h1>
-<span class="header-section-number">9</span> Daily Git Practice: Cheat Sheet<a class="anchor" aria-label="anchor" href="#daily-git-practice-cheat-sheet"><i class="fas fa-link"></i></a>
+<span class="header-section-number">9</span> Daily Git Practice<a class="anchor" aria-label="anchor" href="#daily-git-practice"><i class="fas fa-link"></i></a>
 </h1>
 <p>Use these instructions each day you are working in your repository for good practice!</p>
 <ol style="list-style-type: decimal">
@@ -65,20 +75,21 @@ If there are files with changes to be committed, you will need to figure out if
 you want to commit those changes or if you want to discard them. If you want to
 discard them, type <code>git restore {file-name}</code> to discard changes to that file. Do
 this for all files until you have a clean directory if you are sure you don’t
-want to track those changes. If you want to commit them, follow steps X through Y
+want to track those changes. If you want to commit them, follow steps 10 through 19
 before proceeding to Step 2.</li>
-<li>Type <code>git checkout main</code> and <code>enter</code>.</li>
-<li>Type <code>git pull origin main</code> and <code>enter</code>. This will pull the changes you made
+<li>Type <code>git checkout main</code>.</li>
+<li>Type <code>git pull origin main</code>. This will pull the changes you made
 the day before and get you ready to start on a clean branch today.</li>
-<li>Delete the previous day’s branch. Type <code>git branch -d {branch-name}</code> and
-<code>enter</code>. Remember to replace <code>{branch-name}</code> with your previous day’s branch
+<li>Delete the previous day’s branch. Type <code>git branch -d {branch-name}</code>.
+Remember to replace <code>{branch-name}</code> with your previous day’s branch
 name. If you don’t remember what it was named, type <code>git branch</code> to display a
 list of all the branches you have.</li>
 <li>Create and checkout a new branch by typing <code>git checkout -b {new-branch-name}</code>.
 Replace the <code>{new-branch-name}</code> with a new branch name. This may be something
 like <code>{your-initials_date}</code>.</li>
-<li>Do your work. Try to keep “your work” a discrete task that you can summarize
-with one commit message.</li>
+<li>Do your work. Try to perform “your work” as a discrete task that you can summarize
+with one commit message. If you have more to do, then make multiple commits in
+one day.</li>
 <li>Once you are done, go back to Terminal/Bash (where you should already be in
 your repository directory) type <code>git status</code> to see which files have been modified
 and should be staged for a commit. You may have some untracked files that you
@@ -106,15 +117,16 @@ that you just worked on! It is now up on GitHub!</li>
 </ol>
 </div>
   <div class="chapter-nav">
-<div class="empty"></div>
+<div class="prev"><a href="group-workflow.html"><span class="header-section-number">8</span> Group Workflow</a></div>
 <div class="empty"></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <div id="book-on-this-page"></div>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#daily-git-practice"><span class="header-section-number">9</span> Daily Git Practice</a></li></ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-          
+<li><a id="book-source" href="https://github.com/rstudio/bookdown-demo/blob/master/07_git-cheat-sheet.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/rstudio/bookdown-demo/edit/master/07_git-cheat-sheet.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
 </div>
     </nav>
