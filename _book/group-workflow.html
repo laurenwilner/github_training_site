@@ -357,95 +357,6 @@ some decisions regarding whose changes should be kept.</p>
 <p>[insert simple image of merge conflict here]</p>
 <p>If this seems a little convoluted, it is your lucky day. We will set the stage
 for a merge conflict and practice resolving it with our buddy.</p>
-<p>In this scenario, after your colleague pushes their code, they will submit a
-pull request to you, and you will directly edit their code if needed. This may
-be useful if one person is stuck on a certain piece of the code, or if you are
-working very closely together on one script.</p>
-<ul>
-<li>make a new branch</li>
-</ul>
-</div>
-</div>
-<div id="collaborative-route-3-create-a-new-branch" class="section level2" number="8.5">
-<h2>
-<span class="header-section-number">8.5</span> Collaborative Route #3: Create a new branch<a class="anchor" aria-label="anchor" href="#collaborative-route-3-create-a-new-branch"><i class="fas fa-link"></i></a>
-</h2>
-<ul>
-<li>
-<strong>Colleague:</strong> Create a new branch with the following command:</li>
-</ul>
-<div class="sourceCode" id="cb47"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb47-1"><a href="group-workflow.html#cb47-1" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> {new-branch-name}</span>
-<span id="cb47-2"><a href="group-workflow.html#cb47-2" tabindex="-1"></a><span class="fu">git</span> branch</span></code></pre></div>
-<p>Typing <code>git branch</code> will show you that you are now on the new branch, though only the first line was <em>necessary</em> to create this branch.</p>
-</div>
-<div id="collaborative-route-3-colleague-creates-a-file" class="section level2" number="8.6">
-<h2>
-<span class="header-section-number">8.6</span> Collaborative Route #3: Colleague Creates a File<a class="anchor" aria-label="anchor" href="#collaborative-route-3-colleague-creates-a-file"><i class="fas fa-link"></i></a>
-</h2>
-<ul>
-<li>
-<strong>Colleague:</strong> Make a change to the file you used above. You can add in a comment or a new line of code - something small. Save your file.</li>
-</ul>
-</div>
-<div id="collaborative-route-3-push-your-changes" class="section level2" number="8.7">
-<h2>
-<span class="header-section-number">8.7</span> Collaborative Route #3: Push Your Changes<a class="anchor" aria-label="anchor" href="#collaborative-route-3-push-your-changes"><i class="fas fa-link"></i></a>
-</h2>
-<ul>
-<li>
-<strong>Colleague:</strong> Add, commit, and push your new file or changes to your branch on GitHub.</li>
-</ul>
-<div class="sourceCode" id="cb48"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb48-1"><a href="group-workflow.html#cb48-1" tabindex="-1"></a><span class="fu">git</span> add {file-name}</span>
-<span id="cb48-2"><a href="group-workflow.html#cb48-2" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"{your description of what you changed}"</span></span>
-<span id="cb48-3"><a href="group-workflow.html#cb48-3" tabindex="-1"></a><span class="fu">git</span> push origin {your-branch-name}</span></code></pre></div>
-</div>
-<div id="collaborative-route-3-create-a-pull-request" class="section level2" number="8.8">
-<h2>
-<span class="header-section-number">8.8</span> Collaborative Route #3: Create a Pull Request<a class="anchor" aria-label="anchor" href="#collaborative-route-3-create-a-pull-request"><i class="fas fa-link"></i></a>
-</h2>
-<ul>
-<li>
-<strong>Colleague:</strong> Go to your GitHub repository page. You should see a notification about your recent push. Click on “Compare &amp; pull request” next to your branch.<br>
-</li>
-<li>Fill in the details of the pull request, explaining what you’ve added or changed and why.<br>
-</li>
-<li>
-<strong>This time, add your lead researcher as a reviewer. We will not immediately merge this in this time!</strong><br>
-</li>
-<li>Submit the pull request.</li>
-</ul>
-</div>
-<div id="collaborative-route-3-lead-researcher-makes-direct-edits" class="section level2" number="8.9">
-<h2>
-<span class="header-section-number">8.9</span> Collaborative Route #3: Lead researcher makes direct edits<a class="anchor" aria-label="anchor" href="#collaborative-route-3-lead-researcher-makes-direct-edits"><i class="fas fa-link"></i></a>
-</h2>
-<ul>
-<li>
-<strong>Lead Researcher:</strong> Review the code in the pull request. Look at the section with a comment asking for your help, make direct edits to the code in the pull request.</li>
-</ul>
-</div>
-<div id="collaborative-route-3-commit-the-changes" class="section level2" number="8.10">
-<h2>
-<span class="header-section-number">8.10</span> Collaborative Route #3: Commit the Changes<a class="anchor" aria-label="anchor" href="#collaborative-route-3-commit-the-changes"><i class="fas fa-link"></i></a>
-</h2>
-<p><strong>CR/LBW: THIS SLIDE SHOULD BE REFINED ONCE WE PRACTICE THIS TOGETHER</strong></p>
-<ul>
-<li>After making direct edits, push your changes back to the branch.<br>
-</li>
-<li>
-<strong>Both:</strong> Review the final changes together, discuss any further modifications, and then merge the pull requests into the main branch.</li>
-</ul>
-</div>
-<div id="collaborative-route-3-recap" class="section level2" number="8.11">
-<h2>
-<span class="header-section-number">8.11</span> Collaborative Route #3: Recap<a class="anchor" aria-label="anchor" href="#collaborative-route-3-recap"><i class="fas fa-link"></i></a>
-</h2>
-<p>This route had you directly edited your colleague’s code. This can be very useful when one person knows how to do something that another person is stuck on, or when the code is a collaboration. This may not be very common in your work, but is a valuable tool if you are helping someone with code!</p>
-</div>
-<div id="merge-conflicts" class="section level2" number="8.12">
-<h2>
-<span class="header-section-number">8.12</span> Merge conflicts<a class="anchor" aria-label="anchor" href="#merge-conflicts"><i class="fas fa-link"></i></a>
-</h2>
 <p><strong>Creating a merge conflict</strong></p>
 <ul>
 <li>Both researchers should be on <code>main</code> now. If you are not, please do
@@ -482,7 +393,14 @@ button. This brings you back to the page you are familiar with, where you can
 merge into main. Click <code>Merge pull request</code> and then <code>Confirm merge</code>. You can
 delete the branch as you usually do.</p>
 <p>You have just resolved your first merge conflict!</p>
+<p><strong>Recap</strong></p>
+<p>In this route you worked together on the same files. If you had edited different
+sections of the file, you could successfully merge both of your changes into main.
+In this instance, both of you edited the same line of code, which created a
+merge conflict. We covered how to solve the merge conflict on GitHub. Here, you
+need to make decisions about which version of the code is the one you want to keep.</p>
 
+</div>
 </div>
 </div>
   <div class="chapter-nav">
@@ -502,14 +420,6 @@ delete the branch as you usually do.</p>
 <li><a class="nav-link" href="#collaborative-route-3-working-on-the-same-files"><span class="header-section-number">8.4.3</span> Collaborative Route #3: Working on the same files</a></li>
 </ul>
 </li>
-<li><a class="nav-link" href="#collaborative-route-3-create-a-new-branch"><span class="header-section-number">8.5</span> Collaborative Route #3: Create a new branch</a></li>
-<li><a class="nav-link" href="#collaborative-route-3-colleague-creates-a-file"><span class="header-section-number">8.6</span> Collaborative Route #3: Colleague Creates a File</a></li>
-<li><a class="nav-link" href="#collaborative-route-3-push-your-changes"><span class="header-section-number">8.7</span> Collaborative Route #3: Push Your Changes</a></li>
-<li><a class="nav-link" href="#collaborative-route-3-create-a-pull-request"><span class="header-section-number">8.8</span> Collaborative Route #3: Create a Pull Request</a></li>
-<li><a class="nav-link" href="#collaborative-route-3-lead-researcher-makes-direct-edits"><span class="header-section-number">8.9</span> Collaborative Route #3: Lead researcher makes direct edits</a></li>
-<li><a class="nav-link" href="#collaborative-route-3-commit-the-changes"><span class="header-section-number">8.10</span> Collaborative Route #3: Commit the Changes</a></li>
-<li><a class="nav-link" href="#collaborative-route-3-recap"><span class="header-section-number">8.11</span> Collaborative Route #3: Recap</a></li>
-<li><a class="nav-link" href="#merge-conflicts"><span class="header-section-number">8.12</span> Merge conflicts</a></li>
 </ul>
 
       <div class="book-extra">

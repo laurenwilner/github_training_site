@@ -277,65 +277,6 @@ some decisions regarding whose changes should be kept.
 If this seems a little convoluted, it is your lucky day. We will set the stage
 for a merge conflict and practice resolving it with our buddy. 
 
-
-In this scenario, after your colleague pushes their code, they will submit a 
-pull request to you, and you will directly edit their code if needed. This may 
-be useful if one person is stuck on a certain piece of the code, or if you are 
-working very closely together on one script.  
-
-* make a new branch
-
-## Collaborative Route #3: Create a new branch  
-
-- **Colleague:** Create a new branch with the following command:
-
-```bash
-git checkout -b {new-branch-name}
-git branch
-```
-Typing `git branch` will show you that you are now on the new branch, though only the first line was *necessary* to create this branch. 
-
-## Collaborative Route #3: Colleague Creates a File
-
-- **Colleague:** Make a change to the file you used above. You can add in a comment or a new line of code - something small. Save your file.  
-
-## Collaborative Route #3: Push Your Changes
-
-- **Colleague:** Add, commit, and push your new file or changes to your branch on GitHub.  
-
-```bash
-git add {file-name}
-git commit -m "{your description of what you changed}"
-git push origin {your-branch-name}
-```
-
-## Collaborative Route #3: Create a Pull Request
-
-- **Colleague:** Go to your GitHub repository page. You should see a notification about your recent push. Click on "Compare & pull request" next to your branch.  
-- Fill in the details of the pull request, explaining what you've added or changed and why.   
-- **This time, add your lead researcher as a reviewer. We will not immediately merge this in this time!**  
-- Submit the pull request.  
-
-## Collaborative Route #3: Lead researcher makes direct edits  
-
-- **Lead Researcher:** Review the code in the pull request. Look at the section with a comment asking for your help, make direct edits to the code in the pull request.
-
-## Collaborative Route #3: Commit the Changes  
-
-**CR/LBW: THIS SLIDE SHOULD BE REFINED ONCE WE PRACTICE THIS TOGETHER**  
-
-- After making direct edits, push your changes back to the branch.    
-- **Both:** Review the final changes together, discuss any further modifications, and then merge the pull requests into the main branch.  
-
-## Collaborative Route #3: Recap
-
-This route had you directly edited your colleague's code. This can be very useful when one person knows how to do something that another person is stuck on, or when the code is a collaboration. This may not be very common in your work, but is a valuable tool if you are helping someone with code!
-
-
-## Merge conflicts
-
-
-
 **Creating a merge conflict**
 
 - Both researchers should be on `main` now. If you are not, please do 
@@ -390,4 +331,14 @@ merge into main. Click `Merge pull request` and then `Confirm merge`. You can
 delete the branch as you usually do. 
 
 You have just resolved your first merge conflict! 
+
+**Recap**
+
+In this route you worked together on the same files. If you had edited different
+sections of the file, you could successfully merge both of your changes into main. 
+In this instance, both of you edited the same line of code, which created a 
+merge conflict. We covered how to solve the merge conflict on GitHub. Here, you
+need to make decisions about which version of the code is the one you want to keep.
+
+
 
