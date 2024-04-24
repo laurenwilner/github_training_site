@@ -1,6 +1,6 @@
-# Best practices around folder and file names
+# Naming folders and files
 
-When you are working in Terminal/Bash, it is important to have good folder and 
+When you are working in Terminal/Bash, it is important to use good folder and 
 file names to make your life easier. Recall when you name a variable in SAS or 
 R, the variable name cannot contain spaces or unusual characters. **It is best 
 practice to not use spaces or unusual characters in folder or file names,** even
@@ -18,11 +18,13 @@ For example "life-expectancy" is a great folder name for a project estimating
 life expectancy, while "pollution-ptb" is a great folder name for a project 
 estimating the causal effect of air pollution on preterm birth. 
 
-**Good analytical file names**
+<br />
+<br />
+**Good names for code files**
 
 When running a statistical analysis, there is an underlying order across the 
-coding files (e.g., starting with importing the data, then data cleaning, and
-analysis). Good analytical file names should start with a number (padded by 0) 
+code files (e.g., starting with importing the data, then data cleaning, and
+analysis). Good code file names should start with a number (padded by 0) 
 to order the files according to the order they are performed in the analysis. This is 
 followed by a short (human and machine readable) descriptor of what the file 
 does. You can also use underscore "_" to delimit field, and dashes "-" to 
@@ -42,9 +44,29 @@ Flip through [Jenny Bryan's](https://jennybryan.org/about/) slide set here for a
 
 <iframe src="https://drive.google.com/file/d/1JibUedZzP0ZlrZ-IiqnkWhtwsMICoXBx/preview" width="100%" height="400"></iframe>
 
-### Bad file naming examples
+<br />
+<br />
+**What happens when there are bad names?**
 
-<img src="./figures/Space-in-pathways-pain.png" width="100%" />
+The issue and frustration of includes spaces in file names really hits home when
+you include spaces in the names and trying interacting with GitHub to add the files
+and make a commit -- if you like pain and frustration -- you can try this at home!
 
-Here, you can see that there is an R markdown (Rmd) file named "Data Visualization Evaluation Report" that has been modified. The pain arises when I go to `git add` the file. Before each space, I need to include a backslash (which looks ugly). Even worse, the space breaks the auto-complete that happens when I press "tab" to auto-complete the file name. Auto-complete will become your friend when you use Git, and not being able to use it is very sad/infuriating when you have grown to love it.
-**CR: Lets emphasize this in our screenshot?**
+For example, suppose I made an R markdown file called "Data Visualization 
+Evaluation Report.rmd". In the screenshot below, you can see that this file has
+been modified when I used the `git status` command. The issue occurs when I need
+to add that file using `git add {file_name}`. If I typed `git add Data Visualization Evaluation Report.rmd`
+there would be an error because Git doesn't know that the name continues after 
+the space after the word "Data"! Even worse, the space breaks the auto-complete 
+functionality that occurs when you press "tab" to auto-complete the file name 
+after typing the first few letters. 
+
+To really add the file we need to use the escape character (the backlash "\\")
+before each space in the name, as shown in the `git add` command highlighted in
+yellow.This might now sound like a big deal
+if you haven't interacted with Terminal/Bash very much, but I can guarantee you
+that the frustration will build to a crescendo over time... save yourself this 
+pain and by using dashes and underscores instead of spaces!
+
+<img src="./figures/space-in-filename-pain.png" width="100%" />
+
