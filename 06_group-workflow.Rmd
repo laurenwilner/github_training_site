@@ -40,7 +40,7 @@ GitHub username and add them to this repository.
 copying the URL. Then, in Bash/Terminal navigate to the location where you will
 clone your repository and run the following command:
 
-```bash
+```
 git clone {repository URL}
 ```
 
@@ -49,7 +49,7 @@ git clone {repository URL}
 - Navigate into your repository by typing cd {repo-name}/
 - Type `git status`. The results shows you that no changes have been made yet:
 
-```bash
+```
 Biostat-MBP13-20:collabo-repo corinneriddell$ git status
 On branch main
 Your branch is up to date with 'origin/main'.
@@ -59,7 +59,7 @@ nothing to commit, working tree clean
 
 - Type `git branch`. This shows you that you are currently on the main branch.
 
-```bash
+```
 Biostat-MBP13-20:life-expectancy corinneriddell$git branch
 * main
 ```
@@ -68,7 +68,7 @@ Biostat-MBP13-20:life-expectancy corinneriddell$git branch
 date, and on main, we can create a new branch to work on. 
 - **Both:** Create a new branch with the following command:
 
-```bash
+```
 git checkout -b {new-branch-name}
 git branch
 ```
@@ -115,7 +115,7 @@ Let's practice this workflow now:
 your file has the same name as the lead researcher's file, rename it now.
 - **Both:** Add, commit, and push your respective files to GitHub:
 
-```bash
+```
 git add {file-name}
 git commit -m "Initial commit with {file-name}"
 git push origin {new-branch-name}
@@ -170,7 +170,7 @@ Let's practice this workflow now:
 
 - Create a new branch with the following command:
 
-```bash
+```
 git checkout -b {new-branch-name}
 git branch
 ```
@@ -180,7 +180,7 @@ You can add in a comment or a new line of code - something small is good. Save
 your file.
 - Add, commit, and push your changes to your branch on GitHub:
 
-```bash
+```
 git add {file-name}
 git commit -m "{your description of what you changed}"
 git push origin {your-branch-name}
