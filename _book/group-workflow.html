@@ -112,7 +112,7 @@ GitHub username and add them to this repository.</li>
 copying the URL. Then, in Bash/Terminal navigate to the location where you will
 clone your repository and run the following command:</li>
 </ul>
-<div class="sourceCode" id="cb40"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb40-1"><a href="group-workflow.html#cb40-1" tabindex="-1"></a><span class="fu">git</span> clone {repository URL}</span></code></pre></div>
+<pre><code>git clone {repository URL}</code></pre>
 </div>
 <div id="get-oriented-to-the-new-directory-1" class="section level2" number="8.3">
 <h2>
@@ -122,24 +122,24 @@ clone your repository and run the following command:</li>
 <li>Navigate into your repository by typing cd {repo-name}/</li>
 <li>Type <code>git status</code>. The results shows you that no changes have been made yet:</li>
 </ul>
-<div class="sourceCode" id="cb41"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb41-1"><a href="group-workflow.html#cb41-1" tabindex="-1"></a><span class="ex">Biostat-MBP13-20:collabo-repo</span> corinneriddell$ git status</span>
-<span id="cb41-2"><a href="group-workflow.html#cb41-2" tabindex="-1"></a><span class="ex">On</span> branch main</span>
-<span id="cb41-3"><a href="group-workflow.html#cb41-3" tabindex="-1"></a><span class="ex">Your</span> branch is up to date with <span class="st">'origin/main'</span>.</span>
-<span id="cb41-4"><a href="group-workflow.html#cb41-4" tabindex="-1"></a></span>
-<span id="cb41-5"><a href="group-workflow.html#cb41-5" tabindex="-1"></a><span class="ex">nothing</span> to commit, working tree clean</span></code></pre></div>
+<pre><code>Biostat-MBP13-20:collabo-repo corinneriddell$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean</code></pre>
 <ul>
 <li>Type <code>git branch</code>. This shows you that you are currently on the main branch.</li>
 </ul>
-<div class="sourceCode" id="cb42"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb42-1"><a href="group-workflow.html#cb42-1" tabindex="-1"></a><span class="ex">Biostat-MBP13-20:life-expectancy</span> corinneriddell<span class="va">$git</span> branch</span>
-<span id="cb42-2"><a href="group-workflow.html#cb42-2" tabindex="-1"></a><span class="ex">*</span> main</span></code></pre></div>
+<pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$git branch
+* main</code></pre>
 <ul>
 <li>Create a new branch. Now that we know that our repository is cloned, up to
 date, and on main, we can create a new branch to work on.</li>
 <li>
 <strong>Both:</strong> Create a new branch with the following command:</li>
 </ul>
-<div class="sourceCode" id="cb43"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb43-1"><a href="group-workflow.html#cb43-1" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> {new-branch-name}</span>
-<span id="cb43-2"><a href="group-workflow.html#cb43-2" tabindex="-1"></a><span class="fu">git</span> branch</span></code></pre></div>
+<pre><code>git checkout -b {new-branch-name}
+git branch</code></pre>
 <p>Typing <code>git branch</code> will show you that you are now on the new branch, though
 only the first line was <em>necessary</em> to create this branch.</p>
 </div>
@@ -186,9 +186,9 @@ your file has the same name as the lead researcher’s file, rename it now.</li>
 <li>
 <strong>Both:</strong> Add, commit, and push your respective files to GitHub:</li>
 </ul>
-<div class="sourceCode" id="cb44"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb44-1"><a href="group-workflow.html#cb44-1" tabindex="-1"></a><span class="fu">git</span> add {file-name}</span>
-<span id="cb44-2"><a href="group-workflow.html#cb44-2" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Initial commit with {file-name}"</span></span>
-<span id="cb44-3"><a href="group-workflow.html#cb44-3" tabindex="-1"></a><span class="fu">git</span> push origin {new-branch-name}</span></code></pre></div>
+<pre><code>git add {file-name}
+git commit -m "Initial commit with {file-name}"
+git push origin {new-branch-name}</code></pre>
 <p>If the output from the push command looks successful, you are now ready to create
 a pull request following the same process we used in the solo workflow section.</p>
 <ul>
@@ -238,17 +238,17 @@ these changes by submitting comments on the pull request.</p>
 <ul>
 <li>Create a new branch with the following command:</li>
 </ul>
-<div class="sourceCode" id="cb45"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb45-1"><a href="group-workflow.html#cb45-1" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> {new-branch-name}</span>
-<span id="cb45-2"><a href="group-workflow.html#cb45-2" tabindex="-1"></a><span class="fu">git</span> branch</span></code></pre></div>
+<pre><code>git checkout -b {new-branch-name}
+git branch</code></pre>
 <ul>
 <li>Make a change to the file you added in the previous step.
 You can add in a comment or a new line of code - something small is good. Save
 your file.</li>
 <li>Add, commit, and push your changes to your branch on GitHub:</li>
 </ul>
-<div class="sourceCode" id="cb46"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb46-1"><a href="group-workflow.html#cb46-1" tabindex="-1"></a><span class="fu">git</span> add {file-name}</span>
-<span id="cb46-2"><a href="group-workflow.html#cb46-2" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"{your description of what you changed}"</span></span>
-<span id="cb46-3"><a href="group-workflow.html#cb46-3" tabindex="-1"></a><span class="fu">git</span> push origin {your-branch-name}</span></code></pre></div>
+<pre><code>git add {file-name}
+git commit -m "{your description of what you changed}"
+git push origin {your-branch-name}</code></pre>
 <ul>
 <li>Go to your GitHub repository page. You should see a notification about your
 recent push. Click on “Compare &amp; pull request” next to your branch.</li>
