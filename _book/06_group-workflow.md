@@ -11,7 +11,7 @@ using Git and GitHub. We will:
 - Cover three routes for collaboration: 
     - Independent Work
     - Code Review
-    - Direct Edits
+    - Working on the same files
 - Practice resolving a merge conflict
 
 ## Setup
@@ -82,7 +82,8 @@ In general, there are three ways to work collaboratively on a project:
 
 1. **Independent Work:** You each work on separate files and merge your own changes.
 2. **Code Review:** Submit pull requests for code reviews without direct edits.
-3. **Direct Edits:** Submit pull requests and make direct changes to each other's code.
+3. **Working on the same files:** You both work on the same file and merge in 
+your changes. Sometimes this leads to merge conflicts so additional care is needed. 
 
 While these different routes may seem ambiguous right now, you can think of pull
 requests as akin to "Track Changes" in Microsoft Word or "Comments" in Google Docs.  
@@ -94,12 +95,13 @@ documents and storing them in a shared folder for you both to view.
 you can leave comments for each other - like when you leave comments on a
 MS Word document for your colleague.  
 
-**Collaborative route #3 (Direct edits)** is like having a shared document where
-you can make changes directly to your colleague's work - think track changes.
+**Collaborative route #3 (Working on the same files)** is like having a shared 
+document where you can make changes directly to your colleague's work - think 
+track changes.
 
 We will cover each collaborative route below.
 
-## Collaborative Route #1: Independent work  
+### Collaborative Route #1: Independent work  
 
 You each work on separate files and merge your own changes. To start, the 
 repository will have two files, one that each of you made. In general, you could
@@ -156,7 +158,7 @@ repository. You should be doing this already, but it is even more important
 when you are working together so you can stay up to date on whatever changes
 have been made to the repository.
 
-## Collaborative Route #2: Code Review
+### Collaborative Route #2: Code Review
 
 In Collaborative Route #2, the lead researcher will make a new file, make 
 changes to that file and push these to GitHub. The colleague will then review 
@@ -208,60 +210,80 @@ any potential errors you might notice.
     1. **Comment:** This submits feedback without explicitly approving the pull request.
     2. **Approve:** This submits feedback and approves the pull request for merging into main.
     3. **Request Changes:** Submit feedback that the other person must address before they can merge into main.
-    
-Let's take a moment to talk briefly about each of these review options.
 
-**Comment:** This submits feedback without explicitly approving the pull request.
-This will send the lead researcher an email with your comments on their code. 
-The lead researcher can click `View it on GitHub` to see your comments. They can
-reply and/or merge the pull request into main at this point. This can be used 
-either as an FYI or to start a conversation about the code - e.g. maybe a 
-certain function is new to you so you want to ask about why they chose to use that.
-You may want to use this if you have a workflow where you always want the person
-who wrote the code to do the merging.
+<br />
 
-**Approve:** This submits feedback and approves the PR for merging into main. 
-This will send the lead researcher an email with your comments that will also 
-indicate that the pull request is approved. This option can be used as an FYI, 
-e.g., telling them about an alternate function that they *could* use but do not 
-have to. Either person can merge the pull request into main. You can establish
-norms around how these work with your colleagues - there is no right answer! 
+Let's take a moment to talk briefly about each of these review options. 
 
-**Request Changes:** Submit feedback that the other person needs to address 
-before they can merge into main. This will send the lead researcher an email 
-with your comments that will also indicate that the PR needs changes. This 
-option can be used if you see something that needs to change before the pull 
-request can be merged - e.g. a function that is not working as intended. The 
-lead researcher will need to address your comments before they can merge the 
-pull request into main. *Technically, the PR could be merged in without the 
-changes, but this is not good practice.*
+|  |   |
+|-|---------|
+|**Comment**   | This submits feedback without explicitly approving the pull request. This will send the lead researcher an email with your comments on their code. The lead researcher can click `View it on GitHub` to see your comments. They can reply and/or merge the pull request into main at this point. This can be used either as an FYI or to start a conversation about the code - e.g. maybe a certain function is new to you so you want to ask about why they chose to use that. You may want to use this if you have a workflow where you always want the person who wrote the code to do the merging.  |
+|**Approve**|This submits feedback and approves the PR for merging into main. This will send the lead researcher an email with your comments that will also indicate that the pull request is approved. This option can be used as an FYI, e.g., telling them about an alternate function that they *could* use but do not have to. Either person can merge the pull request into main. You can establish norms around how these work with your colleagues - there is no right answer! |
+|**Request Changes**|Submit feedback that the other person needs to address before they can merge into main. This will send the lead researcher an email with your comments that will also indicate that the PR needs changes. This option can be used if you see something that needs to change before the pull request can be merged - e.g. a function that is not working as intended. The lead researcher will need to address your comments before they can merge the pull request into main. *Technically, the PR could be merged in without the changes, but this is not good practice.*|
+|  |   |
 
-## Collaborative Route #2: Your turn [CR/LBW: THIS SLIDE NEEDS TO BE REFINED]  
+**Colleague:** 
 
-- **Colleague:** Review the changes made by your lead researcher in the pull request. Leave comments on the code as needed. Choose whichever option you think is best.
-- **Lead Researcher:** Review the comments made by your colleague. Make any necessary changes to your code based on the feedback.
+- Review the changes made by your lead researcher in the pull request. Leave comments on the code as needed. Choose one option to test out.
+
+**Lead Researcher:**
+
+- Review the comments made by your colleague. Make any necessary changes to your code based on the feedback.
 - Add, commit, and push these changes to the same branch. This will automatically update the pull request.
-- Colleague will receive an email saying that the lead researcher pushed one commit. At this point, the colleague can click `View it on GitHub` and verify that the changes are sufficient. 
-- Now you can restart the process and either comment, comment and approve, or comment and request changes again!
 
+**Colleague:**
 
-## Collaborative Route #2: Finalizing the Pull Request [CR/LBW: THIS SLIDE NEEDS TO BE REFINED]  
+- You will receive an email saying that the lead researcher pushed one commit. At this point, the colleague can click `View it on GitHub` and verify that the changes are sufficient. 
+- Review the changes made by the lead researcher in response to your comments. If you're satisfied with the updates, approve the pull request.
 
-- **Colleague:** Review the changes made by the lead researcher in response to your comments. If you're satisfied with the updates, approve the pull request.
-- **Lead Researcher:** Once the pull request is approved, merge your changes into the main branch. 
+**Lead Researcher:** 
 
-## Collaborative Route #2: Recap  
+- Once the pull request is approved, merge your changes into the main branch. 
+
+**Recap** 
+
+- You have successfully complete the second collaborative route. 
  
-We have now practiced using Git to do a code review! You used Git to review/check/comment on our colleague's work without emailing or copying/pasting code back and forth. The lead researcher made changes to their code based on your feedback, and you both worked together to finalize the pull request. 
+- We have now practiced using Git to do a code review! You used Git to review/check/comment on our colleague's work without emailing or copying/pasting code back and forth. The lead researcher made changes to their code based on your feedback, and you both worked together to finalize the pull request. 
+- **CR to flesh this out to similar format as previous**
 
 
+### Collaborative Route #3: Working on the same files 
 
-## Collaborative Route #3: Direct Edits
+In this scenario, the lead researcher may have created and committed an analysis 
+file, and then the colleague might want to make direct changes to that file or 
+extend the analysis. This is a valid and commonly used workflow, and goes well if both people
+are working sequentially and pulling from main often to pull down any changes 
+made to the repo as the other person works.
 
-**CR/LBW: DO WE WANT TO COVER THIS?**
+[insert simple image of no merge conflict here]
+
+However, this collaborative route leaves room for the dreaded merge conflict.
+
+Merge conflicts can be a source of stress for many GitHub users. While they can
+be scary, you are in good company when you have your first merge conflict --
+everyone has a merge conflict eventually. 
+
+What is a merge conflict, you might ask, and how does it happen? Well, a merge 
+conflict can happen if you and a colleague edit the same location on the same 
+file. If colleague #1 merges their changes into main, then when colleague #2 
+goes to merge their changes into main, GitHub doesn't know what to do. This can
+occur if you both worked from the same version of main. Once colleague #1 merged
+in their changes, colleague #2's changes can't be merged in without making 
+some decisions regarding whose changes should be kept.
+
+[insert simple image of merge conflict here]
+
+If this seems a little convoluted, it is your lucky day. We will set the stage
+for a merge conflict and practice resolving it with our buddy. 
 
 
-In this scenario, after your colleague pushes their code, they will submit a pull request to you, and you will directly edit their code if needed. This may be useful if one person is stuck on a certain piece of the code, or if you are working very closely together on one script.  
+In this scenario, after your colleague pushes their code, they will submit a 
+pull request to you, and you will directly edit their code if needed. This may 
+be useful if one person is stuck on a certain piece of the code, or if you are 
+working very closely together on one script.  
+
+* make a new branch
 
 ## Collaborative Route #3: Create a new branch  
 
@@ -312,20 +334,7 @@ This route had you directly edited your colleague's code. This can be very usefu
 
 ## Merge conflicts
 
-Merge conflicts can be a source of stress for many GitHub users. While they can
-be scary, you are in good company when you have your first merge conflict --
-everyone has a merge conflict eventually. 
 
-What is a merge conflict, you might ask, and how does it happen? Well, a merge 
-conflict can happen if you and a colleague edit the same location on the same 
-file. If colleague #1 merges their changes into main, then when colleague #2 
-goes to merge their changes into main, GitHub doesn't know what to do. This can
-occur if you both worked from the same version of main. Once colleague #1 merged
-in their changes, colleague #2's changes can't be merged in without making 
-some decisions regarding whose changes should be kept.
-
-If this seems a little convoluted, it is your lucky day. We will set the stage
-for a merge conflict and practice resolving it with our buddy. 
 
 **Creating a merge conflict**
 
