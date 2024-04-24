@@ -16,7 +16,7 @@ Git and GitHub and the associated jargon. She covers:
 * push 
 * pull
 
-In the live workshop, we will go through Alison's slides together. If you are 
+In the live workshop, we will go through Alice's slides together. If you are 
 going through this training asynchronously, you can flip through Alice's slides 
 here: 
 
