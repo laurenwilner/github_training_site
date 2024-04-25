@@ -11,11 +11,12 @@ We have discussed why Git and GitHub are important, now we will set up a reposit
 * Push the code to your repository  
 * Merge your branch into main  
 
-## Set up a project that you want to track with git and GitHub 
+### Set up a project that you want to track with git and GitHub 
 
 Let's suppose that you have a project that you want to start tracking using Git and Github. For this project, you are already working on with some code, data, and visualizations that have already been saved. We have made this project for you. To download it, run the following two commands in the RStudio console:
 
-```{r, eval = FALSE, include = TRUE}
+
+```r
 install.packages("usethis")
 usethis::use_course("corinne-riddell/existing-project")
 ```
@@ -33,7 +34,7 @@ Now you are set up with some existing code and things that you might want to sta
 tracking on GitHub. The next thing to do is make a folder on GitHub that will 
 store this project.
 
-## Make a new repository on GitHub  
+**Make a new repository on GitHub**
 
 * Go to github.com and log in. Click the green "New" button to make a GitHub 
 repository. Type "life-expectancy" in the repository name.
@@ -45,7 +46,7 @@ repository. Type "life-expectancy" in the repository name.
 * Click "Create repository". Github will then bring you to the repository's 
 main page.
 
-## Clone the repository to your local machine
+**Clone the repository to your local machine**
 
 * From the main page of your repository and click on the green `Code` button.  
 * You'll see a URL that starts with https://. Push the icon with two overlapping
@@ -69,7 +70,7 @@ Unpacking objects: 100% (5/5), done.
 
 You now are ready to begin tracking changes to this folder using Git and GitHub.
 
-## Get oriented to the new directory
+**Get oriented to the new directory**
 
 To get yourself oriented, do the following in the Terminal/Bash window:
 
@@ -91,7 +92,7 @@ Biostat-MBP13-20:life-expectancy corinneriddell$git branch
 * main
 ```
 
-## Make your first branch
+### Make your first branch
 
 Set yourself up in a new branch off of main. In Terminal/Bash:
 
@@ -112,14 +113,14 @@ Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
 * may3-cr
 ```
 
-## Make some changes to your code
+**Make some changes to your code**
 
 Okay, you are now set up to track changes. Let's do the following:
 
 Copy the code/ data/ and images/ sub-folders from your "existing-project" folder into the 
 "life-expectancy" folder.
 
-## Commit the changes that you made and push them to GitHub
+**Commit the changes that you made and push them to GitHub**
 
 Go back over to Terminal or Bash. Type `git status`. The output will tell you 
 what has been changed. It tells us that there are untracked files:
@@ -205,7 +206,7 @@ To https://github.com/corinne-riddell/life-expectancy.git
 ```
 You have successfully pushed your changes to GitHub! 
 
-## Merge the changes from your branch into main
+**Merge the changes from your branch into main**
 
 Navigate to GitHub.com to your repository's URL. There should be a pale yellow 
 banner informing you about the changes you just pushed. Click the button 
@@ -225,7 +226,7 @@ branch has no conflicts with the base branch". This means you are good to go!
 * Click on the green "Confirm merge" button. 
 * Click the "Delete branch" button.
 
-## Summary 
+**Summary**
 
 * You setup a folder on your laptop so that Git is used to track changes made 
 *locally on your laptop*. 
@@ -235,7 +236,7 @@ externally on GitHub.
 GitHub and pulled your changes into main. This means that the main branch has 
 been updated with your changes *on GitHub*.
 
-## Tracking changes
+### Moving forward: More practice with branching
 
 Now suppose a few days have gone by and you are ready to work on your analysis 
 project. In particular, you want to update some code that will affect some 
@@ -243,7 +244,7 @@ of the results and "outputs", where outputs are results saved in any form. In
 this section, we outline the process to follow when you want to implement some 
 set of tracked changes.
 
-## Get setup for a new day of work
+**Get setup for a new day of work**
 
 The first thing we need to do is make sure we are in a good place with git and
 GitHub:
@@ -303,7 +304,7 @@ Biostat-MBP13-20:github-training corinneriddell$ git branch -d may3-cr
 Deleted branch may3-cr (was 761bb97).
 ```
 
-## Pull down the changes from main
+**Pull down the changes from main**
 
 This is your **local** copy of main. It needs to pull down the changes to 
 made that you made on GitHub in an earlier step. To do that, type `git pull origin main`.
@@ -334,7 +335,7 @@ Fast-forward
  create mode 100644 life-expectancy.Rproj
 ```
 
-## Start a new branch
+**Start a new branch**
 
 Like the last day, start a new branch to track today's changes. Let's 
 pretend it is now May 7. Type `git checkout -b may7-XY`, where XY is replaced 
@@ -348,7 +349,7 @@ Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
 * may7-cr
 ```
 
-## You are now ready to make changes!
+**You are now ready to make changes!**
 
 Think about what you would like to do in advance. In particular, suppose you 
 want to:
@@ -361,7 +362,8 @@ To do so, re-launch RStudio by double-clicking the .Rproj file in your file view
 window. Navigate to the code file 01_Analyze-life-expectancy.R and insert the 
 following R code (if working in R) or SAS code (if working in SAS) to make and save this table:
 
-```{r, eval=F}
+
+```r
 # R Code
 # Calculate the LE for each state, separately by race and gender:
 le_averages <- le_data %>% 
@@ -398,7 +400,7 @@ PROC EXPORT DATA= WORK.LE_AVERAGES
      PUTNAMES=YES;
 RUN;
 ```
-## Track your changes using Git
+**Track your changes using Git**
 
 Re-run your previous R code (highlight all the previous code and hit 
 command + Return [Mac] or control + Enter [Windows]). Then run the newly-added 
@@ -420,7 +422,7 @@ Untracked files:
 	data/le_averages.csv
 ```
 
-## Add new and modified files 
+**Add new and modified files**
 
 Use `git add` to add the specific files that have been modified or created.
 Add them one by one. Use `git status` again to check that all the changed files
@@ -441,7 +443,7 @@ Untracked files:
 	.DS_Store
 ```
 
-## Commit the changes locally
+**Commit the changes locally**
 
 Helpful hint: Terminal/Bash plays well with autocomplete. For example, if you 
 are typing the pathway for the .R file as "code/..." you can push the tab button
@@ -458,7 +460,7 @@ Biostat-MBP13-20:life-expectancy corinneriddell$ git commit -m 'calc LE averages
  create mode 100644 data/le_averages.csv
 ```
 
-## Push the changes up to GitHub
+**Push the changes up to GitHub**
 
 You are now ready to push these changes up to GitHub onto GitHub's version
 of your local branch. First, remind yourself of your branch's name using 
@@ -485,12 +487,12 @@ To https://github.com/corinne-riddell/life-expectancy.git
  * [new branch]      may7-cr -> may7-cr
 ```
 
-## Create a pull request
+**Create a pull request**
 
 Navigate to GitHub.com and go through the steps described previously to 
 create a pull request to pull these changes into main.
 
-## Changes after receiving an updated dataset
+## Another practice: Changes after receiving an updated dataset
 
 Another week goes by. It is now May 14. You received an email that there was an 
 error in the data file that you used to conduct the analysis. A new data file
@@ -498,7 +500,7 @@ was securely transferred to you by the data holder. You need to rerun the analys
 using the new dataset. The new data file is the one called "LEbsyrx.csv" in the 
 data folder.
 
-## Get ready for the day 
+**Get ready for the day**
 
 Set yourself up to work with git and GitHub for the day:
 
@@ -551,7 +553,7 @@ Fast-forward
  create mode 100644 data/le_averages.csv
 ```
 
-## Checkout a new branch
+**Checkout a new branch**
 
 `git checkout -b may14-xy`, replacing xy with your initials.
 
@@ -560,7 +562,7 @@ Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout -b may14-cr
 Switched to a new branch 'may14-cr'
 ```
 
-## Update the dataset
+**Update the dataset**
 
 Update the CSV file "Life-expectancy-by-state-long.csv" with the new dataset.
 First, decide if you want to archive this older version of the dataset for any reason.
@@ -571,7 +573,7 @@ the file it is replacing ("Life-expectancy-by-state-long.csv").
 
 Re-run all your code that uses this file. First open the .Rproj file to launch RStudio. Then, you can highlight all the code and hit the "Run" button.
 
-## Track the changes using Git
+**Track the changes using Git**
 
 Use "git status", "git add...", and "git commit..." to track these changes 
 locally. Use "git push" to push these changes to GitHub. 
@@ -624,7 +626,7 @@ Untracked files:
 	data/.DS_Store
 ```
 
-## Commit the changes locally
+**Commit the changes locally**
 
 Then I commit my changes:
 
@@ -636,7 +638,7 @@ Biostat-MBP13-20:life-expectancy corinneriddell$ git commit -m 'data update and 
  rewrite images/ca-black-women-LE.png (98%)
 ```
 
-## Push the changes to GitHub
+**Push the changes to GitHub**
 
 Finally I push these changes to GitHub:
 
@@ -655,7 +657,7 @@ Biostat-MBP13-20:life-expectancy corinneriddell$
 
 ```
 
-## Submit a pull request
+**Submit a pull request**
 
 Go through the process to start a pull request. On the pull request page, 
 scroll down to see the "diffs" in the data and image. Pay close attention to 
@@ -667,20 +669,9 @@ How did the data changed? Which tool do you prefer?
 * can you tell from the data or images how the change affected the analytic findings?
 * anything else you noticed?
 
-```{r, include = FALSE, eval = FALSE}
-# code below by internal use (not to share with training participants)
-# code used to make the "updated" dataset
 
-le_data2 <- le_data %>% 
-  rowwise() %>% 
-  mutate(LE = case_when(state %in% c("Alabama", "California") ~ LE + rnorm(1, mean = 0, 0.5),
-                        !(state %in% c("Alabama", "California")) ~ LE)
-)
 
-write_csv(le_data2, "./data/LEbsyrx.csv")
-```
-
-## Summary
+### Summary
 
 Congratulations, you have successfully worked in Git and GitHub solo! What a 
 journey. You now know how to transition your existing work to being tracked 
