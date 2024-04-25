@@ -5,11 +5,14 @@
 
 We have discussed why Git and GitHub are important, now we will set up a repository and work through an example. During this first section, you will be working in a repository alone. We will:    
 
-* Make a new repository on GitHub  
-* Clone the repository to your local machine  
-* Write code in your repository locally  
-* Push the code to your repository  
-* Merge your branch into main  
+* Set up a new project in git/GitHub
+  * Make new repository on GitHub  
+  * Clone the repository to your local machine  
+  * Write code in your repository locally  
+  * Push the code to your repository  
+  * Merge your branch into main
+* Repeat the process with more code updates
+* Repeat the process with data updates
 
 ### Set up a project that you want to track with git and GitHub 
 
