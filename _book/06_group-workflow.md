@@ -256,7 +256,8 @@ extend the analysis. This is a valid and commonly used workflow, and goes well i
 are working sequentially and pulling from main often to pull down any changes 
 made to the repo as the other person works.
 
-[insert simple image of no merge conflict here]
+<img src="./figures/no-conflict.PNG" width="100%" />
+
 
 However, this collaborative route leaves room for the dreaded merge conflict.
 
@@ -272,7 +273,7 @@ occur if you both worked from the same version of main. Once colleague #1 merged
 in their changes, colleague #2's changes can't be merged in without making 
 some decisions regarding whose changes should be kept.
 
-[insert simple image of merge conflict here]
+<img src="./figures/conflict.PNG" width="100%" />
 
 If this seems a little convoluted, it is your lucky day. We will set the stage
 for a merge conflict and practice resolving it with our buddy. 
