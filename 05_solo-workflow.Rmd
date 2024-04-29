@@ -304,7 +304,7 @@ locally:
 
 ```
 Biostat-MBP13-20:github-training corinneriddell$ git branch -d may3-cr
-Deleted branch may3-cr (was 761bb97).
+Deleted branch may3-cr (was 58fcc58).
 ```
 
 **Pull down the changes from main**
