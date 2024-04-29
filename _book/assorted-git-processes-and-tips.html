@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 11 Assorted Git processes and tips | Git and GitHub for Public Health</title>
+<meta name="author" content="Corinne Riddell and Lauren Wilner">
+<meta name="description" content="This page introduces a few Git and GitHub processes that didn’t nicely fold into the other chapters, but which we think make be useful to you  11.1 Forking Remember when we went through branching?...">
+<meta name="generator" content="bookdown 0.39 with bs4_book()">
+<meta property="og:title" content="Chapter 11 Assorted Git processes and tips | Git and GitHub for Public Health">
+<meta property="og:type" content="book">
+<meta property="og:description" content="This page introduces a few Git and GitHub processes that didn’t nicely fold into the other chapters, but which we think make be useful to you  11.1 Forking Remember when we went through branching?...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 11 Assorted Git processes and tips | Git and GitHub for Public Health">
+<meta name="twitter:description" content="This page introduces a few Git and GitHub processes that didn’t nicely fold into the other chapters, but which we think make be useful to you  11.1 Forking Remember when we went through branching?...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.5.1/transition.js"></script><script src="libs/bs3compat-0.5.1/tabs.js"></script><script src="libs/bs3compat-0.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><link href="libs/vembedr-0.1.5/css/vembedr.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Git and GitHub for Public Health</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Git and GitHub for Public Health</a></li>
+<li><a class="" href="workshop-setup.html"><span class="header-section-number">2</span> Workshop Setup</a></li>
+<li><a class="" href="why-git-and-github.html"><span class="header-section-number">3</span> Why Git and GitHub</a></li>
+<li><a class="" href="git-jargon.html"><span class="header-section-number">4</span> Git Jargon</a></li>
+<li><a class="" href="interacting-with-terminal-and-bash.html"><span class="header-section-number">5</span> Interacting with Terminal and Bash</a></li>
+<li><a class="" href="naming-folders-and-files.html"><span class="header-section-number">6</span> Naming folders and files</a></li>
+<li><a class="" href="solo-workflow.html"><span class="header-section-number">7</span> Solo Workflow</a></li>
+<li><a class="" href="group-workflow.html"><span class="header-section-number">8</span> Group Workflow</a></li>
+<li><a class="" href="what-to-track-on-git-and-github.html"><span class="header-section-number">9</span> What to track on Git and Github?</a></li>
+<li><a class="" href="daily-git-practice.html"><span class="header-section-number">10</span> Daily Git Practice</a></li>
+<li><a class="active" href="assorted-git-processes-and-tips.html"><span class="header-section-number">11</span> Assorted Git processes and tips</a></li>
+<li><a class="" href="conclusions.html"><span class="header-section-number">12</span> Conclusions</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/rstudio/bookdown-demo">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="assorted-git-processes-and-tips" class="section level1" number="11">
+<h1>
+<span class="header-section-number">11</span> Assorted Git processes and tips<a class="anchor" aria-label="anchor" href="#assorted-git-processes-and-tips"><i class="fas fa-link"></i></a>
+</h1>
+<p>This page introduces a few Git and GitHub processes that didn’t nicely fold into the other chapters, but which we think make be useful to you</p>
+<div id="forking" class="section level2" number="11.1">
+<h2>
+<span class="header-section-number">11.1</span> Forking<a class="anchor" aria-label="anchor" href="#forking"><i class="fas fa-link"></i></a>
+</h2>
+<p>Remember when we went through <strong>branching</strong>? <strong>Branching</strong> is the process of creating a new branch where you can make changes to code separately from the main branch. When you finish your changes, you merge your branch into main and delete the branch. <strong>Branching</strong> is a critical tool for working with Git repositories and ensuring that the main branch remains functional and clean. Even if you do not merge your branch back in, the owner of the repository can see your branch on GitHub, take a look at what you have done, and foster collaboration with the members of the repository.</p>
+<p><strong>Branching</strong>:
+<img src="figures/branching.png" width="100%"></p>
+<p><strong>Forking</strong> is a similar process, but it is used when you want to build off of someone else’s repository. When you <strong>fork</strong> a repository, you create a copy of the repository in your GitHub account. You can then make changes to the repository in your account without affecting the original repository. The owner of the original repository will not be a member of your forked repository. The forked repository is essentially your repository now. You can think about this as similar to receiving a Google folder, downloading its contents, and saving it to your computer. The original Google folder is still there, the people with ownership and access to the original Google folder are unaffected, but now you have a completely separate folder on your computer that is not a collaboration with the original Google folder team in any way.</p>
+<p>Why fork? Forking is a great way to contribute to open-source projects or to change a repository that you don’t have “write” access to. Forking also circumvents reinventing the wheel – perhaps your colleagues developed a suite of functions for cleaning malaria data, and you need similar functions for your dengue project. You can fork their repository, make changes to tailor these functions to dengue, and use their functions in your project.</p>
+<p><strong>Forking</strong>:
+<img src="figures/forking.png" width="100%"></p>
+<p><strong>Forking</strong> is core to the premise of Git and the effort to move towards open-source software development. It allows for collaboration within workplaces, disciplines, and around the world for the sharing of code and ideas.</p>
+</div>
+<div id="ignoring-files" class="section level2" number="11.2">
+<h2>
+<span class="header-section-number">11.2</span> Ignoring files<a class="anchor" aria-label="anchor" href="#ignoring-files"><i class="fas fa-link"></i></a>
+</h2>
+<p>When you are working on a project, you will often have files that you do not
+want to track with Git. Such files, such as restricted datasets and large
+datasets, were discussed in the “What to track on Git and GitHub” chapter.</p>
+<p>Decisions around data storage are a team decision and may require input from
+your information technology department or institutional review board. If
+permitted according to the data’s level of security, some teams will store some
+data on Git in a private repository, while other teams will use shared drives for
+data storage and Git/GitHub for code sharing, and, finally, other teams will store
+the data in their Git repository but not push them to GitHub.</p>
+<p>About that last one – yes, you can store files in your GitHub folder but never
+choose to track them. To do this, use a <code>.gitignore</code> file to tell Git to ignore
+these files.</p>
+<p>A <code>.gitignore</code> file is a list of files that Git is instructed not to track.
+Whenever you <code>add</code> files in your repository, for example, Git will ignore the
+files listed in your <code>.gitignore</code> file.</p>
+<p><strong>Here’s an example of the contents of a .gitignore file:</strong></p>
+<div class="inline-figure"><img src="figures/gitignore.png" width="25%"></div>
+<p>This .gitignore file instructs Git to ignore any files that end with <code>.sql</code> or <code>.sqlite</code>, as
+well as any files in the <code>build</code> subfolder. Git ignore files are handy if
+you have a workflow where you store most of a project’s files within the Git
+repository, since it allows you to specify which files to ignore. Git ignore
+files are less useful if you have a workflow
+where you want everything in your repository to be pushed to GitHub.</p>
+</div>
+<div id="rolling-back-changes" class="section level2" number="11.3">
+<h2>
+<span class="header-section-number">11.3</span> Rolling back changes<a class="anchor" aria-label="anchor" href="#rolling-back-changes"><i class="fas fa-link"></i></a>
+</h2>
+<p>Another advantages of Git and GitHub is the ability to roll back changes.
+Perhaps you committed a few iterations of code and realized that
+the code you wrote three commits ago was, in hindsight, the best version. No worries – you can roll
+back to that commit and start from there. This is a great way to experiment with
+code and try new things without worrying about losing your work. To do this, you
+can either use <code>git checkout</code> to check out a previous commit, or you can use
+<code>git revert</code> to revert a commit. This process is a bit complicated, but there is
+a great walk through <a href="https://swcarpentry.github.io/git-novice/05-history.html">here</a>.</p>
+</div>
+<div id="and-if-all-else-fails" class="section level2" number="11.4">
+<h2>
+<span class="header-section-number">11.4</span> And if all else fails…<a class="anchor" aria-label="anchor" href="#and-if-all-else-fails"><i class="fas fa-link"></i></a>
+</h2>
+<p>Remember that Git is a tool that can help you track versions, examine changes,
+and collaborate with others. If you get stuck, never forget that its okay to
+delete your repository and start over - both of these website’s co-author have
+done this (repeatedly… even while creating this website).</p>
+<p>There are many comics and memes about Git and the struggles that come with it– include the acceptability of burning down your repository and starting over!</p>
+<iframe src="https://imgs.xkcd.com/comics/git.png" width="50%">
+</iframe>
+<p>Remember that you are not alone in your struggles and that there are many resources available to help you. It is ALWAYS okay to just save your code elsewhere for a moment and start over.</p>
+
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="daily-git-practice.html"><span class="header-section-number">10</span> Daily Git Practice</a></div>
+<div class="next"><a href="conclusions.html"><span class="header-section-number">12</span> Conclusions</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#assorted-git-processes-and-tips"><span class="header-section-number">11</span> Assorted Git processes and tips</a></li>
+<li><a class="nav-link" href="#forking"><span class="header-section-number">11.1</span> Forking</a></li>
+<li><a class="nav-link" href="#ignoring-files"><span class="header-section-number">11.2</span> Ignoring files</a></li>
+<li><a class="nav-link" href="#rolling-back-changes"><span class="header-section-number">11.3</span> Rolling back changes</a></li>
+<li><a class="nav-link" href="#and-if-all-else-fails"><span class="header-section-number">11.4</span> And if all else fails…</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/rstudio/bookdown-demo/blob/master/09_misc_git_tips.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/rstudio/bookdown-demo/edit/master/09_misc_git_tips.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Git and GitHub for Public Health</strong>" was written by Corinne Riddell and Lauren Wilner. It was last built on 2024-04-29.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>
