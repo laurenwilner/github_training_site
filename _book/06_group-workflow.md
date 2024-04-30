@@ -153,7 +153,7 @@ to each other's work!
 the shared repo and add other files as you go along. 
 
 * ❗ Take care: Now that you are working together, be sure
-to use `git pull origin main` to grab any changes your colleague made to the 
+to use `git pull origin main` to frequently grab any changes your colleague made to the 
 repository. You should be doing this already, but it is even more important 
 when you are working together so you can stay up to date on whatever changes
 have been made to the repository.
@@ -242,22 +242,28 @@ Let's take a moment to talk briefly about each of these review options.
 
 **Recap** 
 
-- You have successfully complete the second collaborative route. 
+- You have successfully completed the second collaborative route. You used Git to
+review/check/comment on your colleague's work without emailing
+or copying/pasting code back and forth. The lead researcher made changes to 
+their code based on your feedback, and you both worked together to finalize the 
+pull request. 
+
+- Similar to the previous workflow, collaborators can work independently, but 
+request review of each other's work.
  
-- We have now practiced using Git to do a code review! You used Git to review/check/comment on our colleague's work without emailing or copying/pasting code back and forth. The lead researcher made changes to their code based on your feedback, and you both worked together to finalize the pull request. 
-- **CR to flesh this out to similar format as previous**
-
-
 ### Collaborative Route #3: Working on the same files 
 
-In this scenario, the lead researcher may have created and committed an analysis 
-file, and then the colleague might want to make direct changes to that file or 
-extend the analysis. This is a valid and commonly used workflow, and goes well if both people
-are working sequentially and pulling from main often to pull down any changes 
-made to the repo as the other person works.
+In this scenario, imagine that the lead researcher has already created and 
+committed an analysis file. The colleague then wants to make direct changes to 
+that file or extend the analysis. This is a valid and commonly used workflow, 
+and works well if both people are working sequentially and pulling from main 
+often to pull down any changes made to the repo as their collaborators work.
+
+This diagram shows how both Lauren and Corinne can work on the same file, 
+sequentially over time, each pulling from main, making changes, and merging their
+changes back into main before the other person works:
 
 <img src="./figures/no-conflict.PNG" width="100%" />
-
 
 However, this collaborative route leaves room for the dreaded merge conflict.
 
@@ -266,12 +272,11 @@ be scary, you are in good company when you have your first merge conflict --
 everyone has a merge conflict eventually. 
 
 What is a merge conflict, you might ask, and how does it happen? Well, a merge 
-conflict can happen if you and a colleague edit the same location on the same 
-file. If colleague #1 merges their changes into main, then when colleague #2 
-goes to merge their changes into main, GitHub doesn't know what to do. This can
-occur if you both worked from the same version of main. Once colleague #1 merged
-in their changes, colleague #2's changes can't be merged in without making 
-some decisions regarding whose changes should be kept.
+conflict can happen if you and a colleague both pull from main at the same 
+time and proceed to edit the same location on the same file. If colleague #1 
+merges their changes into main, then when colleague #2 
+goes to merge their changes into main, GitHub doesn't know what changes to keep.
+
 
 <img src="./figures/conflict.PNG" width="100%" />
 
@@ -286,20 +291,16 @@ for a merge conflict and practice resolving it with our buddy.
 you should call their branch something different from the other researcher.
 - Together, choose one file and one line location on the file that you will each
 edit separately on your laptops.
+- **Lead researcher only:** add, commit, and push your changes to your branch. 
+Then, create a pull request and merge your changes into main. 
+- **Colleague:** Your turn. Add, commit, and push your changes to your branch. 
+Then, create a pull request. 😱 Merge conflict! You will not 
+be able to merge into main. 
 
-Then, the lead researcher will first add, commit, and push their changes to 
-their branch. Then, they will create a pull request and merge their changes into
-main. After this, the colleague will add, commit, and push their changes to 
-their branch. Then, they will create a pull request. 
-
-😨 Merge conflict! 
-
-You will not be able to merge into main. 
-
-We will walk you through how to resolve the merge conflict. 
+Deep breaths. Let's walk through how to resolve the merge conflict. 
 
 The colleague with the conflict will see the following. Colleague, follow these steps!
-Lead researcher, watch your colleague's screen to see how this looks:
+Lead researcher, watch your colleague's screen to follow along:
 
 <img src="./figures/merge-conflict-1.png" width="100%" />
 
@@ -325,15 +326,17 @@ button. This brings you back to the page you are familiar with, where you can
 merge into main. Click `Merge pull request` and then `Confirm merge`. You can 
 delete the branch as you usually do. 
 
-You have just resolved your first merge conflict! 
-
 **Recap**
 
-In this route you worked together on the same files. If you had edited different
+- You have just resolved your first merge conflict! 
+- In this route you worked together on the same files. If you had edited different
 sections of the file, you could successfully merge both of your changes into main. 
 In this instance, both of you edited the same line of code, which created a 
-merge conflict. We covered how to solve the merge conflict on GitHub. Here, you
-need to make decisions about which version of the code is the one you want to keep.
-
+merge conflict. You resolve the merge conflict. 
+- To minimize the change of merge conflicts, make sure you do `git pull origin main` before you 
+start your day's work to pull down the most recent version of the repo. If you do
+get a conflict, you know how to resolve it. You will need to make a decision about
+which version of the code to keep. It should be clear based on what you hope to 
+accomplish in the analysis. 
 
 
