@@ -292,7 +292,7 @@ their branch. Then, they will create a pull request and merge their changes into
 main. After this, the colleague will add, commit, and push their changes to 
 their branch. Then, they will create a pull request. 
 
-😱 Merge conflict! 
+😨 Merge conflict! 
 
 You will not be able to merge into main. 
 
