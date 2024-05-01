@@ -14,7 +14,7 @@ We have discussed why Git and GitHub are important, now we will set up a reposit
 * Repeat the process with more code updates
 * Repeat the process with data updates
 
-### Set up a project that you want to track with git and GitHub 
+## Set up a project that you want to track with git and GitHub 
 
 Let's suppose that you have a project that you want to start tracking using Git and Github. For this project, you are already working on with some code, data, and visualizations that have already been saved. We have made this project for you. To download it, run the following two commands in the RStudio console:
 
@@ -95,7 +95,7 @@ Biostat-MBP13-20:life-expectancy corinneriddell$git branch
 * main
 ```
 
-### Make your first branch
+## Make your first branch
 
 Set yourself up in a new branch off of main. In Terminal/Bash:
 
@@ -239,7 +239,7 @@ externally on GitHub.
 GitHub and pulled your changes into main. This means that the main branch has 
 been updated with your changes *on GitHub*.
 
-### Moving forward: More practice with branching
+## Moving forward: More practice with branching
 
 Now suppose a few days have gone by and you are ready to work on your analysis 
 project. In particular, you want to update some code that will affect some 
@@ -408,7 +408,7 @@ RUN;
 Re-run your previous R code (highlight all the previous code and hit 
 command + Return [Mac] or control + Enter [Windows]). Then run the newly-added 
 code line by line to see what it is doing. Save the updated .R file by pushing
-the save icon. Track the changes using Git. Go to the Bash/Terminal window. Type "git status".
+the save icon. Track the changes using Git. Go to the Bash/Terminal window. Type `git status`.
 Which files have been modified? Which files are new and untracked?
 
 ```
@@ -467,7 +467,7 @@ Biostat-MBP13-20:life-expectancy corinneriddell$ git commit -m 'calc LE averages
 
 You are now ready to push these changes up to GitHub onto GitHub's version
 of your local branch. First, remind yourself of your branch's name using 
-"git branch". Then push: `git push origin {YOUR-BRANCH-NAME}`, replacing 
+`git branch`. Then push: `git push origin {YOUR-BRANCH-NAME}`, replacing 
 {YOUR-BRANCH-NAME} with the name of your branch.
 
 ```
@@ -537,7 +537,7 @@ Your branch is up to date with 'origin/main'.
 ```
 
 `git pull origin main`: pull GitHub's copy of the main branch to update your 
-local version. Examine the figure made by git about the changes:
+local version. Examine the figure made by Git about the changes:
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git pull origin main
@@ -578,8 +578,8 @@ Re-run all your code that uses this file. First open the .Rproj file to launch R
 
 **Track the changes using Git**
 
-Use "git status", "git add...", and "git commit..." to track these changes 
-locally. Use "git push" to push these changes to GitHub. 
+Use `git status`, `git add...`, and `git commit...` to track these changes 
+locally. Use `git push` to push these changes to GitHub. 
 
 Using `git status`, I can see that the data files have all been modified, as has 
 the image file of the plot. There is a new untracked folder called data/archive/

@@ -89,10 +89,11 @@
 <li>Repeat the process with more code updates</li>
 <li>Repeat the process with data updates</li>
 </ul>
-<div id="set-up-a-project-that-you-want-to-track-with-git-and-github" class="section level3" number="7.1.1">
-<h3>
-<span class="header-section-number">7.1.1</span> Set up a project that you want to track with git and GitHub<a class="anchor" aria-label="anchor" href="#set-up-a-project-that-you-want-to-track-with-git-and-github"><i class="fas fa-link"></i></a>
-</h3>
+</div>
+<div id="set-up-a-project-that-you-want-to-track-with-git-and-github" class="section level2" number="7.2">
+<h2>
+<span class="header-section-number">7.2</span> Set up a project that you want to track with git and GitHub<a class="anchor" aria-label="anchor" href="#set-up-a-project-that-you-want-to-track-with-git-and-github"><i class="fas fa-link"></i></a>
+</h2>
 <p>Let’s suppose that you have a project that you want to start tracking using Git and Github. For this project, you are already working on with some code, data, and visualizations that have already been saved. We have made this project for you. To download it, run the following two commands in the RStudio console:</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"usethis"</span><span class="op">)</span></span>
@@ -163,10 +164,10 @@ nothing to commit, working tree clean</code></pre>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$git branch
 * main</code></pre>
 </div>
-<div id="make-your-first-branch" class="section level3" number="7.1.2">
-<h3>
-<span class="header-section-number">7.1.2</span> Make your first branch<a class="anchor" aria-label="anchor" href="#make-your-first-branch"><i class="fas fa-link"></i></a>
-</h3>
+<div id="make-your-first-branch" class="section level2" number="7.3">
+<h2>
+<span class="header-section-number">7.3</span> Make your first branch<a class="anchor" aria-label="anchor" href="#make-your-first-branch"><i class="fas fa-link"></i></a>
+</h2>
 <p>Set yourself up in a new branch off of main. In Terminal/Bash:</p>
 <ul>
 <li>Type <code>git checkout -b may3-XY</code>, replacing XY with your initials. (If today
@@ -282,10 +283,10 @@ GitHub and pulled your changes into main. This means that the main branch has
 been updated with your changes <em>on GitHub</em>.</li>
 </ul>
 </div>
-<div id="moving-forward-more-practice-with-branching" class="section level3" number="7.1.3">
-<h3>
-<span class="header-section-number">7.1.3</span> Moving forward: More practice with branching<a class="anchor" aria-label="anchor" href="#moving-forward-more-practice-with-branching"><i class="fas fa-link"></i></a>
-</h3>
+<div id="moving-forward-more-practice-with-branching" class="section level2" number="7.4">
+<h2>
+<span class="header-section-number">7.4</span> Moving forward: More practice with branching<a class="anchor" aria-label="anchor" href="#moving-forward-more-practice-with-branching"><i class="fas fa-link"></i></a>
+</h2>
 <p>Now suppose a few days have gone by and you are ready to work on your analysis
 project. In particular, you want to update some code that will affect some
 of the results and “outputs”, where outputs are results saved in any form. In
@@ -413,7 +414,7 @@ RUN;</code></pre>
 <p>Re-run your previous R code (highlight all the previous code and hit
 command + Return [Mac] or control + Enter [Windows]). Then run the newly-added
 code line by line to see what it is doing. Save the updated .R file by pushing
-the save icon. Track the changes using Git. Go to the Bash/Terminal window. Type “git status”.
+the save icon. Track the changes using Git. Go to the Bash/Terminal window. Type <code>git status</code>.
 Which files have been modified? Which files are new and untracked?</p>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git status
 On branch may7-cr
@@ -456,7 +457,7 @@ Replace ‘your message’ with a short message describing the changes. Remember
 <p><strong>Push the changes up to GitHub</strong></p>
 <p>You are now ready to push these changes up to GitHub onto GitHub’s version
 of your local branch. First, remind yourself of your branch’s name using
-“git branch”. Then push: <code>git push origin {YOUR-BRANCH-NAME}</code>, replacing
+<code>git branch</code>. Then push: <code>git push origin {YOUR-BRANCH-NAME}</code>, replacing
 {YOUR-BRANCH-NAME} with the name of your branch.</p>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
   main
@@ -479,10 +480,9 @@ To https://github.com/corinne-riddell/life-expectancy.git
 <p>Navigate to GitHub.com and go through the steps described previously to
 create a pull request to pull these changes into main.</p>
 </div>
-</div>
-<div id="another-practice-changes-after-receiving-an-updated-dataset" class="section level2" number="7.2">
+<div id="another-practice-changes-after-receiving-an-updated-dataset" class="section level2" number="7.5">
 <h2>
-<span class="header-section-number">7.2</span> Another practice: Changes after receiving an updated dataset<a class="anchor" aria-label="anchor" href="#another-practice-changes-after-receiving-an-updated-dataset"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.5</span> Another practice: Changes after receiving an updated dataset<a class="anchor" aria-label="anchor" href="#another-practice-changes-after-receiving-an-updated-dataset"><i class="fas fa-link"></i></a>
 </h2>
 <p>Another week goes by. It is now May 14. You received an email that there was an
 error in the data file that you used to conduct the analysis. A new data file
@@ -513,7 +513,7 @@ nothing added to commit but untracked files present (use "git add" to track)</co
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.</code></pre>
 <p><code>git pull origin main</code>: pull GitHub’s copy of the main branch to update your
-local version. Examine the figure made by git about the changes:</p>
+local version. Examine the figure made by Git about the changes:</p>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git pull origin main
 remote: Enumerating objects: 1, done.
 remote: Counting objects: 100% (1/1), done.
@@ -541,8 +541,8 @@ up to you and your file organization system. Move the LEbsyrx.csv into the data 
 the file it is replacing (“Life-expectancy-by-state-long.csv”).</p>
 <p>Re-run all your code that uses this file. First open the .Rproj file to launch RStudio. Then, you can highlight all the code and hit the “Run” button.</p>
 <p><strong>Track the changes using Git</strong></p>
-<p>Use “git status”, “git add…”, and “git commit…” to track these changes
-locally. Use “git push” to push these changes to GitHub.</p>
+<p>Use <code>git status</code>, <code>git add...</code>, and <code>git commit...</code> to track these changes
+locally. Use <code>git push</code> to push these changes to GitHub.</p>
 <p>Using <code>git status</code>, I can see that the data files have all been modified, as has
 the image file of the plot. There is a new untracked folder called data/archive/
 where I moved the archived dataset.</p>
@@ -611,9 +611,9 @@ How did the data changed? Which tool do you prefer?</li>
 <li>can you tell from the data or images how the change affected the analytic findings?</li>
 <li>anything else you noticed?</li>
 </ul>
-<div id="summary" class="section level3" number="7.2.1">
+<div id="summary" class="section level3" number="7.5.1">
 <h3>
-<span class="header-section-number">7.2.1</span> Summary<a class="anchor" aria-label="anchor" href="#summary"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.5.1</span> Summary<a class="anchor" aria-label="anchor" href="#summary"><i class="fas fa-link"></i></a>
 </h3>
 <p>Congratulations, you have successfully worked in Git and GitHub solo! What a
 journey. You now know how to transition your existing work to being tracked
@@ -636,15 +636,12 @@ commands covered in this section.</p>
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#solo-workflow"><span class="header-section-number">7</span> Solo Workflow</a></li>
+<li><a class="nav-link" href="#outline-for-this-section"><span class="header-section-number">7.1</span> Outline for this section</a></li>
+<li><a class="nav-link" href="#set-up-a-project-that-you-want-to-track-with-git-and-github"><span class="header-section-number">7.2</span> Set up a project that you want to track with git and GitHub</a></li>
+<li><a class="nav-link" href="#make-your-first-branch"><span class="header-section-number">7.3</span> Make your first branch</a></li>
+<li><a class="nav-link" href="#moving-forward-more-practice-with-branching"><span class="header-section-number">7.4</span> Moving forward: More practice with branching</a></li>
 <li>
-<a class="nav-link" href="#outline-for-this-section"><span class="header-section-number">7.1</span> Outline for this section</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#set-up-a-project-that-you-want-to-track-with-git-and-github"><span class="header-section-number">7.1.1</span> Set up a project that you want to track with git and GitHub</a></li>
-<li><a class="nav-link" href="#make-your-first-branch"><span class="header-section-number">7.1.2</span> Make your first branch</a></li>
-<li><a class="nav-link" href="#moving-forward-more-practice-with-branching"><span class="header-section-number">7.1.3</span> Moving forward: More practice with branching</a></li>
-</ul>
-</li>
-<li>
-<a class="nav-link" href="#another-practice-changes-after-receiving-an-updated-dataset"><span class="header-section-number">7.2</span> Another practice: Changes after receiving an updated dataset</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#summary"><span class="header-section-number">7.2.1</span> Summary</a></li></ul>
+<a class="nav-link" href="#another-practice-changes-after-receiving-an-updated-dataset"><span class="header-section-number">7.5</span> Another practice: Changes after receiving an updated dataset</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#summary"><span class="header-section-number">7.5.1</span> Summary</a></li></ul>
 </li>
 </ul>
 
@@ -663,7 +660,7 @@ commands covered in this section.</p>
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Git and GitHub for Public Health</strong>" was written by Corinne Riddell and Lauren Wilner. It was last built on 2024-04-27.</p>
+    <p>"<strong>Git and GitHub for Public Health</strong>" was written by Corinne Riddell and Lauren Wilner. It was last built on 2024-05-01.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
