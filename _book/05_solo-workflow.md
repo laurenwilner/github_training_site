@@ -24,7 +24,7 @@ install.packages("usethis")
 usethis::use_course("corinne-riddell/existing-project")
 ```
 
-* R will asked you if you want this folder copied onto the Desktop. Select Yes.
+* R will ask you if you want this folder copied onto the Desktop. Select Yes.
 * R will display messages showing you that the folder has been downloaded and unzipped.
 Tell R whether to delete the file.
 * RStudio will then open. Click the code folder in the file viewer. Then, click
@@ -231,7 +231,7 @@ branch has no conflicts with the base branch". This means you are good to go!
 
 **Summary**
 
-* You setup a folder on your laptop so that Git is used to track changes made 
+* You set up a folder on your laptop so that Git is used to track changes made 
 *locally on your laptop*. 
 * You linked that folder to GitHub.com so that the same changes can be tracked 
 externally on GitHub. 
