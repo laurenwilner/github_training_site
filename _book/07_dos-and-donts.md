@@ -71,8 +71,16 @@ analysis after having already written up some results. If you track the image,
 you can easily see how it changed (it being the point estimates and confidence
 intervals, of the slope of the regression line, or the shading of a colored map).
 This has the direct pay-off of making it much easier to revise the written 
-results as you can more easily see the changes using these tools.
+result.
 
+  <div class="app-image">
+   <a href="https://drive.google.com/file/d/1KY5BgNgtaLRXHHGz6mHc4jcgwSvwDYvt/preview"><img src="onion-skin-example.gif"></a>
+  </div>
+  
+  <div class="app-image">
+   <a href="https://drive.google.com/file/d/148hhoZhBuYCGspjKYfgE9leXVv0DeXdR/preview"><img src="swipe-example.gif"></a>
+  </div>
+  
 ❌ **Dont' track very large image files**
 
 One thing to be careful about is not uploading very large images like the 
