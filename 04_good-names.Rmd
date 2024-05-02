@@ -46,7 +46,7 @@ These files are:
 
 Flip through [Jenny Bryan's](https://jennybryan.org/about/) slide set here for a deeper dive into file naming:
 
-<iframe src="https://drive.google.com/file/d/1JibUedZzP0ZlrZ-IiqnkWhtwsMICoXBx/preview" width="100%" height="400"></iframe>
+<iframe src="https://drive.google.com/file/d/1JibUedZzP0ZlrZ-IiqnkWhtwsMICoXBx/preview" width="100%" height="800"></iframe>
 
 <br />
 <br />
