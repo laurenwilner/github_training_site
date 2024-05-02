@@ -67,7 +67,7 @@ done this (repeatedly... even while creating this website).
 
 There are many comics and memes about Git and the struggles that come with it-- include the acceptability of burning down your repository and starting over! 
 
-<iframe src="https://imgs.xkcd.com/comics/git.png" width="50%" height="200"></iframe> 
+<iframe src="https://imgs.xkcd.com/comics/git.png" width="56%" height="483"></iframe> 
 
 Remember that you are not alone in your struggles and that there are many resources available to help you. It is ALWAYS okay to just save your code elsewhere for a moment and start over.
 
