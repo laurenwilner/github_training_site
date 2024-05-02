@@ -7,7 +7,7 @@
 <title>Chapter 8 Group Workflow | Git and GitHub for Public Health</title>
 <meta name="author" content="Corinne Riddell and Lauren Wilner">
 <meta name="description" content="8.1 Outline for this section In the previous section, you got up and running with working alone in Git and GitHub. During this section, we’re going to learn how to collaborate with others using...">
-<meta name="generator" content="bookdown 0.39.1 with bs4_book()">
+<meta name="generator" content="bookdown 0.39 with bs4_book()">
 <meta property="og:title" content="Chapter 8 Group Workflow | Git and GitHub for Public Health">
 <meta property="og:type" content="book">
 <meta property="og:description" content="8.1 Outline for this section In the previous section, you got up and running with working alone in Git and GitHub. During this section, we’re going to learn how to collaborate with others using...">
@@ -16,7 +16,7 @@
 <meta name="twitter:description" content="8.1 Outline for this section In the previous section, you got up and running with working alone in Git and GitHub. During this section, we’re going to learn how to collaborate with others using...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.6.1/transition.js"></script><script src="libs/bs3compat-0.6.1/tabs.js"></script><script src="libs/bs3compat-0.6.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.5.1/transition.js"></script><script src="libs/bs3compat-0.5.1/tabs.js"></script><script src="libs/bs3compat-0.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
 <script src="libs/bs4_book-1.0.0/bs4_book.js"></script><link href="libs/vembedr-0.1.5/css/vembedr.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
@@ -135,10 +135,9 @@ nothing to commit, working tree clean</code></pre>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$git branch
 * main</code></pre>
 <ul>
-<li>Create a new branch. Now that we know that our repository is cloned, up to
-date, and on main, we can create a new branch to work on.</li>
 <li>
-<strong>Both:</strong> Create a new branch with the following command:</li>
+<strong>Both:</strong> Create a new branch. Now that we know that our repository is cloned,
+up to date, and on main, we can make a new branch to work on:</li>
 </ul>
 <pre><code>git checkout -b {new-branch-name}
 git branch</code></pre>
@@ -152,23 +151,17 @@ only the first line was <em>necessary</em> to create this branch.</p>
 <p>In general, there are three ways to work collaboratively on a project:</p>
 <ol style="list-style-type: decimal">
 <li>
-<strong>Independent Work:</strong> You each work on separate files and merge your own changes.</li>
+<strong>Collaborative route #1 (Independent work)</strong>: You each work on separate files and merge your own changes. It is similar to creating several separate documents and
+storing them in a shared folder for you both to view.<br>
+</li>
 <li>
-<strong>Code Review:</strong> Submit pull requests for code reviews without direct edits.</li>
+<strong>Collaborative route #2 (Code review)</strong>: Submit pull requests for code reviews without direct edits. It is similar to having a shared document where you can leave comments for each other - like when you leave comments on a MS Word document for your colleague.<br>
+</li>
 <li>
-<strong>Working on the same files:</strong> You both work on the same file and merge in
-your changes. Sometimes this leads to merge conflicts so additional care is needed.</li>
+<strong>Collaborative route #3 (Working on the same files)</strong>: You both work on the same file and merge in your changes. Sometimes this leads to merge conflicts so additional care is needed. It is similar to having a shared document where you
+can make changes directly to your colleague’s work – think about working collaboratively on a document in the cloud where both individuals can edit the
+document at the same time, but weird things might happen if you are working on the same sentence at the same time.</li>
 </ol>
-<p>While these different routes may seem ambiguous right now, you can think of pull
-requests as akin to “Track Changes” in Microsoft Word or “Comments” in Google Docs.</p>
-<p><strong>Collaborative route #1 (Independent work)</strong> is like creating several separate
-documents and storing them in a shared folder for you both to view.</p>
-<p><strong>Collaborative route #2 (Code review)</strong> is like having a shared document where
-you can leave comments for each other - like when you leave comments on a
-MS Word document for your colleague.</p>
-<p><strong>Collaborative route #3 (Working on the same files)</strong> is like having a shared
-document where you can make changes directly to your colleague’s work - think
-track changes.</p>
 <p>We will cover each collaborative route below.</p>
 <div id="collaborative-route-1-independent-work" class="section level3" number="8.4.1">
 <h3>

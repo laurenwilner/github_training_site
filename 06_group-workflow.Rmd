@@ -64,9 +64,8 @@ Biostat-MBP13-20:life-expectancy corinneriddell$git branch
 * main
 ```
 
-- Create a new branch. Now that we know that our repository is cloned, up to 
-date, and on main, we can create a new branch to work on. 
-- **Both:** Create a new branch with the following command:
+- **Both:** Create a new branch. Now that we know that our repository is cloned,
+up to date, and on main, we can make a new branch to work on: 
 
 ```
 git checkout -b {new-branch-name}
@@ -80,24 +79,12 @@ only the first line was *necessary* to create this branch.
 
 In general, there are three ways to work collaboratively on a project:
 
-1. **Independent Work:** You each work on separate files and merge your own changes.
-2. **Code Review:** Submit pull requests for code reviews without direct edits.
-3. **Working on the same files:** You both work on the same file and merge in 
-your changes. Sometimes this leads to merge conflicts so additional care is needed. 
-
-While these different routes may seem ambiguous right now, you can think of pull
-requests as akin to "Track Changes" in Microsoft Word or "Comments" in Google Docs.  
-
-**Collaborative route #1 (Independent work)** is like creating several separate 
-documents and storing them in a shared folder for you both to view.  
-
-**Collaborative route #2 (Code review)** is like having a shared document where 
-you can leave comments for each other - like when you leave comments on a
-MS Word document for your colleague.  
-
-**Collaborative route #3 (Working on the same files)** is like having a shared 
-document where you can make changes directly to your colleague's work - think 
-track changes.
+1. **Collaborative route #1 (Independent work)**: You each work on separate files and merge your own changes. It is similar to creating several separate documents and 
+storing them in a shared folder for you both to view.  
+2. **Collaborative route #2 (Code review)**: Submit pull requests for code reviews without direct edits. It is similar to having a shared document where you can leave comments for each other - like when you leave comments on a MS Word document for your colleague.  
+3. **Collaborative route #3 (Working on the same files)**: You both work on the same file and merge in your changes. Sometimes this leads to merge conflicts so additional care is needed. It is similar to having a shared document where you 
+can make changes directly to your colleague's work -- think about working collaboratively on a document in the cloud where both individuals can edit the
+document at the same time, but weird things might happen if you are working on the same sentence at the same time.
 
 We will cover each collaborative route below.
 
