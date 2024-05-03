@@ -73,16 +73,21 @@ intervals, of the slope of the regression line, or the shading of a colored map)
 This has the direct pay-off of making it much easier to revise the written 
 result.
 
-**Swipe comparison tool**
+**2-up comparison:**
+
+<img src="./figures/2-up-example.png" width="100%" />
+
+
+**Swipe comparison:**
 
 <BODY>
-  <IMG SRC="https://bph-storage.s3.us-west-1.amazonaws.com/git-for-humans/swipe-example.gif" width="425" height="350">
+  <IMG SRC="https://bph-storage.s3.us-west-1.amazonaws.com/git-for-humans/swipe-example.gif" width="450" height="325">
 </BODY>
 
-**Onion skin comparison tool**
+**Onion skin comparison:**
 
 <BODY>
-  <IMG SRC="https://bph-storage.s3.us-west-1.amazonaws.com/git-for-humans/onion-skin-example.gif" width="425" height="350">
+  <IMG SRC="https://bph-storage.s3.us-west-1.amazonaws.com/git-for-humans/onion-skin-example.gif" width="450" height="325">
 </BODY>
 
 
