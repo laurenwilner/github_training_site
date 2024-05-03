@@ -12,7 +12,7 @@ using Git and GitHub. We will:
     - Independent Work
     - Code Review
     - Working on the same files
-- Practice resolving a merge conflict
+        - Practice resolving a merge conflict
 
 ## Setup
 
@@ -46,7 +46,7 @@ git clone {repository URL}
 
 ## Get oriented to the new directory
 
-- Navigate into your repository by typing cd {repo-name}/
+- Navigate into your repository by typing `cd {repo-name}`
 - Type `git status`. The results shows you that no changes have been made yet:
 
 ```
@@ -155,19 +155,29 @@ Let's practice this workflow now:
 
 **Lead researcher steps:** 
 
-- Create a new branch with the following command:
+- Checkout main, and pull down the changes
+
+```
+git checkout main
+git pull origin main
+git status
+```
+
+- Create a new branch. Pretend it is the next day and include this date in the 
+branch name alongside your initials:
 
 ```
 git checkout -b {new-branch-name}
 git branch
 ```
 
-- Make a change to the file you added in the previous step.
+- Make and save a change to the file you added in the previous step.
 You can add in a comment or a new line of code - something small is good. Save 
 your file.
 - Add, commit, and push your changes to your branch on GitHub:
 
 ```
+git status
 git add {file-name}
 git commit -m "{your description of what you changed}"
 git push origin {your-branch-name}
@@ -193,10 +203,7 @@ of code. You can leave multiple comments. Your feedback can include suggestions,
 questions, or general feedback about the code. Focus on clarity, efficiency, and 
 any potential errors you might notice.
 - When you're finished commenting, click `Finish your review` in green in the top right. 
-- Submit your comments. You can either:  
-    1. **Comment:** This submits feedback without explicitly approving the pull request.
-    2. **Approve:** This submits feedback and approves the pull request for merging into main.
-    3. **Request Changes:** Submit feedback that the other person must address before they can merge into main.
+- Submit your comments. You have three review options:
 
 <br />
 
@@ -204,14 +211,10 @@ Let's take a moment to talk briefly about each of these review options.
 
 |  |   |
 |-|---------|
-|**Comment**   | This submits feedback without explicitly approving the pull request. This will send the lead researcher an email with your comments on their code. The lead researcher can click `View it on GitHub` to see your comments. They can reply and/or merge the pull request into main at this point. This can be used either as an FYI or to start a conversation about the code - e.g. maybe a certain function is new to you so you want to ask about why they chose to use that. You may want to use this if you have a workflow where you always want the person who wrote the code to do the merging.  |
-|**Approve**|This submits feedback and approves the PR for merging into main. This will send the lead researcher an email with your comments that will also indicate that the pull request is approved. This option can be used as an FYI, e.g., telling them about an alternate function that they *could* use but do not have to. Either person can merge the pull request into main. You can establish norms around how these work with your colleagues - there is no right answer! |
-|**Request Changes**|Submit feedback that the other person needs to address before they can merge into main. This will send the lead researcher an email with your comments that will also indicate that the PR needs changes. This option can be used if you see something that needs to change before the pull request can be merged - e.g. a function that is not working as intended. The lead researcher will need to address your comments before they can merge the pull request into main. *Technically, the PR could be merged in without the changes, but this is not good practice.*|
+|`r emo::ji("check")` **Comment**   | This submits feedback without explicitly approving the pull request. This will send the lead researcher an email with your comments on their code. The lead researcher can click `View it on GitHub` to see your comments. They can reply and/or merge the pull request into main at this point. This can be used either as an FYI or to start a conversation about the code - e.g. maybe a certain function is new to you so you want to ask about why they chose to use that. You may want to use this if you have a workflow where you always want the person who wrote the code to do the merging.  |
+|`r emo::ji("check")` **Approve**|This submits feedback and approves the PR for merging into main. This will send the lead researcher an email with your comments that will also indicate that the pull request is approved. This option can be used as an FYI, e.g., telling them about an alternate function that they *could* use but do not have to. Either person can merge the pull request into main. You can establish norms around how these work with your colleagues - there is no right answer! |
+|`r emo::ji("check")` **Request Changes**|Submit feedback that the other person needs to address before they can merge into main. This will send the lead researcher an email with your comments that will also indicate that the PR needs changes. This option can be used if you see something that needs to change before the pull request can be merged - e.g. a function that is not working as intended. The lead researcher will need to address your comments before they can merge the pull request into main. *Technically, the PR could be merged in without the changes, but this is not good practice.*|
 |  |   |
-
-**Colleague:** 
-
-- Review the changes made by your lead researcher in the pull request. Leave comments on the code as needed. Choose one option to test out.
 
 **Lead Researcher:**
 
