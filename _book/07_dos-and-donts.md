@@ -74,7 +74,7 @@ This has the direct pay-off of making it much easier to revise the written
 result.
 
 <BODY>
-  <IMG SRC="https://bph-storage.s3.us-west-1.amazonaws.com/git-for-humans/swipe-example.gif">
+  <IMG SRC="https://bph-storage.s3.us-west-1.amazonaws.com/git-for-humans/swipe-example.gif" width="400" height="400">
 </BODY>
 
 
