@@ -81,10 +81,13 @@ using Git and GitHub. We will:</p>
 <ul>
 <li>Independent Work</li>
 <li>Code Review</li>
-<li>Working on the same files</li>
+<li>Working on the same files
+<ul>
+<li>Practice resolving a merge conflict</li>
 </ul>
 </li>
-<li>Practice resolving a merge conflict</li>
+</ul>
+</li>
 </ul>
 </div>
 <div id="setup" class="section level2" number="8.2">
@@ -121,7 +124,8 @@ clone your repository and run the following command:</li>
 <span class="header-section-number">8.3</span> Get oriented to the new directory<a class="anchor" aria-label="anchor" href="#get-oriented-to-the-new-directory"><i class="fas fa-link"></i></a>
 </h2>
 <ul>
-<li>Navigate into your repository by typing cd {repo-name}/</li>
+<li>Navigate into your repository by typing <code>cd {repo-name}</code>
+</li>
 <li>Type <code>git status</code>. The results shows you that no changes have been made yet:</li>
 </ul>
 <pre><code>Biostat-MBP13-20:collabo-repo corinneriddell$ git status
@@ -231,17 +235,25 @@ these changes by submitting comments on the pull request.</p>
 <p>Let’s practice this workflow now:</p>
 <p><strong>Lead researcher steps:</strong></p>
 <ul>
-<li>Create a new branch with the following command:</li>
+<li>Checkout main, and pull down the changes</li>
+</ul>
+<pre><code>git checkout main
+git pull origin main
+git status</code></pre>
+<ul>
+<li>Create a new branch. Pretend it is the next day and include this date in the
+branch name alongside your initials:</li>
 </ul>
 <pre><code>git checkout -b {new-branch-name}
 git branch</code></pre>
 <ul>
-<li>Make a change to the file you added in the previous step.
+<li>Make and save a change to the file you added in the previous step.
 You can add in a comment or a new line of code - something small is good. Save
 your file.</li>
 <li>Add, commit, and push your changes to your branch on GitHub:</li>
 </ul>
-<pre><code>git add {file-name}
+<pre><code>git status
+git add {file-name}
 git commit -m "{your description of what you changed}"
 git push origin {your-branch-name}</code></pre>
 <ul>
@@ -265,16 +277,7 @@ of code. You can leave multiple comments. Your feedback can include suggestions,
 questions, or general feedback about the code. Focus on clarity, efficiency, and
 any potential errors you might notice.</li>
 <li>When you’re finished commenting, click <code>Finish your review</code> in green in the top right.</li>
-<li>Submit your comments. You can either:
-<ol style="list-style-type: decimal">
-<li>
-<strong>Comment:</strong> This submits feedback without explicitly approving the pull request.</li>
-<li>
-<strong>Approve:</strong> This submits feedback and approves the pull request for merging into main.</li>
-<li>
-<strong>Request Changes:</strong> Submit feedback that the other person must address before they can merge into main.</li>
-</ol>
-</li>
+<li>Submit your comments. You have three review options:</li>
 </ul>
 <p><br></p>
 <p>Let’s take a moment to talk briefly about each of these review options.</p>
@@ -285,15 +288,18 @@ any potential errors you might notice.</li>
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><strong>Comment</strong></td>
+<td>✅ <strong>Comment</strong>
+</td>
 <td>This submits feedback without explicitly approving the pull request. This will send the lead researcher an email with your comments on their code. The lead researcher can click <code>View it on GitHub</code> to see your comments. They can reply and/or merge the pull request into main at this point. This can be used either as an FYI or to start a conversation about the code - e.g. maybe a certain function is new to you so you want to ask about why they chose to use that. You may want to use this if you have a workflow where you always want the person who wrote the code to do the merging.</td>
 </tr>
 <tr class="even">
-<td><strong>Approve</strong></td>
+<td>✅ <strong>Approve</strong>
+</td>
 <td>This submits feedback and approves the PR for merging into main. This will send the lead researcher an email with your comments that will also indicate that the pull request is approved. This option can be used as an FYI, e.g., telling them about an alternate function that they <em>could</em> use but do not have to. Either person can merge the pull request into main. You can establish norms around how these work with your colleagues - there is no right answer!</td>
 </tr>
 <tr class="odd">
-<td><strong>Request Changes</strong></td>
+<td>✅ <strong>Request Changes</strong>
+</td>
 <td>Submit feedback that the other person needs to address before they can merge into main. This will send the lead researcher an email with your comments that will also indicate that the PR needs changes. This option can be used if you see something that needs to change before the pull request can be merged - e.g. a function that is not working as intended. The lead researcher will need to address your comments before they can merge the pull request into main. <em>Technically, the PR could be merged in without the changes, but this is not good practice.</em>
 </td>
 </tr>
@@ -303,10 +309,6 @@ any potential errors you might notice.</li>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Colleague:</strong></p>
-<ul>
-<li>Review the changes made by your lead researcher in the pull request. Leave comments on the code as needed. Choose one option to test out.</li>
-</ul>
 <p><strong>Lead Researcher:</strong></p>
 <ul>
 <li>Review the comments made by your colleague. Make any necessary changes to your code based on the feedback.</li>
