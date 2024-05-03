@@ -75,21 +75,10 @@ intervals, of the slope of the regression line, or the shading of a colored map)
 This has the direct pay-off of making it much easier to revise the written 
 result.
 
-<div class="app-section">
+<BODY>
+  <IMG SRC="https://bph-storage.s3.us-west-1.amazonaws.com/git-for-humans/swipe-example.gif">
+</BODY>
 
-  <div class="app-image">
-   <a href="https://bph-storage.s3.us-west-1.amazonaws.com/git-for-humans/"><img src="swipe-example.gif"></a>
-  </div>
-  
-</div>
-
-<div class="app-section">
-
-  <div class="app-image">
-   <a href="https://bph-storage.s3.us-west-1.amazonaws.com/git-for-humans/"><img src="onion-skin-example.gif"></a>
-  </div>
-  
-</div>
 
 
 `r emo::ji("x")` **Dont' track very large image files**
