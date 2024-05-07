@@ -61,12 +61,12 @@ the space after the word "Data"! Even worse, the space breaks the auto-complete
 functionality that occurs when you press "tab" to auto-complete the file name 
 after typing the first few letters. 
 
-To really add the file we need to use the escape character (the backlash "\\")
+To really add the file we need to use the escape character (the backslash "\\")
 before each space in the name, as shown in the `git add` command highlighted in
-yellow.This might now sound like a big deal
+yellow. This might not sound like a big deal
 if you haven't interacted with Terminal/Bash very much, but I can guarantee you
 that the frustration will build to a crescendo over time... save yourself this 
-pain and by using dashes and underscores instead of spaces!
+pain by using dashes and underscores instead of spaces!
 
 <img src="./figures/space-in-filename-pain.png" width="100%" />
 

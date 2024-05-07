@@ -99,8 +99,9 @@ Biostat-MBP13-20:life-expectancy corinneriddell$git branch
 
 Set yourself up in a new branch off of main. In Terminal/Bash:
 
-* Type `git checkout -b may3-XY`, replacing XY with your initials. (If today 
-is not May 3, replace "may3" with today's date.)
+* Type `git checkout -b may3-xy`, replacing xy with your initials -- write these 
+in lowercase to prevent errors later! (If today is not May 3, replace "may3" 
+with today's date.)
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout -b may3-cr

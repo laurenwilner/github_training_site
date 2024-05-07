@@ -44,11 +44,20 @@ Restricted data cannot be posted on GitHub. A best practice is to store it
 securely outside of your tracked folder to ensure there is no chance of it being
 posted. 
 
-`r emo::ji("x")` **Dont' track large datasets!** 
+`r emo::ji("x")` **Don't track large datasets!** 
 
 Git will warn you if your file exceeds 50 MB and 
 block you from tracking files 100 MB or larger. To ensure these files aren't tracked, you can store them elsewhere (outside of
 the tracked Git folder), or store them in the tracked folder while also listing them or their file type to your .gitignore file. 
+
+`r emo::ji("x")` **WARNING FOR MAC USERS: UNDER NO CIRCUMSTANCES SHOULD YOU TRACK .DS_STORE files!**
+
+If you are a Mac user, you may not even know what a .DS_STORE file is. These are 
+invisible files that are created whenever you view a folder using Finder. You 
+will see them when you write `git status`. You do not want to track these files
+as it can allow people to hack your computer!! As a best practice, add these 
+to your .gitignore file to ensure that they are never tracked by you or anyone
+else contributing to your project.
 
 `r emo::ji("thinking")` **Consider tracking intermediate data products**
 
