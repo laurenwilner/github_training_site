@@ -311,7 +311,7 @@ Deleted branch may3-cr (was 58fcc58).
 **Pull down the changes from main**
 
 This is your **local** copy of main. It needs to pull down the changes to 
-made that you made on GitHub in an earlier step. To do that, type `git pull origin main`.
+main that you made on GitHub in an earlier step. To do that, type `git pull origin main`.
 A graphic will be drawn that summarizes which files have been updated and by 
 how much.
 
