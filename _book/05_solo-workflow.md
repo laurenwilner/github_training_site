@@ -55,8 +55,8 @@ main page.
 * You'll see a URL that starts with https://. Push the icon with two overlapping
 squares to copy the URL to your clipboard.
 * Open Terminal (Mac) or Bash (Windows) program. Navigate to where you want to place 
-this repository using the `cd {folder_name}` command. Then write 
-`git clone {paste the url you copied here}` and
+this repository using the `cd {folder_name}` command. *Note: Whenever we use curly brackets on this website, you do not need to type out curly brackets in your code. For example use `cd Documents/` to navigate to your Documents folder, not `cd {Documents}`. This applies wherever you see curly brackets on this website!* 
+* Then type `git clone {paste the url you copied here}` in Terminal/Bash and
 then press the return/enter button. The following will display in Terminal/Bash
 if this was successful:
 
@@ -138,7 +138,7 @@ Untracked files:
 	code/
 	data/
 	images/
-	life-expectancy.Rproj
+	existing-project.Rproj
 ```
 
 We want to track the code/, data/, and images/ subfolders we just copied over, as well as the life-expectancy.Rproj file.
@@ -170,7 +170,6 @@ Note: Computers create files that we don't want to track. For example, Macs crea
 doc or Excel spreadsheet is open. You will see these weird files listed under the 
 Untracked files list. You don't need to worry about them because we don't want 
 to track changes to any of those files.
-
 
 Commit these changes locally: `git commit -m 'your commit message' `, replace
 'your commit message' with a short message about what you've done (keep the 
@@ -279,8 +278,8 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 There is one untracked file: .DS_Store. This is okay since it is an internal 
-file used by Mac OS that does not need to be tracked. We just want to ensure 
-no code files or outputs we intended to track have been forgotton.
+file used by Mac OS that should never be tracked. We just want to ensure 
+no code files or outputs we intended to track have been forgotten.
 
 You are likely still on your branch from the last day. In that case, navigate
 back to main using `git checkout main`. 
@@ -336,7 +335,7 @@ Fast-forward
  create mode 100644 data/Life-expectancy-by-state-long.csv
  create mode 100644 images/ca-black-women-LE.png
  create mode 100644 images/placeholder.md
- create mode 100644 life-expectancy.Rproj
+ create mode 100644 existing-project.Rproj
 ```
 
 **Start a new branch**
@@ -573,8 +572,9 @@ Update the CSV file "Life-expectancy-by-state-long.csv" with the new dataset.
 First, decide if you want to archive this older version of the dataset for any reason.
 If you do, then decide where you would store the archived version and move it there.
 The archived version could stay on GitHub or be moved off of GitHub -- this is 
-up to you and your file organization system. Move the LEbsyrx.csv into the data folder and rename it to have the name of 
-the file it is replacing ("Life-expectancy-by-state-long.csv").
+up to you and your file organization system. Then, copy the dataset called 
+"Life-expectancy-by-state-long.csv" from the existing-project/future-data 
+subfolder and paste it into the life-expectancy/data subfolder. 
 
 Re-run all your code that uses this file. First open the .Rproj file to launch RStudio. Then, you can highlight all the code and hit the "Run" button.
 
@@ -673,8 +673,6 @@ How did the data changed? Which tool do you prefer?
 * can you see which rows of data were affected by the change?
 * can you tell from the data or images how the change affected the analytic findings?
 * anything else you noticed?
-
-
 
 ## Summary
 
