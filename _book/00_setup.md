@@ -175,7 +175,7 @@ console:
 -> Done.
 ```  
 
-## Blah
+## Download data and code used for the workshop
 
 Run the following two commands in the RStudio console:
 
@@ -193,8 +193,6 @@ it then. If you are following along asynchronously we will use this folder in th
 solo workflow section.
 * If you would like, feel free to run the code in the folder, but do not otherwise
 edit it at this time.
-
-
 
 
 ## Resources
