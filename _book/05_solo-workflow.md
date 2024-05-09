@@ -16,26 +16,15 @@ We have discussed why Git and GitHub are important, now we will set up a reposit
 
 ## Set up a project that you want to track with Git and GitHub 
 
-Let's suppose that you have a project that you want to start tracking using Git and Github. For this project, you are already working on with some code, data, and visualizations that have already been saved. We have made this project for you. To download it, run the following two commands in the RStudio console:
+Let's suppose that you have a project that you want to start tracking using Git 
+and Github. For this project, you are already working on with some code, data, 
+and visualizations that have already been saved. We have made this project for you. 
+It is the one called "existing-project" that should be on your Desktop. If it is
+not, go back to the Workshop Setup page and run the `usethis::use_course("corinne-riddell/existing-project")` code to begin this section.
 
-
-```r
-install.packages("usethis")
-usethis::use_course("corinne-riddell/existing-project")
-```
-
-* R will ask you if you want this folder copied onto the Desktop. Select Yes.
-* R will display messages showing you that the folder has been downloaded and unzipped.
-Tell R whether to delete the file.
-* RStudio will then open. Click the code folder in the file viewer. Then, click
-the filename "01_Analyze-life-expectancy.R" to open this file in RStudio.
-* Run all the code in the .R file you just downloaded. Note that it created a figure and
-saved it into the images sub-folder. Alternatively, open the SAS file 
-"01_Analyze-life-expectancy.sas" to run the equivalent SAS code.
-
-Now you are set up with some existing code and things that you might want to start
-tracking on GitHub. The next thing to do is make a folder on GitHub that will 
-store this project.
+The `existing-project` folder contains existing code and things that you might 
+want to start tracking on GitHub. The next thing to do is make a folder on 
+GitHub to store this project.
 
 **Make a new repository on GitHub**
 

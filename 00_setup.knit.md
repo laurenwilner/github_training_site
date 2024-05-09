@@ -175,6 +175,28 @@ console:
 -> Done.
 ```  
 
+## Blah
+
+Run the following two commands in the RStudio console:
+
+```r
+install.packages("usethis")
+usethis::use_course("corinne-riddell/existing-project")
+```
+
+* R will ask you if you want this folder copied onto the Desktop. Select Yes.
+* R will display messages showing you that the folder has been downloaded and unzipped.
+Tell R whether to delete the file.
+* RStudio will launch.
+* If you are attending a live workshop, keep this folder handy -- we will reference
+it then. If you are following along asynchronously we will use this folder in the 
+solo workflow section.
+* If you would like, feel free to run the code in the folder, but do not otherwise
+edit it at this time.
+
+
+
+
 ## Resources
 
 You are now set up to use Git and GitHub! If you had any issues, here are 
