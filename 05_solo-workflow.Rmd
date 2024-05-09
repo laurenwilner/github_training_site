@@ -45,7 +45,7 @@ repository. Type "life-expectancy" in the repository name.
 * Select either to make this a public or private repository. 
 * Check the box next to `Add a README file`. This tells Git to create a file that can describe your project. For now, you can write a sentence about this being a practice repository for this workshop.   
 * Choose `.gitignore` template: `R`. This tells Git to use defaults that work well for R users.   
-* Choose `MIT License`. This relates to the licensing for your code, which is not relevant for this workshop.  
+* Keep the license as None. (You would want a license if you are developing code for software, like an R package, but not for every day analysis code). 
 * Click "Create repository". Github will then bring you to the repository's 
 main page.
 
@@ -117,7 +117,7 @@ Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
 * may3-cr
 ```
 
-**Make some changes to your code**
+**Make some changes to your tracked folder**
 
 Okay, you are now set up to track changes. Let's do the following:
 
@@ -408,8 +408,9 @@ RUN;
 
 Re-run your previous R code (highlight all the previous code and hit 
 command + Return [Mac] or control + Enter [Windows]). Then run the newly-added 
-code line by line to see what it is doing. Save the updated .R file by pushing
-the save icon. Track the changes using Git. Go to the Bash/Terminal window. Type `git status`.
+code line by line to see what it is doing. **Don't forget to save the updated 
+.R file by pushing the save icon!** After all that, track the changes using Git. 
+Go to the Bash/Terminal window. Type `git status`.
 Which files have been modified? Which files are new and untracked?
 
 ```

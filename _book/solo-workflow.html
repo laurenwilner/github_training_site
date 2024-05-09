@@ -55,7 +55,6 @@
 <li><a class="" href="what-to-track-on-git-and-github.html"><span class="header-section-number">9</span> What to track on Git and Github?</a></li>
 <li><a class="" href="daily-git-practice.html"><span class="header-section-number">10</span> Daily Git Practice</a></li>
 <li><a class="" href="assorted-git-processes-and-tips.html"><span class="header-section-number">11</span> Assorted Git processes and tips</a></li>
-<li><a class="" href="conclusions.html"><span class="header-section-number">12</span> Conclusions</a></li>
 </ul>
 
         <div class="book-extra">
@@ -121,8 +120,7 @@ repository. Type “life-expectancy” in the repository name.</li>
 </li>
 <li>Choose <code>.gitignore</code> template: <code>R</code>. This tells Git to use defaults that work well for R users.<br>
 </li>
-<li>Choose <code>MIT License</code>. This relates to the licensing for your code, which is not relevant for this workshop.<br>
-</li>
+<li>Keep the license as None. (You would want a license if you are developing code for software, like an R package, but not for every day analysis code).</li>
 <li>Click “Create repository”. Github will then bring you to the repository’s
 main page.</li>
 </ul>
@@ -183,7 +181,7 @@ the new branch.</li>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
   main
 * may3-cr</code></pre>
-<p><strong>Make some changes to your code</strong></p>
+<p><strong>Make some changes to your tracked folder</strong></p>
 <p>Okay, you are now set up to track changes. Let’s do the following:</p>
 <p>Copy the code/, data/, and images/ sub-folders from your “existing-project” folder into the
 “life-expectancy” folder.</p>
@@ -414,8 +412,9 @@ RUN;</code></pre>
 <p><strong>Track your changes using Git</strong></p>
 <p>Re-run your previous R code (highlight all the previous code and hit
 command + Return [Mac] or control + Enter [Windows]). Then run the newly-added
-code line by line to see what it is doing. Save the updated .R file by pushing
-the save icon. Track the changes using Git. Go to the Bash/Terminal window. Type <code>git status</code>.
+code line by line to see what it is doing. <strong>Don’t forget to save the updated
+.R file by pushing the save icon!</strong> After all that, track the changes using Git.
+Go to the Bash/Terminal window. Type <code>git status</code>.
 Which files have been modified? Which files are new and untracked?</p>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git status
 On branch may7-cr
@@ -660,7 +659,7 @@ commands covered in this section.</p>
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Git and GitHub for Public Health</strong>" was written by Corinne Riddell and Lauren Wilner. It was last built on 2024-05-07.</p>
+    <p>"<strong>Git and GitHub for Public Health</strong>" was written by Corinne Riddell and Lauren Wilner. It was last built on 2024-05-09.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
