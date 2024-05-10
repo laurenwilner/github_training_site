@@ -111,7 +111,7 @@ Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
 Okay, you are now set up to track changes. Let's do the following:
 
 Copy the code/, data/, and images/ sub-folders from your "existing-project" folder into the 
-"life-expectancy" folder.
+"life-expectancy" folder as well as the .Rproj file.
 
 **Commit the changes that you made and push them to GitHub**
 
@@ -147,7 +147,7 @@ Changes to be committed:
 	new file:   data/Life-expectancy-by-state-long.csv
 	new file:   images/ca-black-women-LE.png
 	new file:   images/placeholder.md
-	new file:   life-expectancy.Rproj
+	new file:   existing-project.Rproj
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
