@@ -24,7 +24,8 @@ computer or if something went wrong. For example, here is the command
 
 <img src="./figures/Terminal-explainer-2.jpg" width="100%" />
 
-Here is a cheat sheet that you can refer to for your bash commands: 
+Here is a cheat sheet that you can refer to for your bash commands:  
+
 | Command  | Description                            |
 |----------|----------------------------------------|
 | `ls`     | Lists files and directories            |
