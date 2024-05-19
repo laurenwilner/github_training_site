@@ -6,17 +6,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Chapter 6 Naming folders and files | Git and GitHub for Public Health</title>
 <meta name="author" content="Corinne Riddell and Lauren Wilner">
-<meta name="description" content="When you are working in Terminal/Bash, it is important to use good folder and file names to make your life easier. Recall when you name a variable in SAS or R, the variable name cannot contain...">
-<meta name="generator" content="bookdown 0.39 with bs4_book()">
+<meta name="description" content="When you are working in Terminal/Bash, it is important to use good folder and file names to make your life easier. 1. Good names for folders: no spaces or special characters Recall when you name a...">
+<meta name="generator" content="bookdown 0.39.1 with bs4_book()">
 <meta property="og:title" content="Chapter 6 Naming folders and files | Git and GitHub for Public Health">
 <meta property="og:type" content="book">
-<meta property="og:description" content="When you are working in Terminal/Bash, it is important to use good folder and file names to make your life easier. Recall when you name a variable in SAS or R, the variable name cannot contain...">
+<meta property="og:description" content="When you are working in Terminal/Bash, it is important to use good folder and file names to make your life easier. 1. Good names for folders: no spaces or special characters Recall when you name a...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chapter 6 Naming folders and files | Git and GitHub for Public Health">
-<meta name="twitter:description" content="When you are working in Terminal/Bash, it is important to use good folder and file names to make your life easier. Recall when you name a variable in SAS or R, the variable name cannot contain...">
+<meta name="twitter:description" content="When you are working in Terminal/Bash, it is important to use good folder and file names to make your life easier. 1. Good names for folders: no spaces or special characters Recall when you name a...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.5.1/transition.js"></script><script src="libs/bs3compat-0.5.1/tabs.js"></script><script src="libs/bs3compat-0.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.6.1/transition.js"></script><script src="libs/bs3compat-0.6.1/tabs.js"></script><script src="libs/bs3compat-0.6.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
 <script src="libs/bs4_book-1.0.0/bs4_book.js"></script><link href="libs/vembedr-0.1.5/css/vembedr.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
@@ -67,10 +67,9 @@
 <span class="header-section-number">6</span> Naming folders and files<a class="anchor" aria-label="anchor" href="#naming-folders-and-files"><i class="fas fa-link"></i></a>
 </h1>
 <p>When you are working in Terminal/Bash, it is important to use good folder and
-file names to make your life easier. Recall when you name a variable in SAS or
-R, the variable name cannot contain spaces or unusual characters. <strong>It is best
-practice to not use spaces or unusual characters in folder or file names,</strong> even
-though spaces are permissible and commonly used by Windows and Mac Users.</p>
+file names to make your life easier.</p>
+<p><strong>1. Good names for folders: no spaces or special characters</strong></p>
+<p>Recall when you name a variable in SAS or R, the variable name cannot contain spaces or unusual characters. <strong>It is best practice to not use spaces or unusual characters in folder or file names,</strong> even though spaces are permissible and commonly used by Windows and Mac Users.</p>
 <p>You may wonder what the problem is with spaces, anyway? While
 spaces are human-readable they aren’t machine-friendly. When you refer to a
 folder or file using Git in Terminal or Bash, a name without spaces is much
@@ -81,7 +80,7 @@ frustrating.</p>
 For example “life-expectancy” is a great folder name for a project estimating
 life expectancy, while “pollution-ptb” is a great folder name for a project
 estimating the causal effect of air pollution on preterm birth.</p>
-<p><br><br><strong>Good names for code files</strong></p>
+<p><br><br><strong>2. Good names for code files: numbered with underscores and dashes</strong></p>
 <p>When running a statistical analysis, there is an underlying order across the
 code files (e.g., starting with importing the data, then data cleaning, and
 analysis). Good code file names should start with a number (padded by 0)
@@ -102,7 +101,7 @@ separate words within field.</p>
 <p>Flip through <a href="https://jennybryan.org/about/">Jenny Bryan’s</a> slide set here for a deeper dive into file naming:</p>
 <iframe src="https://bph-storage.s3.us-west-1.amazonaws.com/git-for-humans/how-to-name-files.pdf" width="100%" height="800">
 </iframe>
-<p><br><br><strong>What happens when there are bad names?</strong></p>
+<p><br><br><strong>3. What happens when there are bad names?</strong></p>
 <p>The issue and frustration of includes spaces in file names really hits home when
 you include spaces in the names and trying interacting with GitHub to add the files
 and make a commit – if you like pain and frustration – you can try this at home!</p>
@@ -145,7 +144,7 @@ pain by using dashes and underscores instead of spaces!</p>
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Git and GitHub for Public Health</strong>" was written by Corinne Riddell and Lauren Wilner. It was last built on 2024-05-10.</p>
+    <p>"<strong>Git and GitHub for Public Health</strong>" was written by Corinne Riddell and Lauren Wilner. It was last built on 2024-05-18.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

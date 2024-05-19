@@ -1,10 +1,11 @@
 # Naming folders and files
 
 When you are working in Terminal/Bash, it is important to use good folder and 
-file names to make your life easier. Recall when you name a variable in SAS or 
-R, the variable name cannot contain spaces or unusual characters. **It is best 
-practice to not use spaces or unusual characters in folder or file names,** even
-though spaces are permissible and commonly used by Windows and Mac Users. 
+file names to make your life easier. 
+
+**1. Good names for folders: no spaces or special characters**
+
+Recall when you name a variable in SAS or R, the variable name cannot contain spaces or unusual characters. **It is best practice to not use spaces or unusual characters in folder or file names,** even though spaces are permissible and commonly used by Windows and Mac Users. 
 
 You may wonder what the problem is with spaces, anyway? While 
 spaces are human-readable they aren't machine-friendly. When you refer to a 
@@ -20,7 +21,7 @@ estimating the causal effect of air pollution on preterm birth.
 
 <br />
 <br />
-**Good names for code files**
+**2. Good names for code files: numbered with underscores and dashes**
 
 When running a statistical analysis, there is an underlying order across the 
 code files (e.g., starting with importing the data, then data cleaning, and
@@ -50,7 +51,7 @@ Flip through [Jenny Bryan's](https://jennybryan.org/about/) slide set here for a
 
 <br />
 <br />
-**What happens when there are bad names?**
+**3. What happens when there are bad names?**
 
 The issue and frustration of includes spaces in file names really hits home when
 you include spaces in the names and trying interacting with GitHub to add the files

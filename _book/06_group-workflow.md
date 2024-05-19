@@ -145,6 +145,9 @@ repository. You should be doing this already, but it is even more important
 when you are working together so you can stay up to date on whatever changes
 have been made to the repository.
 
+<br> 
+<br> 
+
 ### Collaborative Route #2: Code Review
 
 In Collaborative Route #2, the lead researcher will make a new file, make 
@@ -153,7 +156,7 @@ these changes by submitting comments on the pull request.
 
 Let's practice this workflow now:
 
-**Lead researcher steps:** 
+**Everyone:** 
 
 - Checkout main, and pull down the changes
 
@@ -163,6 +166,8 @@ git pull origin main
 git status
 ```
 
+**Lead researcher steps:** 
+
 - Create a new branch. Pretend it is the next day and include this date in the 
 branch name alongside your initials:
 
@@ -171,9 +176,9 @@ git checkout -b {new-branch-name}
 git branch
 ```
 
-- Make and save a change to the file you added in the previous step.
-You can add in a comment or a new line of code - something small is good. Save 
-your file.
+- Make and **save a change** to the file you added in the previous step.
+You can add in a comment or a new line of code - something small is good. **Save 
+your file.**
 - Add, commit, and push your changes to your branch on GitHub:
 
 ```
@@ -240,12 +245,15 @@ pull request.
 
 - Similar to the previous workflow, collaborators can work independently, but 
 request review of each other's work.
- 
+
+<br> 
+<br> 
+
 ### Collaborative Route #3: Working on the same files 
 
 In this scenario, imagine that the lead researcher has already created and 
 committed an analysis file. The colleague then wants to make direct changes to 
-that file or extend the analysis. This is a valid and commonly used workflow, 
+that file or extend the analysis. This is a commonly used workflow, 
 and works well if both people are working sequentially and pulling from main 
 often to pull down any changes made to the repo as their collaborators work.
 
@@ -275,16 +283,23 @@ for a merge conflict and practice resolving it with our buddy.
 
 **Creating a merge conflict**
 
-- Both researchers should be on `main` now. If you are not, please do 
-`git checkout main` and `git pull origin main` to make sure you are up to date.
+**Everyone**:
+- Checkout and pull any changes: `git checkout main` and `git pull origin main` to make sure you are up to date.
 - Make and checkout a new branch: `git checkout -b {new-branch-name}`. Each of
 you should call their branch something different from the other researcher.
 - Together, choose one file and one line location on the file that you will each
 edit separately on your laptops.
+- Each of you should make the edits you agreed upon to the single line location that you decided you would edit. You should both make *different* changes. **Save your code file.**
+
+<br> 
+
 - **Lead researcher only:** add, commit, and push your changes to your branch. 
 Then, create a pull request and merge your changes into main. 
+
+<br> 
+
 - **Colleague:** Your turn. Add, commit, and push your changes to your branch. 
-Then, create a pull request. 😨 Merge conflict! You will not 
+Then, create a pull request. 😱 Merge conflict! You will not 
 be able to merge into main. 
 
 Deep breaths. Let's walk through how to resolve the merge conflict. 
@@ -315,6 +330,9 @@ green button in the top right corner that says `Commit merge`. Click on this
 button. This brings you back to the page you are familiar with, where you can 
 merge into main. Click `Merge pull request` and then `Confirm merge`. You can 
 delete the branch as you usually do. 
+
+**Everyone**: 
+You can both checkout main and pull down the changes. You will now see that the file with the merge conflict has been cleaned up and you will see only the code that you accepted above!
 
 **Recap**
 
