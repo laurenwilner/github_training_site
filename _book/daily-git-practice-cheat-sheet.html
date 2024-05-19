@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 9 Daily Git Practice: Cheat Sheet | Git and GitHub for Public Health</title>
+<meta name="author" content="Corinne Riddell and Lauren Wilner">
+<meta name="description" content="Use these instructions each day you are working in your repository for good practice! Open Terminal (Mac) or Bash (Windows). Navigate to your repository using cd. When you get to your directory,...">
+<meta name="generator" content="bookdown 0.39 with bs4_book()">
+<meta property="og:title" content="Chapter 9 Daily Git Practice: Cheat Sheet | Git and GitHub for Public Health">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Use these instructions each day you are working in your repository for good practice! Open Terminal (Mac) or Bash (Windows). Navigate to your repository using cd. When you get to your directory,...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 9 Daily Git Practice: Cheat Sheet | Git and GitHub for Public Health">
+<meta name="twitter:description" content="Use these instructions each day you are working in your repository for good practice! Open Terminal (Mac) or Bash (Windows). Navigate to your repository using cd. When you get to your directory,...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.5.1/transition.js"></script><script src="libs/bs3compat-0.5.1/tabs.js"></script><script src="libs/bs3compat-0.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><link href="libs/vembedr-0.1.5/css/vembedr.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Git and GitHub for Public Health</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled"><li><a class="" href="index.html"><span class="header-section-number">Chapter 9</span> Daily Git Practice: Cheat Sheet</a></li></ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/rstudio/bookdown-demo">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="daily-git-practice-cheat-sheet" class="section level1" number="9">
+<h1>
+<span class="header-section-number">9</span> Daily Git Practice: Cheat Sheet<a class="anchor" aria-label="anchor" href="#daily-git-practice-cheat-sheet"><i class="fas fa-link"></i></a>
+</h1>
+<p>Use these instructions each day you are working in your repository for good practice!</p>
+<ol style="list-style-type: decimal">
+<li>Open Terminal (Mac) or Bash (Windows). Navigate to your repository using <code>cd</code>.</li>
+<li>When you get to your directory, type <code>git branch</code> to remind yourself
+which branch you are on as you main be on a branch from the previous work day.
+Type <code>git status</code> to ensure you committed and pushed everything the last time
+you used Git and GitHub. If there is nothing to commit, go to the next step.
+If there are files with changes to be committed, you will need to figure out if
+you want to commit those changes or if you want to discard them. If you want to
+discard them, type <code>git restore {file-name}</code> to discard changes to that file. Do
+this for all files until you have a clean directory if you are sure you don’t
+want to track those changes. If you want to commit them, follow steps X through Y
+before proceeding to Step 2.</li>
+<li>Type <code>git checkout main</code> and <code>enter</code>.</li>
+<li>Type <code>git pull origin main</code> and <code>enter</code>. This will pull the changes you made
+the day before and get you ready to start on a clean branch today.</li>
+<li>Delete the previous day’s branch. Type <code>git branch -d {branch-name}</code> and
+<code>enter</code>. Remember to replace <code>{branch-name}</code> with your previous day’s branch
+name. If you don’t remember what it was named, type <code>git branch</code> to display a
+list of all the branches you have.</li>
+<li>Create and checkout a new branch by typing <code>git checkout -b {new-branch-name}</code>.
+Replace the <code>{new-branch-name}</code> with a new branch name. This may be something
+like <code>{your-initials_date}</code>.</li>
+<li>Do your work. Try to keep “your work” a discrete task that you can summarize
+with one commit message.</li>
+<li>Once you are done, go back to Terminal/Bash (where you should already be in
+your repository directory) type <code>git status</code> to see which files have been modified
+and should be staged for a commit. You may have some untracked files that you
+created and also want to track.</li>
+<li>Add your newly added and modified files to the staging area by typing
+<code>git add {file-names}</code>. You can add all the files that you edited/created.</li>
+<li>Commit your changes by typing <code>git commit -m "{commit-message}"</code>. Replace
+<code>{commit-message}</code> with your commit message (don’t forget to keep the quotes
+around the message)!</li>
+<li>Remind yourself of your branch’s name by typing <code>git branch</code>. Then push your
+changes to the remote repository by typing <code>git push origin {new-branch-name}</code>.
+Replace <code>{new-branch-name}</code> with your new branch name.</li>
+<li>In a browser, go to your repository on GitHub.</li>
+<li>If this is the first time you committed to this branch, there should be a
+yellow banner on your GitHub home page with a “pull request” button. If not, you
+can navigate to the Code tab, change to your branch, and you will see the code
+that you just worked on! It is now up on GitHub!</li>
+<li>Click on the <code>Pull requests</code> tab.</li>
+<li>Click on the green <code>New pull request</code> button.</li>
+<li>Click on the green <code>Create pull request</code> button.</li>
+<li>Click on the green <code>Merge pull request</code> button.</li>
+<li>Click on the green <code>Confirm merge</code> button.</li>
+<li>Delete your branch on GitHub when prompted.</li>
+<li>You are now ready to do this all over the next day!</li>
+</ol>
+</div>
+  <div class="chapter-nav">
+<div class="empty"></div>
+<div class="empty"></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <div id="book-on-this-page"></div>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Git and GitHub for Public Health</strong>" was written by Corinne Riddell and Lauren Wilner. It was last built on 2024-04-23.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

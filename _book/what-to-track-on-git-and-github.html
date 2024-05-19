@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 9 What to track on Git and Github? | Git and GitHub for Public Health</title>
+<meta name="author" content="Corinne Riddell and Lauren Wilner">
+<meta name="description" content="9.1 Approach 1 : Track statistical code only Some people use Git and Github to track changes to their statistical code only. Here, they are only tracking their code files in R (.R or .Rmd), or SAS...">
+<meta name="generator" content="bookdown 0.39.1 with bs4_book()">
+<meta property="og:title" content="Chapter 9 What to track on Git and Github? | Git and GitHub for Public Health">
+<meta property="og:type" content="book">
+<meta property="og:description" content="9.1 Approach 1 : Track statistical code only Some people use Git and Github to track changes to their statistical code only. Here, they are only tracking their code files in R (.R or .Rmd), or SAS...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 9 What to track on Git and Github? | Git and GitHub for Public Health">
+<meta name="twitter:description" content="9.1 Approach 1 : Track statistical code only Some people use Git and Github to track changes to their statistical code only. Here, they are only tracking their code files in R (.R or .Rmd), or SAS...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.6.1/transition.js"></script><script src="libs/bs3compat-0.6.1/tabs.js"></script><script src="libs/bs3compat-0.6.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><link href="libs/vembedr-0.1.5/css/vembedr.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Git and GitHub for Public Health</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Git and GitHub for Public Health</a></li>
+<li><a class="" href="workshop-setup.html"><span class="header-section-number">2</span> Workshop Setup</a></li>
+<li><a class="" href="why-git-and-github.html"><span class="header-section-number">3</span> Why Git and GitHub</a></li>
+<li><a class="" href="git-jargon.html"><span class="header-section-number">4</span> Git Jargon</a></li>
+<li><a class="" href="interacting-with-terminal-and-bash.html"><span class="header-section-number">5</span> Interacting with Terminal and Bash</a></li>
+<li><a class="" href="naming-folders-and-files.html"><span class="header-section-number">6</span> Naming folders and files</a></li>
+<li><a class="" href="solo-workflow.html"><span class="header-section-number">7</span> Solo Workflow</a></li>
+<li><a class="" href="group-workflow.html"><span class="header-section-number">8</span> Group Workflow</a></li>
+<li><a class="active" href="what-to-track-on-git-and-github.html"><span class="header-section-number">9</span> What to track on Git and Github?</a></li>
+<li><a class="" href="daily-git-practice.html"><span class="header-section-number">10</span> Daily Git Practice</a></li>
+<li><a class="" href="assorted-git-processes-and-tips.html"><span class="header-section-number">11</span> Assorted Git processes and tips</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/rstudio/bookdown-demo">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="what-to-track-on-git-and-github" class="section level1" number="9">
+<h1>
+<span class="header-section-number">9</span> What to track on Git and Github?<a class="anchor" aria-label="anchor" href="#what-to-track-on-git-and-github"><i class="fas fa-link"></i></a>
+</h1>
+<div id="approach-1-track-statistical-code-only" class="section level2" number="9.1">
+<h2>
+<span class="header-section-number">9.1</span> Approach 1 : Track statistical code only<a class="anchor" aria-label="anchor" href="#approach-1-track-statistical-code-only"><i class="fas fa-link"></i></a>
+</h2>
+<p>Some people use Git and Github to track changes to their statistical code only.
+Here, they are only tracking their code files in R (.R or .Rmd), or
+SAS (.SAS), or the corresponding files for whichever language they use.</p>
+<p>They add all other types of files to the .gitignore file so that Git
+won’t track them or accidentally push them to GitHub. Under this approach,
+untracked files include: data files, word documents, PDFs, image files, etc –
+anything else you are storing looking in the folder tracked by git that you do
+not want pushed to GitHub.</p>
+<p>This approach most closely corresponds to how GitHub is used by software
+developers/other code writers, and is used by researchers and research
+teams depending on their objectives.</p>
+</div>
+<div id="approach-2-track-statistical-code-some-data-files-images-and-other-documents" class="section level2" number="9.2">
+<h2>
+<span class="header-section-number">9.2</span> Approach 2: Track statistical code, some data files, images, and other documents<a class="anchor" aria-label="anchor" href="#approach-2-track-statistical-code-some-data-files-images-and-other-documents"><i class="fas fa-link"></i></a>
+</h2>
+<p>Some people use Git and Github to track a variety of files including their code,
+<em>some</em> of their data files, as well as images and other documents. This approach
+is often used by advocates of reproducible research, and to give outsiders a
+fuller picture of an entire research project.</p>
+<p>Sometimes, you can post your data, if it is unrestricted and not too large. In
+this case, you can set up your GitHub so that all of your data visualizations
+as well as a completed report can be reproduced by someone who is not affliated
+with your project.</p>
+<p>In many research or public health settings, you are not able to share the data.
+In this case, you can still share other aspects of your project with the wider
+community.</p>
+<div id="data-files-dos-and-donts" class="section level3" number="9.2.1">
+<h3>
+<span class="header-section-number">9.2.1</span> Data files do’s and dont’s<a class="anchor" aria-label="anchor" href="#data-files-dos-and-donts"><i class="fas fa-link"></i></a>
+</h3>
+<p>❌ <strong>Don’t track restricted data!</strong></p>
+<p>Restricted data cannot be posted on GitHub. A best practice is to store it
+securely outside of your tracked folder to ensure there is no chance of it being
+posted.</p>
+<p>❌ <strong>Don’t track large datasets!</strong></p>
+<p>Git will warn you if your file exceeds 50 MB and
+block you from tracking files 100 MB or larger. To ensure these files aren’t tracked, you can store them elsewhere (outside of
+the tracked Git folder), or store them in the tracked folder while also listing them or their file type to your .gitignore file.</p>
+<p>❌ <strong>WARNING FOR MAC USERS: UNDER NO CIRCUMSTANCES SHOULD YOU TRACK .DS_STORE files!</strong></p>
+<p>If you are a Mac user, you may not even know what a .DS_STORE file is. These are
+invisible files that are created whenever you view a folder using Finder. You
+will see them when you write <code>git status</code>. You do not want to track these files
+as it can allow people to hack your computer!! As a best practice, add these
+to your .gitignore file to ensure that they are never tracked by you or anyone
+else contributing to your project.</p>
+<p>🤔 <strong>Consider tracking intermediate data products</strong></p>
+<p>Generally, it also doesn’t often make sense to track a large “raw” data file – it is too big and not useful to track any changes to this file. It may be helpful to track “intermediate data products”, if these files are not restricted. Intermediate data products might include aggregated datasets that are either reported directly or used in analysis. For example, you may have access to a restricted dataset, but the data may become non-restricted if you aggregate at the level of the census tract. The benefit of tracking this smaller dataset is that if the raw data is updated, you can easily see how those updates affect these intermediate data products if you track them. In this case you need to ensure you are not reporting any private/restricted data (eg no cell counts below 10 is a restricted often imposed on aggregated tables, or not reporting any identifying features such as protected health information or anything else that would allow anyone with access to identify
+individuals.</p>
+<p>✅ <strong>Do track plain text data files (e.g., csv and txt files) </strong></p>
+<p>These are best for tracking because they render nicely on GitHub, so you can
+easily view the differences to these files when you submit a pull request. You
+could also track things like Excel files but you can’t easily view them on
+GitHub, so some of the benefits of using GitHub do not apply to these files.</p>
+</div>
+<div id="images-dos-and-donts" class="section level3" number="9.2.2">
+<h3>
+<span class="header-section-number">9.2.2</span> Images dos and dont’s<a class="anchor" aria-label="anchor" href="#images-dos-and-donts"><i class="fas fa-link"></i></a>
+</h3>
+<p>You can also track image files (e.g., png, jpeg), such as plots/other figures
+you create for a report. The benefit of tracking figures are the use of the
+<a href="https://github.blog/2011-03-21-behold-image-view-modes/">image comparison tools</a>
+in GitHub to see an image pre/post a change in the
+analysis. This can be super helpful when you have modified something in the
+analysis after having already written up some results. If you track the image,
+you can easily see how it changed (it being the point estimates and confidence
+intervals, of the slope of the regression line, or the shading of a colored map).
+This has the direct pay-off of making it much easier to revise the written
+result.</p>
+<p><strong>2-up comparison:</strong></p>
+<div class="inline-figure"><img src="figures/2-up-example.png" width="100%"></div>
+<p><strong>Swipe comparison:</strong></p>
+
+<img src="https://bph-storage.s3.us-west-1.amazonaws.com/git-for-humans/swipe-example.gif" width="450" height="325"><p><strong>Onion skin comparison:</strong></p>
+
+<img src="https://bph-storage.s3.us-west-1.amazonaws.com/git-for-humans/onion-skin-example.gif" width="450" height="325"><p>❌ <strong>Dont’ track very large image files</strong></p>
+<p>One thing to be careful about is not uploading very large images like the
+ones that are generated by some GIS analyses (large maps). If you aren’t sure if
+you should track your image file, take a look at the file size. (I had a look at
+all of my repositories for epidemiologic analyses – most images were &lt; 1000 kb.
+Some were between 1 MB and 4 MB – these were some maps and some images saved at
+higher resolutions.)</p>
+</div>
+<div id="documents" class="section level3" number="9.2.3">
+<h3>
+<span class="header-section-number">9.2.3</span> Documents<a class="anchor" aria-label="anchor" href="#documents"><i class="fas fa-link"></i></a>
+</h3>
+<p>You can also track reports and manuscripts using GitHub. If these reports are
+written in a plain text language (e.g., R markdown, LaTeX) then they will render
+nicely on GitHub and, and permit you to see the “diffs” made to the document
+during a pull request. Tracking pdfs is permissible but you can’t easily see the
+“diffs” when they are updated. However, pdfs are easily viewable on GitHub.
+Tracking docx files is also permissible, but you can’t easily see the “diffs”
+and they are not easily viewable on GitHub (since they require MS Word to render
+them).</p>
+<p>✅ <strong>Do track plain text reports like R markdown files</strong><br>
+🤔 <strong>Consider tracking PDFs (easily viewable on GitHub)</strong><br>
+❌ <strong>Don’t track Word documents (cannot view)</strong></p>
+</div>
+</div>
+<div id="things-you-definitely-do-not-want-to-track" class="section level2" number="9.3">
+<h2>
+<span class="header-section-number">9.3</span> Things you definitely do not want to track<a class="anchor" aria-label="anchor" href="#things-you-definitely-do-not-want-to-track"><i class="fas fa-link"></i></a>
+</h2>
+<p>❌ <strong>Anything that is private or restricted or that you would never want to
+inadvertently share.</strong></p>
+<ul>
+<li>This includes passwords, or API keys that you might use to extract data.</li>
+<li>For example, I have an API key to access Census data. I do not include this
+API key in my GitHub repository. There are methods for writing the code to still
+access the key on my personal computer without writing it out explicitly in the
+code.</li>
+</ul>
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="group-workflow.html"><span class="header-section-number">8</span> Group Workflow</a></div>
+<div class="next"><a href="daily-git-practice.html"><span class="header-section-number">10</span> Daily Git Practice</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#what-to-track-on-git-and-github"><span class="header-section-number">9</span> What to track on Git and Github?</a></li>
+<li><a class="nav-link" href="#approach-1-track-statistical-code-only"><span class="header-section-number">9.1</span> Approach 1 : Track statistical code only</a></li>
+<li>
+<a class="nav-link" href="#approach-2-track-statistical-code-some-data-files-images-and-other-documents"><span class="header-section-number">9.2</span> Approach 2: Track statistical code, some data files, images, and other documents</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#data-files-dos-and-donts"><span class="header-section-number">9.2.1</span> Data files do’s and dont’s</a></li>
+<li><a class="nav-link" href="#images-dos-and-donts"><span class="header-section-number">9.2.2</span> Images dos and dont’s</a></li>
+<li><a class="nav-link" href="#documents"><span class="header-section-number">9.2.3</span> Documents</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#things-you-definitely-do-not-want-to-track"><span class="header-section-number">9.3</span> Things you definitely do not want to track</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/rstudio/bookdown-demo/blob/master/07_dos-and-donts.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/rstudio/bookdown-demo/edit/master/07_dos-and-donts.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Git and GitHub for Public Health</strong>" was written by Corinne Riddell and Lauren Wilner. It was last built on 2024-05-18.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>
