@@ -28,3 +28,18 @@ computer or if something went wrong. For example, here is the command
 knitr::include_graphics(path = "./figures/Terminal-explainer-2.jpg")
 ```
 
+Here is a cheat sheet that you can refer to for your bash commands: 
+| Command  | Description                            |
+|----------|----------------------------------------|
+| `ls`     | Lists files and directories            |
+| `cd {dir}`  | Changes to directory `{dir}`              |
+| `cd ..`  | Moves up one directory level           |
+| `open .` | Opens the current directory            |
+| `rm`     | Removes a file                         |
+| `mkdir {}`| Creates a new directory `{}`          |
+| `touch {}`| Creates a new empty file `{}`         |
+| `cp {source} {destination}` | Copies files or directories from `{source}` to `{destination}` |
+| `mv {source} {destination}` | Moves or renames files or directories from `{source}` to `{destination}` |
+| `pwd`    | Prints the current working directory   |
+| `history`| Shows the command history              |
+| `clear`  | Clears the terminal screen             |
