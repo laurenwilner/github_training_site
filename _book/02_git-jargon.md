@@ -20,7 +20,42 @@ In the live workshop, we will go through Alice's slides together. If you are
 going through this training asynchronously, you can flip through Alice's slides 
 here: 
 
-<div class="embed-responsive embed-responsive-4by4">
+<style>
+  .embed-responsive {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .embed-responsive-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  /* Default style for larger screens */
+  @media (min-width: 768px) {
+    .embed-responsive-item {
+      transform: scale(1); /* No scaling */
+    }
+  }
+
+  /* Style for smaller screens */
+  @media (max-width: 767px) {
+    .embed-responsive-item {
+      transform: scale(0.8); /* Scale down the content */
+      transform-origin: top left; /* Ensure scaling starts from the top-left corner */
+    }
+  }
+</style>
+
+<div class="embed-responsive embed-responsive-16by9">
   <iframe class="embed-responsive-item" src="https://bph-storage.s3.us-west-1.amazonaws.com/git-for-humans/git-for-designers.pdf" allowfullscreen></iframe>
 </div>
-
