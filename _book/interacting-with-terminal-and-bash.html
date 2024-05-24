@@ -43,7 +43,19 @@
 </form>
 
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
-        <ul class="book-toc list-unstyled"><li><a class="" href="index.html"><span class="header-section-number">Chapter 5</span> Interacting with Terminal and Bash</a></li></ul>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Git and GitHub for Public Health</a></li>
+<li><a class="" href="workshop-setup.html"><span class="header-section-number">2</span> Workshop Setup</a></li>
+<li><a class="" href="why-git-and-github.html"><span class="header-section-number">3</span> Why Git and GitHub</a></li>
+<li><a class="" href="git-jargon.html"><span class="header-section-number">4</span> Git Jargon</a></li>
+<li><a class="active" href="interacting-with-terminal-and-bash.html"><span class="header-section-number">5</span> Interacting with Terminal and Bash</a></li>
+<li><a class="" href="naming-folders-and-files.html"><span class="header-section-number">6</span> Naming folders and files</a></li>
+<li><a class="" href="solo-workflow.html"><span class="header-section-number">7</span> Solo Workflow</a></li>
+<li><a class="" href="group-workflow.html"><span class="header-section-number">8</span> Group Workflow</a></li>
+<li><a class="" href="what-to-track-on-git-and-github.html"><span class="header-section-number">9</span> What to track on Git and Github?</a></li>
+<li><a class="" href="daily-git-practice.html"><span class="header-section-number">10</span> Daily Git Practice</a></li>
+<li><a class="" href="assorted-git-processes-and-tips.html"><span class="header-section-number">11</span> Assorted Git processes and tips</a></li>
+</ul>
 
         <div class="book-extra">
           <p><a id="book-repo" href="https://github.com/rstudio/bookdown-demo">View book source <i class="fab fa-github"></i></a></p>
@@ -74,13 +86,8 @@ to this output as it will indicate if the command was understood by your
 computer or if something went wrong. For example, here is the command
 <code>git branch</code>, followed by the output printed to screen:</p>
 <div class="inline-figure"><img src="figures/Terminal-explainer-2.jpg" width="100%"></div>
-<p>Here is a cheat sheet that you can refer to for your bash commands:</p>
+<p>Here is a cheat sheet of commands we use on this website:</p>
 <div class="inline-table"><table class="table table-sm">
-<colgroup>
-<col width="25%">
-<col width="29%">
-<col width="44%">
-</colgroup>
 <thead><tr class="header">
 <th>Mac Command</th>
 <th>Windows Command</th>
@@ -109,8 +116,29 @@ computer or if something went wrong. For example, here is the command
 <td>Opens the current directory</td>
 </tr>
 <tr class="odd">
-<td><code>rm {file}</code></td>
-<td><code>del {file}</code></td>
+<td><code>pwd</code></td>
+<td><code>cd</code></td>
+<td>Prints the current working directory</td>
+</tr>
+</tbody>
+</table></div>
+<p>Here is a cheat sheet of commands we don’t use but are helpful to know and integrate
+into your workflow:</p>
+<div class="inline-table"><table class="table table-sm">
+<colgroup>
+<col width="25%">
+<col width="29%">
+<col width="44%">
+</colgroup>
+<thead><tr class="header">
+<th>Mac Command</th>
+<th>Windows Command</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td><code>git rm {file}</code></td>
+<td><code>git rm {file}</code></td>
 <td>Removes a file</td>
 </tr>
 <tr class="even">
@@ -132,22 +160,17 @@ computer or if something went wrong. For example, here is the command
 </td>
 </tr>
 <tr class="odd">
-<td><code>mv {source} {destination}</code></td>
-<td><code>move {source} {destination}</code></td>
+<td><code>git mv {source} {destination}</code></td>
+<td><code>git mv {source} {destination}</code></td>
 <td>Moves or renames files or directories from <code>{source}</code> to <code>{destination}</code>
 </td>
 </tr>
 <tr class="even">
-<td><code>pwd</code></td>
-<td><code>cd</code></td>
-<td>Prints the current working directory</td>
-</tr>
-<tr class="odd">
 <td><code>history</code></td>
 <td><code>doskey /history</code></td>
 <td>Shows the command history</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>clear</code></td>
 <td><code>cls</code></td>
 <td>Clears the terminal screen</td>
@@ -157,15 +180,19 @@ computer or if something went wrong. For example, here is the command
 </div>
 </div>
   <div class="chapter-nav">
-<div class="empty"></div>
-<div class="empty"></div>
+<div class="prev"><a href="git-jargon.html"><span class="header-section-number">4</span> Git Jargon</a></div>
+<div class="next"><a href="naming-folders-and-files.html"><span class="header-section-number">6</span> Naming folders and files</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <div id="book-on-this-page"></div>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#interacting-with-terminal-and-bash"><span class="header-section-number">5</span> Interacting with Terminal and Bash</a></li>
+<li><a class="nav-link" href="#a-terminal-window"><span class="header-section-number">5.1</span> A Terminal window</a></li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-          
+<li><a id="book-source" href="https://github.com/rstudio/bookdown-demo/blob/master/03_terminal-and-bash.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/rstudio/bookdown-demo/edit/master/03_terminal-and-bash.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
 </div>
     </nav>
@@ -177,7 +204,7 @@ computer or if something went wrong. For example, here is the command
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Git and GitHub for Public Health</strong>" was written by Corinne Riddell and Lauren Wilner. It was last built on 2024-05-18.</p>
+    <p>"<strong>Git and GitHub for Public Health</strong>" was written by Corinne Riddell and Lauren Wilner. It was last built on 2024-05-24.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
