@@ -87,13 +87,13 @@ Biostat-MBP13-20:life-expectancy corinneriddell$git branch
 
 Set yourself up in a new branch off of main. In Terminal/Bash:
 
-* Type `git checkout -b may3-xy`, replacing xy with your initials -- write these 
-in lowercase to prevent errors later! (If today is not May 3, replace "may3" 
+* Type `git checkout -b june18-xy`, replacing xy with your initials -- write these 
+in lowercase to prevent errors later! (If today is not May 3, replace "june18" 
 with today's date.)
 
 ```
-Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout -b may3-cr
-Switched to a new branch 'may3-cr'
+Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout -b june18-cr
+Switched to a new branch 'june18-cr'
 ```
 
 * Type `git branch`, to confirm to yourself that you have indeed switched to 
@@ -102,7 +102,7 @@ the new branch.
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
   main
-* may3-cr
+* june18-cr
 ```
 
 **Make some changes to your tracked folder**
@@ -119,7 +119,7 @@ what has been changed. It tells us that there are untracked files:
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git status
-On branch may3-cr
+On branch june18-cr
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 	.DS_Store
@@ -129,7 +129,7 @@ Untracked files:
 	existing-project.Rproj
 ```
 
-We want to track the code/, data/, and images/ subfolders we just copied over, as well as the life-expectancy.Rproj file.
+We want to track the code/, data/, and images/ subfolders we just copied over, as well as the existing-project.Rproj file.
 
 Use `git add` to add the newly-added files to be tracked. Then use `git status` to confirm you have added everything you want to track:
 
@@ -137,9 +137,9 @@ Use `git add` to add the newly-added files to be tracked. Then use `git status` 
 Biostat-MBP13-20:life-expectancy corinneriddell$ git add code/
 Biostat-MBP13-20:life-expectancy corinneriddell$ git add data/
 Biostat-MBP13-20:life-expectancy corinneriddell$ git add images/
-Biostat-MBP13-20:life-expectancy corinneriddell$ git add life-expectancy.Rproj 
+Biostat-MBP13-20:life-expectancy corinneriddell$ git add existing-project.Rproj 
 Biostat-MBP13-20:life-expectancy corinneriddell$ git status
-On branch may3-cr
+On branch june18-cr
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
 	new file:   code/01_Analyze-life-expectancy.R
@@ -166,13 +166,13 @@ Commit these changes locally: `git commit -m 'your commit message' `, replace
  
  ```
  Biostat-MBP13-20:life-expectancy corinneriddell$ git commit -m "added first set of files"
-[may3-cr 58fcc58] added first set of files
+[june18-cr 58fcc58] added first set of files
  5 files changed, 7253 insertions(+)
  create mode 100644 code/01_Analyze-life-expectancy.R
  create mode 100644 data/Life-expectancy-by-state-long.csv
  create mode 100644 images/ca-black-women-LE.png
  create mode 100644 images/placeholder.md
- create mode 100644 life-expectancy.Rproj
+ create mode 100644 existing-project.Rproj
  ```
  
 Push these changes to GitHub: `git push origin {branch-name}`, replacing 
@@ -180,7 +180,7 @@ Push these changes to GitHub: `git push origin {branch-name}`, replacing
 name, type `git branch` to print it to the screen and then the `git push` command.
 
 ```
-Biostat-MBP13-20:life-expectancy corinneriddell$ git push origin may3-cr
+Biostat-MBP13-20:life-expectancy corinneriddell$ git push origin june18-cr
 Enumerating objects: 11, done.
 Counting objects: 100% (11/11), done.
 Delta compression using up to 8 threads
@@ -188,11 +188,11 @@ Compressing objects: 100% (9/9), done.
 Writing objects: 100% (10/10), 136.50 KiB | 10.50 MiB/s, done.
 Total 10 (delta 0), reused 0 (delta 0)
 remote: 
-remote: Create a pull request for 'may3-cr' on GitHub by visiting:
-remote:      https://github.com/corinne-riddell/life-expectancy/pull/new/may3-cr
+remote: Create a pull request for 'june18-cr' on GitHub by visiting:
+remote:      https://github.com/corinne-riddell/life-expectancy/pull/new/june18-cr
 remote: 
 To https://github.com/corinne-riddell/life-expectancy.git
- * [new branch]      may3-cr -> may3-cr
+ * [new branch]      june18-cr -> june18-cr
 
 ```
 You have successfully pushed your changes to GitHub! 
@@ -248,7 +248,7 @@ names are displayed. The asterisk is next to the branch we are currently on.
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
   main
-* may3-cr
+* june18-cr
 ```
 
 Check if you forgot to save anything from last time using `git status`. 
@@ -257,7 +257,7 @@ Here is my status:
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git status
-On branch may3-cr
+On branch june18-cr
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 	.DS_Store
@@ -284,15 +284,15 @@ main.
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
 * main
-  may3-cr
+  june18-cr
 ```
 
-You can also delete the "may3-XY" branch since you no longer need to track it 
+You can also delete the "june18-XY" branch since you no longer need to track it 
 locally:
 
 ```
-Biostat-MBP13-20:github-training corinneriddell$ git branch -d may3-cr
-Deleted branch may3-cr (was 58fcc58).
+Biostat-MBP13-20:github-training corinneriddell$ git branch -d june18-cr
+Deleted branch june18-cr (was 58fcc58).
 ```
 
 **Pull down the changes from main**
@@ -317,7 +317,7 @@ Fast-forward
  data/Life-expectancy-by-state-long.csv | 7201 +++++++++++++++++++++++++++++++++
  images/ca-black-women-LE.png           |  Bin 0 -> 74550 bytes
  images/placeholder.md                  |    1 +
- life-expectancy.Rproj                  |   13 +
+ existing-project.Rproj                  |   13 +
  5 files changed, 7253 insertions(+)
  create mode 100644 code/01_Analyze-life-expectancy.R
  create mode 100644 data/Life-expectancy-by-state-long.csv
@@ -329,15 +329,15 @@ Fast-forward
 **Start a new branch**
 
 Like the last day, start a new branch to track today's changes. Let's 
-pretend it is now May 7. Type `git checkout -b may7-XY`, where XY is replaced 
+pretend it is now May 7. Type `git checkout -b june21-XY`, where XY is replaced 
 with your initials. Type `git branch` to confirm you have changed branches. 
 
 ```
-Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout -b may7-cr
-Switched to a new branch 'may7-cr'
+Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout -b june21-cr
+Switched to a new branch 'june21-cr'
 Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
   main
-* may7-cr
+* june21-cr
 ```
 
 **You are now ready to make changes!**
@@ -402,7 +402,7 @@ Which files have been modified? Which files are new and untracked?
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git status
-On branch may7-cr
+On branch june21-cr
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
@@ -424,7 +424,7 @@ are being tracked. When you are satisfied, commit these changes locally.
 Biostat-MBP13-20:life-expectancy corinneriddell$ git add code/01_Analyze-life-expectancy.R 
 Biostat-MBP13-20:life-expectancy corinneriddell$ git add data/le_averages.csv 
 Biostat-MBP13-20:life-expectancy corinneriddell$ git status
-On branch may7-cr
+On branch june21-cr
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
 	modified:   code/01_Analyze-life-expectancy.R
@@ -447,7 +447,7 @@ Replace 'your message' with a short message describing the changes. Remember to 
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git commit -m 'calc LE averages' 
-[may7-cr a7435b8] calc LE averages
+[june21-cr a7435b8] calc LE averages
  2 files changed, 177 insertions(+), 1 deletion(-)
  create mode 100644 data/le_averages.csv
 ```
@@ -462,8 +462,8 @@ of your local branch. First, remind yourself of your branch's name using
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
   main
-* may7-cr
-Biostat-MBP13-20:life-expectancy corinneriddell$ git push origin may7-cr
+* june21-cr
+Biostat-MBP13-20:life-expectancy corinneriddell$ git push origin june21-cr
 Enumerating objects: 10, done.
 Counting objects: 100% (10/10), done.
 Delta compression using up to 8 threads
@@ -472,11 +472,11 @@ Writing objects: 100% (6/6), 2.84 KiB | 2.84 MiB/s, done.
 Total 6 (delta 2), reused 0 (delta 0)
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 remote: 
-remote: Create a pull request for 'may7-cr' on GitHub by visiting:
-remote:      https://github.com/corinne-riddell/life-expectancy/pull/new/may7-cr
+remote: Create a pull request for 'june21-cr' on GitHub by visiting:
+remote:      https://github.com/corinne-riddell/life-expectancy/pull/new/june21-cr
 remote: 
 To https://github.com/corinne-riddell/life-expectancy.git
- * [new branch]      may7-cr -> may7-cr
+ * [new branch]      june21-cr -> june21-cr
 ```
 
 **Create a pull request**
@@ -501,14 +501,14 @@ Set yourself up to work with Git and GitHub for the day:
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
   main
-* may7-cr
+* june21-cr
 ```
 
 `git status`: confirm you committed everything you wanted to commit:
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git status
-On branch may7-cr
+On branch june21-cr
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 	.DS_Store
@@ -517,7 +517,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 * `git checkout main`: switch to the main branch
-* `git branch -d may7-cr`: delete the old branch (change "cr" to your initials) 
+* `git branch -d june21-cr`: delete the old branch (change "cr" to your initials) 
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout main
@@ -547,11 +547,11 @@ Fast-forward
 
 **Checkout a new branch**
 
-`git checkout -b may14-xy`, replacing xy with your initials.
+`git checkout -b june25-xy`, replacing xy with your initials.
 
 ```
-Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout -b may14-cr
-Switched to a new branch 'may14-cr'
+Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout -b june25-cr
+Switched to a new branch 'june25-cr'
 ```
 
 **Update the dataset**
@@ -577,7 +577,7 @@ where I moved the archived dataset.
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git status
-On branch may14-cr
+On branch june25-cr
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
@@ -605,7 +605,7 @@ I then use `git status` to confirm everything is being tracked:
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git status
-On branch may14-cr
+On branch june25-cr
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
 	modified:   data/Life-expectancy-by-state-long.csv
@@ -625,7 +625,7 @@ Then I commit my changes:
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git commit -m 'data update and downstream changes'
-[may14-cr c4b02db] data update and downstream changes
+[june25-cr c4b02db] data update and downstream changes
  4 files changed, 7570 insertions(+), 369 deletions(-)
  create mode 100644 data/archive/Life-expectancy-by-state-long_old.csv
  rewrite images/ca-black-women-LE.png (98%)
@@ -636,7 +636,7 @@ Biostat-MBP13-20:life-expectancy corinneriddell$ git commit -m 'data update and 
 Finally I push these changes to GitHub:
 
 ```
-git push origin may14-cr
+git push origin june25-cr
 Enumerating objects: 14, done.
 Counting objects: 100% (14/14), done.
 Delta compression using up to 8 threads
@@ -645,7 +645,7 @@ Writing objects: 100% (8/8), 68.08 KiB | 9.73 MiB/s, done.
 Total 8 (delta 3), reused 0 (delta 0)
 remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
 To https://github.com/corinne-riddell/life-expectancy.git
-   e15298a..c4b02db  may14-cr -> may14-cr
+   e15298a..c4b02db  june25-cr -> june25-cr
 Biostat-MBP13-20:life-expectancy corinneriddell$ 
 
 ```
@@ -661,6 +661,9 @@ How did the data changed? Which tool do you prefer?
 * can you see which rows of data were affected by the change?
 * can you tell from the data or images how the change affected the analytic findings?
 * anything else you noticed?
+
+After looking at the changes, go through the process to merge the pull request 
+into main.
 
 ## Summary
 
