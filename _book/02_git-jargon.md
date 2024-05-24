@@ -20,5 +20,7 @@ In the live workshop, we will go through Alice's slides together. If you are
 going through this training asynchronously, you can flip through Alice's slides 
 here: 
 
-<iframe src="https://bph-storage.s3.us-west-1.amazonaws.com/git-for-humans/git-for-designers.pdf" width="100%" height="800"></iframe>
-  
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://bph-storage.s3.us-west-1.amazonaws.com/git-for-humans/git-for-designers.pdf" allowfullscreen></iframe>
+</div>
+
