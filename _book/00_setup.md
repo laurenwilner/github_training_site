@@ -58,14 +58,10 @@ commands into the console and R looks like when the installs runs smoothly.
 *Please view this video in full screen and at high quality to see it properly.*
 
 
-```{=html}
-<div class="vembedr">
-<div>
-<iframe src="https://www.youtube.com/embed/JuZxhOTDMtw" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
-</div>
-</div>
+```r
+embed_url("https://youtu.be/JuZxhOTDMtw")
 ```
-
+<iframe width="560" height="315" src="https://youtu.be/JuZxhOTDMtw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Create a GitHub account
 
@@ -94,14 +90,10 @@ The following video shows how to download and install Git for Windows. View it
 on full screen and in high quality if you want to follow along:
 
 
-```{=html}
-<div class="vembedr">
-<div>
-<iframe src="https://www.youtube.com/embed/0blgUPi5j4U" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
-</div>
-</div>
+```r
+embed_url("https://youtu.be/0blgUPi5j4U")
 ```
-
+<iframe width="560" height="315" src="https://youtu.be/0blgUPi5j4U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 2) Once you have Git downloads, confirm you have access to Git Bash. To do so, 
 it should appear in your Start menu: Start menu > Git > Git Bash.
