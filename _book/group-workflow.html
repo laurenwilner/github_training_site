@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 8 Group Workflow | Git and GitHub for Public Health</title>
+<meta name="author" content="Corinne Riddell and Lauren Wilner">
+<meta name="description" content="8.1 Outline for this section In the previous section, you got up and running with working alone in Git and GitHub. During this section, we’re going to learn how to collaborate with others using...">
+<meta name="generator" content="bookdown 0.39.1 with bs4_book()">
+<meta property="og:title" content="Chapter 8 Group Workflow | Git and GitHub for Public Health">
+<meta property="og:type" content="book">
+<meta property="og:description" content="8.1 Outline for this section In the previous section, you got up and running with working alone in Git and GitHub. During this section, we’re going to learn how to collaborate with others using...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 8 Group Workflow | Git and GitHub for Public Health">
+<meta name="twitter:description" content="8.1 Outline for this section In the previous section, you got up and running with working alone in Git and GitHub. During this section, we’re going to learn how to collaborate with others using...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.6.1/transition.js"></script><script src="libs/bs3compat-0.6.1/tabs.js"></script><script src="libs/bs3compat-0.6.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><link href="libs/vembedr-0.1.5/css/vembedr.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Git and GitHub for Public Health</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Git and GitHub for Public Health</a></li>
+<li><a class="" href="workshop-setup.html"><span class="header-section-number">2</span> Workshop Setup</a></li>
+<li><a class="" href="why-git-and-github.html"><span class="header-section-number">3</span> Why Git and GitHub</a></li>
+<li><a class="" href="git-jargon.html"><span class="header-section-number">4</span> Git Jargon</a></li>
+<li><a class="" href="interacting-with-terminal-and-bash.html"><span class="header-section-number">5</span> Interacting with Terminal and Bash</a></li>
+<li><a class="" href="naming-folders-and-files.html"><span class="header-section-number">6</span> Naming folders and files</a></li>
+<li><a class="" href="solo-workflow.html"><span class="header-section-number">7</span> Solo Workflow</a></li>
+<li><a class="active" href="group-workflow.html"><span class="header-section-number">8</span> Group Workflow</a></li>
+<li><a class="" href="what-to-track-on-git-and-github.html"><span class="header-section-number">9</span> What to track on Git and Github?</a></li>
+<li><a class="" href="daily-git-practice.html"><span class="header-section-number">10</span> Daily Git Practice</a></li>
+<li><a class="" href="assorted-git-processes-and-tips.html"><span class="header-section-number">11</span> Assorted Git processes and tips</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/rstudio/bookdown-demo">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="group-workflow" class="section level1" number="8">
+<h1>
+<span class="header-section-number">8</span> Group Workflow<a class="anchor" aria-label="anchor" href="#group-workflow"><i class="fas fa-link"></i></a>
+</h1>
+<div id="outline-for-this-section-1" class="section level2" number="8.1">
+<h2>
+<span class="header-section-number">8.1</span> Outline for this section<a class="anchor" aria-label="anchor" href="#outline-for-this-section-1"><i class="fas fa-link"></i></a>
+</h2>
+<p>In the previous section, you got up and running with working alone in Git and
+GitHub. During this section, we’re going to learn how to collaborate with others
+using Git and GitHub. We will:</p>
+<ul>
+<li>Set up a shared repository</li>
+<li>Make a first commit</li>
+<li>Cover three routes for collaboration:
+<ul>
+<li>Independent Work</li>
+<li>Code Review</li>
+<li>Working on the same files
+<ul>
+<li>Practice resolving a merge conflict</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="setup" class="section level2" number="8.2">
+<h2>
+<span class="header-section-number">8.2</span> Setup<a class="anchor" aria-label="anchor" href="#setup"><i class="fas fa-link"></i></a>
+</h2>
+<p>To get the most out of this section of the training, you need a training buddy.
+One of you will be the <em>lead researcher</em>, and the other will be the <em>colleague</em>.
+The lead researcher will create the repository, and the colleague will contribute to it.</p>
+<p><strong>Lead Researcher: Create a new repository on GitHub</strong></p>
+<ul>
+<li>Go to GitHub, click on the “+” icon in the top-right corner, and select <code>New repository</code>.</li>
+<li>Follow the same instructions as we did in the solo workflow to create a new
+repository (add a README, choose a license, etc.).</li>
+<li>Add your colleague as a collaborator by going to
+<code>Settings</code> &gt; <code>Collaborators</code> &gt; <code>Add people</code>. Ask your colleague for their
+GitHub username and add them to this repository.</li>
+</ul>
+<p><strong>Colleague: Join the repository</strong></p>
+<ul>
+<li>Check your email for an invitation to collaborate on the repository.</li>
+<li>Accept the invitation by clicking on the link in the email.</li>
+</ul>
+<p><strong>Both: Clone the repository</strong></p>
+<ul>
+<li>Go to the main page of the repository clicking on the green <code>Code</code> button and
+copying the URL. Then, in Bash/Terminal navigate to the location where you will
+clone your repository and run the following command:</li>
+</ul>
+<pre><code>git clone {repository URL}</code></pre>
+</div>
+<div id="get-oriented-to-the-new-directory" class="section level2" number="8.3">
+<h2>
+<span class="header-section-number">8.3</span> Get oriented to the new directory<a class="anchor" aria-label="anchor" href="#get-oriented-to-the-new-directory"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>Navigate into your repository by typing <code>cd {repo-name}</code>
+</li>
+<li>Type <code>git status</code>. The results shows you that no changes have been made yet:</li>
+</ul>
+<pre><code>Biostat-MBP13-20:collabo-repo corinneriddell$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean</code></pre>
+<ul>
+<li>Type <code>git branch</code>. This shows you that you are currently on the main branch.</li>
+</ul>
+<pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$git branch
+* main</code></pre>
+<ul>
+<li>
+<strong>Both:</strong> Create a new branch. Now that we know that our repository is cloned,
+up to date, and on main, we can make a new branch to work on:</li>
+</ul>
+<pre><code>git checkout -b {new-branch-name}
+git branch</code></pre>
+<p>Typing <code>git branch</code> will show you that you are now on the new branch, though
+only the first line was <em>necessary</em> to create this branch.</p>
+</div>
+<div id="collaborative-routes" class="section level2" number="8.4">
+<h2>
+<span class="header-section-number">8.4</span> Collaborative Routes<a class="anchor" aria-label="anchor" href="#collaborative-routes"><i class="fas fa-link"></i></a>
+</h2>
+<p>In general, there are three ways to work collaboratively on a project:</p>
+<ol style="list-style-type: decimal">
+<li>
+<strong>Collaborative route #1 (Independent work)</strong>: You each work on separate files and merge your own changes. It is similar to creating several separate documents and
+storing them in a shared folder for you both to view.<br>
+</li>
+<li>
+<strong>Collaborative route #2 (Code review)</strong>: Submit pull requests for code reviews without direct edits. It is similar to having a shared document where you can leave comments for each other - like when you leave comments on a MS Word document for your colleague.<br>
+</li>
+<li>
+<strong>Collaborative route #3 (Working on the same files)</strong>: You both work on the same file and merge in your changes. Sometimes this leads to merge conflicts so additional care is needed. It is similar to having a shared document where you
+can make changes directly to your colleague’s work – think about working collaboratively on a document in the cloud where both individuals can edit the
+document at the same time, but weird things might happen if you are working on the same sentence at the same time.</li>
+</ol>
+<p>We will cover each collaborative route below.</p>
+<div id="collaborative-route-1-independent-work" class="section level3" number="8.4.1">
+<h3>
+<span class="header-section-number">8.4.1</span> Collaborative Route #1: Independent work<a class="anchor" aria-label="anchor" href="#collaborative-route-1-independent-work"><i class="fas fa-link"></i></a>
+</h3>
+<p>You each work on separate files and merge your own changes. To start, the
+repository will have two files, one that each of you made. In general, you could
+maintain several files, each of your working on the specific files that make
+sense but never editing each other’s files.</p>
+<p>Let’s practice this workflow now:</p>
+<ul>
+<li>
+<strong>Lead researcher:</strong> Save a code file that you brought to this workshop in the shared repository.</li>
+<li>
+<strong>Colleague:</strong> Save a code file that you brought to this workshop in the shared repository. If
+your file has the same name as the lead researcher’s file, rename it now.</li>
+<li>
+<strong>Both:</strong> Add, commit, and push your respective files to GitHub:</li>
+</ul>
+<pre><code>git add {file-name}
+git commit -m "Initial commit with {file-name}"
+git push origin {new-branch-name}</code></pre>
+<p>If the output from the push command looks successful, you are now ready to create
+a pull request following the same process we used in the solo workflow section.</p>
+<ul>
+<li>
+<strong>Both:</strong> Navigate to GitHub.com to your repository’s URL. There should be a pale yellow
+banner informing you about the changes you just pushed. Click the button
+“Compare &amp; pull request”. Notice that the title is your commit message from the
+previous step. Scroll down. Look at the files that have been added.</li>
+<li>The code is all shown in green, indicating that every line of code is new.</li>
+<li>Merge the changes from your branch into main</li>
+<li>Click on the green “Create pull request” button. Github will check that it
+is able to merge your branch with main without problems. Note the message “This
+branch has no conflicts with the base branch”. This means you are good to go!</li>
+<li>Click on the green “Merge pull request” button.<br>
+</li>
+<li>Click on the green “Confirm merge” button.</li>
+<li>Click the “Delete branch” button.</li>
+</ul>
+<p>Both of your files have been merged into the main branch. Let’s take a look. Go
+into the main <code>Code</code> page and take a look at the code on <code>main</code> (which should be
+the only existing branch in your repository). You should see the files that
+<em>both</em> of you created in the previous steps.</p>
+<p><strong>Recap</strong></p>
+<ul>
+<li><p>You have now successfully completed the first collaborative route. You each
+created a file, committed it, and merged it into the main branch. You worked on
+different files and had no merge conflicts or interaction, but now have access
+to each other’s work!</p></li>
+<li><p>In this workflow, you could continue working independently on your file in
+the shared repo and add other files as you go along.</p></li>
+<li><p>❗ Take care: Now that you are working together, be sure
+to use <code>git pull origin main</code> to frequently grab any changes your colleague made to the
+repository. You should be doing this already, but it is even more important
+when you are working together so you can stay up to date on whatever changes
+have been made to the repository.</p></li>
+</ul>
+<p><br><br></p>
+</div>
+<div id="collaborative-route-2-code-review" class="section level3" number="8.4.2">
+<h3>
+<span class="header-section-number">8.4.2</span> Collaborative Route #2: Code Review<a class="anchor" aria-label="anchor" href="#collaborative-route-2-code-review"><i class="fas fa-link"></i></a>
+</h3>
+<p>In Collaborative Route #2, the lead researcher will make a new file, make
+changes to that file and push these to GitHub. The colleague will then review
+these changes by submitting comments on the pull request.</p>
+<p>Let’s practice this workflow now:</p>
+<p><strong>Everyone:</strong></p>
+<ul>
+<li>Checkout main, and pull down the changes</li>
+</ul>
+<pre><code>git checkout main
+git pull origin main
+git status</code></pre>
+<p><strong>Lead researcher steps:</strong></p>
+<ul>
+<li>Create a new branch. Pretend it is the next day and include this date in the
+branch name alongside your initials:</li>
+</ul>
+<pre><code>git checkout -b {new-branch-name}
+git branch</code></pre>
+<ul>
+<li>Make and <strong>save a change</strong> to the file you added in the previous step.
+You can add in a comment or a new line of code - something small is good. <strong>Save
+your file.</strong>
+</li>
+<li>Add, commit, and push your changes to your branch on GitHub:</li>
+</ul>
+<pre><code>git status
+git add {file-name}
+git commit -m "{your description of what you changed}"
+git push origin {your-branch-name}</code></pre>
+<ul>
+<li>Go to your GitHub repository page. You should see a notification about your
+recent push. Click on “Compare &amp; pull request” next to your branch.</li>
+<li>❗ <strong>NEW STEP ALERT</strong>: Fill in the details of the pull
+request, explaining what you’ve added or changed and why.</li>
+<li>❗ <strong>NEW STEP ALERT</strong>: Add your colleague as a
+reviewer. We will not immediately merge this in this time!</li>
+<li>Submit the pull request.</li>
+</ul>
+<p><strong>Colleague steps:</strong></p>
+<ul>
+<li>Once the pull request is submitted, the colleague should receive an email telling them
+that the lead researcher requested their review on PR #{X}.</li>
+<li>Click <code>View it on GitHub</code> and it will bring you to GitHub and there will be a
+yellow box at the top.</li>
+<li>Click on <code>Add your review</code> in the yellow box. Then click <code>Review changes</code> in green in the right corner.</li>
+<li>Leave comments on the pull request by clicking the plus signs next to chunks
+of code. You can leave multiple comments. Your feedback can include suggestions,
+questions, or general feedback about the code. Focus on clarity, efficiency, and
+any potential errors you might notice.</li>
+<li>When you’re finished commenting, click <code>Finish your review</code> in green in the top right.</li>
+<li>Submit your comments. You have three review options:</li>
+</ul>
+<p><br></p>
+<p>Let’s take a moment to talk briefly about each of these review options.</p>
+<div class="inline-table"><table class="table table-sm">
+<colgroup>
+<col width="10%">
+<col width="90%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>✅ <strong>Comment</strong>
+</td>
+<td>This submits feedback without explicitly approving the pull request. This will send the lead researcher an email with your comments on their code. The lead researcher can click <code>View it on GitHub</code> to see your comments. They can reply and/or merge the pull request into main at this point. This can be used either as an FYI or to start a conversation about the code - e.g. maybe a certain function is new to you so you want to ask about why they chose to use that. You may want to use this if you have a workflow where you always want the person who wrote the code to do the merging.</td>
+</tr>
+<tr class="even">
+<td>✅ <strong>Approve</strong>
+</td>
+<td>This submits feedback and approves the PR for merging into main. This will send the lead researcher an email with your comments that will also indicate that the pull request is approved. This option can be used as an FYI, e.g., telling them about an alternate function that they <em>could</em> use but do not have to. Either person can merge the pull request into main. You can establish norms around how these work with your colleagues - there is no right answer!</td>
+</tr>
+<tr class="odd">
+<td>✅ <strong>Request Changes</strong>
+</td>
+<td>Submit feedback that the other person needs to address before they can merge into main. This will send the lead researcher an email with your comments that will also indicate that the PR needs changes. This option can be used if you see something that needs to change before the pull request can be merged - e.g. a function that is not working as intended. The lead researcher will need to address your comments before they can merge the pull request into main. <em>Technically, the PR could be merged in without the changes, but this is not good practice.</em>
+</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Lead Researcher:</strong></p>
+<ul>
+<li>Review the comments made by your colleague. Make any necessary changes to your code based on the feedback.</li>
+<li>Add, commit, and push these changes to the same branch. This will automatically update the pull request.</li>
+</ul>
+<p><strong>Colleague:</strong></p>
+<ul>
+<li>You will receive an email saying that the lead researcher pushed one commit. At this point, the colleague can click <code>View it on GitHub</code> and verify that the changes are sufficient.</li>
+<li>Review the changes made by the lead researcher in response to your comments. If you’re satisfied with the updates, approve the pull request.</li>
+</ul>
+<p><strong>Lead Researcher:</strong></p>
+<ul>
+<li>Once the pull request is approved, merge your changes into the main branch.</li>
+</ul>
+<p><strong>Recap</strong></p>
+<ul>
+<li><p>You have successfully completed the second collaborative route. You used Git to
+review/check/comment on your colleague’s work without emailing
+or copying/pasting code back and forth. The lead researcher made changes to
+their code based on your feedback, and you both worked together to finalize the
+pull request.</p></li>
+<li><p>Similar to the previous workflow, collaborators can work independently, but
+request review of each other’s work.</p></li>
+</ul>
+<p><br><br></p>
+</div>
+<div id="collaborative-route-3-working-on-the-same-files" class="section level3" number="8.4.3">
+<h3>
+<span class="header-section-number">8.4.3</span> Collaborative Route #3: Working on the same files<a class="anchor" aria-label="anchor" href="#collaborative-route-3-working-on-the-same-files"><i class="fas fa-link"></i></a>
+</h3>
+<p>In this scenario, imagine that the lead researcher has already created and
+committed an analysis file. The colleague then wants to make direct changes to
+that file or extend the analysis. This is a commonly used workflow,
+and works well if both people are working sequentially and pulling from main
+often to pull down any changes made to the repo as their collaborators work.</p>
+<p>This diagram shows how both Lauren and Corinne can work on the same file,
+sequentially over time, each pulling from main, making changes, and merging their
+changes back into main before the other person works:</p>
+<div class="inline-figure"><img src="figures/no-conflict.png" width="100%"></div>
+<p>However, this collaborative route leaves room for the dreaded merge conflict.</p>
+<p>Merge conflicts can be a source of stress for many GitHub users. While they can
+be scary, you are in good company when you have your first merge conflict –
+everyone has a merge conflict eventually.</p>
+<p>What is a merge conflict, you might ask, and how does it happen? Well, a merge
+conflict can happen if you and a colleague both pull from main at the same
+time and proceed to edit the same location on the same file. If colleague #1
+merges their changes into main, then when colleague #2
+goes to merge their changes into main, GitHub doesn’t know what changes to keep.</p>
+<div class="inline-figure"><img src="figures/conflict.png" width="100%"></div>
+<p>If this seems a little convoluted, it is your lucky day. We will set the stage
+for a merge conflict and practice resolving it with our buddy.</p>
+<p><strong>Creating a merge conflict</strong></p>
+<p><strong>Everyone</strong>:
+- Checkout and pull any changes: <code>git checkout main</code> and <code>git pull origin main</code> to make sure you are up to date.
+- Make and checkout a new branch: <code>git checkout -b {new-branch-name}</code>. Each of
+you should call their branch something different from the other researcher.
+- Together, choose one file and one line location on the file that you will each
+edit separately on your laptops.
+- Each of you should make the edits you agreed upon to the single line location that you decided you would edit. You should both make <em>different</em> changes. <strong>Save your code file.</strong></p>
+<p><br></p>
+<ul>
+<li>
+<strong>Lead researcher only:</strong> add, commit, and push your changes to your branch.
+Then, create a pull request and merge your changes into main.</li>
+</ul>
+<p><br></p>
+<ul>
+<li>
+<strong>Colleague:</strong> Your turn. Add, commit, and push your changes to your branch.
+Then, create a pull request. 😱 Merge conflict! You will not
+be able to merge into main.</li>
+</ul>
+<p>Deep breaths. Let’s walk through how to resolve the merge conflict.</p>
+<p>The colleague with the conflict will see the following. Colleague, follow these steps!
+Lead researcher, watch your colleague’s screen to follow along:</p>
+<div class="inline-figure"><img src="figures/merge-conflict-1.png" width="100%"></div>
+<p>Click on <code>View Pull Request</code> to begin resolving the merge conflict. When you click on <code>View Pull Request</code>, you will see the following:</p>
+<div class="inline-figure"><img src="figures/merge-conflict-2.png" width="100%"></div>
+<p>Click on <code>Resolve conflicts</code> to begin resolving the merge conflict. When you click on <code>Resolve conflicts</code>, you will see the following:</p>
+<div class="inline-figure"><img src="figures/Example-merge-conflict-github.png" width="75%"></div>
+<p>Together, look at the code in the file. Decide which edits you will keep. For
+this exercise, it is arbitrary which edits you keep. However, in practice you
+will make this decision in an informed way.</p>
+<p>When you choose what to keep, delete the <code>&gt;&gt;&gt;</code> and <code>===</code> and <code>&lt;&lt;&lt;</code> lines, as
+well as the lines from the person whose code you are not keeping. When you are
+finished, click <code>Mark as resolved</code> in the top right corner. Now that you have
+clicked <code>Mark as resolved</code>, you will see a green check mark next to the file
+name, and it will say <code>Resolved</code> in the top right corner. There will also be a
+green button in the top right corner that says <code>Commit merge</code>. Click on this
+button. This brings you back to the page you are familiar with, where you can
+merge into main. Click <code>Merge pull request</code> and then <code>Confirm merge</code>. You can
+delete the branch as you usually do.</p>
+<p><strong>Everyone</strong>:
+You can both checkout main and pull down the changes. You will now see that the file with the merge conflict has been cleaned up and you will see only the code that you accepted above!</p>
+<p><strong>Recap</strong></p>
+<ul>
+<li>You have just resolved your first merge conflict!</li>
+<li>In this route you worked together on the same files. If you had edited different
+sections of the file, you could successfully merge both of your changes into main.
+In this instance, both of you edited the same line of code, which created a
+merge conflict. You resolve the merge conflict.</li>
+<li>To minimize the change of merge conflicts, make sure you do <code>git pull origin main</code> before you
+start your day’s work to pull down the most recent version of the repo. If you do
+get a conflict, you know how to resolve it. You will need to make a decision about
+which version of the code to keep. It should be clear based on what you hope to
+accomplish in the analysis.</li>
+</ul>
+</div>
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="solo-workflow.html"><span class="header-section-number">7</span> Solo Workflow</a></div>
+<div class="next"><a href="what-to-track-on-git-and-github.html"><span class="header-section-number">9</span> What to track on Git and Github?</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#group-workflow"><span class="header-section-number">8</span> Group Workflow</a></li>
+<li><a class="nav-link" href="#outline-for-this-section-1"><span class="header-section-number">8.1</span> Outline for this section</a></li>
+<li><a class="nav-link" href="#setup"><span class="header-section-number">8.2</span> Setup</a></li>
+<li><a class="nav-link" href="#get-oriented-to-the-new-directory"><span class="header-section-number">8.3</span> Get oriented to the new directory</a></li>
+<li>
+<a class="nav-link" href="#collaborative-routes"><span class="header-section-number">8.4</span> Collaborative Routes</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#collaborative-route-1-independent-work"><span class="header-section-number">8.4.1</span> Collaborative Route #1: Independent work</a></li>
+<li><a class="nav-link" href="#collaborative-route-2-code-review"><span class="header-section-number">8.4.2</span> Collaborative Route #2: Code Review</a></li>
+<li><a class="nav-link" href="#collaborative-route-3-working-on-the-same-files"><span class="header-section-number">8.4.3</span> Collaborative Route #3: Working on the same files</a></li>
+</ul>
+</li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/rstudio/bookdown-demo/blob/master/06_group-workflow.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/rstudio/bookdown-demo/edit/master/06_group-workflow.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Git and GitHub for Public Health</strong>" was written by Corinne Riddell and Lauren Wilner. It was last built on 2024-05-24.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>
