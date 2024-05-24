@@ -11,7 +11,8 @@ as good names make for good times when you interact with Terminal and Bash.
 We will use Terminal and Bash applications to interact with Git on our laptops. 
 Below is a Mac Terminal window. It looks very similar to a Windows Bash window.
 
-<img src="./figures/Terminal-explainer-1.jpg" width="100%" />
+
+\includegraphics[width=1\linewidth]{./figures/Terminal-explainer-1} 
 
 In this training, we supply you with Git code for you to type into 
 your Terminal/Bash windows. 
@@ -22,7 +23,8 @@ to this output as it will indicate if the command was understood by your
 computer or if something went wrong. For example, here is the command 
 `git branch`, followed by the output printed to screen:
 
-<img src="./figures/Terminal-explainer-2.jpg" width="100%" />
+
+\includegraphics[width=1\linewidth]{./figures/Terminal-explainer-2} 
 
 Here is a cheat sheet of commands we use on this website: 
 
