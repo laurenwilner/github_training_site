@@ -24,7 +24,7 @@ computer or if something went wrong. For example, here is the command
 
 <img src="./figures/Terminal-explainer-2.jpg" width="100%" />
 
-Here is a cheat sheet that you can refer to for your bash commands:  
+Here is a cheat sheet of commands we use on this website: 
 
 | Mac Command  | Windows Command| Description     |
 |--------------|----------------|------------------------|
@@ -32,11 +32,17 @@ Here is a cheat sheet that you can refer to for your bash commands:
 | `cd {dir}`  | `cd {dir}`|Changes to directory `{dir}`      |
 | `cd ..`  | `cd ..`| Moves up one directory level           |
 | `open .` | `start .`| Opens the current directory            |
-| `rm {file}`   | `del {file}`| Removes a file       |
+| `pwd`    | `cd` |Prints the current working directory   |
+
+Here is a cheat sheet of commands we don't use but are helpful to know and integrate
+into your workflow:
+
+| Mac Command  | Windows Command| Description     |
+|--------------|----------------|------------------------|
+| `git rm {file}`   | `git rm {file}`| Removes a file       |
 | `mkdir {}`| `mkdir {}` |Creates a new directory `{}`          |
 | `touch {}`| `type nul > {file}`| Creates a new empty file `{}`         |
 | `cp {source} {destination}` | `copy {source} {destination}` |Copies files or directories from `{source}` to `{destination}` |
-| `mv {source} {destination}` | `move {source} {destination}` | Moves or renames files or directories from `{source}` to `{destination}` |
-| `pwd`    | `cd` |Prints the current working directory   |
+| `git mv {source} {destination}` | `git mv {source} {destination}` | Moves or renames files or directories from `{source}` to `{destination}` |
 | `history`| `doskey /history` |Shows the command history              |
 | `clear`  | `cls` |Clears the terminal screen             |
