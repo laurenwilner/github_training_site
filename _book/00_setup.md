@@ -44,7 +44,7 @@ To do this, run the following code in the RStudio console (lower left-hand side
 panel, of the four panel pane):
 
 
-``` r
+```r
 install.packages('tidyverse')
 install.packages('usethis')
 install.packages('gitcreds')
@@ -126,7 +126,7 @@ follow the prompts!
 In RStudio, load the libraries `usethis` & `gitcreds`:  
 
 
-``` r
+```r
 library(usethis)
 library(gitcreds)
 ```
@@ -138,7 +138,7 @@ GitHub user name. `user.email` is the email address linked to your GitHub
 account.
 
 
-``` r
+```r
 use_git_config(user.name = "Your user name",
                user.email = "your.email.adress@gmail.com")
 ```
@@ -148,7 +148,7 @@ authenticate yourself with GitHub. You will need to do this in order to push and
 pull from your GitHub repository.  To do so, run the following in the R console:   
 
 
-``` r
+```r
 usethis::create_github_token()  
 ```
 
@@ -160,7 +160,7 @@ generated and paste it somewhere where you will be able to access it.
 Go back to R/RStudio and run the following:  
 
 
-``` r
+```r
 gitcreds::gitcreds_set()
 ```
 
