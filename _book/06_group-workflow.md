@@ -301,7 +301,7 @@ Then, create a pull request and merge your changes into main.
 <br> 
 
 - **Colleague:** Your turn. Add, commit, and push your changes to your branch. 
-Then, create a pull request. 😱 Merge conflict! You will not 
+Then, create a pull request. 😨 Merge conflict! You will not 
 be able to merge into main. 
 
 Deep breaths. Let's walk through how to resolve the merge conflict. 
