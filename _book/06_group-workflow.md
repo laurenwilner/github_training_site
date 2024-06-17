@@ -292,7 +292,7 @@ for a merge conflict and practice resolving it with our buddy.
 you should call their branch something different from the other researcher.  
 - Together, choose one file and one line location on the file that you will each
 edit separately on your laptops.  
-- Each of you should make the edits you agreed upon to the single line location that you decided you would edit. You should both make *different* changes. **Save your code file.**. 
+- Each of you should make the edits you agreed upon to the single line location that you decided you would edit. You should both make *different* changes. **Save your code file.**  
 
 <br> 
 
