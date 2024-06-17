@@ -88,7 +88,7 @@ Biostat-MBP13-20:life-expectancy corinneriddell$git branch
 Set yourself up in a new branch off of main. In Terminal/Bash:
 
 * Type `git checkout -b june18-xy`, replacing xy with your initials -- write these 
-in lowercase to prevent errors later! (If today is not May 3, replace "june18" 
+in lowercase to prevent errors later! (If today is not June 18th, replace "june18" 
 with today's date.)
 
 ```
@@ -329,7 +329,7 @@ Fast-forward
 **Start a new branch**
 
 Like the last day, start a new branch to track today's changes. Let's 
-pretend it is now May 7. Type `git checkout -b june21-XY`, where XY is replaced 
+pretend it is now June 21. Type `git checkout -b june21-XY`, where XY is replaced 
 with your initials. Type `git branch` to confirm you have changed branches. 
 
 ```
@@ -486,11 +486,10 @@ create a pull request to pull these changes into main.
 
 ## Another practice: Changes after receiving an updated dataset
 
-Another week goes by. It is now May 14. You received an email that there was an 
+Another week goes by. It is now June 25. You received an email that there was an 
 error in the data file that you used to conduct the analysis. A new data file
 was securely transferred to you by the data holder. You need to rerun the analysis
-using the new dataset. The new data file is the one called "LEbsyrx.csv" in the 
-data folder.
+using the new dataset. The new data file is in the `future-data` subfolder of the `existing-project` that you put on your Desktop during setup.
 
 **Get ready for the day**
 

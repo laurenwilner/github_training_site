@@ -33,6 +33,7 @@ GitHub username and add them to this repository.
 
 - Check your email for an invitation to collaborate on the repository.
 - Accept the invitation by clicking on the link in the email.
+- Star this repository by clicking `Star` in the top right - this will make it easier to find it later if you navigate away! 
 
 **Both: Clone the repository**
 
@@ -150,8 +151,8 @@ have been made to the repository.
 
 ### Collaborative Route #2: Code Review
 
-In Collaborative Route #2, the lead researcher will make a new file, make 
-changes to that file and push these to GitHub. The colleague will then review 
+In Collaborative Route #2, the lead researcher will make 
+changes to a file and push these to GitHub. The colleague will then review 
 these changes by submitting comments on the pull request. 
 
 Let's practice this workflow now:
@@ -261,7 +262,8 @@ This diagram shows how both Lauren and Corinne can work on the same file,
 sequentially over time, each pulling from main, making changes, and merging their
 changes back into main before the other person works:
 
-<img src="./figures/no-conflict.PNG" width="100%" />
+
+\includegraphics[width=1\linewidth]{./figures/no-conflict} 
 
 However, this collaborative route leaves room for the dreaded merge conflict.
 
@@ -276,20 +278,21 @@ merges their changes into main, then when colleague #2
 goes to merge their changes into main, GitHub doesn't know what changes to keep.
 
 
-<img src="./figures/conflict.PNG" width="100%" />
+
+\includegraphics[width=1\linewidth]{./figures/conflict} 
 
 If this seems a little convoluted, it is your lucky day. We will set the stage
 for a merge conflict and practice resolving it with our buddy. 
 
 **Creating a merge conflict**
 
-**Everyone**:
-- Checkout and pull any changes: `git checkout main` and `git pull origin main` to make sure you are up to date.
+**Everyone**:  
+- Checkout and pull any changes: `git checkout main` and `git pull origin main` to make sure you are up to date.  
 - Make and checkout a new branch: `git checkout -b {new-branch-name}`. Each of
-you should call their branch something different from the other researcher.
+you should call their branch something different from the other researcher.  
 - Together, choose one file and one line location on the file that you will each
-edit separately on your laptops.
-- Each of you should make the edits you agreed upon to the single line location that you decided you would edit. You should both make *different* changes. **Save your code file.**
+edit separately on your laptops.  
+- Each of you should make the edits you agreed upon to the single line location that you decided you would edit. You should both make *different* changes. **Save your code file.**. 
 
 <br> 
 
@@ -302,20 +305,25 @@ Then, create a pull request and merge your changes into main.
 Then, create a pull request. 😨 Merge conflict! You will not 
 be able to merge into main. 
 
+<br>
+
 Deep breaths. Let's walk through how to resolve the merge conflict. 
 
 The colleague with the conflict will see the following. Colleague, follow these steps!
 Lead researcher, watch your colleague's screen to follow along:
 
-<img src="./figures/merge-conflict-1.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{./figures/merge-conflict-1} 
 
 Click on `View Pull Request` to begin resolving the merge conflict. When you click on `View Pull Request`, you will see the following: 
 
-<img src="./figures/merge-conflict-2.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{./figures/merge-conflict-2} 
 
 Click on `Resolve conflicts` to begin resolving the merge conflict. When you click on `Resolve conflicts`, you will see the following:
 
-<img src="./figures/Example-merge-conflict-github.png" width="75%" />
+
+\includegraphics[width=0.75\linewidth]{./figures/Example-merge-conflict-github} 
 
 Together, look at the code in the file. Decide which edits you will keep. For
 this exercise, it is arbitrary which edits you keep. However, in practice you 

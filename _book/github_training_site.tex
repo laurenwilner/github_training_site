@@ -120,7 +120,7 @@
 
 \title{Git and GitHub for Public Health}
 \author{Corinne Riddell and Lauren Wilner}
-\date{2024-06-06}
+\date{2024-06-17}
 
 \begin{document}
 \maketitle
@@ -479,6 +479,12 @@ have never used these applications before, we introduce them below, so you
 become familiar with them. Second, we discuss good names for files and folders,
 as good names make for good times when you interact with Terminal and Bash.
 
+\section{Terminal primer video}\label{terminal-primer-video}
+
+If you have never used Mac's Terminal or Window's Bash applications before, please
+watch this 9-minute video on how to use these applications to navigate to your
+project folders. While this was recorded on Mac, the same concepts apply for Windows.
+
 \section{A Terminal window}\label{a-terminal-window}
 
 We will use Terminal and Bash applications to interact with Git on our laptops.
@@ -744,7 +750,7 @@ Set yourself up in a new branch off of main. In Terminal/Bash:
 \tightlist
 \item
   Type \texttt{git\ checkout\ -b\ june18-xy}, replacing xy with your initials -- write these
-  in lowercase to prevent errors later! (If today is not May 3, replace ``june18''
+  in lowercase to prevent errors later! (If today is not June 18th, replace ``june18''
   with today's date.)
 \end{itemize}
 
@@ -1014,7 +1020,7 @@ Fast-forward
 \textbf{Start a new branch}
 
 Like the last day, start a new branch to track today's changes. Let's
-pretend it is now May 7. Type \texttt{git\ checkout\ -b\ june21-XY}, where XY is replaced
+pretend it is now June 21. Type \texttt{git\ checkout\ -b\ june21-XY}, where XY is replaced
 with your initials. Type \texttt{git\ branch} to confirm you have changed branches.
 
 \begin{verbatim}
@@ -1178,11 +1184,10 @@ create a pull request to pull these changes into main.
 
 \section{Another practice: Changes after receiving an updated dataset}\label{another-practice-changes-after-receiving-an-updated-dataset}
 
-Another week goes by. It is now May 14. You received an email that there was an
+Another week goes by. It is now June 25. You received an email that there was an
 error in the data file that you used to conduct the analysis. A new data file
 was securely transferred to you by the data holder. You need to rerun the analysis
-using the new dataset. The new data file is the one called ``LEbsyrx.csv'' in the
-data folder.
+using the new dataset. The new data file is in the \texttt{future-data} subfolder of the \texttt{existing-project} that you put on your Desktop during setup.
 
 \textbf{Get ready for the day}
 
@@ -1445,6 +1450,8 @@ The lead researcher will create the repository, and the colleague will contribut
   Check your email for an invitation to collaborate on the repository.
 \item
   Accept the invitation by clicking on the link in the email.
+\item
+  Star this repository by clicking \texttt{Star} in the top right - this will make it easier to find it later if you navigate away!
 \end{itemize}
 
 \textbf{Both: Clone the repository}
@@ -1603,8 +1610,8 @@ the only existing branch in your repository). You should see the files that
 
 \subsection{Collaborative Route \#2: Code Review}\label{collaborative-route-2-code-review}
 
-In Collaborative Route \#2, the lead researcher will make a new file, make
-changes to that file and push these to GitHub. The colleague will then review
+In Collaborative Route \#2, the lead researcher will make
+changes to a file and push these to GitHub. The colleague will then review
 these changes by submitting comments on the pull request.
 
 Let's practice this workflow now:
@@ -1782,13 +1789,13 @@ for a merge conflict and practice resolving it with our buddy.
 
 \textbf{Creating a merge conflict}
 
-\textbf{Everyone}:
-- Checkout and pull any changes: \texttt{git\ checkout\ main} and \texttt{git\ pull\ origin\ main} to make sure you are up to date.
+\textbf{Everyone}:\\
+- Checkout and pull any changes: \texttt{git\ checkout\ main} and \texttt{git\ pull\ origin\ main} to make sure you are up to date.\\
 - Make and checkout a new branch: \texttt{git\ checkout\ -b\ \{new-branch-name\}}. Each of
-you should call their branch something different from the other researcher.
+you should call their branch something different from the other researcher.\\
 - Together, choose one file and one line location on the file that you will each
-edit separately on your laptops.
-- Each of you should make the edits you agreed upon to the single line location that you decided you would edit. You should both make \emph{different} changes. \textbf{Save your code file.}
+edit separately on your laptops.\\
+- Each of you should make the edits you agreed upon to the single line location that you decided you would edit. You should both make \emph{different} changes. \textbf{Save your code file.}.
 
 \begin{itemize}
 \tightlist
