@@ -33,7 +33,8 @@ separate words within field.
 
 For example, here are some of the file names in the "pollution-ptb" folder:
 
-<img src="./figures/Variable-names-example.png" width="50%" />
+
+\includegraphics[width=0.5\linewidth]{./figures/Variable-names-example} 
 
 These files are: 
 
@@ -70,5 +71,6 @@ if you haven't interacted with Terminal/Bash very much, but I can guarantee you
 that the frustration will build to a crescendo over time... save yourself this 
 pain by using dashes and underscores instead of spaces!
 
-<img src="./figures/space-in-filename-pain.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{./figures/space-in-filename-pain} 
 

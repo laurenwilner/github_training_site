@@ -7,7 +7,7 @@
 <title>Chapter 8 Group Workflow | Git and GitHub for Public Health</title>
 <meta name="author" content="Corinne Riddell and Lauren Wilner">
 <meta name="description" content="8.1 Outline for this section In the previous section, you got up and running with working alone in Git and GitHub. During this section, we’re going to learn how to collaborate with others using...">
-<meta name="generator" content="bookdown 0.39 with bs4_book()">
+<meta name="generator" content="bookdown 0.39.1 with bs4_book()">
 <meta property="og:title" content="Chapter 8 Group Workflow | Git and GitHub for Public Health">
 <meta property="og:type" content="book">
 <meta property="og:description" content="8.1 Outline for this section In the previous section, you got up and running with working alone in Git and GitHub. During this section, we’re going to learn how to collaborate with others using...">
@@ -16,7 +16,7 @@
 <meta name="twitter:description" content="8.1 Outline for this section In the previous section, you got up and running with working alone in Git and GitHub. During this section, we’re going to learn how to collaborate with others using...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.7.0/transition.js"></script><script src="libs/bs3compat-0.7.0/tabs.js"></script><script src="libs/bs3compat-0.7.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.6.1/transition.js"></script><script src="libs/bs3compat-0.6.1/tabs.js"></script><script src="libs/bs3compat-0.6.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
 <script src="libs/bs4_book-1.0.0/bs4_book.js"></script><link href="libs/vembedr-0.1.5/css/vembedr.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
@@ -109,6 +109,7 @@ GitHub username and add them to this repository.</li>
 <ul>
 <li>Check your email for an invitation to collaborate on the repository.</li>
 <li>Accept the invitation by clicking on the link in the email.</li>
+<li>Star this repository by clicking <code>Star</code> in the top right - this will make it easier to find it later if you navigate away!</li>
 </ul>
 <p><strong>Both: Clone the repository</strong></p>
 <ul>
@@ -229,8 +230,8 @@ have been made to the repository.</p></li>
 <h3>
 <span class="header-section-number">8.4.2</span> Collaborative Route #2: Code Review<a class="anchor" aria-label="anchor" href="#collaborative-route-2-code-review"><i class="fas fa-link"></i></a>
 </h3>
-<p>In Collaborative Route #2, the lead researcher will make a new file, make
-changes to that file and push these to GitHub. The colleague will then review
+<p>In Collaborative Route #2, the lead researcher will make
+changes to a file and push these to GitHub. The colleague will then review
 these changes by submitting comments on the pull request.</p>
 <p>Let’s practice this workflow now:</p>
 <p><strong>Everyone:</strong></p>
@@ -363,13 +364,13 @@ goes to merge their changes into main, GitHub doesn’t know what changes to kee
 <p>If this seems a little convoluted, it is your lucky day. We will set the stage
 for a merge conflict and practice resolving it with our buddy.</p>
 <p><strong>Creating a merge conflict</strong></p>
-<p><strong>Everyone</strong>:
-- Checkout and pull any changes: <code>git checkout main</code> and <code>git pull origin main</code> to make sure you are up to date.
+<p><strong>Everyone</strong>:<br>
+- Checkout and pull any changes: <code>git checkout main</code> and <code>git pull origin main</code> to make sure you are up to date.<br>
 - Make and checkout a new branch: <code>git checkout -b {new-branch-name}</code>. Each of
-you should call their branch something different from the other researcher.
+you should call their branch something different from the other researcher.<br>
 - Together, choose one file and one line location on the file that you will each
-edit separately on your laptops.
-- Each of you should make the edits you agreed upon to the single line location that you decided you would edit. You should both make <em>different</em> changes. <strong>Save your code file.</strong></p>
+edit separately on your laptops.<br>
+- Each of you should make the edits you agreed upon to the single line location that you decided you would edit. You should both make <em>different</em> changes. <strong>Save your code file.</strong>.</p>
 <p><br></p>
 <ul>
 <li>
@@ -380,9 +381,10 @@ Then, create a pull request and merge your changes into main.</li>
 <ul>
 <li>
 <strong>Colleague:</strong> Your turn. Add, commit, and push your changes to your branch.
-Then, create a pull request. 😨 Merge conflict! You will not
+Then, create a pull request. 😱 Merge conflict! You will not
 be able to merge into main.</li>
 </ul>
+<p><br></p>
 <p>Deep breaths. Let’s walk through how to resolve the merge conflict.</p>
 <p>The colleague with the conflict will see the following. Colleague, follow these steps!
 Lead researcher, watch your colleague’s screen to follow along:</p>
@@ -455,7 +457,7 @@ accomplish in the analysis.</li>
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Git and GitHub for Public Health</strong>" was written by Corinne Riddell and Lauren Wilner. It was last built on 2024-06-11.</p>
+    <p>"<strong>Git and GitHub for Public Health</strong>" was written by Corinne Riddell and Lauren Wilner. It was last built on 2024-06-17.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
