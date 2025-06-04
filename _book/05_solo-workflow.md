@@ -87,13 +87,13 @@ Biostat-MBP13-20:life-expectancy corinneriddell$git branch
 
 Set yourself up in a new branch off of main. In Terminal/Bash:
 
-* Type `git checkout -b june18-xy`, replacing xy with your initials -- write these 
-in lowercase to prevent errors later! (If today is not June 18th, replace "june18" 
+* Type `git checkout -b june10-xy`, replacing xy with your initials -- write these 
+in lowercase to prevent errors later! (If today is not June 18th, replace "june10" 
 with today's date.)
 
 ```
-Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout -b june18-cr
-Switched to a new branch 'june18-cr'
+Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout -b june10-cr
+Switched to a new branch 'june10-cr'
 ```
 
 * Type `git branch`, to confirm to yourself that you have indeed switched to 
@@ -102,7 +102,7 @@ the new branch.
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
   main
-* june18-cr
+* june10-cr
 ```
 
 **Make some changes to your tracked folder**
@@ -112,6 +112,8 @@ Okay, you are now set up to track changes. Let's do the following:
 Copy the code/, data/, and images/ sub-folders from your "existing-project" folder into the 
 "life-expectancy" folder as well as the .Rproj file.
 
+Open the .Rproj file and run the code. You do not need to make any changes to the code, simply run it. This will generate an image file, but otherwise everything will remain unchanged.
+
 **Commit the changes that you made and push them to GitHub**
 
 Go back over to Terminal or Bash. Type `git status`. The output will tell you 
@@ -119,7 +121,7 @@ what has been changed. It tells us that there are untracked files:
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git status
-On branch june18-cr
+On branch june10-cr
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 	.DS_Store
@@ -139,7 +141,7 @@ Biostat-MBP13-20:life-expectancy corinneriddell$ git add data/
 Biostat-MBP13-20:life-expectancy corinneriddell$ git add images/
 Biostat-MBP13-20:life-expectancy corinneriddell$ git add existing-project.Rproj 
 Biostat-MBP13-20:life-expectancy corinneriddell$ git status
-On branch june18-cr
+On branch june10-cr
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
 	new file:   code/01_Analyze-life-expectancy.R
@@ -166,7 +168,7 @@ Commit these changes locally: `git commit -m 'your commit message' `, replace
  
  ```
  Biostat-MBP13-20:life-expectancy corinneriddell$ git commit -m "added first set of files"
-[june18-cr 58fcc58] added first set of files
+[june10-cr 58fcc58] added first set of files
  5 files changed, 7253 insertions(+)
  create mode 100644 code/01_Analyze-life-expectancy.R
  create mode 100644 data/Life-expectancy-by-state-long.csv
@@ -180,7 +182,7 @@ Push these changes to GitHub: `git push origin {branch-name}`, replacing
 name, type `git branch` to print it to the screen and then the `git push` command.
 
 ```
-Biostat-MBP13-20:life-expectancy corinneriddell$ git push origin june18-cr
+Biostat-MBP13-20:life-expectancy corinneriddell$ git push origin june10-cr
 Enumerating objects: 11, done.
 Counting objects: 100% (11/11), done.
 Delta compression using up to 8 threads
@@ -188,11 +190,11 @@ Compressing objects: 100% (9/9), done.
 Writing objects: 100% (10/10), 136.50 KiB | 10.50 MiB/s, done.
 Total 10 (delta 0), reused 0 (delta 0)
 remote: 
-remote: Create a pull request for 'june18-cr' on GitHub by visiting:
-remote:      https://github.com/corinne-riddell/life-expectancy/pull/new/june18-cr
+remote: Create a pull request for 'june10-cr' on GitHub by visiting:
+remote:      https://github.com/corinne-riddell/life-expectancy/pull/new/june10-cr
 remote: 
 To https://github.com/corinne-riddell/life-expectancy.git
- * [new branch]      june18-cr -> june18-cr
+ * [new branch]      june10-cr -> june10-cr
 
 ```
 You have successfully pushed your changes to GitHub! 
@@ -217,6 +219,8 @@ branch has no conflicts with the base branch". This means you are good to go!
 * Click on the green "Confirm merge" button. 
 * Click the "Delete branch" button.
 
+You can close R Studio now that we are finished!
+
 **Summary**
 
 * You set up a folder on your laptop so that Git is used to track changes made 
@@ -237,7 +241,9 @@ set of tracked changes.
 
 **Get setup for a new day of work**
 
-The first thing we need to do is make sure we are in a good place with git and
+If you haven't already, you can close R Studio to simulate starting a new day. 
+
+Then, the first thing we need to do is make sure we are in a good place with git and
 GitHub:
 
 * Open up Bash or Terminal and navigate to the life-expectancy folder using 
@@ -248,7 +254,7 @@ names are displayed. The asterisk is next to the branch we are currently on.
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
   main
-* june18-cr
+* june10-cr
 ```
 
 Check if you forgot to save anything from last time using `git status`. 
@@ -257,7 +263,7 @@ Here is my status:
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git status
-On branch june18-cr
+On branch june10-cr
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 	.DS_Store
@@ -284,15 +290,15 @@ main.
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
 * main
-  june18-cr
+  june10-cr
 ```
 
-You can also delete the "june18-XY" branch since you no longer need to track it 
+You can also delete the "june10-XY" branch since you no longer need to track it 
 locally:
 
 ```
-Biostat-MBP13-20:github-training corinneriddell$ git branch -d june18-cr
-Deleted branch june18-cr (was 58fcc58).
+Biostat-MBP13-20:github-training corinneriddell$ git branch -d june10-cr
+Deleted branch june10-cr (was 58fcc58).
 ```
 
 **Pull down the changes from main**
@@ -489,7 +495,7 @@ create a pull request to pull these changes into main.
 Another week goes by. It is now June 25. You received an email that there was an 
 error in the data file that you used to conduct the analysis. A new data file
 was securely transferred to you by the data holder. You need to rerun the analysis
-using the new dataset. The new data file is in the `future-data` subfolder of the `existing-project` that you put on your Desktop during setup.
+using the new dataset. The new data file is in the `future-data` subfolder of the `existing-project` that you put on your Desktop during setup. You should replace the old data file with this new data file! They have the same name, so when you copy it over, you can choose `replace` to overwrite the old file. If it doesn't have you replace the old file, you can delete the old file and then copy the new one over.
 
 **Get ready for the day**
 

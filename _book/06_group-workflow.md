@@ -262,8 +262,7 @@ This diagram shows how both Lauren and Corinne can work on the same file,
 sequentially over time, each pulling from main, making changes, and merging their
 changes back into main before the other person works:
 
-
-\includegraphics[width=1\linewidth]{./figures/no-conflict} 
+<img src="./figures/no-conflict.PNG" width="100%" />
 
 However, this collaborative route leaves room for the dreaded merge conflict.
 
@@ -278,8 +277,7 @@ merges their changes into main, then when colleague #2
 goes to merge their changes into main, GitHub doesn't know what changes to keep.
 
 
-
-\includegraphics[width=1\linewidth]{./figures/conflict} 
+<img src="./figures/conflict.PNG" width="100%" />
 
 If this seems a little convoluted, it is your lucky day. We will set the stage
 for a merge conflict and practice resolving it with our buddy. 
@@ -312,18 +310,15 @@ Deep breaths. Let's walk through how to resolve the merge conflict.
 The colleague with the conflict will see the following. Colleague, follow these steps!
 Lead researcher, watch your colleague's screen to follow along:
 
-
-\includegraphics[width=1\linewidth]{./figures/merge-conflict-1} 
+<img src="./figures/merge-conflict-1.png" width="100%" />
 
 Click on `View Pull Request` to begin resolving the merge conflict. When you click on `View Pull Request`, you will see the following: 
 
-
-\includegraphics[width=1\linewidth]{./figures/merge-conflict-2} 
+<img src="./figures/merge-conflict-2.png" width="100%" />
 
 Click on `Resolve conflicts` to begin resolving the merge conflict. When you click on `Resolve conflicts`, you will see the following:
 
-
-\includegraphics[width=0.75\linewidth]{./figures/Example-merge-conflict-github} 
+<img src="./figures/Example-merge-conflict-github.png" width="75%" />
 
 Together, look at the code in the file. Decide which edits you will keep. For
 this exercise, it is arbitrary which edits you keep. However, in practice you 

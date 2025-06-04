@@ -6,16 +6,14 @@ This page introduces a few Git and GitHub processes that didn't nicely fold into
 Remember when we went through **branching**? **Branching** is the process of creating a new branch where you can make changes to code separately from the main branch. When you finish your changes, you merge your branch into main and delete the branch. **Branching** is a critical tool for working with Git repositories and ensuring that the main branch remains functional and clean. Even if you do not merge your branch back in, the owner of the repository can see your branch on GitHub, take a look at what you have done, and foster collaboration with the members of the repository.
 
 **Branching**: 
-
-\includegraphics[width=1\linewidth]{./figures/branching} 
+<img src="./figures/branching.png" width="100%" />
 
 **Forking** is a similar process, but it is used when you want to build off of someone else's repository. When you **fork** a repository, you create a copy of the repository in your GitHub account. You can then make changes to the repository in your account without affecting the original repository. The owner of the original repository will not be a member of your forked repository. The forked repository is essentially your repository now. You can think about this as similar to receiving a Google folder, downloading its contents, and saving it to your computer. The original Google folder is still there, the people with ownership and access to the original Google folder are unaffected, but now you have a completely separate folder on your computer that is not a collaboration with the original Google folder team in any way. 
 
 Why fork? Forking is a great way to contribute to open-source projects or to change a repository that you don't have "write" access to. Forking also circumvents reinventing the wheel -- perhaps your colleagues developed a suite of functions for cleaning malaria data, and you need similar functions for your dengue project. You can fork their repository, make changes to tailor these functions to dengue, and use their functions in your project. 
 
 **Forking**: 
-
-\includegraphics[width=1\linewidth]{./figures/forking} 
+<img src="./figures/forking.png" width="100%" />
 
 **Forking** is core to the premise of Git and the effort to move towards open-source software development. It allows for collaboration within workplaces, disciplines, and around the world for the sharing of code and ideas.
 
@@ -42,8 +40,7 @@ files listed in your `.gitignore` file.
 
 **Here's an example of the contents of a .gitignore file:** 
 
-
-\includegraphics[width=0.25\linewidth]{./figures/gitignore} 
+<img src="./figures/gitignore.png" width="25%" />
 
 This .gitignore file instructs Git to ignore any files that end with `.sql` or `.sqlite`, as
 well as any files in the `build` subfolder. Git ignore files are handy if 
