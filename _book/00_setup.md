@@ -44,7 +44,7 @@ To do this, run the following code in the RStudio console (lower left-hand side
 panel, of the four panel pane):
 
 
-```r
+``` r
 install.packages('tidyverse')
 install.packages('usethis')
 install.packages('gitcreds')
@@ -57,6 +57,14 @@ If this is your first time using R/RStudio, this video shows how to type the
 commands into the console and R looks like when the installs runs smoothly. 
 *Please view this video in full screen and at high quality to see it properly.*
 
+
+```{=html}
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/JuZxhOTDMtw" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
+```
 
 
 ## Create a GitHub account
@@ -86,6 +94,14 @@ The following video shows how to download and install Git for Windows. View it
 on full screen and in high quality if you want to follow along:
 
 
+```{=html}
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/0blgUPi5j4U" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
+```
+
 
 2) Once you have Git downloads, confirm you have access to Git Bash. To do so, 
 it should appear in your Start menu: Start menu > Git > Git Bash.
@@ -110,7 +126,7 @@ follow the prompts!
 In RStudio, load the libraries `usethis` & `gitcreds`:  
 
 
-```r
+``` r
 library(usethis)
 library(gitcreds)
 ```
@@ -122,7 +138,7 @@ GitHub user name. `user.email` is the email address linked to your GitHub
 account.
 
 
-```r
+``` r
 use_git_config(user.name = "Your user name",
                user.email = "your.email.adress@gmail.com")
 ```
@@ -132,7 +148,7 @@ authenticate yourself with GitHub. You will need to do this in order to push and
 pull from your GitHub repository.  To do so, run the following in the R console:   
 
 
-```r
+``` r
 usethis::create_github_token()  
 ```
 
@@ -144,7 +160,7 @@ generated and paste it somewhere where you will be able to access it.
 Go back to R/RStudio and run the following:  
 
 
-```r
+``` r
 gitcreds::gitcreds_set()
 ```
 

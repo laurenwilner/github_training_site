@@ -1,7 +1,7 @@
 --- 
 title: "Git and GitHub for Public Health"
 author: "Corinne Riddell and Lauren Wilner"
-date: "2024-06-17"
+date: "2025-06-04"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]

@@ -84,8 +84,7 @@ result.
 
 **2-up comparison:**
 
-
-\includegraphics[width=1\linewidth]{./figures/2-up-example} 
+<img src="./figures/2-up-example.png" width="100%" />
 
 
 **Swipe comparison:**
