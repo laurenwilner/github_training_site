@@ -37,13 +37,16 @@ new versions of the code or data.
 With Github, you can easily view changes made to statistical code. So if 
 you are working together, it is easy to tell what lines of code were changed, 
 alongside downstream changes to reports or data visualizations as a result of the
-change to the analysis.
+change to the analysis. You can also view the history of a given file, which allows 
+you to see how the file has changed over time.
 
 **Facilitates rollbacks**
 
 You can use Git to roll back to a previous version of a file at any point. This 
 is useful if your team decides that a change made to the code was not beneficial
-or wants to revert back to a different strategy that was used previously. 
+or wants to revert back to a different strategy that was used previously. This is 
+similar to viewing the history of a file, but allows you to revert back to that 
+previous version of the file, rather than simply viewing it.
 
 **Supports expeditious sharing of scientific approaches and findings**
 
