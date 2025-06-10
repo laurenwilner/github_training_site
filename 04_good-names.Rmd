@@ -54,7 +54,7 @@ Flip through [Jenny Bryan's](https://jennybryan.org/about/) slide set here for a
 <br />
 **3. What happens when there are bad names?**
 
-The issue and frustration of includes spaces in file names really hits home when
+The issue and frustration of including spaces in file names really hits home when
 you include spaces in the names and trying interacting with GitHub to add the files
 and make a commit -- if you like pain and frustration -- you can try this at home!
 
@@ -63,9 +63,7 @@ Evaluation Report.rmd". In the screenshot below, you can see that this file has
 been modified when I used the `git status` command. The issue occurs when I need
 to add that file using `git add {file_name}`. If I typed `git add Data Visualization Evaluation Report.rmd`
 there would be an error because Git doesn't know that the name continues after 
-the space after the word "Data"! Even worse, the space breaks the auto-complete 
-functionality that occurs when you press "tab" to auto-complete the file name 
-after typing the first few letters. 
+the space after the word "Data"!  
 
 To really add the file we need to use the escape character (the backslash "\\")
 before each space in the name, as shown in the `git add` command highlighted in

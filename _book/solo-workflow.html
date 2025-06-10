@@ -317,10 +317,6 @@ main.</p>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
 * main
   june10-cr</code></pre>
-<p>You can also delete the “june10-XY” branch since you no longer need to track it
-locally:</p>
-<pre><code>Biostat-MBP13-20:github-training corinneriddell$ git branch -d june10-cr
-Deleted branch june10-cr (was 58fcc58).</code></pre>
 <p><strong>Pull down the changes from main</strong></p>
 <p>This is your <strong>local</strong> copy of main. It needs to pull down the changes to
 main that you made on GitHub in an earlier step. To do that, type <code>git pull origin main</code>.
@@ -347,6 +343,10 @@ Fast-forward
  create mode 100644 images/ca-black-women-LE.png
  create mode 100644 images/placeholder.md
  create mode 100644 existing-project.Rproj</code></pre>
+<p>You can also delete the “june10-XY” branch since you no longer need to track it
+locally:</p>
+<pre><code>Biostat-MBP13-20:github-training corinneriddell$ git branch -d june10-cr
+Deleted branch june10-cr (was 58fcc58).</code></pre>
 <p><strong>Start a new branch</strong></p>
 <p>Like the last day, start a new branch to track today’s changes. Let’s
 pretend it is now June 21. Type <code>git checkout -b june21-XY</code>, where XY is replaced
@@ -496,14 +496,15 @@ nothing added to commit but untracked files present (use "git add" to track)</co
 <ul>
 <li>
 <code>git checkout main</code>: switch to the main branch</li>
-<li>
-<code>git branch -d june21-cr</code>: delete the old branch (change “cr” to your initials)</li>
 </ul>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout main
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.</code></pre>
-<p><code>git pull origin main</code>: pull GitHub’s copy of the main branch to update your
-local version. Examine the figure made by Git about the changes:</p>
+<ul>
+<li>
+<code>git pull origin main</code>: pull GitHub’s copy of the main branch to update your
+local version. Examine the figure made by Git about the changes:</li>
+</ul>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git pull origin main
 remote: Enumerating objects: 1, done.
 remote: Counting objects: 100% (1/1), done.
@@ -518,6 +519,10 @@ Fast-forward
  data/le_averages.csv              | 161 +++++++++++++++++++++++++++++++++++++++
  2 files changed, 177 insertions(+), 1 deletion(-)
  create mode 100644 data/le_averages.csv</code></pre>
+<ul>
+<li>
+<code>git branch -d june21-cr</code>: delete the old branch (change “cr” to your initials)</li>
+</ul>
 <p><strong>Checkout a new branch</strong></p>
 <p><code>git checkout -b june25-xy</code>, replacing xy with your initials.</p>
 <pre><code>Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout -b june25-cr
@@ -652,7 +657,7 @@ commands covered in this section.</p>
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Git and GitHub for Public Health</strong>" was written by Corinne Riddell and Lauren Wilner. It was last built on 2025-06-04.</p>
+    <p>"<strong>Git and GitHub for Public Health</strong>" was written by Corinne Riddell and Lauren Wilner. It was last built on 2025-06-10.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

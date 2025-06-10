@@ -293,14 +293,6 @@ Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
   june10-cr
 ```
 
-You can also delete the "june10-XY" branch since you no longer need to track it 
-locally:
-
-```
-Biostat-MBP13-20:github-training corinneriddell$ git branch -d june10-cr
-Deleted branch june10-cr (was 58fcc58).
-```
-
 **Pull down the changes from main**
 
 This is your **local** copy of main. It needs to pull down the changes to 
@@ -330,6 +322,14 @@ Fast-forward
  create mode 100644 images/ca-black-women-LE.png
  create mode 100644 images/placeholder.md
  create mode 100644 existing-project.Rproj
+```
+
+You can also delete the "june10-XY" branch since you no longer need to track it 
+locally:
+
+```
+Biostat-MBP13-20:github-training corinneriddell$ git branch -d june10-cr
+Deleted branch june10-cr (was 58fcc58).
 ```
 
 **Start a new branch**
@@ -522,7 +522,6 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 * `git checkout main`: switch to the main branch
-* `git branch -d june21-cr`: delete the old branch (change "cr" to your initials) 
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout main
@@ -530,7 +529,7 @@ Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 ```
 
-`git pull origin main`: pull GitHub's copy of the main branch to update your 
+* `git pull origin main`: pull GitHub's copy of the main branch to update your 
 local version. Examine the figure made by Git about the changes:
 
 ```
@@ -549,6 +548,8 @@ Fast-forward
  2 files changed, 177 insertions(+), 1 deletion(-)
  create mode 100644 data/le_averages.csv
 ```
+
+* `git branch -d june21-cr`: delete the old branch (change "cr" to your initials) 
 
 **Checkout a new branch**
 
