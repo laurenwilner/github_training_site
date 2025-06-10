@@ -10,8 +10,7 @@ Recall when you name a variable in SAS or R, the variable name cannot contain sp
 You may wonder what the problem is with spaces, anyway? While 
 spaces are human-readable they aren't machine-friendly. When you refer to a 
 folder or file using Git in Terminal or Bash, a name without spaces is much 
-easier to type (otherwise you have to insert a backslash before the space). 
-Spaces also break the auto-complete function that Git users love. This is
+easier to type (otherwise you have to insert a backslash before the space). This is
 frustrating.
 
 Good folder names and files names **use dashes and underscores in place of spaces**.
