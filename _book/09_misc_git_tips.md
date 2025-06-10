@@ -65,7 +65,7 @@ and collaborate with others. If you get stuck, never forget that its okay to
 delete your repository and start over - both of these website's co-author have 
 done this (repeatedly... even while creating this website). 
 
-There are many comics and memes about Git and the struggles that come with it-- include the acceptability of burning down your repository and starting over! 
+There are many comics and memes about Git and the struggles that come with it-- including the acceptability of burning down your repository and starting over! 
 
 <iframe src="https://imgs.xkcd.com/comics/git.png" width="56%" height="483"></iframe> 
 
