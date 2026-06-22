@@ -9,7 +9,7 @@ Keeping track of changes to your statistical code is key to reducing errors and 
 
 ## Live workshop outline
 
-**May 3, 2024**
+**May 3, 2024 (CDPH Sacramento)**
 
 | Section          | Length | Time        | Who |
 |------------------|--------|-------------|-----|
@@ -26,7 +26,7 @@ Keeping track of changes to your statistical code is key to reducing errors and 
 
 * Chapter 10 (Daily Git Practice) will be referenced from sections 7 and 8.
 
-**June 18, 2024**
+**June 18, 2024 (SER Austin)**
 
 | Section          | Length | Time        | Who |
 |------------------|--------|-------------|-----|
@@ -42,7 +42,23 @@ Keeping track of changes to your statistical code is key to reducing errors and 
 | 11 (Misc + conclusion)        | 10 mins| 4:45-4:55 | Corinne |
 
 
-**June 10, 2025**
+**June 10, 2025 (SER Boston)**
+
+| Section          | Length | Time        | Who |
+|------------------|--------|-------------|-----|
+| 3 (Intro + Why Git/GH)   | 5 mins | 1:00-1:05   | Corinne |  
+| 4 (Jargon)       | 20 mins| 1:05-1:25   | Corinne |  
+| 5 (Terminal/Bash)| 5 mins | 1:25-1:30   | Lauren |  
+| 6 (Names)        | 5 mins | 1:30-1:35   | Lauren |  
+| 7.1 - 7.4ish (Solo)| 40 mins| 1:35-2:15  | Corinne | 
+| Break            | 15 mins | 2:15-2:30  | NA    |
+| rest of 7        | 50 mins | 2:30-3:20 | Corinne |
+| Break            | 5 mins  | 3:20-3:25 | NA      |
+| 8 (Group)        | 70 mins| 3:25-4:35 | Lauren  | 
+| 9 (What to track)| 10 mins| 4:35-4:45 | Corinne |
+| 11 (Misc + conclusion)        | 10 mins| 4:45-4:55 | Corinne |
+
+**June 23, 2026 (SER Phoenix)**
 
 | Section          | Length | Time        | Who |
 |------------------|--------|-------------|-----|
