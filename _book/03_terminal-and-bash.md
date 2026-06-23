@@ -29,7 +29,7 @@ Below is a Mac Terminal window. It looks very similar to a Windows Bash window.
 
 <img src="./figures/Terminal-explainer-1.jpg" width="100%" />
 
-In this training, we supply you with Git code for you to type into 
+In this training, we supply you with Git commands for you to type into 
 your Terminal/Bash windows. 
 
 Once you input a command and hit Enter/return on 
@@ -40,9 +40,11 @@ computer or if something went wrong. For example, here is the command
 
 <img src="./figures/Terminal-explainer-2.jpg" width="100%" />
 
-Here is a cheat sheet of commands we use on this website: 
+Below is a cheat sheet of commands we use on this website. Mac users typically use
+Bash commands and Windows users use either, depending on whether they use
+Git Bash or Command Prompt to access the terminal. 
 
-| Mac Command  | Windows Command| Description     |
+| Bash  | Command Prompt | Description     |
 |--------------|----------------|------------------------|
 | `ls`     |`dir` |Lists files and directories               |
 | `cd {dir}`  | `cd {dir}`|Changes to directory `{dir}`      |
@@ -53,7 +55,7 @@ Here is a cheat sheet of commands we use on this website:
 Here is a cheat sheet of commands we don't use but are helpful to know and integrate
 into your workflow:
 
-| Mac Command  | Windows Command| Description     |
+| Bash  | Command Prompt | Description     |
 |--------------|----------------|------------------------|
 | `git rm {file}`   | `git rm {file}`| Removes a file       |
 | `mkdir {}`| `mkdir {}` |Creates a new directory `{}`          |

@@ -7,8 +7,8 @@ We have discussed why Git and GitHub are important, now we will set up a reposit
 
 * Make new repository on GitHub  
 * Clone the repository to your local machine  
-* Write code in your repository locally  
-* Push the code to your repository  
+* Write code on a branch in your local repository  
+* Push code to the branch in your remote repository (GitHub)
 * Merge your branch into main
 * Repeat the process with more code updates
 * Repeat the process with data updates
@@ -42,8 +42,8 @@ main page.
 * From the main page of your repository and click on the green `Code` button.  
 * You'll see a URL that starts with https://. Push the icon with two overlapping
 squares to copy the URL to your clipboard.
-* Open Terminal (Mac) or Bash (Windows) program. Navigate to where you want to place 
-this repository using the `cd {folder_name}` command. 
+* Open a terminal window. Navigate to where you want to place this repository 
+using the `cd {folder_name}` command. 
   * *Note: Whenever we use curly brackets on this website, you do not need to type out curly brackets in your code. For example use `cd Documents/` to navigate to your Documents folder, not `cd {Documents}`. This applies wherever you see curly brackets on this website!* 
   * *Note: It is highly recommended to store repositories locally (i.e., not in a folder that lives on Google Drive, Box, iCloud, etc.). It can be risky to store them on the cloud -- see this [post](https://stackoverflow.com/questions/79364192/is-it-problematic-to-manage-git-repositories-inside-google-drive-for-personal-us) for more details!*
 * Then type `git clone {paste the url you copied here}` in Terminal/Bash and
@@ -89,13 +89,13 @@ Biostat-MBP13-20:life-expectancy corinneriddell$git branch
 
 Set yourself up in a new branch off of main. In Terminal/Bash:
 
-* Type `git checkout -b june10-xy`, replacing xy with your initials -- write these 
-in lowercase to prevent errors later! (If today is not June 18th, replace "june10" 
+* Type `git checkout -b june23-xy`, replacing xy with your initials -- write these 
+in lowercase to prevent errors later! (If today is not June 23th, replace "june23" 
 with today's date.)
 
 ```
-Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout -b june10-cr
-Switched to a new branch 'june10-cr'
+Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout -b june23-cr
+Switched to a new branch 'june23-cr'
 ```
 
 * Type `git branch`, to confirm to yourself that you have indeed switched to 
@@ -104,7 +104,7 @@ the new branch.
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
   main
-* june10-cr
+* june23-cr
 ```
 
 **Make some changes to your tracked folder**
@@ -123,7 +123,7 @@ what has been changed. It tells us that there are untracked files:
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git status
-On branch june10-cr
+On branch june23-cr
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 	.DS_Store
@@ -143,7 +143,7 @@ Biostat-MBP13-20:life-expectancy corinneriddell$ git add data/
 Biostat-MBP13-20:life-expectancy corinneriddell$ git add images/
 Biostat-MBP13-20:life-expectancy corinneriddell$ git add existing-project.Rproj 
 Biostat-MBP13-20:life-expectancy corinneriddell$ git status
-On branch june10-cr
+On branch june23-cr
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
 	new file:   code/01_Analyze-life-expectancy.R
@@ -170,7 +170,7 @@ Commit these changes locally: `git commit -m 'your commit message' `, replace
  
  ```
  Biostat-MBP13-20:life-expectancy corinneriddell$ git commit -m "added first set of files"
-[june10-cr 58fcc58] added first set of files
+[june23-cr 58fcc58] added first set of files
  5 files changed, 7253 insertions(+)
  create mode 100644 code/01_Analyze-life-expectancy.R
  create mode 100644 data/Life-expectancy-by-state-long.csv
@@ -184,7 +184,7 @@ Push these changes to GitHub: `git push origin {branch-name}`, replacing
 name, type `git branch` to print it to the screen and then the `git push` command.
 
 ```
-Biostat-MBP13-20:life-expectancy corinneriddell$ git push origin june10-cr
+Biostat-MBP13-20:life-expectancy corinneriddell$ git push origin june23-cr
 Enumerating objects: 11, done.
 Counting objects: 100% (11/11), done.
 Delta compression using up to 8 threads
@@ -192,11 +192,11 @@ Compressing objects: 100% (9/9), done.
 Writing objects: 100% (10/10), 136.50 KiB | 10.50 MiB/s, done.
 Total 10 (delta 0), reused 0 (delta 0)
 remote: 
-remote: Create a pull request for 'june10-cr' on GitHub by visiting:
-remote:      https://github.com/corinne-riddell/life-expectancy/pull/new/june10-cr
+remote: Create a pull request for 'june23-cr' on GitHub by visiting:
+remote:      https://github.com/corinne-riddell/life-expectancy/pull/new/june23-cr
 remote: 
 To https://github.com/corinne-riddell/life-expectancy.git
- * [new branch]      june10-cr -> june10-cr
+ * [new branch]      june23-cr -> june23-cr
 
 ```
 You have successfully pushed your changes to GitHub! 
@@ -256,7 +256,7 @@ names are displayed. The asterisk is next to the branch we are currently on.
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
   main
-* june10-cr
+* june23-cr
 ```
 
 Check if you forgot to save anything from last time using `git status`. 
@@ -265,7 +265,7 @@ Here is my status:
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git status
-On branch june10-cr
+On branch june23-cr
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 	.DS_Store
@@ -292,7 +292,7 @@ main.
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
 * main
-  june10-cr
+  june23-cr
 ```
 
 **Pull down the changes from main**
@@ -326,26 +326,26 @@ Fast-forward
  create mode 100644 existing-project.Rproj
 ```
 
-You can also delete the "june10-XY" branch since you no longer need to track it 
+You can also delete the "june23-XY" branch since you no longer need to track it 
 locally:
 
 ```
-Biostat-MBP13-20:github-training corinneriddell$ git branch -d june10-cr
-Deleted branch june10-cr (was 58fcc58).
+Biostat-MBP13-20:github-training corinneriddell$ git branch -d june23-cr
+Deleted branch june23-cr (was 58fcc58).
 ```
 
 **Start a new branch**
 
 Like the last day, start a new branch to track today's changes. Let's 
-pretend it is now June 21. Type `git checkout -b june21-XY`, where XY is replaced 
+pretend it is now June 30. Type `git checkout -b june30-XY`, where XY is replaced 
 with your initials. Type `git branch` to confirm you have changed branches. 
 
 ```
-Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout -b june21-cr
-Switched to a new branch 'june21-cr'
+Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout -b june30-cr
+Switched to a new branch 'june30-cr'
 Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
   main
-* june21-cr
+* june30-cr
 ```
 
 **You are now ready to make changes!**
@@ -410,7 +410,7 @@ Which files have been modified? Which files are new and untracked?
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git status
-On branch june21-cr
+On branch june30-cr
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
@@ -432,7 +432,7 @@ are being tracked. When you are satisfied, commit these changes locally.
 Biostat-MBP13-20:life-expectancy corinneriddell$ git add code/01_Analyze-life-expectancy.R 
 Biostat-MBP13-20:life-expectancy corinneriddell$ git add data/le_averages.csv 
 Biostat-MBP13-20:life-expectancy corinneriddell$ git status
-On branch june21-cr
+On branch june30-cr
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
 	modified:   code/01_Analyze-life-expectancy.R
@@ -455,7 +455,7 @@ Replace 'your message' with a short message describing the changes. Remember to 
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git commit -m 'calc LE averages' 
-[june21-cr a7435b8] calc LE averages
+[june30-cr a7435b8] calc LE averages
  2 files changed, 177 insertions(+), 1 deletion(-)
  create mode 100644 data/le_averages.csv
 ```
@@ -470,8 +470,8 @@ of your local branch. First, remind yourself of your branch's name using
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
   main
-* june21-cr
-Biostat-MBP13-20:life-expectancy corinneriddell$ git push origin june21-cr
+* june30-cr
+Biostat-MBP13-20:life-expectancy corinneriddell$ git push origin june30-cr
 Enumerating objects: 10, done.
 Counting objects: 100% (10/10), done.
 Delta compression using up to 8 threads
@@ -480,11 +480,11 @@ Writing objects: 100% (6/6), 2.84 KiB | 2.84 MiB/s, done.
 Total 6 (delta 2), reused 0 (delta 0)
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 remote: 
-remote: Create a pull request for 'june21-cr' on GitHub by visiting:
-remote:      https://github.com/corinne-riddell/life-expectancy/pull/new/june21-cr
+remote: Create a pull request for 'june30-cr' on GitHub by visiting:
+remote:      https://github.com/corinne-riddell/life-expectancy/pull/new/june30-cr
 remote: 
 To https://github.com/corinne-riddell/life-expectancy.git
- * [new branch]      june21-cr -> june21-cr
+ * [new branch]      june30-cr -> june30-cr
 ```
 
 **Create a pull request**
@@ -494,7 +494,7 @@ create a pull request to pull these changes into main.
 
 ## Another practice: Changes after receiving an updated dataset
 
-Another week goes by. It is now June 25. You received an email that there was an 
+Another week goes by. It is now July 7. You received an email that there was an 
 error in the data file that you used to conduct the analysis. A new data file
 was securely transferred to you by the data holder. You need to rerun the analysis
 using the new dataset. The new data file is in the `future-data` subfolder of the `existing-project` that you put on your Desktop during setup. You should replace the old data file with this new data file! They have the same name, so when you copy it over, you can choose `replace` to overwrite the old file. If it doesn't have you replace the old file, you can delete the old file and then copy the new one over.
@@ -508,14 +508,14 @@ Set yourself up to work with Git and GitHub for the day:
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git branch
   main
-* june21-cr
+* june30-cr
 ```
 
 `git status`: confirm you committed everything you wanted to commit:
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git status
-On branch june21-cr
+On branch june30-cr
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 	.DS_Store
@@ -551,15 +551,15 @@ Fast-forward
  create mode 100644 data/le_averages.csv
 ```
 
-* `git branch -d june21-cr`: delete the old branch (change "cr" to your initials) 
+* `git branch -d june30-cr`: delete the old branch (change "cr" to your initials) 
 
 **Checkout a new branch**
 
-`git checkout -b june25-xy`, replacing xy with your initials.
+`git checkout -b july7-xy`, replacing xy with your initials.
 
 ```
-Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout -b june25-cr
-Switched to a new branch 'june25-cr'
+Biostat-MBP13-20:life-expectancy corinneriddell$ git checkout -b july7-cr
+Switched to a new branch 'july7-cr'
 ```
 
 **Update the dataset**
@@ -585,7 +585,7 @@ where I moved the archived dataset.
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git status
-On branch june25-cr
+On branch july7-cr
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
@@ -613,7 +613,7 @@ I then use `git status` to confirm everything is being tracked:
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git status
-On branch june25-cr
+On branch july7-cr
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
 	modified:   data/Life-expectancy-by-state-long.csv
@@ -633,7 +633,7 @@ Then I commit my changes:
 
 ```
 Biostat-MBP13-20:life-expectancy corinneriddell$ git commit -m 'data update and downstream changes'
-[june25-cr c4b02db] data update and downstream changes
+[july7-cr c4b02db] data update and downstream changes
  4 files changed, 7570 insertions(+), 369 deletions(-)
  create mode 100644 data/archive/Life-expectancy-by-state-long_old.csv
  rewrite images/ca-black-women-LE.png (98%)
@@ -644,7 +644,7 @@ Biostat-MBP13-20:life-expectancy corinneriddell$ git commit -m 'data update and 
 Finally I push these changes to GitHub:
 
 ```
-git push origin june25-cr
+git push origin july7-cr
 Enumerating objects: 14, done.
 Counting objects: 100% (14/14), done.
 Delta compression using up to 8 threads
@@ -653,7 +653,7 @@ Writing objects: 100% (8/8), 68.08 KiB | 9.73 MiB/s, done.
 Total 8 (delta 3), reused 0 (delta 0)
 remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
 To https://github.com/corinne-riddell/life-expectancy.git
-   e15298a..c4b02db  june25-cr -> june25-cr
+   e15298a..c4b02db  july7-cr -> july7-cr
 Biostat-MBP13-20:life-expectancy corinneriddell$ 
 
 ```
