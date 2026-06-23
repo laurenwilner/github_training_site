@@ -22,7 +22,7 @@ The lead researcher will create the repository, and the colleague will contribut
 
 **Lead Researcher: Create a new repository on GitHub**
 
-- Go to GitHub, click on the "+" icon in the top-right corner, and select `New repository`.
+- Go to GitHub, click on the green "new" button.
 - Follow the same instructions as we did in the solo workflow to create a new 
 repository (add a README, choose a license, etc.).
 - Add your colleague as a collaborator by going to 
