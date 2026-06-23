@@ -15,7 +15,10 @@ want to track those changes. If you want to commit them, follow steps 10 through
 before proceeding to Step 2.
 3. Type `git checkout main`.
 4. Type `git pull origin main`. This will pull the changes you made
-the day before and get you ready to start on a clean branch today.
+the day before and get you ready to start on a clean branch today. This will also
+pull changes that any of your collaborators made to the main branch, so it is 
+important to do this the moment before you start working on a new branch to 
+ensure you branch off the most up-to-date version of main! 
 5. Delete the previous day's branch. Type `git branch -d {branch-name}`. 
 Remember to replace `{branch-name}` with your previous day's branch 
 name. If you don't remember what it was named, type `git branch` to display a 

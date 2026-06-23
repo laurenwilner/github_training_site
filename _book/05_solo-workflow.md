@@ -43,7 +43,9 @@ main page.
 * You'll see a URL that starts with https://. Push the icon with two overlapping
 squares to copy the URL to your clipboard.
 * Open Terminal (Mac) or Bash (Windows) program. Navigate to where you want to place 
-this repository using the `cd {folder_name}` command. *Note: Whenever we use curly brackets on this website, you do not need to type out curly brackets in your code. For example use `cd Documents/` to navigate to your Documents folder, not `cd {Documents}`. This applies wherever you see curly brackets on this website!* 
+this repository using the `cd {folder_name}` command. 
+  * *Note: Whenever we use curly brackets on this website, you do not need to type out curly brackets in your code. For example use `cd Documents/` to navigate to your Documents folder, not `cd {Documents}`. This applies wherever you see curly brackets on this website!* 
+  * *Note: It is highly recommended to store repositories locally (i.e., not in a folder that lives on Google Drive, Box, iCloud, etc.). It can be risky to store them on the cloud -- see this [post](https://stackoverflow.com/questions/79364192/is-it-problematic-to-manage-git-repositories-inside-google-drive-for-personal-us) for more details!*
 * Then type `git clone {paste the url you copied here}` in Terminal/Bash and
 then press the return/enter button. The following will display in Terminal/Bash
 if this was successful:
